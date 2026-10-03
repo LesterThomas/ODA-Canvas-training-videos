@@ -1,0 +1,27 @@
+# Node / Remotion
+node_modules/
+dist/
+out/
+videos/out/
+.cache/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Installed agent skills (vendored, restorable via `npx skills experimental_install`
+# using skills-lock.json) and their Claude Code symlinks/junctions.
+.agents/skills/
+.claude/
+
+# Logs
+*.log
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Env/secrets
+.env
+.env.*
