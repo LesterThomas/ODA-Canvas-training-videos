@@ -32,7 +32,7 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 > Welcome to the first video in a series about the Open Digital Architecture Canvas, the execution platform for ODA Components, and its open-source reference implementation.
 
 ### Slide 2: Who this is for
-- **Visual:** [3B1B] Two personas slide in. On the left, a component developer holding a Lego block. On the right, a platform engineer holding the Canvas.
+- **Visual:** [3B1B] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a platform engineer holding the Canvas.
 - **Speaker notes:**
 > This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, architects, engineers and site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.
 
@@ -62,12 +62,12 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ## Segment 3: Components and Canvas
 
 ### Slide 7: What is an ODA Component?
-- **Visual:** [3B1B] A Lego block builds up. Its studs are labelled Exposed APIs, Dependent APIs, Events, and Security and Management. A YAML sheet slides out from underneath. (Deck slide 1, left half.)
+- **Visual:** [3B1B] The ODA Component symbol builds up segment by segment. Its exposed-API lollipops and dependent-API sockets draw outward as the APIs are mentioned. Core Function, Notification/Reporting, Security and Management/Operations glow in turn while callout tiles list the declared needs. (Deck slide 1, left half.)
 - **Speaker notes:**
 > That's where ODA Components come in. An ODA Component is an independently deployable unit of functionality. Alongside its business function, it declares its non-functional needs, such as the APIs it exposes and depends on, the events it publishes, its security roles and its observability. Components are interoperable, designed around end-to-end use cases, and portable: they can run on any Canvas that follows the standard.
 
 ### Slide 8: What is the ODA Canvas?
-- **Visual:** [3B1B] A base plate appears under the block, carrying service tiles: API Management, Identity, Observability, Secrets, Events and more. (Deck slide 1, right half.)
+- **Visual:** [3B1B] A base plate appears under the component symbol, carrying service tiles: API Management, Identity, Observability, Secrets, Events and more. (Deck slide 1, right half.)
 - **Speaker notes:**
 > The ODA Canvas is the cloud-native execution environment for those components. It reads each component's declared requirements and provides the shared operational services it needs, including API management, identity, observability and secrets. Component developers can focus on business functionality while the Canvas takes care of security, monitoring and scaling.
 

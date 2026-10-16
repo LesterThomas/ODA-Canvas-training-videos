@@ -1,7 +1,8 @@
 import React from "react";
 import { interpolate } from "remotion";
 import { C } from "../theme";
-import { Appear, Brick, Heading, Icon, Pill, Stage, useProg, useT } from "../lib/ui";
+import { Appear, Heading, Icon, Pill, Stage, useProg, useT } from "../lib/ui";
+import { OdaComponent } from "../lib/OdaComponent";
 
 /** Canvas "base plate" that components click onto. */
 export const Plate: React.FC<{ w?: number; label?: string; fontSize?: number; style?: React.CSSProperties }> = ({
@@ -43,19 +44,19 @@ export const S01Title: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          left: 1230,
-          top: 470,
+          left: 1220,
+          top: 342,
           opacity: drop,
           translate: `0px ${interpolate(drop, [0, 1], [-420, 0])}px`,
         }}
       >
-        <Brick w={360} label="ODA Component" />
+        <OdaComponent size={380} labels={false} />
       </div>
       <div
         style={{
           position: "absolute",
           left: 1410,
-          top: 620,
+          top: 522,
           width: 520 * settle,
           height: 520 * settle,
           translate: "-50% -50%",
@@ -129,7 +130,7 @@ export const S02Audiences: React.FC = () => {
         color={C.component}
         title="Component builders"
         body="Architects and software engineers building software components that meet the ODA standards"
-        prop={<Brick w={200} studs={3} />}
+        prop={<OdaComponent size={210} labels={false} />}
       />
       <div
         style={{

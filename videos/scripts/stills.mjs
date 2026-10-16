@@ -13,7 +13,8 @@ const fractions = posters ? [1] : args.slice(1).map(Number);
 const fr = fractions.length ? fractions : [1];
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
-const comps = (await getCompositions(serveUrl)).filter((c) => c.id.includes(filter));
+const filters = filter.split(",");
+const comps = (await getCompositions(serveUrl)).filter((c) => filters.some((f) => c.id.includes(f)));
 for (const c of comps) {
   for (const f of fr) {
     const frame = Math.min(c.durationInFrames - 1, Math.round((c.durationInFrames - 1) * f));

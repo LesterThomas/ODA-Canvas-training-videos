@@ -1,6 +1,7 @@
 import React from "react";
 import { C } from "../theme";
-import { Appear, Brick, Draw, Heading, Icon, IconName, Pill, Stage, Svg } from "../lib/ui";
+import { Appear, Draw, Heading, Icon, IconName, Pill, Stage, Svg } from "../lib/ui";
+import { OdaComponent } from "../lib/OdaComponent";
 import { Plate } from "./Seg1Intro";
 
 const ROLES: { label: string; icon: IconName; color: string; x: number; y: number }[] = [
@@ -54,10 +55,10 @@ export const S25Together: React.FC = () => {
       ))}
       <Appear at={6.0} from="up" style={{ left: 610, top: 410 }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <div style={{ display: "flex", gap: 14, marginBottom: -4 }}>
-            <Brick w={160} studs={2} />
-            <Brick w={160} studs={2} color={C.agent} />
-            <Brick w={160} studs={2} />
+          <div style={{ display: "flex", gap: 10, marginBottom: -22 }}>
+            <OdaComponent size={190} labels={false} />
+            <OdaComponent size={190} mono={C.agent} />
+            <OdaComponent size={190} labels={false} />
           </div>
           <Plate w={700} />
         </div>
@@ -119,7 +120,7 @@ export const S26Next: React.FC = () => (
           <Icon name="globe" size={38} color={C.tmf} /> github.com/tmforum-oda/oda-canvas
         </Pill>
         <Pill color={C.component} fontSize={36}>
-          <Icon name="cube" size={38} color={C.component} /> tmforum.org/oda/directory
+          <OdaComponent size={34} crop /> tmforum.org/oda/directory
         </Pill>
       </div>
     </Appear>

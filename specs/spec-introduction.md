@@ -180,7 +180,8 @@ session isn't ready in time for this deck's deadline.
   non-functional concern (API Gateway, Identity, Observability, Secrets, Cost, Carbon, AI) with a
   consistent colour/icon used identically across every segment in this deck and carried forward
   into every later deck.
-- The "Lego block" motif (pptx slides 1, 21) and the capability-map diagram (slide 2/3) are the
+- The component motif (originally the "Lego block" from pptx slides 1 and 21, now replaced by the
+  standard ODA Component symbol, `images/ODA-Component.svg`) and the capability-map diagram (slide 2/3) are the
   two most-reused visual motifs in the source deck — build these as reusable Remotion components
   early, since nearly every later segment either reuses or evolves from them (e.g. Segment 10
   animates slide 9's diagram morphing into slide 3's AI-native version).

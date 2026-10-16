@@ -3,7 +3,6 @@ import { interpolate } from "remotion";
 import { C, MONO } from "../theme";
 import {
   Appear,
-  Brick,
   Caption,
   Draw,
   Heading,
@@ -17,6 +16,7 @@ import {
   useT,
 } from "../lib/ui";
 import { Plate } from "./Seg1Intro";
+import { OdaComponent, OdaSegment } from "../lib/OdaComponent";
 
 // Slide 7 — What is an ODA Component?
 const NEEDS: { label: string; icon: IconName; color: string; at: number }[] = [
@@ -27,26 +27,38 @@ const NEEDS: { label: string; icon: IconName; color: string; at: number }[] = [
   { label: "Observability", icon: "chart", color: C.observability, at: 13.4 },
 ];
 
+// Which segment glows while the narration names it (seconds → segment).
+const S07_FOCUS: [number, OdaSegment | null][] = [
+  [3.0, "core"],
+  [7.0, null],
+  [11.2, "notification"],
+  [12.2, "security"],
+  [13.4, "management"],
+  [15.5, null],
+];
+
 export const S07Component: React.FC = () => {
   const lift = useProg(0.6, 1.2);
+  const build = useProg(0.6, 1.8);
+  const ifaces = useProg(8.8, 1.8);
+  const t = useT();
+  const focus = S07_FOCUS.reduce<OdaSegment | null>((acc, [at, seg]) => (t >= at ? seg : acc), null);
   return (
     <Stage>
       <Heading kicker="Components and Canvas" title="What is an ODA Component?" color={C.component} />
       <div
         style={{
           position: "absolute",
-          left: 170,
-          top: 380,
+          left: 110,
+          top: 236,
           opacity: lift,
           translate: `0px ${interpolate(lift, [0, 1], [80, 0])}px`,
         }}
       >
-        <Brick w={600} label="ODA Component" sub="independently deployable" />
+        <OdaComponent size={660} build={build} interfaces={ifaces} highlight={focus} dim={0.55} />
       </div>
-      <Appear at={3.0} from="up" style={{ left: 250, top: 690 }}>
-        <Pill color={C.component} fontSize={30}>
-          <Icon name="cube" size={32} color={C.component} /> Business function
-        </Pill>
+      <Appear at={1.4} from="up" style={{ left: 300, top: 852 }}>
+        <Pill color={C.component} fontSize={28}>independently deployable</Pill>
       </Appear>
       <Appear at={7.0} from="right" style={{ left: 1060, top: 268 }}>
         <div style={{ fontSize: 30, color: C.muted, fontWeight: 600, letterSpacing: 2 }}>
@@ -57,7 +69,7 @@ export const S07Component: React.FC = () => {
         {NEEDS.map((n, i) => (
           <Draw
             key={n.label}
-            d={`M 770 ${470 + i * 18} C 900 ${470 + i * 18}, 930 ${355 + i * 108}, 1050 ${355 + i * 108}`}
+            d={`M 790 ${470 + i * 26} C 920 ${470 + i * 26}, 940 ${355 + i * 108}, 1050 ${355 + i * 108}`}
             at={n.at - 0.3}
             dur={0.5}
             color={n.color}
@@ -70,7 +82,7 @@ export const S07Component: React.FC = () => {
           <Tile label={n.label} color={n.color} icon={n.icon} w={560} h={88} fontSize={32} />
         </Appear>
       ))}
-      <Appear at={17.5} from="up" style={{ left: 0, top: 900, width: 1920 }}>
+      <Appear at={17.5} from="up" style={{ left: 0, top: 955, width: 1920 }}>
         <div style={{ display: "flex", justifyContent: "center", gap: 30 }}>
           <Pill color={C.operator} fontSize={34}>Interoperable</Pill>
           <Appear at={19.0} from="up" style={{ position: "relative" }}>
@@ -103,19 +115,19 @@ export const S08Canvas: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          left: 760,
-          top: interpolate(drop, [0, 1], [230, 380]),
+          left: 780,
+          top: interpolate(drop, [0, 1], [130, 292]),
         }}
       >
         <Appear at={0.4} from="pop" style={{ position: "relative" }}>
-          <Brick w={400} label="ODA Component" />
+          <OdaComponent size={360} labels={false} />
         </Appear>
         <div
           style={{
             position: "absolute",
-            left: -10,
-            top: 30 + scan * 160,
-            width: 420,
+            left: 40,
+            top: 50 + scan * 250,
+            width: 280,
             height: 6,
             background: C.operator,
             boxShadow: `0 0 30px ${C.operator}`,
@@ -228,10 +240,11 @@ const Band: React.FC<{
               width: ww,
               height: it.brick ? 106 : 90,
               borderRadius: it.brick ? 12 : 14,
-              background: it.brick ? it.color : `${it.color}24`,
-              border: it.brick ? "none" : `2px solid ${it.color}`,
-              boxShadow: it.ai ? `0 0 ${30 * aiP}px ${it.color}` : it.brick ? "inset 0 -10px 0 rgba(0,0,0,0.18)" : "none",
-              color: it.brick ? C.bg : C.text,
+              background: `${it.color}24`,
+              border: `2px solid ${it.color}`,
+              boxShadow: it.ai ? `0 0 ${30 * aiP}px ${it.color}` : "none",
+              color: C.text,
+              gap: 8,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -245,7 +258,8 @@ const Band: React.FC<{
               overflow: "hidden",
             }}
           >
-            {it.label}
+            {it.brick ? <OdaComponent size={44} crop mono={it.ai ? C.agent : undefined} style={{ flexShrink: 0 }} /> : null}
+            <span style={{ textAlign: it.brick ? "left" : "center" }}>{it.label}</span>
           </div>
         );
       })}
@@ -399,8 +413,8 @@ export const S11Identity: React.FC = () => {
               <div style={{ position: "absolute", opacity: 1 - oda }}>
                 <Tile label={`Application ${i + 1}`} color={C.muted} icon="server" w={340} h={110} fontSize={30} />
               </div>
-              <div style={{ position: "absolute", left: 10, top: -26, opacity: oda }}>
-                <Brick w={280} label={`Component ${i + 1}`} />
+              <div style={{ position: "absolute", left: 80, top: -30, opacity: oda }}>
+                <OdaComponent size={180} labels={false} highlight={merge > 0 ? "security" : null} dim={0.35 * merge} />
               </div>
             </div>
           </Appear>
@@ -463,10 +477,10 @@ export const S12Secrets: React.FC = () => {
   return (
     <Stage>
       <Heading kicker="Example" title="Secrets without bootstrap credentials" color={C.secrets} />
-      <Appear at={0.8} from="up" style={{ left: 200, top: 360 }}>
-        <Brick w={420} label="ODA Component" />
+      <Appear at={0.8} from="up" style={{ left: 170, top: 200 }}>
+        <OdaComponent size={460} highlight={t >= 3.0 ? "security" : null} dim={0.35} />
       </Appear>
-      <Appear at={3.0} from="up" style={{ left: 200, top: 600 }}>
+      <Appear at={3.0} from="up" style={{ left: 200, top: 650 }}>
         <div
           style={{
             fontFamily: MONO,

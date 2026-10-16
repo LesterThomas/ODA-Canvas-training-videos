@@ -19,6 +19,7 @@ import {
   useProg,
   useT,
 } from "../lib/ui";
+import { OdaComponent } from "../lib/OdaComponent";
 
 // ---------- Portal "demo" helpers (screenshots are 1920×1080) ----------
 
@@ -218,7 +219,7 @@ export const S20Deploy: React.FC = () => {
       </div>
       <Appear at={0.6} from="left" style={{ left: 210, top: 985 }}>
         <Pill color={C.tmf} fontSize={30}>
-          <Icon name="cube" size={32} color={C.tmf} /> Components are packaged as Helm charts
+          <OdaComponent size={30} crop /> Components are packaged as Helm charts
         </Pill>
       </Appear>
       {[
@@ -338,17 +339,17 @@ export const S22Observability: React.FC = () => {
   return (
     <Stage>
       <Heading kicker="A tour of the Canvas" title="Observability" color={C.observability} />
-      <Appear at={0.8} from="up" style={{ left: 120, top: 360 }}>
-        <Tile label="ODA Component" color={C.component} icon="cube" w={340} h={120} fontSize={34} filled />
+      <Appear at={0.8} from="up" style={{ left: 110, top: 290 }}>
+        <OdaComponent size={300} labels={false} highlight={t >= 3.4 && t < 10 ? "management" : null} dim={0.45} />
       </Appear>
-      <Appear at={3.4} from="left" style={{ left: 120, top: 520 }}>
+      <Appear at={3.4} from="left" style={{ left: 120, top: 600 }}>
         <Pill color={C.observability} fontSize={26}>metrics · OpenMetrics</Pill>
       </Appear>
-      <Appear at={6.2} from="left" style={{ left: 120, top: 590 }}>
+      <Appear at={6.2} from="left" style={{ left: 120, top: 670 }}>
         <Pill color={C.observability} fontSize={26}>traces · OpenTelemetry</Pill>
       </Appear>
       <Svg>
-        <Draw d="M 470 420 L 640 420" at={11.0} color={C.api} arrow />
+        <Draw d="M 440 420 L 640 420" at={11.0} color={C.api} arrow />
         {STACK.map((s, i) => (
           <Draw key={s.label} d={`M 900 420 C 1000 420, 1000 ${300 + i * 118}, 1120 ${300 + i * 118}`} at={s.at - 0.3} dur={0.5} color={C.observability} width={3} arrow />
         ))}

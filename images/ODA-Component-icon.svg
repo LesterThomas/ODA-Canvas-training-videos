@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 720 680" role="img" aria-label="ODA Component: core function, management/operations, notification/reporting, security and environment dependence, with exposed APIs (lollipops) and dependent APIs (sockets)">
+<title>ODA Component</title>
+<g stroke="#1A2747" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<g class="api"><line x1="255.7" y1="218.3" x2="229.7" y2="173.3"/><circle cx="220.2" cy="156.8" r="19" fill="#FFFFFF"/></g>
+<g class="dep"><line x1="325.7" y1="177.9" x2="299.7" y2="132.8"/><path d="M 307.8 102.8 A 22 22 0 0 1 269.7 124.8" fill="none"/></g>
+<g class="api"><line x1="480.6" y1="181.6" x2="506.6" y2="136.5"/><circle cx="516.1" cy="120.1" r="19" fill="#FFFFFF"/></g>
+<g class="dep"><line x1="544.3" y1="218.3" x2="570.3" y2="173.3"/><path d="M 600.3 165.2 A 22 22 0 0 1 562.2 143.2" fill="none"/></g>
+<g class="api"><line x1="612.2" y1="340.8" x2="664.2" y2="340.8"/><circle cx="683.2" cy="340.8" r="19" fill="#FFFFFF"/></g>
+<g class="dep"><line x1="612.2" y1="409.4" x2="664.2" y2="409.4"/><path d="M 686.2 431.4 A 22 22 0 0 1 686.2 387.4" fill="none"/></g>
+<g class="api"><line x1="548.5" y1="539.2" x2="574.5" y2="584.3"/><circle cx="584" cy="600.7" r="19" fill="#FFFFFF"/></g>
+<g class="dep"><line x1="478.5" y1="579.7" x2="504.5" y2="624.7"/><path d="M 496.5 654.8 A 22 22 0 0 1 534.6 632.8" fill="none"/></g>
+<g class="api"><line x1="187.8" y1="421.6" x2="135.8" y2="421.6"/><circle cx="116.8" cy="421.6" r="19" fill="#FFFFFF"/></g>
+<g class="dep"><line x1="187.8" y1="340.8" x2="135.8" y2="340.8"/><path d="M 113.8 318.8 A 22 22 0 0 1 113.8 362.8" fill="none"/></g>
+</g>
+<g stroke="#1A2747" stroke-width="6" stroke-linejoin="round">
+<polygon class="seg-core" points="400,380 187.8,257.5 400,135 612.2,257.5" fill="#7E9E54"/>
+<polygon class="seg-notification" points="400,380 612.2,257.5 612.2,502.5" fill="#FABB42"/>
+<polygon class="seg-security" points="400,380 612.2,502.5 400,625" fill="#E0141D"/>
+<polygon class="seg-environment" points="400,380 400,625 187.8,502.5" fill="#D3D4DA"/>
+<polygon class="seg-management" points="400,380 187.8,502.5 187.8,257.5" fill="#6596CE"/>
+</g>
+<polygon points="400,135 612.2,257.5 612.2,502.5 400,625 187.8,502.5 187.8,257.5" fill="none" stroke="#1A2747" stroke-width="12" stroke-linejoin="round"/>
+<circle cx="400" cy="380" r="52" fill="#D3D4DA"/><path d="M 400 432 A 52 52 0 1 0 355 406" fill="none" stroke="#1A2747" stroke-width="7" stroke-linecap="round"/><g fill="none" stroke="#1A2747" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M 375 352 v 11 a 25 6.5 0 0 0 50 0 v -11" fill="#E9E9EE"/><ellipse cx="400" cy="352" rx="25" ry="6.5" fill="#E9E9EE"/><line x1="389" y1="442" x2="379.1" y2="402.2"/><circle cx="376.2" cy="390.6" r="12" fill="#D3D4DA"/><line x1="340" y1="438" x2="400.6" y2="403"/><path d="M 419.7 408.1 A 14 14 0 0 1 405.7 383.9"/></g>
+</svg>

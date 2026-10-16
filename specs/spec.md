@@ -140,6 +140,11 @@ Group-B-style live-demo slides.
 
 ## 6. Tooling & Tech Stack
 
+> The end-to-end production process (research → script → Remotion clips → deck → verification), and
+> the loop for applying user feedback, are captured in the project skill
+> [`.claude/skills/oda-canvas-video-generator`](../.claude/skills/oda-canvas-video-generator/SKILL.md).
+> Its `references/lessons.md` and `references/feedback-log.md` record what feedback has changed.
+
 - **Animation/compositing for 3Blue1Brown-style videos**: [Remotion](https://www.remotion.dev)
   (React-based). Project scaffolded per the installed `remotion-create` skill
   (`npx create-video@latest --yes --blank --no-tailwind`). Relevant installed Remotion Agent
@@ -208,8 +213,9 @@ The exact Remotion scaffold layout will be finalized when the `remotion-create` 
   `presentations/About ODA Canvas.pptx` and the upstream repo's `images/` folder). Define once in
   a shared `videos/src/theme.ts` for Remotion clips, so 3Blue1Brown-style videos and live-demo
   recordings look like one consistent visual family within a deck.
-- Maintain a shared component library for recurring diagram motifs (the "Lego block" component
-  icon, operator icons, API Gateway, Identity, Observability icons, etc.) seen throughout the
+- Maintain a shared component library for recurring diagram motifs (the standard ODA Component
+  symbol, `images/ODA-Component.svg` / `videos/src/lib/OdaComponent.tsx`, which replaced the earlier
+  "Lego block"; operator icons, API Gateway, Identity, Observability icons, etc.) seen throughout the
   existing deck, so visual language stays consistent across all videos.
 
 ## 10. Versioning & Maintenance

@@ -124,6 +124,8 @@ export const Tile: React.FC<{
   sub?: string;
   color: string;
   icon?: IconName;
+  /** Custom icon element (e.g. <OdaComponent crop />), used instead of `icon`. */
+  iconNode?: React.ReactNode;
   w?: number;
   h?: number;
   fontSize?: number;
@@ -136,6 +138,7 @@ export const Tile: React.FC<{
   sub,
   color,
   icon,
+  iconNode,
   w = 300,
   h = 110,
   fontSize = 30,
@@ -162,7 +165,7 @@ export const Tile: React.FC<{
       ...style,
     }}
   >
-    {icon ? <Icon name={icon} size={Math.min(52, h * 0.5)} color={filled ? C.bg : color} /> : null}
+    {iconNode ?? (icon ? <Icon name={icon} size={Math.min(52, h * 0.5)} color={filled ? C.bg : color} /> : null)}
     <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.15 }}>
       <div style={{ fontSize, fontWeight: 700 }}>{label}</div>
       {sub ? (

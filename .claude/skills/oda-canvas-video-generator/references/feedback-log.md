@@ -1,0 +1,13 @@
+# Feedback log
+
+Every piece of user feedback on a deck, clip or script gets one row, newest first, whether or not it
+changed the skill. Before starting a deck, scan this log for recurring themes. A local fix that keeps
+coming back belongs in `lessons.md`.
+
+| Date | Deck / slide | Feedback (as given) | Change made to the deck | Skill changed? Why / why not |
+|---|---|---|---|---|
+| 2026-10-17 | 01 intro / slides 1, 2, 7–12, 15, 17, 20, 22, 25, 26 | "The SVG looks good - approved. Update deck 01 to use it in place of the Lego block, and add it to the skill's house style." | Replaced every Lego `Brick` and component `cube` icon with `OdaComponent`. Slide 7 now builds the symbol and lights its segments with the narration; slides 11, 12 and 22 highlight Security or Management. The layer map uses small hex icons (white for agentic). Re-rendered the 14 changed clips and rebuilt the deck. | Yes. The house style now has an ODA Component symbol section, and a new lesson. A general visual standard for every deck. |
+| 2026-10-17 | Shared asset / ODA Component SVG | "The centre of the svg image is not quite right. It is not an icon of a man; Instead it is just the exposed-api and dependent-api icons overlapped. Fix this in the svg and wait for my approval" | Redrew the hub as a data disc above a crossed lollipop and socket, with a grey hub open over the Environment segment, in both the SVG generator and `OdaComponent.tsx`. Waited for approval before changing the deck. | Yes. Added a lesson to check traced artwork at high zoom. Also: get approval on shared visual assets before rolling them into decks (the user asked for that here). |
+| 2026-10-17 | Shared asset (requested) | "I want to use this image as a standard (and not the Lego block) when talking about ODA Components. If possible, create a svg version of this image so that it scales nicely" | Traced `images/ODA-Component.png` into `images/ODA-Component.svg`, an `-icon.svg`, and the animatable `OdaComponent`. | Yes. See the entry above. |
+| 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
+| 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |

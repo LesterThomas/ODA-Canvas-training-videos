@@ -13,7 +13,12 @@ __pycache__/
 # Installed agent skills (vendored, restorable via `npx skills experimental_install`
 # using skills-lock.json) and their Claude Code symlinks/junctions.
 .agents/skills/
-.claude/
+.claude/*
+!.claude/launch.json
+!.claude/skills/
+.claude/skills/*
+# Project-authored skills are committed (the rest are symlinks to .agents/skills).
+!.claude/skills/oda-canvas-video-generator/
 
 # Logs
 *.log

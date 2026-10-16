@@ -21,12 +21,17 @@ import {
   S24Adoption,
 } from "./intro/Seg5Portal";
 import { S25Together, S26Next } from "./intro/Seg6Conclusion";
+import { OdaComponentShowcase } from "./library/OdaComponentShowcase";
 
 // Deck 01 — "Introduction to the ODA Canvas" (scripts/01-introduction-to-the-oda-canvas.md).
 // One silent clip per slide; each duration roughly matches that slide's narration so the
 // build-up tracks the voice-over, then the clip holds on its final frame.
 export const RemotionRoot: React.FC = () => {
   return (
+    <>
+    <Folder name="Library">
+      <Composition id="Lib-OdaComponent" component={OdaComponentShowcase} durationInFrames={190} fps={30} width={1920} height={1080} />
+    </Folder>
     <Folder name="Intro-to-ODA-Canvas">
       <Composition id="Intro-01-Title" component={S01Title} durationInFrames={330} fps={30} width={1920} height={1080} />
       <Composition id="Intro-02-Audiences" component={S02Audiences} durationInFrames={840} fps={30} width={1920} height={1080} />
@@ -55,5 +60,6 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Intro-25-Together" component={S25Together} durationInFrames={660} fps={30} width={1920} height={1080} />
       <Composition id="Intro-26-Next" component={S26Next} durationInFrames={630} fps={30} width={1920} height={1080} />
     </Folder>
+    </>
   );
 };

@@ -3,7 +3,6 @@ import { Img, staticFile } from "remotion";
 import { C, MONO } from "../theme";
 import {
   Appear,
-  Brick,
   BrowserFrame,
   Caption,
   Code,
@@ -19,6 +18,7 @@ import {
   useProg,
   useT,
 } from "../lib/ui";
+import { OdaComponent } from "../lib/OdaComponent";
 
 // Slide 15 — The component standard in two layers
 const GOLDEN = [
@@ -32,7 +32,7 @@ const GOLDEN = [
 export const S15TwoLayers: React.FC = () => (
   <Stage>
     <Heading kicker="A tour of the Canvas" title="The component standard: two layers" color={C.component} />
-    <Appear at={2.6} from="up" dist={60} style={{ left: 160, top: 700 }}>
+    <Appear at={2.6} from="up" dist={60} style={{ left: 160, top: 730 }}>
       <div
         style={{
           width: 1600,
@@ -66,11 +66,15 @@ export const S15TwoLayers: React.FC = () => (
       </div>
     </Appear>
     {GOLDEN.map((g, i) => (
-      <Appear key={g.id} at={12.2 + i * 0.9} from="down" dist={160} style={{ left: 170 + i * 322, top: 400 }}>
-        <Brick w={290} label={g.name} sub={g.id} fontSize={28} />
+      <Appear key={g.id} at={12.2 + i * 0.9} from="down" dist={160} style={{ left: 175 + i * 322, top: 360 }}>
+        <div style={{ width: 290, display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <OdaComponent size={230} labels={false} />
+          <div style={{ fontSize: 30, fontWeight: 800, marginTop: 6 }}>{g.name}</div>
+          <div style={{ fontSize: 24, fontWeight: 700, color: C.component }}>{g.id}</div>
+        </div>
       </Appear>
     ))}
-    <Appear at={19.8} from="up" style={{ left: 1180, top: 950 }}>
+    <Appear at={19.8} from="up" style={{ left: 1180, top: 978 }}>
       <Pill color={C.tmf} fontSize={30}>
         <Icon name="globe" size={32} color={C.tmf} /> tmforum.org/oda/directory
       </Pill>
@@ -182,7 +186,7 @@ export const S17Operators: React.FC = () => {
           <Pill color={C.operator} fontSize={28}>Kubernetes operator pattern</Pill>
         </Appear>
         <Appear at={8.0} from="up" style={{ left: 120, top: 470 }}>
-          <Tile label="Component" sub="component.yaml" color={C.component} icon="cube" w={300} h={130} fontSize={36} />
+          <Tile label="Component" sub="component.yaml" color={C.component} iconNode={<OdaComponent size={56} crop />} w={300} h={130} fontSize={36} />
         </Appear>
         <Appear at={9.4} from="pop" style={{ left: 490, top: 455 }}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
