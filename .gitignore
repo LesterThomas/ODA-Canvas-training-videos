@@ -25,3 +25,6 @@ Thumbs.db
 # Env/secrets
 .env
 .env.*
+
+# Office lock files (deck open in PowerPoint)
+~$*

@@ -5,14 +5,14 @@ linked-from: oda-canvas README.md:25
 oda-canvas-commit: c39da6340dbc971981bcb1eea5da5d718fac11d2  (chart 1.2.6-rc5, component spec v1)
 outline: specs/spec-introduction.md §6
 target-length: ~8–9 min (~1,300 narrated words)
-status: draft script
+status: facts confirmed 2026-10-16; deck at decks/01-introduction-to-the-oda-canvas.pptx
 ---
 
 # Introduction to the ODA Canvas: updated script
 
 This follows the 26-slide shot list in [spec-introduction.md](../specs/spec-introduction.md) §6. Facts
-were refreshed using [video-update-plan.md](../specs/video-update-plan.md) §2. Text marked
-**[VERIFY]** must be confirmed before narration is generated.
+were refreshed using [video-update-plan.md](../specs/video-update-plan.md) §2. All facts were
+confirmed on 2026-10-16, including the Open API download figure and the 10x claim.
 
 **Main changes from the original:**
 - The "Horizon 1 / 2 / Experimental" framing is replaced by *available today / experimental / planned*.
@@ -50,7 +50,7 @@ were refreshed using [video-update-plan.md](../specs/video-update-plan.md) §2. 
 
 ### Slide 5: The Open API programme
 - **Visual:** [3B1B] Timeline: hackathons in 2013, the Open API launch in January 2017, then a download counter ticking up.
-- **On-screen text:** "Over 1 million downloads" **[VERIFY]**
+- **On-screen text:** "Over 1 million downloads"
 - **Speaker notes:**
 > The next big step was TM Forum's Open API programme. It began with experiments and hackathons around 2013 and launched formally in January 2017. Open APIs are detailed, prescriptive, machine-readable specifications for standard services. Adoption has been huge: the APIs have been downloaded more than a million times by tens of thousands of developers, and today most telecom IT capabilities start with the question, "Which standard APIs do we need?"
 
@@ -99,7 +99,7 @@ were refreshed using [video-update-plan.md](../specs/video-update-plan.md) §2. 
 > Why do this? The benefits are shared by service providers, software vendors, integrators and cloud providers. Seamless integration supports zero-touch, zero-wait and zero-trouble customer experiences. Operations get simpler, moving from hundreds of teams running vertically integrated applications towards a single site reliability team running a Canvas. Agility drives innovation, including faster adoption of AI-native capabilities. Integration becomes automated instead of a manual project. Security is built in, with a zero-trust architecture and security as code. And modular contracts let every component be upgraded continuously, reducing technical debt.
 
 ### Slide 14: An order-of-magnitude goal
-- **Visual:** [3B1B] A "+30%" bar is overtaken by a "10x" bar. **[VERIFY whether to keep the 10x claim]**
+- **Visual:** [3B1B] A "+30%" bar is overtaken by a "10x" bar.
 - **Speaker notes:**
 > The ambition isn't an incremental gain. The goal is a step change, aiming for an order-of-magnitude improvement in efficiency and agility, and a faster transformation to an AI-native telco.
 
