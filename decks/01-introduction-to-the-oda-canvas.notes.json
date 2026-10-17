@@ -9,9 +9,9 @@
  {
   "n": 2,
   "title": "Who this is for",
-  "notes": "This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, architects, engineers and site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.",
-  "words": 67,
-  "secs": 26.8
+  "notes": "This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.",
+  "words": 64,
+  "secs": 25.6
  },
  {
   "n": 3,

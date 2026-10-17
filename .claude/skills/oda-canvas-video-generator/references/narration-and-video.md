@@ -82,10 +82,11 @@ Things to watch:
 
 - If the deck is open in PowerPoint, `build_deck.py` stops with "close it there". Reply on the page
   asking the user to close it, and retry once they say so (or on their next request).
-- Fixes always go into the built deck (`decks/<deck-id>.pptx`). If the page is reviewing a slice of
-  it (such as the 4-slide "- final" test copy), recreate the slice afterwards:
-  `presentation-generator/.venv/Scripts/python.exe tools/subset_deck.py decks/<deck-id>.pptx "<copy>.pptx" 1-4`.
-  It keeps the SlideIDs, so approvals carry over. Then run `refresh` on the copy.
+- **Review the built deck itself** (`decks/<deck-id>.pptx`), never a hand-made copy. Every fix
+  rebuilds that file (`build_deck.py` → `animate_deck.ps1`), so `refresh` shows the fix on the page
+  straight away. Unchanged slides keep their approvals, because SlideIDs stay stable while the slide
+  order is unchanged. (`tools/subset_deck.py` can still cut a short copy for a quick experiment, keeping
+  SlideIDs. Don't use one for the real review: fixes don't reach it unless you recut it.)
 - A request you can't act on safely (unclear, a factual claim to verify, a change to a shared
   asset that needs the user's approval): reply on the page with the question, and ask in chat too.
 - The watch only runs while this Claude session is open. If the session ends, the requests wait in

@@ -50,15 +50,14 @@ export const Stage: React.FC<{
 
 /**
  * Slide heading: a small coloured kicker over a large title, top-left inside the safe area.
- * `opening` (title and section-opening slides): a plain fade, no movement (house style).
+ * It fades in at the start of the slide with no movement (house style: titles never move in).
  */
 export const Heading: React.FC<{
   kicker?: string;
   title: string;
   color?: string;
   at?: number;
-  opening?: boolean;
-}> = ({ kicker, title, color = C.tmf, at = 0, opening = false }) => {
+}> = ({ kicker, title, color = C.tmf, at = 0 }) => {
   const p = useProg(at, 0.9);
   return (
     <div
@@ -67,7 +66,6 @@ export const Heading: React.FC<{
         left: 120,
         top: 84,
         opacity: p,
-        translate: opening ? undefined : `${interpolate(p, [0, 1], [-40, 0])}px 0px`,
       }}
     >
       {kicker ? (

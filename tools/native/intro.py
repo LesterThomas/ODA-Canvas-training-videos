@@ -53,7 +53,7 @@ def s02(k: Kit):
         k.image(None, _ico("person", "2F6FED"), 1185, 300, 190),
         k.rect(None, 1405, 430, 230, 46, fill="canvas", radius=10),
         k.text(None, 1020, 520, 760, 140, "Canvas builders & operators", size=52, bold=True, align="center"),
-        k.text(None, 1060, 680, 680, 160, "Architects, engineers and SREs building or operating a Canvas platform",
+        k.text(None, 1060, 680, 680, 160, "Site reliability engineers (SREs) building or operating a Canvas platform",
                size=34, color="muted", align="center", line_spacing=1.3),
     ]
     k.group("Canvas builders", right)
@@ -61,7 +61,7 @@ def s02(k: Kit):
     p1 = k.pill(None, 1080, 920, "CSP-run Canvas", "canvas")
     p2 = k.pill(None, 1350, 920, "Managed Canvas (cloud provider)", "canvas")
     k.group("Canvas options", [p1, p2])
-    k.anim("Canvas options", 19.0, "rise")
+    k.anim("Canvas options", 17.6, "rise")
 
 
 # Slide 3 — Roadmap
@@ -100,7 +100,7 @@ PILLARS = [
 
 def s13(k: Kit):
     k.background()
-    k.heading("Benefits", "Why ODA Components and Canvas?", opening=True)
+    k.heading("Benefits", "Why ODA Components and Canvas?")
     pills, x = [], 120
     for who in ["Service providers", "Software vendors", "Systems integrators", "Cloud providers"]:
         p = k.pill(None, x, 245, who, "muted", size=26)
@@ -147,7 +147,7 @@ GOLDEN = [("TMFC001", "Product Catalog"), ("TMFC002", "Product Order"), ("TMFC00
 
 def s15(k: Kit):
     k.background()
-    k.heading("A tour of the Canvas", "The component standard: two layers", color="component", opening=True)
+    k.heading("A tour of the Canvas", "The component standard: two layers", color="component")
     slab = [k.rect(None, 160, 730, 1600, 210, fill="panel", line="operator", line_w=3, radius=24),
             k.text(None, 200, 756, 1500, 40, "LAYER 1 · DESIGN PATTERNS", size=30, bold=True, color="operator", spacing=3)]
     k.group("Layer 1", slab)
@@ -249,7 +249,7 @@ ROLES = [("Communication service providers", "globe", "tmf", "E6007E", 120, 220)
 
 def s26(k: Kit):
     k.background()
-    k.heading("Conclusion", "Built together", opening=True)
+    k.heading("Conclusion", "Built together")
     for i, (label, icon, color, hexc, x, y) in enumerate(ROLES):
         parts = [k.circle(None, x + 200, y + 70, 140, fill=color, fill_alpha=0.15, line=color, line_w=4),
                  k.image(None, _ico(icon, hexc), x + 160, y + 30, 80),

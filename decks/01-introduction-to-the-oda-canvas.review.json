@@ -1,0 +1,365 @@
+{
+  "deck": "01-introduction-to-the-oda-canvas.pptx",
+  "slides": {
+    "256": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T07:51:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c8ad0036874ae633"
+        },
+        {
+          "at": "2026-10-17T07:55:45+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "I think it is too distracting for everything to appear from the bottom. For this introductory frame have the Titles fade-in together at the start",
+          "fingerprint": "c8ad0036874ae633"
+        },
+        {
+          "at": "2026-10-17T08:03:38+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: switching the title card to a single fade-in at the start.",
+          "fingerprint": "c8ad0036874ae633"
+        },
+        {
+          "at": "2026-10-17T08:04:54+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The three title lines now fade in together at 0.2 s. Nothing rises from the bottom any more: the component symbol zooms in gently at 0.9 s, and the ODA Canvas plate and series pill fade in at 1.2 s and 1.6 s. Rebuilt deck 01 and this test copy. Check the silent preview, then approve or ask again.",
+          "fingerprint": "7f16c4a1d7bc2e9c"
+        },
+        {
+          "at": "2026-10-17T08:07:32+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7f16c4a1d7bc2e9c"
+        }
+      ],
+      "number": 1,
+      "title": "Title card",
+      "hidden": false,
+      "fingerprint": "7f16c4a1d7bc2e9c",
+      "comment": "",
+      "updated_at": "2026-10-17T08:07:32+01:00",
+      "approved_fingerprint": "7f16c4a1d7bc2e9c"
+    },
+    "257": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T07:51:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7653f1926a1f5e74"
+        },
+        {
+          "at": "2026-10-17T08:07:41+01:00",
+          "action": "reset",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7653f1926a1f5e74"
+        },
+        {
+          "at": "2026-10-17T08:20:11+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7653f1926a1f5e74"
+        },
+        {
+          "at": "2026-10-17T08:23:11+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The 'Two audiences, one platform' title should not appear from the bottom. All titles should fade in at the start of the slide.\nThe text and speaker notes for the 'Canvas builders & operators' should not mention Architects. This should be Site Reliability Engineers",
+          "fingerprint": "7653f1926a1f5e74"
+        },
+        {
+          "at": "2026-10-17T08:23:34+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: fading every slide title in at the start, and changing the second audience to site reliability engineers in the card and the narration.",
+          "fingerprint": "7653f1926a1f5e74"
+        },
+        {
+          "at": "2026-10-17T08:31:28+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The heading now fades in at the start, with no movement. That's now a house rule for every slide title, and all of deck 01 is rebuilt to match. The right-hand card and the narration now say site reliability engineers only, with no architects, and the two pills are retimed to the new wording. Approving will re-voice this slide, because its narration changed. One open point: the plain blue bar beside the SRE stands in for the platform. Ask if you'd like a proper Canvas icon there.",
+          "fingerprint": "6b8d96d842b55c99"
+        },
+        {
+          "at": "2026-10-17T08:32:43+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6b8d96d842b55c99"
+        }
+      ],
+      "number": 2,
+      "title": "Who this is for",
+      "hidden": false,
+      "fingerprint": "6b8d96d842b55c99",
+      "comment": "",
+      "updated_at": "2026-10-17T08:32:43+01:00",
+      "approved_fingerprint": "6b8d96d842b55c99"
+    },
+    "258": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T07:51:48+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2894bf49063e124a"
+        },
+        {
+          "at": "2026-10-17T08:31:28+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again.",
+          "fingerprint": "8b139ad4fb48b9e6"
+        }
+      ],
+      "number": 3,
+      "title": "Roadmap",
+      "hidden": false,
+      "fingerprint": "8b139ad4fb48b9e6",
+      "comment": "",
+      "updated_at": "2026-10-17T07:51:48+01:00",
+      "approved_fingerprint": "2894bf49063e124a",
+      "reply": {
+        "at": "2026-10-17T08:31:28+01:00",
+        "text": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again."
+      }
+    },
+    "259": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T07:51:51+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "45a3e67252feeff8"
+        },
+        {
+          "at": "2026-10-17T08:08:19+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed by the new house rule from your slide 1 feedback: section-opening slides fade the kicker and title in together, with no movement. This slide opens the History section. Nothing else changed. Please check it and approve again.",
+          "fingerprint": "01e16ff8ac1ac784"
+        },
+        {
+          "at": "2026-10-17T08:31:28+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again.",
+          "fingerprint": "01e16ff8ac1ac784"
+        }
+      ],
+      "number": 4,
+      "title": "Frameworks and the problem of interpretation",
+      "hidden": false,
+      "fingerprint": "01e16ff8ac1ac784",
+      "comment": "",
+      "updated_at": "2026-10-17T07:51:51+01:00",
+      "approved_fingerprint": "45a3e67252feeff8",
+      "reply": {
+        "at": "2026-10-17T08:31:28+01:00",
+        "text": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again."
+      }
+    },
+    "260": {
+      "status": "pending",
+      "history": [],
+      "number": 5,
+      "title": "The Open API programme",
+      "hidden": false,
+      "fingerprint": "f3c4dc90fc585709"
+    },
+    "261": {
+      "status": "pending",
+      "history": [],
+      "number": 6,
+      "title": "The remaining gap",
+      "hidden": false,
+      "fingerprint": "0edea012be518824"
+    },
+    "262": {
+      "status": "pending",
+      "history": [],
+      "number": 7,
+      "title": "What is an ODA Component?",
+      "hidden": false,
+      "fingerprint": "3e0c5874fa3badaf"
+    },
+    "263": {
+      "status": "pending",
+      "history": [],
+      "number": 8,
+      "title": "What is the ODA Canvas?",
+      "hidden": false,
+      "fingerprint": "abd22327310b273b"
+    },
+    "264": {
+      "status": "pending",
+      "history": [],
+      "number": 9,
+      "title": "Composable IT with ODA",
+      "hidden": false,
+      "fingerprint": "9c52faa74ebd3cfb"
+    },
+    "265": {
+      "status": "pending",
+      "history": [],
+      "number": 10,
+      "title": "Composable AI with Agentic ODA",
+      "hidden": false,
+      "fingerprint": "4b1c08cb89789bf2"
+    },
+    "266": {
+      "status": "pending",
+      "history": [],
+      "number": 11,
+      "title": "Example: identity is declared, not implemented",
+      "hidden": false,
+      "fingerprint": "819630e998e5c1eb"
+    },
+    "267": {
+      "status": "pending",
+      "history": [],
+      "number": 12,
+      "title": "Example: secrets without bootstrap credentials",
+      "hidden": false,
+      "fingerprint": "9d8c0a79baf02860"
+    },
+    "268": {
+      "status": "pending",
+      "history": [],
+      "number": 13,
+      "title": "Six benefits",
+      "hidden": false,
+      "fingerprint": "bc2c5c89ca441566"
+    },
+    "269": {
+      "status": "pending",
+      "history": [],
+      "number": 14,
+      "title": "An order-of-magnitude goal",
+      "hidden": false,
+      "fingerprint": "76ba8c42d551be20"
+    },
+    "270": {
+      "status": "pending",
+      "history": [],
+      "number": 15,
+      "title": "The component standard in two layers",
+      "hidden": false,
+      "fingerprint": "ec3cc689d9d0097a"
+    },
+    "271": {
+      "status": "pending",
+      "history": [],
+      "number": 16,
+      "title": "Live demo: the ODA Component Directory",
+      "hidden": false,
+      "fingerprint": "e850eae66f6aa08b"
+    },
+    "272": {
+      "status": "pending",
+      "history": [],
+      "number": 17,
+      "title": "The component YAML",
+      "hidden": false,
+      "fingerprint": "65b529f4b90bbd49"
+    },
+    "273": {
+      "status": "pending",
+      "history": [],
+      "number": 18,
+      "title": "The Canvas as a set of operators",
+      "hidden": false,
+      "fingerprint": "d8ff78c2dc228001"
+    },
+    "274": {
+      "status": "pending",
+      "history": [],
+      "number": 19,
+      "title": "Worked example: API exposure",
+      "hidden": false,
+      "fingerprint": "2b86c0912c2207a4"
+    },
+    "275": {
+      "status": "pending",
+      "history": [],
+      "number": 20,
+      "title": "Live demo: the component inventory",
+      "hidden": false,
+      "fingerprint": "beffd841e65b1698"
+    },
+    "276": {
+      "status": "pending",
+      "history": [],
+      "number": 21,
+      "title": "Live demo: deploying a component",
+      "hidden": false,
+      "fingerprint": "39d7291dfd179b3a"
+    },
+    "277": {
+      "status": "pending",
+      "history": [],
+      "number": 22,
+      "title": "Identity configuration",
+      "hidden": false,
+      "fingerprint": "9f40c2ededf06342"
+    },
+    "278": {
+      "status": "pending",
+      "history": [],
+      "number": 23,
+      "title": "Observability",
+      "hidden": false,
+      "fingerprint": "79d26b8d183c6dd8"
+    },
+    "279": {
+      "status": "pending",
+      "history": [],
+      "number": 24,
+      "title": "Available today, experimental, planned",
+      "hidden": false,
+      "fingerprint": "462482a4289c0de4"
+    },
+    "280": {
+      "status": "pending",
+      "history": [],
+      "number": 25,
+      "title": "Measuring Canvas adoption",
+      "hidden": false,
+      "fingerprint": "bfd6239a0a739911"
+    },
+    "281": {
+      "status": "pending",
+      "history": [],
+      "number": 26,
+      "title": "Built together",
+      "hidden": false,
+      "fingerprint": "a3a4dad134760d26"
+    },
+    "282": {
+      "status": "pending",
+      "history": [],
+      "number": 27,
+      "title": "What's next",
+      "hidden": false,
+      "fingerprint": "a4769a2c7cb7cc85"
+    }
+  },
+  "inspected_at": "2026-10-17T08:30:06+01:00"
+}

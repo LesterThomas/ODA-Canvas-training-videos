@@ -99,11 +99,11 @@ and the `--renderer still` fallback uses it.
 
 ## Motion
 
-- **Title and section-opening slides: fade the titles in together, at the start.** On the title card
-  and on the first slide of each segment, the kicker, title (and subtitle) appear as one plain fade in
-  the first 0.2 s, with no rise and no slide. Use `k.heading(..., opening=True)` (native) or
-  `<Heading opening />` (Remotion). Keep rise-ins (`rise`, `Appear`) for content that builds with
-  the narration. Elsewhere, a heading may keep its usual short entrance.
+- **Every slide title fades in at the start, with no movement.** On every slide, the kicker, title and
+  any subtitle appear together as one plain fade in the first moment of the slide, never rising or
+  sliding in. `k.heading(...)` (native) and `<Heading>` (Remotion) do this, so use them for every
+  heading. Hand-placed titles, like those on the title card, must do the same. Keep rise-ins (`rise`,
+  `Appear`) for content that builds with the narration.
 - Use one idea per beat, and build diagrams piece by piece in the order the narration mentions them.
 - Entrances: `Appear` (fade plus a 40 px slide, or `pop`), with an ease-out bezier (0.16, 1, 0.3, 1).
   Connectors draw on with `Draw`, and gears spin all the time.

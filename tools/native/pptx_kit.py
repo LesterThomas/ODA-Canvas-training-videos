@@ -184,14 +184,10 @@ class Kit:
         g = self.shapes.add_group_shape(shapes)
         return self._name(g, name)
 
-    def heading(self, kicker: str, title: str, color: str = "tmf", at: float = 0.0, opening: bool = False):
-        """opening=True for title and section-opening slides: kicker and title fade in together (house style)."""
+    def heading(self, kicker: str, title: str, color: str = "tmf", at: float = 0.0):
+        """Kicker and title fade in together at the start of the slide (house style: titles never move in)."""
         k = self.text("Kicker", 120, 84, 1500, 40, kicker.upper(), size=26, color=color, bold=True, spacing=5)
         t = self.text("Title", 120, 122, 1700, 90, title, size=68, bold=True)
-        if opening:
-            self.anim("Kicker", at, "fade", 0.8)
-            self.anim("Title", at, "fade", 0.8)
-        else:
-            self.anim("Kicker", at, "fade", 0.5)
-            self.anim("Title", at + 0.1, "rise", 0.6)
+        self.anim("Kicker", at, "fade", 0.8)
+        self.anim("Title", at, "fade", 0.8)
         return k, t

@@ -170,6 +170,7 @@ Depends on: Phase 6.
       handed off.
 - [ ] Review and approve every slide on the presentation-generator review page
       (`uv run --native-tls presgen.py review "<abs path>/decks/01-introduction-to-the-oda-canvas.pptx"`).
-      Tested end to end on the 4-slide copy `decks/01-introduction-to-the-oda-canvas - final.pptx`.
+      Reviewed on the full deck. Approving a slide narrates and renders it, and review comments are
+      fixed live, with the deck rebuilt.
 - [ ] `presgen.py generate` for voice narration and the final `.mp4` (PowerPoint renders the slides, so
       clips and animations play). See the skill's `narration-and-video.md`.

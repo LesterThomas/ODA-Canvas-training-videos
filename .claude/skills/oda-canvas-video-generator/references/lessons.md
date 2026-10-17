@@ -20,16 +20,17 @@ audio and final video for that slide. For each slide, I want the Approved/Draft 
 to make sure the timing and the length of audio aligns." Folded into SKILL.md Step 7 and
 `narration-and-video.md` (Timing).
 
-### 2026-10-17: Title and section-opening slides fade their titles in together
-**Rule:** On the title card and the first slide of every segment, fade the kicker, title and any
-subtitle in together at the start (`opening=True` / `<Heading opening />`). Keep rise-ins for content
-that builds with the narration.
-**Why:** Elements rising from the bottom one after another felt distracting on an opening frame,
-which should settle at once and set the scene. Movement earns its place when it tracks the narration.
+### 2026-10-17: Every slide title fades in at the start (widened from opening slides)
+**Rule:** On every slide, the kicker, title and any subtitle fade in together at the start, with no
+rise or slide. `k.heading` and `<Heading>` do this by default. Keep rise-ins for content that builds
+with the narration.
+**Why:** Titles rising from the bottom felt distracting. A title should be there as the slide
+starts, so the viewer knows what it's about. Movement earns its place when it tracks the narration.
 **Source:** Review-page feedback on deck 01 slide 1: "I think it is too distracting for everything to
 appear from the bottom. For this introductory frame have the Titles fade-in together at the start."
-The user agreed to make it a rule. Folded into house-style.md (Motion). Applied to deck 01 slides 1,
-4, 7, 13, 15 and 26.
+The user agreed to make it a rule for opening slides. On slide 2 they then widened it: "All titles
+should fade in at the start of the slide." Folded into house-style.md (Motion) and both heading
+helpers. Applied to every slide of deck 01.
 
 ### 2026-10-17: Act on review-page change requests straight away
 **Rule:** While a review page is open, keep a Monitor on `scripts/watch_review.sh`. Fix each change

@@ -46,20 +46,20 @@
   },
   "2": {
    "n": 2,
-   "secs": 26.8,
+   "secs": 25.6,
    "kind": "native",
    "anims": [
     {
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Divider",
@@ -81,7 +81,7 @@
     },
     {
      "shape": "Canvas options",
-     "at": 19.0,
+     "at": 17.6,
      "effect": "rise",
      "dur": 0.6
     }
@@ -96,13 +96,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Progress",
@@ -263,13 +263,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Small bar",
@@ -443,13 +443,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Available header",
@@ -576,13 +576,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Outcome",
@@ -776,13 +776,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Part 2",

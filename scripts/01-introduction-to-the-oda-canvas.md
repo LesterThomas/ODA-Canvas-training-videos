@@ -32,9 +32,9 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 > Welcome to the first video in a series about the Open Digital Architecture Canvas, the execution platform for ODA Components, and its open-source reference implementation.
 
 ### Slide 2: Who this is for
-- **Visual:** [NATIVE] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a platform engineer holding the Canvas.
+- **Visual:** [NATIVE] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a site reliability engineer holding the Canvas.
 - **Speaker notes:**
-> This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, architects, engineers and site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.
+> This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.
 
 ### Slide 3: Roadmap
 - **Visual:** [NATIVE] Agenda builds: History, Components and Canvas, Benefits, A tour of the Canvas, What's next.

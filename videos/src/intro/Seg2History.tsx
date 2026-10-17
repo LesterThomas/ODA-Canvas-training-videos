@@ -49,7 +49,7 @@ export const S04Frameworks: React.FC = () => {
   ];
   return (
     <Stage>
-      <Heading kicker="History" title="Frameworks: a common language" opening />
+      <Heading kicker="History" title="Frameworks: a common language" />
       <Appear at={0.8} from="pop" style={{ left: 1540, top: 60 }}>
         <div
           style={{
