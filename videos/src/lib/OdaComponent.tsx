@@ -159,12 +159,16 @@ export type OdaComponentProps = {
   /** "dark" (default, for the dark video stage): light interfaces and a light rim.
    *  "light": the original navy-on-white look, for white slides and documents. */
   variant?: "dark" | "light";
-  /** Fill every segment with one colour (e.g. C.agent white for agentic components). Hides labels. */
+  /** Fill every segment with one colour. Hides labels. */
   mono?: string;
+  /** Agentic / AI solution component: only the Core Function segment is white; the other four keep their colours. */
+  agent?: boolean;
   /** Hexagon-only framing (no interfaces, tight bounds) for small inline icons in pills and tiles. */
   crop?: boolean;
   style?: React.CSSProperties;
 };
+
+const AGENT_WHITE = "#F8FAFC";
 
 export const OdaComponent: React.FC<OdaComponentProps> = ({
   size = 400,
@@ -177,13 +181,14 @@ export const OdaComponent: React.FC<OdaComponentProps> = ({
   captionColor = "#F2F5FB",
   variant = "dark",
   mono,
+  agent = false,
   crop = false,
   style,
 }) => {
   const line = variant === "dark" ? ODA_DARK_LINE : ODA_NAVY;
   const viewBox = crop ? "170 118 460 524" : "40 40 720 680";
   const h = crop ? (size * 524) / 460 : (size * 680) / 720;
-  const showLabels = labels && !mono && !crop;
+  const showLabels = labels && !mono && !agent && !crop;
   const showIfaces = !crop;
   const order: OdaSegment[] = ["core", "notification", "security", "environment", "management"];
   const segP = (k: OdaSegment) => clamp01(build * 1.6 - order.indexOf(k) * 0.15);
@@ -210,7 +215,7 @@ export const OdaComponent: React.FC<OdaComponentProps> = ({
               <polygon
                 key={s.key}
                 points={ptsStr(s.pts)}
-                fill={mono ?? ODA_SEGMENT_COLORS[s.key]}
+                fill={mono ?? (agent && s.key === "core" ? AGENT_WHITE : ODA_SEGMENT_COLORS[s.key])}
                 opacity={op(s.key) * p}
                 style={{ transformOrigin: `${CX}px ${CY}px`, scale: String(0.6 + 0.4 * p) }}
                 filter={highlight === s.key ? `url(#oda-glow-${highlight})` : undefined}

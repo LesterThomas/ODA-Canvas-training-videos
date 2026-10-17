@@ -46,10 +46,11 @@ export const S21IdentityConfig: React.FC = () => (
     </Appear>
     <Svg>
       <Draw d="M 760 450 L 860 450" at={10.6} color={C.identity} arrow />
-      <Draw d="M 1080 420 C 1160 420, 1160 330, 1250 330" at={12.2} color={C.identity} arrow />
-      <Draw d="M 1080 480 C 1160 480, 1160 560, 1250 560" at={13.2} color={C.identity} arrow />
-      <Draw d="M 970 560 C 970 680, 860 700, 820 790" at={15.6} color={C.secrets} arrow />
-      <Draw d="M 970 560 C 970 680, 1300 700, 1340 790" at={18.0} color={C.api} arrow />
+      <Draw d="M 1080 420 C 1160 420, 1160 290, 1250 290" at={12.2} color={C.identity} arrow />
+      <Draw d="M 1080 450 L 1250 450" at={12.8} color={C.identity} arrow />
+      <Draw d="M 1080 480 C 1160 480, 1160 610, 1250 610" at={13.8} color={C.identity} arrow />
+      <Draw d="M 970 560 C 970 680, 860 700, 820 790" at={17.2} color={C.secrets} arrow />
+      <Draw d="M 970 560 C 970 680, 1300 700, 1340 790" at={19.6} color={C.api} arrow />
     </Svg>
     <Appear at={10.8} from="pop" style={{ left: 875, top: 345 }}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
@@ -57,13 +58,16 @@ export const S21IdentityConfig: React.FC = () => (
         <div style={{ fontSize: 26, fontWeight: 800, color: C.identity }}>Identity Config operator</div>
       </div>
     </Appear>
-    <Appear at={12.4} from="right" style={{ left: 1260, top: 280 }}>
+    <Appear at={12.4} from="right" style={{ left: 1260, top: 240 }}>
       <Tile label="Keycloak" color={C.identity} icon="shield" w={520} h={100} fontSize={34} />
     </Appear>
-    <Appear at={13.4} from="right" style={{ left: 1260, top: 510 }}>
+    <Appear at={13.0} from="right" style={{ left: 1260, top: 400 }}>
       <Tile label="Microsoft Entra ID" color={C.identity} icon="shield" w={520} h={100} fontSize={34} />
     </Appear>
-    <Appear at={15.8} from="up" style={{ left: 470, top: 800 }}>
+    <Appear at={14.0} from="right" style={{ left: 1260, top: 560 }}>
+      <Tile label="Another identity platform" color={C.muted} icon="shield" w={520} h={100} fontSize={34} />
+    </Appear>
+    <Appear at={17.4} from="up" style={{ left: 470, top: 800 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
         <Gear size={84} color={C.secrets} spin={70} />
         <div>
@@ -72,7 +76,7 @@ export const S21IdentityConfig: React.FC = () => (
         </div>
       </div>
     </Appear>
-    <Appear at={18.2} from="up" style={{ left: 1150, top: 800 }}>
+    <Appear at={19.8} from="up" style={{ left: 1150, top: 800 }}>
       <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
         <Gear size={84} color={C.api} spin={70} />
         <div>
@@ -95,7 +99,7 @@ const STACK: { label: string; icon: IconName; at: number }[] = [
 export const S22Observability: React.FC = () => {
   const t = useT();
   const count = 41 + (t > 27.4 ? 1 : 0) + (t > 28.6 ? 1 : 0);
-  const bump = interpolate(t, [27.4, 27.8, 28.6, 29.0], [0, 1, 0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const bump = interpolate(t, [28.6, 29.0, 29.8, 30.2], [0, 1, 0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Stage>
       <Heading kicker="A tour of the Canvas" title="Observability" color={C.observability} />
@@ -131,13 +135,14 @@ export const S22Observability: React.FC = () => {
           <Tile label={s.label} color={C.observability} icon={s.icon} w={600} h={92} fontSize={32} />
         </Appear>
       ))}
-      <Appear at={20.6} from="up" style={{ left: 560, top: 720 }}>
-        <div style={{ display: "flex", gap: 16 }}>
-          <Pill color={C.muted} fontSize={26}>Managed Prometheus</Pill>
-          <Pill color={C.muted} fontSize={26}>Datadog</Pill>
+      <Appear at={20.6} from="up" style={{ left: 420, top: 720 }}>
+        <div style={{ display: "flex", gap: 12 }}>
+          <Pill color={C.muted} fontSize={22}>Managed Prometheus</Pill>
+          <Pill color={C.muted} fontSize={22}>Datadog</Pill>
+          <Pill color={C.muted} fontSize={22}>Another platform</Pill>
         </div>
       </Appear>
-      <Appear at={24.0} from="up" style={{ left: 1130, top: 760 }}>
+      <Appear at={25.2} from="up" style={{ left: 1130, top: 760 }}>
         <div
           style={{
             width: 600,

@@ -16,7 +16,7 @@ const ASSETS = [
   { id: "Asset-Stage", props: { glow: "#2A1534" }, file: "stage-ai" },
   { id: "Asset-Stage", props: { glow: "#1B2550" }, file: "stage-title" },
   { id: "Asset-Oda", props: { labels: false }, file: "oda" },
-  { id: "Asset-Oda", props: { labels: false, mono: C.agent }, file: "oda-agent" },
+  { id: "Asset-Oda", props: { labels: false, agent: true }, file: "oda-agent" },
   { id: "Asset-OdaCrop", props: { labels: false, crop: true }, file: "oda-icon" },
   icon("person", C.component), icon("person", C.canvas),
   icon("doc", C.tmf), icon("doc", C.muted), icon("layers", C.tmf), icon("layers", C.muted),

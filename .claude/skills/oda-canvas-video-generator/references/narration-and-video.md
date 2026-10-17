@@ -24,6 +24,19 @@ Because PowerPoint does the rendering, **animations and embedded clips play in t
 poster frame and native final state still matter: they are the review stills and the
 `--renderer still` fallback.
 
+## Approve, then validate
+
+Each slide has two toggles on the review page. **Approved** means the slide's content is right, and
+starts narration and rendering. **Narration validated** means the user has listened to the narrated
+clip and accepts it. The final video is built automatically only when every visible slide is both.
+Validation is tied to the exact clip, so any rebuild (new notes, re-voice, recording, slide change)
+clears it. Never validate on the user's behalf.
+
+The user can also **record** a slide's narration on the page. The recording is matched to the
+generated voice (EQ, levelling, loudness) and used in place of the voice; `presgen.py rematch`
+re-processes recordings after the matching changes. A clip is rebuilt whenever its narration file
+is newer than the clip.
+
 ## Files
 
 | Path | What | Git |
@@ -61,9 +74,9 @@ instead of waiting for the user to mention it in chat:
 1. **Arm the watch** with the Monitor tool (maximum timeout, re-arm on every expiry for as long as the
    review server runs):
    `bash .claude/skills/oda-canvas-video-generator/scripts/watch_review.sh "<abs path>/decks/<deck-id>.pptx"`.
-   It prints one JSON line per change request, with the slide numbers, titles and comment. When
-   arming, also read `presgen.py status --json`, because requests made before the watch began are
-   not replayed.
+   It prints one JSON line per change request, with the slide numbers, titles and comment. On start
+   it first prints every request that still has no reply from Claude, so a request made while the
+   watch was down (it expires every 30 minutes) is never missed. Re-arm it as soon as it expires.
 2. **On each event**, give the user a moment (a few seconds) and re-read `status --json`, so
    requests made close together become one rebuild. Then post
    `presgen.py reply ... -m "Working on it" --by claude` so the page shows the request was seen.

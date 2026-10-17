@@ -59,7 +59,7 @@ Measure the boxes by opening the PNG. Lift these helpers into `lib/` when the ne
 1. Run `extract_notes.py` to get the words and seconds for each slide.
 2. Composition length is the narration length rounded up, plus 1–2 seconds, at 30 fps.
 3. Start time for an element is the number of words before its mention, divided by 2.5. For example,
-   in slide 18, "Istio, which is the default" is about word 55, so the Istio tile lights at about 21.6 s.
+   in slide 19, "the Istio service mesh" starts at about word 54, so the Istio tile lights at about 21.6 s.
 4. Put any "cycling" or emphasis loop at the end. It must still finish on a clean, complete frame.
 
 ## Workflow and checks

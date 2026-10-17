@@ -54,7 +54,7 @@ The visuals reuse the operator-catalogue and "Lego block" assets from deck 01.
 ### Slide 6: Example 1: API management
 - **Visual:** [3B1B] Deck slide 32. The ExposedAPI declaration flows into the API Management tile, which fans out to Istio, Kong, Apache APISIX, Azure API Management, Google Apigee and Whale Cloud.
 - **Speaker notes:**
-> First, API management. Every component declares the APIs it wants to expose, whether for its core function or for managing and securing the component, along with policies such as rate limits or API-key checks. A Canvas can use any API gateway or service mesh, and an API operator configures it automatically. The reference implementation has operators for the Istio service mesh, which is the default, the Kong and Apache APISIX gateways, and Azure API Management, Google Apigee and Whale Cloud API management.
+> First, API management. Every component declares the APIs it wants to expose, whether for its core function or for managing and securing the component, along with policies such as rate limits or API-key checks. A Canvas can use any API gateway or service mesh, and an API operator configures it automatically. The reference implementation has operators for the Istio service mesh, the Kong and Apache APISIX gateways, and Azure API Management, Google Apigee and Whale Cloud API management.
 
 ### Slide 7: Example 2: observability
 - **Visual:** [3B1B] Deck slide 34, redrawn. The component exposes an OpenMetrics endpoint. The API operator's "metrics" output can point at a Prometheus ServiceMonitor, Prometheus annotations for a managed service, or Datadog annotations. The reference stack (Prometheus, Grafana, Jaeger, OpenTelemetry) sits underneath.

@@ -18,10 +18,10 @@ export const IconAsset: React.FC<IconAssetProps> = ({ name, color }) => (
   </AbsoluteFill>
 );
 
-export type OdaAssetProps = { labels: boolean; mono?: string; crop?: boolean };
-export const OdaAsset: React.FC<OdaAssetProps> = ({ labels, mono, crop }) => (
+export type OdaAssetProps = { labels: boolean; mono?: string; agent?: boolean; crop?: boolean };
+export const OdaAsset: React.FC<OdaAssetProps> = ({ labels, mono, agent, crop }) => (
   <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-    <OdaComponent size={crop ? 440 : 720} labels={labels} mono={mono} crop={crop} />
+    <OdaComponent size={crop ? 440 : 720} labels={labels} mono={mono} agent={agent} crop={crop} />
   </AbsoluteFill>
 );
 

@@ -14,7 +14,7 @@ git log -1 --format='%H %cd'                                                  # 
 |---|---|
 | Canvas version, release history | `charts/canvas-oda/Chart.yaml` (`version`, `appVersion`), `README.md` release table, `release-notes/ReleaseNotes.md` (component spec changes) |
 | Operator catalogue and status | `source/operators/README.md` (TMFOP001–011, plus planned ones) and each `TMFOP0xx-*/README.md` ("Implementation Planned" means not built) |
-| API gateway options | `source/operators/TMFOP002-API-Management/README.md`, `installation/README.md` (Istio is the default, one API operator at a time) |
+| API gateway options | `source/operators/TMFOP002-API-Management/README.md`, `installation/README.md` (one API operator at a time; **there is no default**, per the user, 2026-10-17: never call Istio the default) |
 | Observability | `TMFOP002…/istio/README.md` (`openMetricsImplementation`: ServiceMonitor, DataDogAnnotations, PrometheusAnnotation), `charts/observability-stack/README.md` (Prometheus, Grafana, Jaeger, OpenTelemetry Collector) |
 | What installs by default | `charts/canvas-oda/values.yaml` (`enabled:` flags) |
 | Identity | `TMFOP003-Identity-Config/README.md` (Keycloak, Entra ID; dynamic roles via TMF672), realm `odari` and client `canvassystem` in `charts/canvas-oda/values.yaml` |
@@ -60,6 +60,15 @@ at that folder. On this machine, Norton intercepts TLS. Concatenate certifi's bu
 `C:\ProgramData\Norton\Antivirus\wscert.pem` and set `REQUESTS_CA_BUNDLE` to the combined file. Save
 transcripts to `presentations/transcripts/NN-<deck>.md` with timestamps. Expect caption errors: the
 captions write "Oda" for ODA and "Kali" for Kiali.
+
+## Operator status and terms (confirmed by the user, 2026-10-17)
+
+- **Experimental:** Model-as-a-Service, Data Product and carbon-aware (Carbon Management) operators,
+  in that order.
+- **Planned:** Event Management, Cost Control, Database Management.
+- Say "disruption budget" (the Kubernetes term), not "availability during maintenance".
+- There is no default API operator (Istio is one option of six).
+- Who shapes what: software vendors and systems integrators are most influential for the components; communication service providers and cloud providers for the Canvas.
 
 ## External figures
 

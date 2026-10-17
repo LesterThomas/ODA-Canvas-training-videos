@@ -20,6 +20,25 @@ audio and final video for that slide. For each slide, I want the Approved/Draft 
 to make sure the timing and the length of audio aligns." Folded into SKILL.md Step 7 and
 `narration-and-video.md` (Timing).
 
+### 2026-10-17: Name example products only with "or another … platform"
+**Rule:** Whenever a slide names an example implementation, the narration and the visual must also
+say that another platform can be used. Make the point once, plainly, where it matters: the Canvas
+mandates no product, and provides standard integration patterns built on open standards.
+**Why:** Naming only Keycloak or Entra ID implies the Canvas requires them. It doesn't, and
+portability and interoperability through open standards are the point of the Canvas.
+**Source:** Deck 01 slide 11 review: "When we use examples like Keycloak or Microsoft Entra ID, we
+should always say (and show) or other Identity Management Platform. The Canvas does not mandate
+specific implementations, but provides standard integration patterns, adopting open standards to
+enable interoperability and portability." Applied to slides 11, 12, 19, 22 and 23; folded into
+house-style.md and script-template.md.
+
+### 2026-10-17: Show the Canvas with the ODA Canvas picture
+**Rule:** Wherever the ODA Canvas appears, use the ODA Canvas picture (`images/ODA-Canvas-dark.svg`),
+never a plain blue plate or bar. Light up its modules to point at the services the narration names.
+**Why:** The user supplied the picture as the visual for the Canvas, and asked for it on slide 1 and
+again on slide 8 ("Use the new Canvas picture (like on slide 1)").
+**Source:** Deck 01 review, 2026-10-17. Folded into house-style.md.
+
 ### 2026-10-17: Every slide title fades in at the start (widened from opening slides)
 **Rule:** On every slide, the kicker, title and any subtitle fade in together at the start, with no
 rise or slide. `k.heading` and `<Heading>` do this by default. Keep rise-ins for content that builds

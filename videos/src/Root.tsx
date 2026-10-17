@@ -38,16 +38,16 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Intro-08-Canvas" component={S08Canvas} durationInFrames={630} fps={30} width={1920} height={1080} />
       <Composition id="Intro-09-ComposableIT" component={S09ComposableIT} durationInFrames={810} fps={30} width={1920} height={1080} />
       <Composition id="Intro-10-ComposableAI" component={S10ComposableAI} durationInFrames={1050} fps={30} width={1920} height={1080} />
-      <Composition id="Intro-11-Identity" component={S11Identity} durationInFrames={780} fps={30} width={1920} height={1080} />
-      <Composition id="Intro-12-Secrets" component={S12Secrets} durationInFrames={660} fps={30} width={1920} height={1080} />
+      <Composition id="Intro-11-Identity" component={S11Identity} durationInFrames={1140} fps={30} width={1920} height={1080} />
+      <Composition id="Intro-12-Secrets" component={S12Secrets} durationInFrames={744} fps={30} width={1920} height={1080} />
       <Composition id="Intro-16-Directory" component={S16Directory} durationInFrames={1020} fps={30} width={1920} height={1080} />
       <Composition id="Intro-17-Yaml" component={S16Yaml} durationInFrames={810} fps={30} width={1920} height={1080} />
       <Composition id="Intro-18-Operators" component={S17Operators} durationInFrames={870} fps={30} width={1920} height={1080} />
-      <Composition id="Intro-19-ApiExposure" component={S18ApiExposure} durationInFrames={1080} fps={30} width={1920} height={1080} />
+      <Composition id="Intro-19-ApiExposure" component={S18ApiExposure} durationInFrames={1188} fps={30} width={1920} height={1080} />
       <Composition id="Intro-20-PortalInventory" component={S20Inventory} durationInFrames={450} fps={30} width={1920} height={1080} />
       <Composition id="Intro-21-PortalDeploy" component={S21Deploy} durationInFrames={630} fps={30} width={1920} height={1080} />
-      <Composition id="Intro-22-IdentityConfig" component={S21IdentityConfig} durationInFrames={660} fps={30} width={1920} height={1080} />
-      <Composition id="Intro-23-Observability" component={S22Observability} durationInFrames={930} fps={30} width={1920} height={1080} />
+      <Composition id="Intro-22-IdentityConfig" component={S21IdentityConfig} durationInFrames={708} fps={30} width={1920} height={1080} />
+      <Composition id="Intro-23-Observability" component={S22Observability} durationInFrames={966} fps={30} width={1920} height={1080} />
     </Folder>
     </>
   );

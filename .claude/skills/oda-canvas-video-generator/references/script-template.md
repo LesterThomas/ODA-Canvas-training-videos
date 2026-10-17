@@ -57,6 +57,9 @@ Note demo-environment needs if there are [DEMO] slides.
 
 ## Rules of thumb
 
+- When you name an example product, add "or another … platform" in the narration and on screen
+  (see house-style.md, "Naming products").
+
 - **Treatment tags:** `[NATIVE]` for a native PowerPoint slide (titles, agendas, cards, lists,
   simple builds, links), `[3B1B]` for a Remotion explainer where the motion carries meaning, and
   `[DEMO]` for a live recording of the Component Directory, Canvas Portal or a terminal replay.

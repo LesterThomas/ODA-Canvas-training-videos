@@ -44,9 +44,9 @@
  {
   "n": 7,
   "title": "What is an ODA Component?",
-  "notes": "That's where ODA Components come in. An ODA Component is an independently deployable unit of functionality. Alongside its business function, it declares its non-functional needs, such as the APIs it exposes and depends on, the events it publishes, its security roles and its observability. Components are interoperable, designed around end-to-end use cases, and portable: they can run on any Canvas that follows the standard.",
-  "words": 64,
-  "secs": 25.6
+  "notes": "That's where ODA Components come in. An ODA Component is an independently deployable unit of functionality. Alongside its business function, it declares its non-functional needs, such as the APIs it exposes and depends on, the events it publishes, its security roles and its observability. Components are interoperable, designed around end-to-end use cases. They are also portable and can run on any cloud platform that follows the standard.",
+  "words": 67,
+  "secs": 26.8
  },
  {
   "n": 8,
@@ -72,16 +72,16 @@
  {
   "n": 11,
   "title": "Example: identity is declared, not implemented",
-  "notes": "Identity is a good example of why this matters. Traditionally, each application ships with its own identity management, which operations teams then have to integrate. In the ODA model, a component only declares the roles it supports. The Canvas configures those roles in one shared identity platform, such as Keycloak or Microsoft Entra ID. Identities are managed once, consistently, across every application.",
-  "words": 62,
-  "secs": 24.8
+  "notes": "Identity is a good example of why this matters. Traditionally, each application ships with its own identity management. Operations teams then have to integrate each one. In the ODA model, a component only declares the roles it supports. The Canvas configures those roles in one shared identity platform. That could be Keycloak, Microsoft Entra ID, or another identity management platform. The Canvas does not mandate a specific product. It provides standard integration patterns, built on open standards, for interoperability and portability. Identities are managed once, consistently, across every application.",
+  "words": 89,
+  "secs": 35.6
  },
  {
   "n": 12,
   "title": "Example: secrets without bootstrap credentials",
-  "notes": "Secrets work the same way. A component declares that it needs a secrets store, and the Canvas sets up a private vault for it. In the reference implementation that's HashiCorp Vault. The component authenticates with its own Kubernetes workload identity, so it never needs a bootstrap password just to reach the vault.",
-  "words": 52,
-  "secs": 20.8
+  "notes": "Secrets work the same way. A component declares that it needs a secrets store, and the Canvas sets up a private vault for it. In the reference implementation that's HashiCorp Vault, but any secrets management platform can be used. The component authenticates with its own Kubernetes workload identity. So it never needs a bootstrap password just to reach the vault.",
+  "words": 60,
+  "secs": 24.0
  },
  {
   "n": 13,
@@ -121,16 +121,16 @@
  {
   "n": 18,
   "title": "The Canvas as a set of operators",
-  "notes": "The Canvas itself is modular. It is a set of software operators, following the Kubernetes operator pattern. The component management operator takes the component definition and breaks it into sub-resources, such as exposed APIs, dependent APIs, identity configuration and secrets management. Each sub-resource is handled by its own specialised operator. Each operator is a piece of software that holds the operational knowledge a human administrator would otherwise apply by hand.",
+  "notes": "The Canvas itself is modular. It is a set of software operators, following the Kubernetes operator pattern. The component management operator takes the component definition and breaks it into sub-resources, such as exposed APIs, dependent APIs, identity configuration and secrets management. Each sub-resource is handled by its own specialised operator. Each operator is a piece of software that holds the operational knowledge a human operator would otherwise apply by hand.",
   "words": 70,
   "secs": 28.0
  },
  {
   "n": 19,
   "title": "Worked example: API exposure",
-  "notes": "API exposure shows the pattern. The component declares which APIs it wants to expose, and optionally policies such as rate limiting, API-key checks, cross-origin rules or request validation. An API operator reads that declaration and automatically configures whichever gateway or service mesh the Canvas uses. There are six options in the reference implementation: the Istio service mesh, which is the default, the Kong and Apache APISIX gateways, and operators for Azure API Management, Google Apigee and Whale Cloud. The component stays the same, and only the operator changes.",
-  "words": 88,
-  "secs": 35.2
+  "notes": "API exposure shows the pattern. The component declares which APIs it wants to expose, and optionally policies such as rate limiting, API-key checks, cross-origin rules or request validation. An API operator reads that declaration and automatically configures whichever gateway or service mesh the Canvas uses. The reference implementation has six options. They are the Istio service mesh and the Kong and Apache APISIX gateways. There are also operators for Azure API Management, Google Apigee and Whale Cloud. Any other gateway can be added with its own operator. The component stays the same, and only the operator changes.",
+  "words": 97,
+  "secs": 38.8
  },
  {
   "n": 20,
@@ -149,37 +149,37 @@
  {
   "n": 22,
   "title": "Identity configuration",
-  "notes": "Identity follows the same pattern. A component declares its roles, either statically in its YAML or dynamically through a standard roles-and-permissions API. An identity config operator registers them in Keycloak or Microsoft Entra ID. Companion operators then create the component's client credentials and connect its API dependencies once access has been granted.",
-  "words": 52,
-  "secs": 20.8
+  "notes": "Identity follows the same pattern. A component declares its roles, either statically in its YAML or dynamically through a standard roles-and-permissions API. An identity config operator registers them in Keycloak, Microsoft Entra ID, or another identity management platform. Companion operators then create the component's client credentials and connect its API dependencies once access has been granted.",
+  "words": 56,
+  "secs": 22.4
  },
  {
   "n": 23,
   "title": "Observability",
-  "notes": "For observability, components publish metrics using OpenMetrics and traces using OpenTelemetry, rather than shipping their own monitoring tools. When the API operator exposes a component's metrics endpoint, it also sets up scraping. In the reference implementation that means Prometheus, Grafana, Jaeger and an OpenTelemetry collector. The same declaration can target managed Prometheus services or Datadog instead. Metrics can be business metrics as well as technical ones, for example a new product being added to a catalog.",
-  "words": 76,
-  "secs": 30.4
+  "notes": "For observability, components publish metrics using OpenMetrics and traces using OpenTelemetry, rather than shipping their own monitoring tools. When the API operator exposes a component's metrics endpoint, it also sets up scraping. In the reference implementation that means Prometheus, Grafana, Jaeger and an OpenTelemetry collector. The same declaration can target managed Prometheus services, Datadog, or another observability platform instead. Metrics can be business metrics as well as technical ones, for example a new product being added to a catalog.",
+  "words": 79,
+  "secs": 31.6
  },
  {
   "n": 24,
   "title": "Available today, experimental, planned",
-  "notes": "Here's where things stand. Available in the reference implementation today are operators for component management, API management, identity, credentials, dependencies, secrets, availability during maintenance, and carbon-aware scaling. An OAuth2 configuration operator for authentication between components is available as a prototype. The AI-Native capabilities are experimental. Event management, a model-as-a-service operator, cost control and database services are planned. The Canvas is generally available, with regular releases, and every change is checked by an automated behaviour-driven test suite that runs against a real Kubernetes cluster.",
-  "words": 83,
-  "secs": 33.2
+  "notes": "Here's where things stand. Available in the reference implementation today are operators for component management, API management, identity, credentials, dependencies, secrets and disruption budgets. An OAuth2 configuration operator for authentication between components is available as a prototype. Experimental operators cover model-as-a-service, data products and carbon-aware scaling. Event management, cost control and database services are planned. The Canvas is generally available, with regular releases. Every change is checked by an automated behaviour-driven test suite, running against a real Kubernetes cluster.",
+  "words": 79,
+  "secs": 31.6
  },
  {
   "n": 25,
   "title": "Measuring Canvas adoption",
-  "notes": "How do you measure adoption? The outcome that matters is automated component deployment and lifecycle management. A service provider can turn on each light in turn as it automates API exposure, observability, identity, secrets and, increasingly, responsible AI, cost and carbon management.",
-  "words": 42,
-  "secs": 16.8
+  "notes": "How do you measure adoption? The outcome that matters is automated component deployment and lifecycle management. A service provider can turn on each light in turn as it automates API exposure, observability, identity, secrets and, increasingly, responsible AI, cost and carbon management. The Canvas itself is modular and can be deployed incrementally.",
+  "words": 52,
+  "secs": 20.8
  },
  {
   "n": 26,
   "title": "Built together",
-  "notes": "The Canvas is the result of collaboration between communication service providers, cloud providers, software vendors and systems integrators, delivering what the ODA Manifesto set out: a standard execution environment for ODA Components. That shared foundation is what lets the industry adopt new capabilities, including AI, faster together than any one company could alone.",
-  "words": 53,
-  "secs": 21.2
+  "notes": "The ODA Components and Canvas are the result of collaboration between software vendors, systems integrators, communication service providers and cloud providers. Together they deliver what the ODA Manifesto set out: a standard execution environment for ODA Components. That shared foundation is what lets the industry adopt new capabilities, including AI, faster together than any one company could alone.",
+  "words": 58,
+  "secs": 23.2
  },
  {
   "n": 27,

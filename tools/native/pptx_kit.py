@@ -163,9 +163,9 @@ class Kit:
             shape.click_action.hyperlink.address = link
         return shape
 
-    def line(self, name, x1, y1, x2, y2, color="muted", width=4, arrow=False, dash=False, elbow=False):
-        """Straight (default) or elbow connector; elbow routes horizontal → vertical → horizontal."""
-        kind = MSO_CONNECTOR.ELBOW if elbow else MSO_CONNECTOR.STRAIGHT
+    def line(self, name, x1, y1, x2, y2, color="muted", width=4, arrow=False, dash=False, elbow=False, curve=False):
+        """Straight (default), elbow (horizontal → vertical → horizontal) or curved (S-curve) connector."""
+        kind = MSO_CONNECTOR.CURVE if curve else MSO_CONNECTOR.ELBOW if elbow else MSO_CONNECTOR.STRAIGHT
         conn = self.shapes.add_connector(kind, px(x1), px(y1), px(x2), px(y2))
         conn.line.color.rgb = _rgb(C.get(color, color))
         conn.line.width = px(width)

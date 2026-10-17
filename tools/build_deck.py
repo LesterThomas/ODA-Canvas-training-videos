@@ -148,12 +148,17 @@ def main() -> None:
         slide.notes_slide.notes_text_frame.text = s["notes"]
 
     lock = os.path.join(os.path.dirname(os.path.abspath(a.out_path)), "~$" + os.path.basename(a.out_path))
-    try:
-        if os.path.exists(lock):
-            raise PermissionError
-        prs.save(a.out_path)
-    except PermissionError:
+    if os.path.exists(lock):
         sys.exit(f"{a.out_path} is open in PowerPoint: close it there, then build again")
+    import time
+    for attempt in range(6):  # antivirus or the review server may hold the file for a moment
+        try:
+            prs.save(a.out_path)
+            break
+        except OSError as e:
+            if attempt == 5:
+                sys.exit(f"could not write {a.out_path}: {e}. Close anything that has it open, then build again")
+            time.sleep(2)
     plan_path = os.path.splitext(a.out_path)[0] + ".anim.json"
     json.dump(plan, open(plan_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     native = sum(1 for e in plan["slides"].values() if e["kind"] == "native")

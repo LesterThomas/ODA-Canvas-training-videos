@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate } from "remotion";
+import { Img, interpolate, staticFile } from "remotion";
 import { C, MONO } from "../theme";
 import {
   Appear,
@@ -15,7 +15,6 @@ import {
   useProg,
   useT,
 } from "../lib/ui";
-import { Plate } from "../lib/Plate";
 import { OdaComponent, OdaSegment } from "../lib/OdaComponent";
 
 // Slide 7 — What is an ODA Component?
@@ -88,8 +87,8 @@ export const S07Component: React.FC = () => {
           <Appear at={19.0} from="up" style={{ position: "relative" }}>
             <Pill color={C.operator} fontSize={34}>Built for end-to-end use cases</Pill>
           </Appear>
-          <Appear at={21.5} from="up" style={{ position: "relative" }}>
-            <Pill color={C.tmf} fontSize={34}>Portable to any Canvas</Pill>
+          <Appear at={22.3} from="up" style={{ position: "relative" }}>
+            <Pill color={C.tmf} fontSize={34}>Portable to any cloud platform</Pill>
           </Appear>
         </div>
       </Appear>
@@ -97,14 +96,38 @@ export const S07Component: React.FC = () => {
   );
 };
 
-// Slide 8 — What is the ODA Canvas?
-const SERVICES: { label: string; icon: IconName; color: string; at: number }[] = [
-  { label: "API Management", icon: "gateway", color: C.api, at: 8.6 },
-  { label: "Identity", icon: "shield", color: C.identity, at: 9.6 },
-  { label: "Observability", icon: "chart", color: C.observability, at: 10.4 },
-  { label: "Secrets", icon: "lock", color: C.secrets, at: 11.6 },
-  { label: "Events", icon: "bell", color: C.events, at: 12.4 },
+// Slide 8 — What is the ODA Canvas? The ODA Canvas picture (images/ODA-Canvas-dark.svg), a component
+// dropping onto its interfaces, and each capability module lighting up as the narration names it.
+const CANVAS = { left: 460, top: 545, w: 1000 };
+const CS = CANVAS.w / 1652; // the SVG's viewBox is 10 180 1652 610
+const MODULE = (x0: number, x1: number, y0: number, y1: number) => ({
+  left: CANVAS.left + (x0 - 10) * CS,
+  top: CANVAS.top + (y0 - 180) * CS,
+  width: (x1 - x0) * CS,
+  height: (y1 - y0) * CS,
+});
+const HIGHLIGHTS: { label: string; box: ReturnType<typeof MODULE>; color: string; at: number }[] = [
+  { label: "API management", box: MODULE(490, 821, 326, 458), color: C.api, at: 8.6 },
+  { label: "Identity", box: MODULE(1205, 1556, 326, 458), color: C.identity, at: 9.6 },
+  { label: "Observability", box: MODULE(849, 1181, 326, 458), color: C.observability, at: 10.4 },
+  { label: "Secrets", box: MODULE(1205, 1556, 326, 458), color: C.secrets, at: 11.6 },
 ];
+
+const Glow: React.FC<{ box: ReturnType<typeof MODULE>; color: string; at: number }> = ({ box, color, at }) => {
+  const p = useProg(at, 0.5);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        ...box,
+        borderRadius: 10,
+        border: `4px solid ${color}`,
+        boxShadow: `0 0 ${30 * p}px ${color}, inset 0 0 ${20 * p}px ${color}66`,
+        opacity: p,
+      }}
+    />
+  );
+};
 
 export const S08Canvas: React.FC = () => {
   const drop = useProg(4.6, 1.2);
@@ -112,22 +135,28 @@ export const S08Canvas: React.FC = () => {
   return (
     <Stage>
       <Heading kicker="Components and Canvas" title="What is the ODA Canvas?" color={C.canvas} />
+      <Appear at={1.5} from="up" dist={80} style={{ left: CANVAS.left, top: CANVAS.top }}>
+        <Img src={staticFile("ODA-Canvas-dark.svg")} style={{ width: CANVAS.w, display: "block" }} />
+      </Appear>
+      {HIGHLIGHTS.map((h) => (
+        <Glow key={h.label + h.at} box={h.box} color={h.color} at={h.at} />
+      ))}
       <div
         style={{
           position: "absolute",
-          left: 780,
-          top: interpolate(drop, [0, 1], [130, 292]),
+          left: 810,
+          top: interpolate(drop, [0, 1], [110, 248]),
         }}
       >
         <Appear at={0.4} from="pop" style={{ position: "relative" }}>
-          <OdaComponent size={360} labels={false} />
+          <OdaComponent size={300} labels={false} />
         </Appear>
         <div
           style={{
             position: "absolute",
-            left: 40,
-            top: 50 + scan * 250,
-            width: 280,
+            left: 34,
+            top: 40 + scan * 210,
+            width: 232,
             height: 6,
             background: C.operator,
             boxShadow: `0 0 30px ${C.operator}`,
@@ -135,23 +164,15 @@ export const S08Canvas: React.FC = () => {
           }}
         />
       </div>
-      <Appear at={1.5} from="up" dist={80} style={{ left: 410, top: 576 }}>
-        <Plate w={1100} fontSize={40} label="ODA Canvas · cloud-native execution environment" />
-      </Appear>
-      <Appear at={6.4} from="left" style={{ left: 1270, top: 410 }}>
+      <Appear at={6.4} from="left" style={{ left: 1150, top: 360 }}>
         <Pill color={C.operator} fontSize={28}>reads declared requirements</Pill>
       </Appear>
-      {SERVICES.map((s, i) => (
-        <Appear key={s.label} at={s.at} from="up" style={{ left: 190 + i * 310, top: 780 }}>
-          <Tile label={s.label} color={s.color} icon={s.icon} w={290} h={96} fontSize={27} />
-        </Appear>
-      ))}
       <Appear at={14.5} from="left" style={{ left: 120, top: 330 }}>
         <div style={{ fontSize: 30, color: C.component, fontWeight: 700, width: 520 }}>
           Developers focus on business functionality
         </div>
       </Appear>
-      <Appear at={16.5} from="up" style={{ left: 0, top: 940, width: 1920 }}>
+      <Appear at={16.5} from="up" style={{ left: 0, top: 960, width: 1920 }}>
         <div style={{ textAlign: "center", fontSize: 34, color: C.canvas, fontWeight: 700 }}>
           The Canvas handles security · monitoring · scaling
         </div>
@@ -258,7 +279,7 @@ const Band: React.FC<{
               overflow: "hidden",
             }}
           >
-            {it.brick ? <OdaComponent size={44} crop mono={it.ai ? C.agent : undefined} style={{ flexShrink: 0 }} /> : null}
+            {it.brick ? <OdaComponent size={44} crop agent={it.ai} style={{ flexShrink: 0 }} /> : null}
             <span style={{ textAlign: it.brick ? "left" : "center" }}>{it.label}</span>
           </div>
         );
@@ -401,8 +422,8 @@ const APPS = [360, 860, 1360];
 
 export const S11Identity: React.FC = () => {
   const t = useT();
-  const oda = interpolate(t, [10.5, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const merge = interpolate(t, [13, 15], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const oda = interpolate(t, [10.5, 12.0], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const merge = interpolate(t, [13.4, 15.4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Stage>
       <Heading kicker="Example" title="Identity: declared, not implemented" color={C.identity} />
@@ -429,7 +450,7 @@ export const S11Identity: React.FC = () => {
               <Tile label="Own IdM" color={C.identity} icon="database" w={200} h={80} fontSize={26} />
             </div>
           </Appear>
-          <Appear at={14.6 + i * 0.3} from="up" style={{ left: x + 40, top: 520 }}>
+          <Appear at={15.0 + i * 0.3} from="up" style={{ left: x + 40, top: 520 }}>
             <Pill color={C.identity} fontSize={24}>
               roles: admin, owner…
             </Pill>
@@ -438,30 +459,35 @@ export const S11Identity: React.FC = () => {
       ))}
       <Svg>
         {APPS.map((x, i) => (
-          <Draw key={x} d={`M ${x + 150} 575 L ${860 + 150 + (i - 1) * 120} 720`} at={15.2 + i * 0.3} color={C.identity} width={3} arrow />
+          <Draw key={x} d={`M ${x + 150} 575 L ${860 + 150 + (i - 1) * 120} 720`} at={15.6 + i * 0.3} color={C.identity} width={3} arrow />
         ))}
         {APPS.map((x, i) => (
           <Draw key={`m${x}`} d={`M ${x + 150} 560 C ${x + 150} 700, 960 700, 960 820`} at={6.5 + i * 0.3} color={C.faint} width={3} dash opacity={1 - oda} />
         ))}
       </Svg>
-      <Appear at={7.2} from="up" out={11} style={{ left: 760, top: 830 }}>
+      <Appear at={7.2} from="up" out={11.0} style={{ left: 760, top: 830 }}>
         <Pill color={C.danger} fontSize={30}>
           <Icon name="people" size={34} color={C.danger} /> Ops teams integrate each one
         </Pill>
       </Appear>
-      <Appear at={15.0} from="pop" style={{ left: 610, top: 730 }}>
+      <Appear at={15.4} from="pop" style={{ left: 510, top: 730 }}>
         <Tile
           label="Canvas identity service"
-          sub="Keycloak · Microsoft Entra ID"
+          sub="Keycloak · Microsoft Entra ID · or another identity platform"
           color={C.identity}
           icon="shield"
-          w={700}
+          w={900}
           h={130}
           fontSize={38}
           glow={0.5}
         />
       </Appear>
-      <Caption at={21} bottom={50} color={C.identity}>
+      <Appear at={24.4} from="up" style={{ left: 0, top: 895, width: 1920 }}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Pill color={C.canvas} fontSize={28}>No mandated product · standard integration patterns · open standards</Pill>
+        </div>
+      </Appear>
+      <Caption at={32.8} bottom={40} color={C.identity}>
         Identities managed once — consistently, across every application
       </Caption>
     </Stage>
@@ -471,9 +497,9 @@ export const S11Identity: React.FC = () => {
 // Slide 12 — Secrets without bootstrap credentials
 export const S12Secrets: React.FC = () => {
   const t = useT();
-  const fly = interpolate(t, [11.0, 13.2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const open = interpolate(t, [13.2, 14.0], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const strike = useProg(16.5, 0.8);
+  const fly = interpolate(t, [13.8, 16.0], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const open = interpolate(t, [16.0, 16.8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const strike = useProg(19.3, 0.8);
   return (
     <Stage>
       <Heading kicker="Example" title="Secrets without bootstrap credentials" color={C.secrets} />
@@ -517,7 +543,7 @@ export const S12Secrets: React.FC = () => {
           </div>
           <div style={{ fontSize: 38, fontWeight: 800 }}>Private vault</div>
           <Appear at={8.6} from="up" style={{ position: "relative" }}>
-            <div style={{ fontSize: 28, color: C.muted }}>HashiCorp Vault</div>
+            <div style={{ fontSize: 26, color: C.muted, textAlign: "center" }}>HashiCorp Vault<br />or another secrets platform</div>
           </Appear>
         </div>
       </Appear>
@@ -526,19 +552,19 @@ export const S12Secrets: React.FC = () => {
           position: "absolute",
           left: interpolate(fly, [0, 1], [460, 1180]),
           top: interpolate(fly, [0, 1], [300, 260]) - Math.sin(fly * Math.PI) * 80,
-          opacity: interpolate(t, [10.6, 11.0, 13.6, 14.2], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+          opacity: interpolate(t, [13.4, 13.8, 16.4, 17.0], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
         }}
       >
         <Pill color={C.operator} fontSize={28}>
           <Icon name="key" size={30} color={C.operator} /> Kubernetes workload identity (JWT)
         </Pill>
       </div>
-      <Appear at={14.2} from="up" style={{ left: 1300, top: 720 }}>
+      <Appear at={17.0} from="up" style={{ left: 1300, top: 720 }}>
         <Pill color={C.ok} fontSize={30}>
           <Icon name="check" size={32} color={C.ok} /> Access granted
         </Pill>
       </Appear>
-      <Appear at={15.6} from="up" style={{ left: 700, top: 820 }}>
+      <Appear at={18.4} from="up" style={{ left: 700, top: 820 }}>
         <div style={{ position: "relative", fontFamily: MONO, fontSize: 40, color: C.muted, padding: "10px 20px" }}>
           bootstrapPassword: ••••••••
           <div

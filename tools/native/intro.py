@@ -174,12 +174,12 @@ def s15(k: Kit):
 
 
 # Slide 24 — Available today, experimental, planned
-AVAILABLE = [("Component Management", 2.6, "operator"), ("API Management", 3.4, "api"), ("Identity Config", 4.0, "identity"),
-             ("Credentials Management", 4.6, "identity"), ("Dependency Management", 5.2, "api"), ("Secrets Management", 5.8, "secrets"),
-             ("Disruption Budget", 6.8, "canvas"), ("Carbon Management", 8.2, "carbon"), ("OAuth2 Config", 10.4, "identity", "prototype")]
-EXPERIMENTAL = [("AI-Native Canvas", 13.6, "ai", "Model Gateway · MCP")]
-PLANNED = [("Event Management", 16.2, "muted"), ("Model-as-a-Service", 17.0, "muted"), ("Cost Control", 18.0, "muted"),
-           ("Database Management", 18.8, "muted")]
+# Slide 24 — timings are word positions in the narration / 2.5
+AVAILABLE = [("Component Management", 5.2, "operator"), ("API Management", 6.0, "api"), ("Identity Config", 6.8, "identity"),
+             ("Credentials Management", 7.2, "identity"), ("Dependency Management", 7.6, "api"), ("Secrets Management", 8.0, "secrets"),
+             ("Disruption Budget", 8.8, "canvas"), ("OAuth2 Config", 9.6, "identity", "prototype")]
+EXPERIMENTAL = [("Model-as-a-Service", 16.0, "ai"), ("Data Product", 16.4, "ai"), ("Carbon-aware", 17.6, "carbon")]
+PLANNED = [("Event Management", 18.4, "muted"), ("Cost Control", 19.2, "muted"), ("Database Management", 20.4, "muted")]
 
 
 def _column(k: Kit, x, title, color, icon_file, items, at, tag):
@@ -202,18 +202,18 @@ def _column(k: Kit, x, title, color, icon_file, items, at, tag):
 def s24(k: Kit):
     k.background()
     k.heading("Where things stand", "Available · experimental · planned")
-    _column(k, 120, "Available today", "ok", _ico("check", "22C55E"), AVAILABLE, 2.2, "Available")
-    _column(k, 690, "Experimental", "ai", _ico("flask", "F472B6"), EXPERIMENTAL, 13.2, "Experimental")
-    _column(k, 1260, "Planned", "muted", _ico("rocket", "8F9BB8"), PLANNED, 15.8, "Planned")
+    _column(k, 120, "Available today", "ok", _ico("check", "22C55E"), AVAILABLE, 1.6, "Available")
+    _column(k, 690, "Experimental", "ai", _ico("flask", "F472B6"), EXPERIMENTAL, 14.6, "Experimental")
+    _column(k, 1260, "Planned", "muted", _ico("rocket", "8F9BB8"), PLANNED, 18.2, "Planned")
     ga = [k.rect(None, 690, 680, 1110, 190, fill="ok", fill_alpha=0.08, line="ok", line_w=3, radius=24),
           k.image(None, _ico("check", "22C55E"), 726, 712, 44),
           k.text(None, 784, 708, 980, 50, "Generally available · regular releases", size=34, bold=True)]
     k.group("GA", ga)
-    k.anim("GA", 21.0, "rise")
+    k.anim("GA", 22.0, "rise")
     bdd = [k.image(None, _ico("flask", "22C55E"), 726, 790, 40),
            k.text(None, 784, 788, 990, 50, "Every change tested by a BDD suite on a real Kubernetes cluster", size=30, color="muted")]
     k.group("BDD", bdd)
-    k.anim("BDD", 24.4, "fade")
+    k.anim("BDD", 25.2, "fade")
 
 
 # Slide 25 — Measuring Canvas adoption
@@ -236,36 +236,43 @@ def s25(k: Kit):
         k.anim(f"Light {i + 1}", 6.5 + i * 0.15, "fade")
         k.circle(f"Light {i + 1} on", cx, 545, 150, fill="ok")
         k.anim(f"Light {i + 1} on", at, "zoom", 0.5)
-    k.text("Future", 0, 930, 1920, 50, "…and future automations", size=40, bold=True, color="muted", align="center")
+    k.text("Future", 0, 830, 1920, 50, "…and future automations", size=40, bold=True, color="muted", align="center")
     k.anim("Future", 16.2, "fade")
+    k.text("Modular", 0, 915, 1920, 50, "Modular · deploy the Canvas incrementally", size=34, bold=True, color="canvas", align="center")
+    k.anim("Modular", 16.8, "fade")
 
 
 # Slide 26 — Built together
-ROLES = [("Communication service providers", "globe", "tmf", "E6007E", 120, 220),
-         ("Cloud providers", "cloud", "canvas", "2F6FED", 1400, 220),
-         ("Software vendors", "cube", "component", "F5A623", 120, 540),
-         ("Systems integrators", "handshake", "operator", "1FC7A8", 1400, 540)]
+# Vendors and integrators shape the components (top row, arrows to the components); service providers
+# and cloud providers shape the Canvas (bottom row, arrows to the Canvas). Last two values: the point the
+# arrow aims at; the arrow itself stops well short of it.
+ROLES = [("Software vendors", "cube", "component", "F5A623", 120, 220, 775, 440),
+         ("Systems integrators", "handshake", "operator", "1FC7A8", 1400, 220, 1145, 440),
+         ("Communication service providers", "globe", "tmf", "E6007E", 120, 540, 700, 690),
+         ("Cloud providers", "cloud", "canvas", "2F6FED", 1400, 540, 1220, 690)]
 
 
 def s26(k: Kit):
     k.background()
     k.heading("Conclusion", "Built together")
-    for i, (label, icon, color, hexc, x, y) in enumerate(ROLES):
+    # Drawn first, so the arrows sit on top of it. The ODA Canvas picture (house standard), with three components (one agentic) on its interfaces
+    canvas = [k.image(None, "canvas-dark.png", 610, 535, 700),
+              k.image(None, "oda.png", 690, 365, 170), k.image(None, "oda-agent.png", 875, 365, 170),
+              k.image(None, "oda.png", 1060, 365, 170)]
+    k.group("Canvas", canvas)
+    for i, (label, icon, color, hexc, x, y, tx, ty) in enumerate(ROLES):
         parts = [k.circle(None, x + 200, y + 70, 140, fill=color, fill_alpha=0.15, line=color, line_w=4),
                  k.image(None, _ico(icon, hexc), x + 160, y + 30, 80),
                  k.text(None, x, y + 152, 400, 80, label, size=30, bold=True, align="center")]
         k.group(f"Role {i + 1}", parts)
         k.anim(f"Role {i + 1}", 1.2 + i * 0.6, "zoom")
-        # Elbow connectors from the icon's side to the plate's side, routed clear of the labels.
-        sx = x + 270 if x < 960 else x + 130
-        ex = 610 if x < 960 else 1310
-        k.line(f"Link {i + 1}", sx, y + 70, ex, 616, color=color, width=3, arrow=True, elbow=True)
+        # Straight arrow from the circle's edge towards what this group shapes most, stopping well short.
+        cx, cy = x + 200, y + 70
+        dx, dy = tx - cx, ty - cy
+        d = (dx * dx + dy * dy) ** 0.5
+        ux, uy = dx / d, dy / d
+        k.line(f"Link {i + 1}", cx + 78 * ux, cy + 78 * uy, tx - 150 * ux, ty - 150 * uy, color=color, width=4, arrow=True)
         k.anim(f"Link {i + 1}", 5.0 + i * 0.3, "fade", 0.5)
-    canvas = [k.image(None, "oda.png", 665, 410, 190), k.image(None, "oda-agent.png", 865, 410, 190),
-              k.image(None, "oda.png", 1065, 410, 190)]
-    plate = k.rect(None, 610, 567, 700, 98, fill="canvas", radius=16)
-    k.text(None, 0, 0, 0, 0, "ODA Canvas", size=35, bold=True, align="center", anchor="middle", shape=plate, spacing=2)
-    k.group("Canvas", canvas + [plate])
     k.anim("Canvas", 6.0, "rise", 0.8)
     m = [k.text(None, 0, 820, 1920, 40, "ODA MANIFESTO", size=26, bold=True, color="tmf", align="center", spacing=4),
          k.text(None, 0, 860, 1920, 60, "A standard execution environment for ODA Components", size=40, bold=True, align="center")]

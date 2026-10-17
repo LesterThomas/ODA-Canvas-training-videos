@@ -203,12 +203,12 @@ export const S17Operators: React.FC = () => {
 
 // Slide 18 — Worked example: API exposure
 const GATEWAYS = [
-  { name: "Istio service mesh", tag: "default", at: 21.6 },
+  { name: "Istio service mesh", at: 21.6 },
   { name: "Kong", at: 23.6 },
   { name: "Apache APISIX", at: 24.2 },
-  { name: "Azure API Management", at: 25.6 },
-  { name: "Google Apigee", at: 26.8 },
-  { name: "Whale Cloud", at: 27.8 },
+  { name: "Azure API Management", at: 27.6 },
+  { name: "Google Apigee", at: 28.8 },
+  { name: "Whale Cloud", at: 30.0 },
 ];
 
 const POLICIES = [
@@ -220,8 +220,8 @@ const POLICIES = [
 
 export const S18ApiExposure: React.FC = () => {
   const t = useT();
-  // After 31s the active gateway cycles to show "only the operator changes".
-  const cycle = t > 30.5 ? Math.floor((t - 30.5) / 0.9) % GATEWAYS.length : -1;
+  // After 34.4s the active gateway cycles to show "only the operator changes".
+  const cycle = t > 34.4 ? Math.floor((t - 34.4) / 0.9) % GATEWAYS.length : -1;
   return (
     <Stage>
       <Heading kicker="Worked example" title="API exposure" color={C.api} />
@@ -283,16 +283,12 @@ export const S18ApiExposure: React.FC = () => {
             glow={(t >= g.at && t < g.at + 1.4) || cycle === i ? 0.7 : 0}
             dim={cycle !== -1 && cycle !== i ? 1 : 0}
           />
-          {g.tag ? (
-            <div style={{ position: "absolute", right: 22, top: 26 }}>
-              <Pill color={C.ok} fontSize={20}>
-                {g.tag}
-              </Pill>
-            </div>
-          ) : null}
         </Appear>
       ))}
-      <Caption at={31} bottom={60} color={C.api}>
+      <Appear at={30.8} from="up" style={{ left: 1240, top: 920 }}>
+        <div style={{ fontSize: 28, color: C.muted, fontWeight: 700 }}>…or any other gateway, via its own operator</div>
+      </Appear>
+      <Caption at={34.8} bottom={30} color={C.api}>
         Same component · only the operator changes
       </Caption>
     </Stage>

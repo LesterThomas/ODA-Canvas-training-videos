@@ -194,7 +194,9 @@ Read `references/narration-and-video.md` first. Then:
 2. The user switches slides from Draft to Approved on the page, or tells you in chat ("approve 1–4").
    In that case, record it with `presgen.py approve`. **Never approve a slide yourself.** Each
    approved slide is narrated and rendered straight away, with its animation timed to the real
-   narration. The final video rebuilds once all are approved.
+   narration. The user then listens and switches **Narration validated** on (or records the slide in
+   their own voice, which is matched to the generated voice). The final video is built once every
+   slide is approved and validated.
 3. **Watch for change requests and act on them straight away.** Arm a Monitor on
    `scripts/watch_review.sh` and keep re-arming it while the review page runs. For each request:
    - fix the slide through the **Feedback loop**,

@@ -342,181 +342,710 @@
       "approved_fingerprint": "a04111003464732f"
     },
     "261": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:07:49+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0edea012be518824"
+        }
+      ],
       "number": 6,
       "title": "The remaining gap",
       "hidden": false,
-      "fingerprint": "0edea012be518824"
+      "fingerprint": "0edea012be518824",
+      "comment": "",
+      "updated_at": "2026-10-17T13:07:49+01:00",
+      "approved_fingerprint": "0edea012be518824"
     },
     "262": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:08:42+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3e0c5874fa3badaf"
+        },
+        {
+          "at": "2026-10-17T13:14:02+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Adjust the speaker notes. Instead of 'Components are interoperable, designed around end-to-end use cases, and portable: they can run on any Canvas that follows the standard.' use 'Components are interoperable, designed around end-to-end use cases. They are also portable and can run on any cloud platform that follows the standard.'",
+          "fingerprint": "3e0c5874fa3badaf"
+        },
+        {
+          "at": "2026-10-17T13:14:13+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: updating the narration with your wording.",
+          "fingerprint": "3e0c5874fa3badaf"
+        },
+        {
+          "at": "2026-10-17T13:15:36+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now uses your wording: 'Components are interoperable, designed around end-to-end use cases. They are also portable and can run on any cloud platform that follows the standard.' I changed the on-screen pill from 'Portable to any Canvas' to 'Portable to any cloud platform' to match. It also appears 0.8 s later, because 'portable' now comes later in the sentence. Approving the slide will voice it.",
+          "fingerprint": "19095387785adc3d"
+        },
+        {
+          "at": "2026-10-17T13:18:32+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "19095387785adc3d"
+        }
+      ],
       "number": 7,
       "title": "What is an ODA Component?",
       "hidden": false,
-      "fingerprint": "3e0c5874fa3badaf"
+      "fingerprint": "19095387785adc3d",
+      "comment": "",
+      "updated_at": "2026-10-17T13:18:32+01:00",
+      "approved_fingerprint": "19095387785adc3d"
     },
     "263": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:14:38+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Use the new Canvas picture (like on slide 1)",
+          "fingerprint": "abd22327310b273b"
+        },
+        {
+          "at": "2026-10-17T13:15:44+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: putting the new Canvas picture into this scene.",
+          "fingerprint": "abd22327310b273b"
+        },
+        {
+          "at": "2026-10-17T13:17:39+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The new ODA Canvas picture replaces the blue plate, and the component symbol drops onto its interfaces. The separate row of service tiles is gone, because the picture already shows those modules. Instead, the modules light up as the narration names them: API Mgmt, Identity & Credentials, Observability, then Identity & Credentials again for secrets. The narration is unchanged.",
+          "fingerprint": "f6c12baf3162622f"
+        },
+        {
+          "at": "2026-10-17T13:19:02+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f6c12baf3162622f"
+        }
+      ],
       "number": 8,
       "title": "What is the ODA Canvas?",
       "hidden": false,
-      "fingerprint": "abd22327310b273b"
+      "fingerprint": "f6c12baf3162622f",
+      "comment": "",
+      "updated_at": "2026-10-17T13:19:02+01:00",
+      "approved_fingerprint": "f6c12baf3162622f"
     },
     "264": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:15:06+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9c52faa74ebd3cfb"
+        }
+      ],
       "number": 9,
       "title": "Composable IT with ODA",
       "hidden": false,
-      "fingerprint": "9c52faa74ebd3cfb"
+      "fingerprint": "9c52faa74ebd3cfb",
+      "comment": "",
+      "updated_at": "2026-10-17T13:15:06+01:00",
+      "approved_fingerprint": "9c52faa74ebd3cfb"
     },
     "265": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:15:31+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4b1c08cb89789bf2"
+        },
+        {
+          "at": "2026-10-17T14:42:37+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed by your slide 26 comment: the small agentic component icons in the Components & Agents row now show the AI solution component with a white core function and the usual colours elsewhere. Nothing else changed. Note that the 'Agentic component' labels are slightly clipped in their tiles; that was already the case before this change. Say if you'd like the tiles widened or the label shortened.",
+          "fingerprint": "0acb02b11fce2090"
+        },
+        {
+          "at": "2026-10-17T14:45:00+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0acb02b11fce2090"
+        }
+      ],
       "number": 10,
       "title": "Composable AI with Agentic ODA",
       "hidden": false,
-      "fingerprint": "4b1c08cb89789bf2"
+      "fingerprint": "0acb02b11fce2090",
+      "comment": "",
+      "updated_at": "2026-10-17T14:45:00+01:00",
+      "approved_fingerprint": "0acb02b11fce2090"
     },
     "266": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:18:02+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "When we use examples like Keycloak or Microsoft Entra ID, we should always say (and show) or other Identity Management Platform. The Canvas does not mandate specific implementations, but provides standard integration patterns, adopting open standards to enable interoperability and portability.",
+          "fingerprint": "819630e998e5c1eb"
+        },
+        {
+          "at": "2026-10-17T13:18:18+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it, and I'm checking the rest of the deck for named products.",
+          "fingerprint": "819630e998e5c1eb"
+        },
+        {
+          "at": "2026-10-17T13:25:22+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now says: 'That could be Keycloak, Microsoft Entra ID, or another identity management platform. The Canvas does not mandate a specific product. It provides standard integration patterns, built on open standards, for interoperability and portability.' On screen, the identity service now reads 'Keycloak · Microsoft Entra ID · or another identity platform', and the tag 'No mandated product · standard integration patterns · open standards' appears as that is said. I also split the long 'Traditionally…' sentence. I've applied the same rule to slides 12, 19, 22 and 23, and added it to the skill.",
+          "fingerprint": "bd41cba7ec356881"
+        },
+        {
+          "at": "2026-10-17T13:34:27+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "bd41cba7ec356881"
+        }
+      ],
       "number": 11,
       "title": "Example: identity is declared, not implemented",
       "hidden": false,
-      "fingerprint": "819630e998e5c1eb"
+      "fingerprint": "bd41cba7ec356881",
+      "comment": "",
+      "updated_at": "2026-10-17T13:34:27+01:00",
+      "approved_fingerprint": "bd41cba7ec356881"
     },
     "267": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:25:23+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 11 comment: whenever we name a product, we say and show that another can be used. The narration now says HashiCorp Vault is the reference implementation, 'but any secrets management platform can be used', and the vault shows 'or another secrets platform'. Later steps are re-timed, and the last long sentence is split in two.",
+          "fingerprint": "f1952382e6380cb3"
+        },
+        {
+          "at": "2026-10-17T13:34:47+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f1952382e6380cb3"
+        }
+      ],
       "number": 12,
       "title": "Example: secrets without bootstrap credentials",
       "hidden": false,
-      "fingerprint": "9d8c0a79baf02860"
+      "fingerprint": "f1952382e6380cb3",
+      "comment": "",
+      "updated_at": "2026-10-17T13:34:47+01:00",
+      "approved_fingerprint": "f1952382e6380cb3"
     },
     "268": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:23:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "bc2c5c89ca441566"
+        }
+      ],
       "number": 13,
       "title": "Six benefits",
       "hidden": false,
-      "fingerprint": "bc2c5c89ca441566"
+      "fingerprint": "bc2c5c89ca441566",
+      "comment": "",
+      "updated_at": "2026-10-17T13:23:34+01:00",
+      "approved_fingerprint": "bc2c5c89ca441566"
     },
     "269": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:23:49+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "76ba8c42d551be20"
+        }
+      ],
       "number": 14,
       "title": "An order-of-magnitude goal",
       "hidden": false,
-      "fingerprint": "76ba8c42d551be20"
+      "fingerprint": "76ba8c42d551be20",
+      "comment": "",
+      "updated_at": "2026-10-17T13:23:49+01:00",
+      "approved_fingerprint": "76ba8c42d551be20"
     },
     "270": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:24:15+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b1feb70f15fcd911"
+        }
+      ],
       "number": 15,
       "title": "The component standard in two layers",
       "hidden": false,
-      "fingerprint": "b1feb70f15fcd911"
+      "fingerprint": "b1feb70f15fcd911",
+      "comment": "",
+      "updated_at": "2026-10-17T13:24:15+01:00",
+      "approved_fingerprint": "b1feb70f15fcd911"
     },
     "271": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:24:46+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e850eae66f6aa08b"
+        }
+      ],
       "number": 16,
       "title": "Live demo: the ODA Component Directory",
       "hidden": false,
-      "fingerprint": "e850eae66f6aa08b"
+      "fingerprint": "e850eae66f6aa08b",
+      "comment": "",
+      "updated_at": "2026-10-17T13:24:46+01:00",
+      "approved_fingerprint": "e850eae66f6aa08b"
     },
     "272": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:25:09+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "65b529f4b90bbd49"
+        }
+      ],
       "number": 17,
       "title": "The component YAML",
       "hidden": false,
-      "fingerprint": "65b529f4b90bbd49"
+      "fingerprint": "65b529f4b90bbd49",
+      "comment": "",
+      "updated_at": "2026-10-17T13:25:09+01:00",
+      "approved_fingerprint": "65b529f4b90bbd49"
     },
     "273": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:26:14+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Don't use 'human administrator', instead use 'human operator'.",
+          "fingerprint": "d8ff78c2dc228001"
+        },
+        {
+          "at": "2026-10-17T13:26:19+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it.",
+          "fingerprint": "d8ff78c2dc228001"
+        },
+        {
+          "at": "2026-10-17T13:26:54+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now says '…the operational knowledge a human operator would otherwise apply by hand.' The phrase was only in the narration, so the picture is unchanged. I checked the other video scripts, and none of them use 'administrator'.",
+          "fingerprint": "489bc81696028514"
+        },
+        {
+          "at": "2026-10-17T13:35:11+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "489bc81696028514"
+        }
+      ],
       "number": 18,
       "title": "The Canvas as a set of operators",
       "hidden": false,
-      "fingerprint": "d8ff78c2dc228001"
+      "fingerprint": "489bc81696028514",
+      "comment": "",
+      "updated_at": "2026-10-17T13:35:11+01:00",
+      "approved_fingerprint": "489bc81696028514"
     },
     "274": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:25:23+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 11 comment: after the six options, the narration adds 'Any other gateway can be added with its own operator.', shown as a note under the gateway list. The sentence listing the options is split into three shorter ones, and each gateway lights up as it is named.",
+          "fingerprint": "a41d4f3ab0cf3243"
+        },
+        {
+          "at": "2026-10-17T13:27:28+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Istio service mesh is not the default. There is no default so just remove this from the script and the slide.",
+          "fingerprint": "a41d4f3ab0cf3243"
+        },
+        {
+          "at": "2026-10-17T13:27:37+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: removing 'default' from the narration and the slide.",
+          "fingerprint": "a41d4f3ab0cf3243"
+        },
+        {
+          "at": "2026-10-17T13:29:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now says 'They are the Istio service mesh and the Kong and Apache APISIX gateways.', and the 'default' tag is gone from the Istio tile. The later gateways light up 1.6 s sooner to match. I removed the same claim from the Buy or Build script (02) and the project notes. The skill's research notes now say there is no default API operator, so later videos won't repeat it.",
+          "fingerprint": "c501b3f2f69c568f"
+        },
+        {
+          "at": "2026-10-17T13:35:43+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c501b3f2f69c568f"
+        }
+      ],
       "number": 19,
       "title": "Worked example: API exposure",
       "hidden": false,
-      "fingerprint": "2b86c0912c2207a4"
+      "fingerprint": "c501b3f2f69c568f",
+      "comment": "",
+      "updated_at": "2026-10-17T13:35:43+01:00",
+      "approved_fingerprint": "c501b3f2f69c568f"
     },
     "275": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:28:06+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "beffd841e65b1698"
+        }
+      ],
       "number": 20,
       "title": "Live demo: the component inventory",
       "hidden": false,
-      "fingerprint": "beffd841e65b1698"
+      "fingerprint": "beffd841e65b1698",
+      "comment": "",
+      "updated_at": "2026-10-17T13:28:06+01:00",
+      "approved_fingerprint": "beffd841e65b1698"
     },
     "276": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:28:24+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "39d7291dfd179b3a"
+        }
+      ],
       "number": 21,
       "title": "Live demo: deploying a component",
       "hidden": false,
-      "fingerprint": "39d7291dfd179b3a"
+      "fingerprint": "39d7291dfd179b3a",
+      "comment": "",
+      "updated_at": "2026-10-17T13:28:24+01:00",
+      "approved_fingerprint": "39d7291dfd179b3a"
     },
     "277": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:25:24+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 11 comment: the operator now registers roles in 'Keycloak, Microsoft Entra ID, or another identity management platform', with a third tile, 'Another identity platform'.",
+          "fingerprint": "b97cdfcc48775600"
+        },
+        {
+          "at": "2026-10-17T13:28:46+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b97cdfcc48775600"
+        }
+      ],
       "number": 22,
       "title": "Identity configuration",
       "hidden": false,
-      "fingerprint": "9f40c2ededf06342"
+      "fingerprint": "b97cdfcc48775600",
+      "comment": "",
+      "updated_at": "2026-10-17T13:28:46+01:00",
+      "approved_fingerprint": "b97cdfcc48775600"
     },
     "278": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:25:24+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 11 comment: the narration now says 'managed Prometheus services, Datadog, or another observability platform', with an 'Another platform' pill beside the other two.",
+          "fingerprint": "70dbad0dcd0e1fa1"
+        },
+        {
+          "at": "2026-10-17T13:29:14+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "70dbad0dcd0e1fa1"
+        }
+      ],
       "number": 23,
       "title": "Observability",
       "hidden": false,
-      "fingerprint": "79d26b8d183c6dd8"
+      "fingerprint": "70dbad0dcd0e1fa1",
+      "comment": "",
+      "updated_at": "2026-10-17T13:29:14+01:00",
+      "approved_fingerprint": "70dbad0dcd0e1fa1"
     },
     "279": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:31:50+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "model-as-a-service, data product and carbon-aware operators should be shown as experimental (in that order)\nThe speaker notes should use 'disruption budget' and not 'availability during maintenance'",
+          "fingerprint": "462482a4289c0de4"
+        },
+        {
+          "at": "2026-10-17T13:31:56+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it.",
+          "fingerprint": "462482a4289c0de4"
+        },
+        {
+          "at": "2026-10-17T13:33:10+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The Experimental column is now Model-as-a-Service, Data Product, Carbon-aware, in that order. Carbon moved over from Available today, Model-as-a-Service from Planned, and Data Product is new; the three replace the old 'AI-Native Canvas' tile. The narration now lists 'secrets and disruption budgets' as available, then says 'Experimental operators cover model-as-a-service, data products and carbon-aware scaling.' Each tile appears as its words are spoken, and I split the long closing sentence. One thing for later: scripts 02 (Buy or Build) and 05 (Carbon-aware) still describe carbon management as available. I'll correct them when we produce those videos, unless you'd like it done now.",
+          "fingerprint": "be0e94ac15202770"
+        },
+        {
+          "at": "2026-10-17T13:36:19+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "be0e94ac15202770"
+        }
+      ],
       "number": 24,
       "title": "Available today, experimental, planned",
       "hidden": false,
-      "fingerprint": "462482a4289c0de4"
+      "fingerprint": "be0e94ac15202770",
+      "comment": "",
+      "updated_at": "2026-10-17T13:36:19+01:00",
+      "approved_fingerprint": "be0e94ac15202770"
     },
     "280": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:32:53+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Add onto the end of the script: 'The Canvas is itself is modular and can be deployed incrementally.'",
+          "fingerprint": "bfd6239a0a739911"
+        },
+        {
+          "at": "2026-10-17T14:18:58+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it.",
+          "fingerprint": "bfd6239a0a739911"
+        },
+        {
+          "at": "2026-10-17T14:20:30+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now ends: 'The Canvas itself is modular and can be deployed incrementally.' I dropped the doubled 'is' from your comment. The same message appears on screen as that is said ('Modular · deploy the Canvas incrementally'), under '…and future automations'. Sorry this one waited: it arrived while my watch on the page was being restarted. The watch now catches up on any requests it missed when it starts.",
+          "fingerprint": "6522cc4030224ea5"
+        },
+        {
+          "at": "2026-10-17T14:22:24+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6522cc4030224ea5"
+        }
+      ],
       "number": 25,
       "title": "Measuring Canvas adoption",
       "hidden": false,
-      "fingerprint": "bfd6239a0a739911"
+      "fingerprint": "6522cc4030224ea5",
+      "comment": "",
+      "updated_at": "2026-10-17T14:22:24+01:00",
+      "approved_fingerprint": "6522cc4030224ea5"
     },
     "281": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:33:34+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Use the standard Canvas Picture from slide 1.",
+          "fingerprint": "64686c6a4977e7be"
+        },
+        {
+          "at": "2026-10-17T13:33:40+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it.",
+          "fingerprint": "64686c6a4977e7be"
+        },
+        {
+          "at": "2026-10-17T13:34:29+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The standard ODA Canvas picture replaces the blue plate. The three components (the middle one agentic) sit above its interfaces, and the arrows from the four partner groups now end on it. Everything else on the slide, including the narration, is unchanged.",
+          "fingerprint": "fa7519937acc103c"
+        },
+        {
+          "at": "2026-10-17T14:21:53+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The systems integrators and software vendors are more influential for the components, the cloud providers and CSPs are more influencial for the Canvas. Show the Vendors and Integrators above the CSPs and Cloud providers and show 4 curved arrows pointing towards the components for the vendors and integrators and towards the canvas for the csps and cloud providers. For the script, start with 'The ODA Component and Canvas is the result...'",
+          "fingerprint": "fa7519937acc103c"
+        },
+        {
+          "at": "2026-10-17T14:22:01+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: rearranging the partner groups and their arrows.",
+          "fingerprint": "fa7519937acc103c"
+        },
+        {
+          "at": "2026-10-17T14:24:06+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. Software vendors and systems integrators are now in the top row, with curved arrows to the components. Communication service providers and cloud providers are in the bottom row, with curved arrows to the Canvas. The narration starts as you asked, with grammar adjusted for the plural: 'The ODA Components and Canvas are the result of collaboration between software vendors, systems integrators, communication service providers and cloud providers.' I listed the groups in the picture's order and split the long first sentence. It continues: 'Together they deliver what the ODA Manifesto set out: a standard execution environment for ODA Components.'",
+          "fingerprint": "f91b6483886d4789"
+        },
+        {
+          "at": "2026-10-17T14:24:44+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Also done: all four arrows now stop just short of the components and the Canvas, with a clear gap.",
+          "fingerprint": "fea9798816985d40"
+        },
+        {
+          "at": "2026-10-17T14:37:56+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Make the arrows straighter and stop shorter. I want the vendor and system integrator arrows to be pointing generally towards the components and the CSP and Cloud Provider arrows to be pointing generally towards the canvas.",
+          "fingerprint": "fea9798816985d40"
+        },
+        {
+          "at": "2026-10-17T14:38:39+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: straighter, shorter arrows.",
+          "fingerprint": "fea9798816985d40"
+        },
+        {
+          "at": "2026-10-17T14:39:23+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "For the white componet (representing solution components often used when packaging an AI as a component), only the functional part (that was green) should be white. The other blue, yellow, red and grey segments should be the same.",
+          "fingerprint": "c0bf683a1a9164ba"
+        },
+        {
+          "at": "2026-10-17T14:39:26+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The four arrows are now straight and stop well short. The software vendor and systems integrator arrows point towards the components; the service provider and cloud provider arrows point towards the Canvas.",
+          "fingerprint": "c0bf683a1a9164ba"
+        },
+        {
+          "at": "2026-10-17T14:39:37+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: making only the core function segment white.",
+          "fingerprint": "c0bf683a1a9164ba"
+        },
+        {
+          "at": "2026-10-17T14:42:36+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The middle component now has only its core function segment white; the blue, yellow, red and grey segments keep their usual colours. I've made this the standard symbol for an AI solution component, so it is used the same way everywhere, including slide 10.",
+          "fingerprint": "7d3670213c8839e5"
+        },
+        {
+          "at": "2026-10-17T14:45:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7d3670213c8839e5"
+        }
+      ],
       "number": 26,
       "title": "Built together",
       "hidden": false,
-      "fingerprint": "64686c6a4977e7be"
+      "fingerprint": "7d3670213c8839e5",
+      "comment": "",
+      "updated_at": "2026-10-17T14:45:34+01:00",
+      "approved_fingerprint": "7d3670213c8839e5"
     },
     "282": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T13:34:00+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a4769a2c7cb7cc85"
+        }
+      ],
       "number": 27,
       "title": "What's next",
       "hidden": false,
-      "fingerprint": "a4769a2c7cb7cc85"
+      "fingerprint": "a4769a2c7cb7cc85",
+      "comment": "",
+      "updated_at": "2026-10-17T13:34:00+01:00",
+      "approved_fingerprint": "a4769a2c7cb7cc85"
     }
   },
-  "inspected_at": "2026-10-17T12:33:28+01:00"
+  "inspected_at": "2026-10-17T14:42:16+01:00"
 }

@@ -31,7 +31,7 @@ Keep each colour tied to the same concept in every deck. Viewers learn the mappi
 | Secrets | gold `#E9C46A` | `lock` / `key` |
 | Events | lime `#A3E635` | `bell` |
 | AI-native | pink `#F472B6` | `spark` |
-| Agentic component | white `#F8FAFC` | `<OdaComponent mono={C.agent} />`: same symbol, all white (ODA convention: agents aren't standardised) |
+| Agentic / AI solution component | white core `#F8FAFC` | `<OdaComponent agent />` (PNG: `oda-agent.png`). Only the Core Function segment is white; the other four keep their colours. It represents the solution components used to package an AI as an ODA Component |
 | Carbon | green `#34D399` | `leaf` |
 | Cost | orange `#FB923C` | `coin` |
 | TM Forum accent, use cases | magenta `#E6007E` | kicker, highlights, cursor ripples |
@@ -70,6 +70,22 @@ observability and management APIs go with **Management/Operations**; the busines
 **Core Function**; dependencies and platform needs go with **Environment**. Use `highlight` (with a
 `dim` of about 0.35–0.55; higher looks muddy on the dark stage), `build` (segments grow from the
 centre) and `interfaces` (lollipops and sockets draw outward) to follow the narration.
+
+## The ODA Canvas picture (standard)
+
+Whenever a slide shows the ODA Canvas itself, use the **ODA Canvas picture**: a platform of capability
+modules with ODA Component interfaces (lollipops and sockets) along its top, on a navy base carrying
+the label. Never use a plain blue plate or bar. The source is `images/AI-Native-Canvas.webp` (from the
+user); `scripts/make_oda_canvas_svg.py` generates the SVGs:
+
+- `images/ODA-Canvas-dark.svg`: light outlines for the dark stage. **Use this one on slides.**
+- `images/ODA-Canvas.svg`: for light backgrounds. `images/AI-Native-Canvas.svg`: the original label.
+
+Native slides: `node tools/svg_to_png.mjs images/ODA-Canvas-dark.svg videos/out/assets/canvas-dark.png 1600`,
+then `k.image(..., "canvas-dark.png", ...)`. Remotion: copy the SVG to `videos/public/` and use
+`<Img src={staticFile("ODA-Canvas-dark.svg")} />`. To point at a module, overlay a glow box placed
+from the SVG's coordinates (viewBox `10 180 1652 610`; see `S08Canvas` in `Seg3ComponentsCanvas.tsx`).
+A component "running on the Canvas" sits just above its interfaces.
 
 ## Native PowerPoint or Remotion? (decide per slide)
 
@@ -113,6 +129,9 @@ and the `--renderer still` fallback uses it.
 
 ## Layout pitfalls already hit (check for these in stills)
 
+- Arrows pointing at a shape point *towards* it and stop clearly short of it, leaving a visible gap.
+  Prefer straight arrows. Draw them above pictures, so their heads are never hidden.
+
 - Rows of pills wider than the space left at the right of the frame. Shorten the text or centre the
   row under its parent.
 - Labels on `Plate` or `Tile` that wrap or overflow. Pass an explicit `fontSize`, or widen the tile
@@ -126,7 +145,20 @@ and the `--renderer still` fallback uses it.
 - Content that moves (pull or translate animations) into another group's labels late in a scene.
   Check the final frame.
 
+## Naming products: always "or another …"
+
+The Canvas does not mandate specific implementations. It provides standard integration patterns,
+built on open standards, for interoperability and portability. So whenever narration or a visual
+names an example product (Keycloak, Microsoft Entra ID, HashiCorp Vault, Istio, Kong, Apache APISIX,
+Prometheus, Datadog and so on), it must also **say and show** that another platform can be used:
+"…or another identity management platform", "…any secrets management platform can be used",
+"Any other gateway can be added with its own operator". On screen, add a matching tile, pill or
+"or another … platform" line next to the named products. Where the point matters to the story,
+say it outright once: the Canvas does not mandate a specific product.
+
 ## Narration voice
+
+- Say "human operator", not "administrator", for the person who would otherwise do the work by hand. This matches the operator pattern the Canvas is built on.
 
 - Neutral, third-person voice of the project: "The Canvas…", "A component declares…". Not "I" or
   "we at <company>".
