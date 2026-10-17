@@ -38,6 +38,27 @@ noise reduction, which the user rejected) and used in place of the voice; `presg
 re-processes recordings after the matching changes. A clip is rebuilt whenever its narration file
 is newer than the clip.
 
+### Presenter videos (the user on camera)
+
+When the user records themselves presenting a slide (e.g. `decks/<deck-id>/Intro-video.mp4` for
+deck 01's slide 1), use it as that slide's clip and its sound as the narration:
+
+1. Copy the video to `videos/public/captures/` and build a Remotion composition that plays it
+   full-frame and **muted**, with overlays in the left and right thirds and a lower third, clear of the
+   presenter. Time each overlay to the recording's pauses (`ffmpeg -af silencedetect=n=-35dB:d=0.4`),
+   not to a words-per-second estimate. Example: `videos/src/intro/S01Presenter.tsx`.
+2. Make the slide a clip slide (remove it from the native `BUILDERS`), set the script's Visual tag,
+   and keep the speaker notes as the words actually spoken. Rebuild with `rebuild_deck.sh`.
+3. After the refresh, use its sound with
+   `presgen.py use-recording "<deck>.pptx" <slide> "<video>" --sync`. It gets the same voice-matching
+   EQ and gain as a page recording, but is **not trimmed**, and the slide's timing is **never
+   stretched**, so the lips stay in step with the voice. `rematch` keeps it in sync.
+   The sound is also delayed 0.1 s, because PowerPoint starts an embedded video about 0.1 s after
+   the slide. To check sync, compare the clip with the source: the picture's offset (frame matching)
+   and the sound's offset (envelope correlation) should agree within about 0.03 s.
+4. The slide is never voiced: the review page offers no Re-voice or Record for it, and approving it
+   only renders the clip with the video's sound. It still needs approving and validating like any other.
+
 ## Files
 
 | Path | What | Git |

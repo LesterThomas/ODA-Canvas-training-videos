@@ -57,6 +57,8 @@ Note demo-environment needs if there are [DEMO] slides.
 
 ## Rules of thumb
 
+- For more than one paragraph of narration, put a bare `>` line between them. `extract_notes.py` keeps the break.
+
 - Speaker notes have no colons or semicolons and no sentence over about 17 words (house-style.md).
 
 - When you name an example product, add "or another … platform" in the narration and on screen

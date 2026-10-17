@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
+import { S01Presenter } from "./intro/S01Presenter";
 import { S04Frameworks, S05OpenApis, S06Gap } from "./intro/Seg2History";
 import {
   S07Component,
@@ -31,6 +32,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Asset-OdaCrop" component={OdaAsset} durationInFrames={1} fps={30} width={440} height={502} defaultProps={{ labels: false, crop: true }} />
     </Folder>
     <Folder name="Intro-to-ODA-Canvas">
+      <Composition id="Intro-01-Presenter" component={S01Presenter} durationInFrames={1660} fps={30} width={1920} height={1080} />
       <Composition id="Intro-04-Frameworks" component={S04Frameworks} durationInFrames={983} fps={30} width={1920} height={1080} />
       <Composition id="Intro-05-OpenAPIs" component={S05OpenApis} durationInFrames={983} fps={30} width={1920} height={1080} />
       <Composition id="Intro-06-Gap" component={S06Gap} durationInFrames={660} fps={30} width={1920} height={1080} />

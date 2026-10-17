@@ -66,16 +66,65 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "255ee5c4ff511232"
+        },
+        {
+          "at": "2026-10-17T20:16:40+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Make the speaker notes for this slide more verbose. I want a 2 paragraph summary of the whole presentation.",
+          "fingerprint": "255ee5c4ff511232"
+        },
+        {
+          "at": "2026-10-17T20:16:54+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: writing a two-paragraph summary of the whole video.",
+          "fingerprint": "255ee5c4ff511232"
+        },
+        {
+          "at": "2026-10-17T20:17:56+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration is now a two-paragraph summary of the whole video, about a minute long. The first paragraph covers the welcome, the history from frameworks to Open APIs, and what Components and the Canvas are. The second covers the benefits, the tour and Portal demo, what's available, experimental and planned, and how the industry builds the Canvas together. Every sentence is 17 words or fewer, with no colons, and the slide holds its title picture while it plays. One thing to consider: slide 3 (Roadmap) now partly repeats this. Ask if you'd like it shortened. Please approve again to voice it.",
+          "fingerprint": "cfc6f9c092692555"
+        },
+        {
+          "at": "2026-10-17T20:23:16+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Updated with your wording from chat, in two paragraphs. Please approve again to voice it.",
+          "fingerprint": "3b2770c59c9e8c9d"
+        },
+        {
+          "at": "2026-10-17T20:34:38+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 1 now plays your presenter video, muted. Overlays: a lower-third title (0-7 s), the ODA Canvas picture with a component (8-15 s), and a running agenda whose seven topics appear as you name them. Its narration is your video's own sound, with the same voice-matching EQ plus gain (-28.6 LUFS). It is untrimmed and never stretched, so your lips stay in sync. Approve it to make the narrated clip, then validate it.",
+          "fingerprint": "d21a347551dcfc6a"
+        },
+        {
+          "at": "2026-10-17T20:41:43+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d21a347551dcfc6a"
+        },
+        {
+          "at": "2026-10-17T20:49:29+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d21a347551dcfc6a"
         }
       ],
       "number": 1,
       "title": "Title card",
       "hidden": false,
-      "fingerprint": "255ee5c4ff511232",
+      "fingerprint": "d21a347551dcfc6a",
       "comment": "",
-      "updated_at": "2026-10-17T11:00:33+01:00",
-      "approved_fingerprint": "255ee5c4ff511232",
-      "validated_key": "c03f0a88adefade5"
+      "updated_at": "2026-10-17T20:41:43+01:00",
+      "validated_key": "f9e68f83f230359a",
+      "approved_fingerprint": "d21a347551dcfc6a"
     },
     "257": {
       "status": "approved",
@@ -163,6 +212,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-17T20:51:47+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
         }
       ],
       "number": 2,
@@ -207,6 +270,20 @@
         },
         {
           "at": "2026-10-17T14:54:50+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "eb288bcb4eca4569"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "eb288bcb4eca4569"
+        },
+        {
+          "at": "2026-10-17T20:52:04+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -329,6 +406,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "76f04d4362b4c383"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "76f04d4362b4c383"
+        },
+        {
+          "at": "2026-10-17T20:52:09+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "76f04d4362b4c383"
         }
       ],
       "number": 4,
@@ -384,6 +475,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a04111003464732f"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "a04111003464732f"
+        },
+        {
+          "at": "2026-10-17T20:52:11+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a04111003464732f"
         }
       ],
       "number": 5,
@@ -407,6 +512,20 @@
         },
         {
           "at": "2026-10-17T14:53:23+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0edea012be518824"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "0edea012be518824"
+        },
+        {
+          "at": "2026-10-17T20:52:13+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -487,6 +606,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a70585beaa675181"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "a70585beaa675181"
+        },
+        {
+          "at": "2026-10-17T20:52:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a70585beaa675181"
         }
       ],
       "number": 7,
@@ -495,8 +628,8 @@
       "fingerprint": "a70585beaa675181",
       "comment": "",
       "updated_at": "2026-10-17T15:30:13+01:00",
-      "validated_key": "1aff178f811dbb71",
-      "approved_fingerprint": "a70585beaa675181"
+      "approved_fingerprint": "a70585beaa675181",
+      "validated_key": "1aff178f811dbb71"
     },
     "263": {
       "status": "approved",
@@ -584,6 +717,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a519da2b60d7441e"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "a519da2b60d7441e"
+        },
+        {
+          "at": "2026-10-17T20:52:27+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a519da2b60d7441e"
         }
       ],
       "number": 8,
@@ -592,8 +739,8 @@
       "fingerprint": "a519da2b60d7441e",
       "comment": "",
       "updated_at": "2026-10-17T18:58:12+01:00",
-      "validated_key": "4dbca19fce6411b7",
-      "approved_fingerprint": "a519da2b60d7441e"
+      "approved_fingerprint": "a519da2b60d7441e",
+      "validated_key": "4dbca19fce6411b7"
     },
     "264": {
       "status": "approved",
@@ -639,6 +786,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "e8115600842f6e46"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "e8115600842f6e46"
+        },
+        {
+          "at": "2026-10-17T20:52:30+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e8115600842f6e46"
         }
       ],
       "number": 9,
@@ -647,8 +808,8 @@
       "fingerprint": "e8115600842f6e46",
       "comment": "",
       "updated_at": "2026-10-17T15:30:40+01:00",
-      "validated_key": "32dc1d41480aa07d",
-      "approved_fingerprint": "e8115600842f6e46"
+      "approved_fingerprint": "e8115600842f6e46",
+      "validated_key": "32dc1d41480aa07d"
     },
     "265": {
       "status": "approved",
@@ -701,6 +862,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "b69e54c306efc07c"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "b69e54c306efc07c"
+        },
+        {
+          "at": "2026-10-17T20:52:33+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b69e54c306efc07c"
         }
       ],
       "number": 10,
@@ -709,8 +884,8 @@
       "fingerprint": "b69e54c306efc07c",
       "comment": "",
       "updated_at": "2026-10-17T15:30:57+01:00",
-      "validated_key": "8970d2ea640c922f",
-      "approved_fingerprint": "b69e54c306efc07c"
+      "approved_fingerprint": "b69e54c306efc07c",
+      "validated_key": "8970d2ea640c922f"
     },
     "266": {
       "status": "approved",
@@ -749,6 +924,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "bd41cba7ec356881"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "bd41cba7ec356881"
+        },
+        {
+          "at": "2026-10-17T20:52:36+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "bd41cba7ec356881"
         }
       ],
       "number": 11,
@@ -779,6 +968,20 @@
         },
         {
           "at": "2026-10-17T15:21:20+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f1952382e6380cb3"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "f1952382e6380cb3"
+        },
+        {
+          "at": "2026-10-17T20:52:39+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -831,6 +1034,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "ce5c800b3f8127e5"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "ce5c800b3f8127e5"
+        },
+        {
+          "at": "2026-10-17T20:52:41+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ce5c800b3f8127e5"
         }
       ],
       "number": 13,
@@ -839,8 +1056,8 @@
       "fingerprint": "ce5c800b3f8127e5",
       "comment": "",
       "updated_at": "2026-10-17T15:31:25+01:00",
-      "validated_key": "f488ac81ca4b8d16",
-      "approved_fingerprint": "ce5c800b3f8127e5"
+      "approved_fingerprint": "ce5c800b3f8127e5",
+      "validated_key": "f488ac81ca4b8d16"
     },
     "269": {
       "status": "approved",
@@ -879,6 +1096,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "e5374889a8f204d4"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "e5374889a8f204d4"
+        },
+        {
+          "at": "2026-10-17T20:52:43+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e5374889a8f204d4"
         }
       ],
       "number": 14,
@@ -887,8 +1118,8 @@
       "fingerprint": "e5374889a8f204d4",
       "comment": "",
       "updated_at": "2026-10-17T15:31:37+01:00",
-      "validated_key": "066931af6e757061",
-      "approved_fingerprint": "e5374889a8f204d4"
+      "approved_fingerprint": "e5374889a8f204d4",
+      "validated_key": "066931af6e757061"
     },
     "270": {
       "status": "approved",
@@ -927,6 +1158,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d66e9ba2278a6087"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "d66e9ba2278a6087"
+        },
+        {
+          "at": "2026-10-17T20:52:45+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d66e9ba2278a6087"
         }
       ],
       "number": 15,
@@ -935,8 +1180,8 @@
       "fingerprint": "d66e9ba2278a6087",
       "comment": "",
       "updated_at": "2026-10-17T15:31:53+01:00",
-      "validated_key": "dcf22f784fff4257",
-      "approved_fingerprint": "d66e9ba2278a6087"
+      "approved_fingerprint": "d66e9ba2278a6087",
+      "validated_key": "dcf22f784fff4257"
     },
     "271": {
       "status": "approved",
@@ -996,6 +1241,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "59882da075e64701"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "59882da075e64701"
+        },
+        {
+          "at": "2026-10-17T20:52:47+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "59882da075e64701"
         }
       ],
       "number": 16,
@@ -1044,6 +1303,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "1a3c7fca654aa923"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "1a3c7fca654aa923"
+        },
+        {
+          "at": "2026-10-17T20:52:49+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1a3c7fca654aa923"
         }
       ],
       "number": 17,
@@ -1052,8 +1325,8 @@
       "fingerprint": "1a3c7fca654aa923",
       "comment": "",
       "updated_at": "2026-10-17T15:32:32+01:00",
-      "validated_key": "0c3e4cabc867d3a9",
-      "approved_fingerprint": "1a3c7fca654aa923"
+      "approved_fingerprint": "1a3c7fca654aa923",
+      "validated_key": "0c3e4cabc867d3a9"
     },
     "273": {
       "status": "approved",
@@ -1113,6 +1386,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d437a6057ca77804"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "d437a6057ca77804"
+        },
+        {
+          "at": "2026-10-17T20:52:51+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d437a6057ca77804"
         }
       ],
       "number": 18,
@@ -1121,8 +1408,8 @@
       "fingerprint": "d437a6057ca77804",
       "comment": "",
       "updated_at": "2026-10-17T15:32:47+01:00",
-      "validated_key": "bfed613fdce3684d",
-      "approved_fingerprint": "d437a6057ca77804"
+      "approved_fingerprint": "d437a6057ca77804",
+      "validated_key": "bfed613fdce3684d"
     },
     "274": {
       "status": "approved",
@@ -1182,6 +1469,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "29fed38a2e2f7705"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "29fed38a2e2f7705"
+        },
+        {
+          "at": "2026-10-17T20:52:53+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "29fed38a2e2f7705"
         }
       ],
       "number": 19,
@@ -1205,6 +1506,20 @@
         },
         {
           "at": "2026-10-17T15:08:52+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "beffd841e65b1698"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "beffd841e65b1698"
+        },
+        {
+          "at": "2026-10-17T20:52:55+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -1257,6 +1572,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "4eaf30bf0006128e"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "4eaf30bf0006128e"
+        },
+        {
+          "at": "2026-10-17T20:53:03+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4eaf30bf0006128e"
         }
       ],
       "number": 21,
@@ -1265,12 +1594,12 @@
       "fingerprint": "4eaf30bf0006128e",
       "comment": "",
       "updated_at": "2026-10-17T15:23:41+01:00",
-      "validated_key": "8615a432012c15bb",
       "approved_fingerprint": "4eaf30bf0006128e",
       "reply": {
         "at": "2026-10-17T15:23:41+01:00",
         "text": "From your slide 16 comment (no colons or semicolons, because the voice reads them badly): now '…the operators take over. They expose its APIs…'. Please approve again to re-voice it."
-      }
+      },
+      "validated_key": "8615a432012c15bb"
     },
     "277": {
       "status": "approved",
@@ -1291,6 +1620,20 @@
         },
         {
           "at": "2026-10-17T15:09:45+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b97cdfcc48775600"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "b97cdfcc48775600"
+        },
+        {
+          "at": "2026-10-17T20:53:06+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -1325,6 +1668,20 @@
         },
         {
           "at": "2026-10-17T15:24:39+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "70dbad0dcd0e1fa1"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "70dbad0dcd0e1fa1"
+        },
+        {
+          "at": "2026-10-17T20:53:09+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -1373,6 +1730,20 @@
         },
         {
           "at": "2026-10-17T15:11:56+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "be0e94ac15202770"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "be0e94ac15202770"
+        },
+        {
+          "at": "2026-10-17T20:53:11+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -1435,6 +1806,20 @@
         },
         {
           "at": "2026-10-17T19:01:01+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d4ea9800d6ad1d7d"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "d4ea9800d6ad1d7d"
+        },
+        {
+          "at": "2026-10-17T20:53:17+01:00",
           "action": "validate",
           "by": "review page",
           "comment": "",
@@ -1606,16 +1991,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d2f6eac2a7c3d354"
+        },
+        {
+          "at": "2026-10-17T20:41:13+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d318d107a7169eb0"
+        },
+        {
+          "at": "2026-10-17T20:45:05+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d318d107a7169eb0"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "d318d107a7169eb0"
+        },
+        {
+          "at": "2026-10-17T20:53:24+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d318d107a7169eb0"
         }
       ],
       "number": 26,
       "title": "Built together",
       "hidden": false,
-      "fingerprint": "d2f6eac2a7c3d354",
+      "fingerprint": "d318d107a7169eb0",
       "comment": "",
-      "updated_at": "2026-10-17T18:49:48+01:00",
-      "validated_key": "b59f37907be2b8c4",
-      "approved_fingerprint": "d2f6eac2a7c3d354"
+      "updated_at": "2026-10-17T20:41:13+01:00",
+      "approved_fingerprint": "d318d107a7169eb0",
+      "validated_key": "d7349b37955036fd"
     },
     "282": {
       "status": "approved",
@@ -1647,6 +2060,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "96502aaac69decdf"
+        },
+        {
+          "at": "2026-10-17T20:50:21+01:00",
+          "action": "unvalidate",
+          "by": "claude: re-render after the picture/narration timing fix",
+          "comment": "",
+          "fingerprint": "96502aaac69decdf"
+        },
+        {
+          "at": "2026-10-17T20:53:55+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "96502aaac69decdf"
         }
       ],
       "number": 27,
@@ -1659,5 +2086,5 @@
       "validated_key": "1191ebd6dc4b1bb4"
     }
   },
-  "inspected_at": "2026-10-17T18:53:15+01:00"
+  "inspected_at": "2026-10-17T20:33:50+01:00"
 }

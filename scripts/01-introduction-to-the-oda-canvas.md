@@ -27,9 +27,11 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ## Segment 1: Intro
 
 ### Slide 1: Title card
-- **Visual:** [NATIVE] "Introduction to the ODA Canvas" with the TM Forum ODA mark.
+- **Visual:** [CLIP Intro-01-Presenter] The presenter's own recorded introduction (Intro-video.mp4), with overlays: a lower-third title, the ODA Canvas picture, and a running agenda. Its audio, EQ-matched, is the narration (kept in sync, never stretched).
 - **Speaker notes:**
-> Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components. It also has an open-source reference implementation.
+> Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components, with an open-source reference implementation. This video starts with a short history, from TM Forum's frameworks to its Open APIs, sharing what led us to creating the ODA Component and Canvas standards. It then shares what an ODA Component is, and what services the Canvas provides towards components.
+>
+> Next we'll go through the business benefits of this approach, and a tour of the Canvas and its Portal. You'll see a component deployed, with its APIs, identity and observability configured automatically. The video also covers which capabilities are available today, which are experimental, and which are planned.
 
 ### Slide 2: Who this is for
 - **Visual:** [NATIVE] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a site reliability engineer holding the Canvas.

@@ -25,7 +25,17 @@ def main() -> None:
     for i in range(1, len(parts), 3):
         n, title, body = int(parts[i]), parts[i + 1].strip(), parts[i + 2]
         body = body.split("\n## ")[0].split("\n---")[0]  # stop at the next segment or the source check
-        notes = " ".join(l[2:].strip() for l in body.splitlines() if l.startswith("> "))
+        # "> text" lines are narration; a bare ">" line starts a new paragraph (kept as a blank line).
+        paras, cur = [], []
+        for l in body.splitlines():
+            if l.startswith("> ") and l[2:].strip():
+                cur.append(l[2:].strip())
+            elif l.strip() == ">" and cur:
+                paras.append(" ".join(cur))
+                cur = []
+        if cur:
+            paras.append(" ".join(cur))
+        notes = "\n\n".join(paras)
         words = len(notes.split())
         slides.append({"n": n, "title": title, "notes": notes, "words": words, "secs": round(words / WORDS_PER_SECOND, 1)})
         flag = "  <-- no notes" if not notes else ("  <-- long, consider splitting" if words > 90 else "")
