@@ -35,6 +35,10 @@ Thumbs.db
 ~$*
 !.env.example
 
+# presentation-generator output folders (stills, narration, clips, final video).
+# The approvals file, decks/<deck>.review.json, is committed.
+decks/*/
+
 # Playwright capture deps
 demos/node_modules/
 

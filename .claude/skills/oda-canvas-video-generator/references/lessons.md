@@ -7,6 +7,17 @@ it now lives.
 
 ---
 
+### 2026-10-17: The user approves every slide before it is narrated
+**Rule:** Run presentation-generator's review page. The user approves slides one by one, there or in
+chat, and only approved slides are narrated and rendered. Never approve on the user's behalf. Treat
+review-page comments as feedback, through the feedback loop.
+**Why:** The cloned voice costs 1.5–2.5 minutes per slide, and the user wants to sign off each slide
+before it goes into a video. Approvals carry a fingerprint, so a slide changed after sign-off can't
+slip into the video unseen.
+**Source:** User request for deck 01: "I want to be able to review the presentation and approve
+slides on a slide-by-slide basis and then have the presentation-generator generate the videos."
+Folded into SKILL.md Step 7 and `narration-and-video.md`.
+
 ### 2026-10-17: Use native PowerPoint unless motion carries meaning
 **Rule:** Decide each slide's treatment. Titles, agendas, cards, lists, simple builds and calls to
 action are native PowerPoint slides with timed entrance animations. Remotion is for transformations,
@@ -73,12 +84,12 @@ error was easy to miss, but the user spotted it at once.
 **Source:** User correction: "It is not an icon of a man; instead it is just the exposed-api and
 dependent-api icons overlapped."
 
-### 2026-10-16: Assume presentation-generator shows each slide as a still
+### 2026-10-16: Make every final frame complete (updated 2026-10-17)
 **Rule:** Make every clip's final frame a complete, self-explanatory version of the slide, and use it
 as the poster frame (`stills.mjs --posters`).
-**Why:** `presentation-generator` currently exports slides as PNGs through PowerPoint and narrates
-over the still. It does not play the embedded video yet. A clip whose last frame is half-built, or
-blank, gives a broken video today.
+**Why:** presentation-generator first narrated over a still of each slide. Since 2026-10-17 it has
+PowerPoint render the slides, so clips and animations play. The final frame is still the review-page
+still and the `--renderer still` fallback, so a half-built or blank last frame still shows up.
 **Source:** Found while building deck 01 (reading `presentation-generator/extract_slides.py`).
 Folded into SKILL.md Step 4 and `deck-assembly.md`.
 

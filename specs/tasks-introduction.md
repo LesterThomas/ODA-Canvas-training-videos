@@ -168,5 +168,8 @@ Depends on: Phase 6.
       Phase 5's fallback path, unless intentionally kept).
 - [ ] Update the deck's status in the catalog (`spec.md` §4) to reflect drafted / assembled /
       handed off.
-- [ ] Hand off `decks/introduction-to-the-oda-canvas.pptx` to `presentation-generator` for voice
-      narration and final `.mp4` rendering.
+- [ ] Review and approve every slide on the presentation-generator review page
+      (`uv run --native-tls presgen.py review "<abs path>/decks/01-introduction-to-the-oda-canvas.pptx"`).
+      Tested end to end on the 4-slide copy `decks/01-introduction-to-the-oda-canvas - final.pptx`.
+- [ ] `presgen.py generate` for voice narration and the final `.mp4` (PowerPoint renders the slides, so
+      clips and animations play). See the skill's `narration-and-video.md`.

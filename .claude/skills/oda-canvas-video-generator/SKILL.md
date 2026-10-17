@@ -1,6 +1,6 @@
 ---
 name: oda-canvas-video-generator
-description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo. Each deck is a .pptx mixing native PowerPoint slides and Remotion clips (including live recordings), with spoken-style speaker notes that presentation-generator narrates. Use this skill whenever the user wants to create, update, refresh, re-record or fix an ODA Canvas training video, deck, script, slide, animation or speaker notes. That includes requests like "do the buy-or-build video next", "update the auth deep-dive", "slide 7 feels too busy", "the narration on slide 12 is wrong", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any existing deck, clip or script, because feedback must be applied to that deck and considered for this skill. Also use it to record or show the ODA Component Directory, the Canvas Portal, or helm/kubectl commands in a training video. Use it even if the user names only one part, such as just the script or just one clip.
+description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo: native PowerPoint slides and Remotion clips (including live recordings) with spoken-style speaker notes, which presentation-generator turns into a narrated video after slide-by-slide approval. Use this skill whenever the user wants to create, update, refresh, re-record, fix, review, approve, narrate or render an ODA Canvas training video, deck, script, slide, animation or speaker notes, e.g. "do the buy-or-build video next", "slide 7 feels too busy", "the narration on slide 12 is wrong", "approve slides 1-4", "generate the video", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any deck, clip, script or narration (apply it, then consider it for this skill), and to record the ODA Component Directory, the Canvas Portal or helm/kubectl commands for a video. Use it even if the user names only one part.
 ---
 
 # ODA Canvas video generator
@@ -15,7 +15,9 @@ each carry:
 - **speaker notes**: the narration, written to be read aloud verbatim by an AI voice.
 
 `presentation-generator` (`D:\Dev\lesterthomas\presentation-generator`, a separate repo) turns the
-deck into the final narrated `.mp4`. This repo never records or synthesises voice.
+deck into the final narrated `.mp4`. The user reviews and approves the deck slide by slide on its
+review page. It then voices the approved slides in the user's cloned voice, and has PowerPoint render
+them, so animations and clips play. This repo never records or synthesises voice itself (Step 7).
 
 The skill improves through use. Every piece of feedback the user gives is applied to the deck it
 concerns, then weighed as a possible rule for all future decks (see **Feedback loop** below). Read
@@ -37,7 +39,9 @@ it overrides anything older in this file.
 | `demos/` | Playwright captures of the **Component Directory** and **Canvas Portal**, plus real **helm/kubectl** output (`demos/.env` holds the portal login and is gitignored) |
 | `videos/public/captures/` | Recorded `.webm` files with `.marks.json` timelines, and `.cli.json` command outputs |
 | `tools/build_deck.py` | Assembles the deck: full-bleed auto-play video, poster frame and notes on each slide |
-| `decks/<deck-id>.pptx` | Deliverable, plus `<deck-id>.notes.json` |
+| `decks/<deck-id>.pptx` | Deliverable, plus `<deck-id>.notes.json` and `<deck-id>.anim.json` |
+| `decks/<deck-id>.review.json` | Slide-by-slide approvals and review comments (written by presentation-generator; committed) |
+| `decks/<deck-id>/` | presentation-generator output: stills, narration, clips, final video (gitignored) |
 | `.claude/launch.json` | `remotion-studio` preview config (runs from `videos/`) |
 
 Deck ids are numbered to match `specs/video-update-plan.md` (for example `01-introduction-to-the-oda-canvas`).
@@ -51,6 +55,8 @@ The Remotion composition ids use a short prefix per deck plus the slide number (
    feedback touches, then rebuild from the step that change affects.
 3. **Upstream Canvas changed**: re-run Step 1 for the facts in that deck's source-check table, then
    update the script and the affected clips.
+4. **Review, approve, narrate or render a built deck**: go to Step 7. Comments left on the review
+   page are feedback, so handle them through the **Feedback loop**.
 
 ## The process
 
@@ -128,8 +134,9 @@ repo's conventions:
 - **Time each build to the narration.** An element appears at roughly
   `(words before it in the notes) / 2.5` seconds. Set the composition length to the narration length
   plus 1–2 seconds.
-- **Make the final frame complete.** The poster frame is the last frame, and presentation-generator
-  currently exports each slide as a still. So the finished diagram has to stand on its own.
+- **Make the final frame complete.** The poster frame is the last frame. It is the review still,
+  and it is what the `--renderer still` fallback shows. So the finished diagram has to stand on its
+  own, even though the final video plays the whole clip.
 - **Show the real thing.** Read `references/live-demos.md` first.
   - When a slide talks about **which components exist**, record the ODA Component Directory
     (tmforum.org) and drill into components such as TMFC001, 002, 005, 006, 007, 008, 043 and 023.
@@ -173,10 +180,29 @@ pwsh .claude/skills/oda-canvas-video-generator/scripts/ppt_check.ps1 decks/<deck
 
 `ppt_check.ps1` should show `N:<effects>/3` for every slide: 1 effect for a clip slide, several for a
 native slide, and the first effect always trigger 3 ("After Previous"), so the slide starts by itself.
-It also exports sample PNGs, which are what presentation-generator will capture. If PowerPoint has
+It also exports sample PNGs, which are what the review page shows as stills. If PowerPoint has
 the deck open, a `~$` lock file appears. It is gitignored.
 
-### Step 7: Close out
+### Step 7: Review, approve, narrate and render (presentation-generator)
+
+Read `references/narration-and-video.md` first. Then:
+
+1. Start the review page in the background:
+   `uv run --native-tls presgen.py review "<abs path>/decks/<deck-id>.pptx"`, run from
+   `D:\Dev\lesterthomas\presentation-generator`. It opens in the user's browser with a still, a
+   silent PowerPoint render and the narration text for every slide.
+2. The user approves slides on the page, or tells you in chat ("approve 1–4"). In that case, record
+   it with `presgen.py approve`. **Never approve a slide yourself.**
+3. Read their comments (`presgen.py status --json`) and handle each one through the **Feedback
+   loop**. Rebuild the deck, re-run `review`, and tell the user which slides need approving again. A
+   changed slide loses its approval automatically.
+4. When the user asks, run `presgen.py generate` in the background. It voices and renders only the
+   approved slides, at 1.5–2.5 minutes of voice per slide. Once every slide is approved, it also
+   builds `decks/<deck-id>/<deck-id>_video.mp4` and a chapter list.
+5. Check sample frames of the result, then tell the user where the video is, how long it runs, and
+   any slides still pending.
+
+### Step 8: Close out
 
 Update the deck's task list and status, and mention anything you couldn't verify. Commit only when
 the user asks. Rendered clips (`videos/out/`) are gitignored. The `.pptx` is committed, and it is
@@ -224,5 +250,6 @@ Tell the user, briefly, what changed in the deck and what (if anything) changed 
 - `references/research.md`: upstream sources, finding videos, transcripts, known factual traps.
 - `references/remotion-scenes.md`: project structure, primitives, timing, portal demos, Studio, pitfalls.
 - `references/live-demos.md`: recording the Component Directory, the Canvas Portal and helm/kubectl, and editing them with `CaptureClip` and `Terminal`.
-- `references/deck-assembly.md`: `build_deck.py`, the auto-play XML, posters, verification, presentation-generator.
+- `references/deck-assembly.md`: `build_deck.py`, the auto-play XML, posters, verification.
+- `references/narration-and-video.md`: presentation-generator, covering slide-by-slide review and approval, narration, PowerPoint rendering and the final video.
 - `references/feedback-log.md`: the log of every feedback item and its outcome.

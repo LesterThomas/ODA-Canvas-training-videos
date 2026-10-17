@@ -44,15 +44,16 @@ auto-play. The template in `build_deck.py` is the version PowerPoint accepts. Ke
    `1/3`; native slides show their effect count, for example `9/3`. The `/3` (the first effect starts
    "After Previous") must be on every slide. It also exports sample slides as PNGs to the scratchpad
    (or `-OutDir`).
-4. Look at one or two exported PNGs. They are exactly what presentation-generator will narrate over.
+4. Look at one or two exported PNGs. They are the stills on the presentation-generator review page.
 
 ## presentation-generator compatibility
 
-`D:\Dev\lesterthomas\presentation-generator\extract_slides.py` exports each visible slide to PNG
-through PowerPoint COM, saves the notes to `text_NN.txt`, synthesises audio, and builds the video
-from the still and the audio. **It does not play embedded video yet.** Until it does, the poster frame
-is what viewers see. So final frames must be complete (see `lessons.md`). Hidden slides are skipped,
-so never hide a slide just to park it.
+presentation-generator (see `narration-and-video.md`) renders every slide with PowerPoint's own
+`CreateVideo`. So the auto-play clips and the native entrances must work in a real PowerPoint slide
+show, which `ppt_check.ps1` confirms. It sets each slide's length itself, from the real narration
+length, the last animation and the clip length, so the auto-advance times from `animate_deck.ps1`
+only matter for live presenting. Hidden slides are skipped, so never hide a slide just to park it.
+Any rebuild that changes a slide clears that slide's approval in `decks/<deck-id>.review.json`.
 
 ## Size and git
 

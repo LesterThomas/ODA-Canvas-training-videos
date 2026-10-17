@@ -92,11 +92,10 @@ component symbol (PNG assets from `videos/scripts/assets.mjs`), the same palette
 Install Inter to make them match exactly. Native entrance effects are timed to the narration exactly
 like Remotion builds (`k.anim(shape, at)`).
 
-In today's pipeline **both kinds show their final state**. presentation-generator exports each slide
-as a still: video slides show their poster frame, and native slides show every shape with animations
-ignored. So the final state of a native slide must be complete too. Animations and clips do play when
-the deck is presented, or exported to video by PowerPoint itself (slides auto-advance after their
-narration).
+In the final video **both kinds play**. presentation-generator has PowerPoint render each slide, so
+native entrances and Remotion clips run as in a slide show, with the narration starting 1 s in. The
+final state of each slide must still be complete, because the review page shows it as the slide's still
+and the `--renderer still` fallback uses it.
 
 ## Motion
 
