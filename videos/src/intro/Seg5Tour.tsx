@@ -50,11 +50,11 @@ const YAML: CodeLine[] = [
 
 const FOCUS = [
   { at: 6.2, from: 3, to: 6, color: C.component, label: "Metadata & functional scope" },
-  { at: 10.6, from: 7, to: 10, color: C.api, label: "APIs it exposes" },
-  { at: 12.6, from: 11, to: 12, color: C.api, label: "APIs it depends on" },
-  { at: 14.4, from: 13, to: 14, color: C.events, label: "Events it uses" },
-  { at: 15.8, from: 15, to: 17, color: C.observability, label: "Management & metrics" },
-  { at: 17.4, from: 18, to: 21, color: C.identity, label: "Security roles" },
+  { at: 11.0, from: 7, to: 10, color: C.api, label: "APIs it exposes" },
+  { at: 13.0, from: 11, to: 12, color: C.api, label: "APIs it depends on" },
+  { at: 15.2, from: 13, to: 14, color: C.events, label: "Events it uses" },
+  { at: 16.6, from: 15, to: 17, color: C.observability, label: "Management & metrics" },
+  { at: 18.2, from: 18, to: 21, color: C.identity, label: "Security roles" },
 ];
 
 export const S16Yaml: React.FC = () => {
@@ -97,7 +97,7 @@ export const S16Yaml: React.FC = () => {
           </div>
         </Appear>
       ))}
-      <Appear at={21.0} from="pop" style={{ left: 1120, top: 930 }}>
+      <Appear at={21.8} from="pop" style={{ left: 1120, top: 930 }}>
         <Pill color={C.ok} fontSize={32}>
           <Icon name="check" size={34} color={C.ok} /> Spec v1 · generally available, Dec 2024
         </Pill>

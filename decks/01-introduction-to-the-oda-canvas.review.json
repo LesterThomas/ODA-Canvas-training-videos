@@ -59,6 +59,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "255ee5c4ff511232"
+        },
+        {
+          "at": "2026-10-17T14:53:49+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "255ee5c4ff511232"
         }
       ],
       "number": 1,
@@ -67,7 +74,8 @@
       "fingerprint": "255ee5c4ff511232",
       "comment": "",
       "updated_at": "2026-10-17T11:00:33+01:00",
-      "approved_fingerprint": "255ee5c4ff511232"
+      "approved_fingerprint": "255ee5c4ff511232",
+      "validated_key": "c03f0a88adefade5"
     },
     "257": {
       "status": "approved",
@@ -141,6 +149,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-17T14:54:24+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-17T15:19:33+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
         }
       ],
       "number": 2,
@@ -149,7 +171,8 @@
       "fingerprint": "73b025779cc1a1d8",
       "comment": "",
       "updated_at": "2026-10-17T12:35:15+01:00",
-      "approved_fingerprint": "73b025779cc1a1d8"
+      "approved_fingerprint": "73b025779cc1a1d8",
+      "validated_key": "98f6e9e1ab2289f5"
     },
     "258": {
       "status": "approved",
@@ -181,6 +204,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "eb288bcb4eca4569"
+        },
+        {
+          "at": "2026-10-17T14:54:50+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "eb288bcb4eca4569"
         }
       ],
       "number": 3,
@@ -189,7 +219,8 @@
       "fingerprint": "eb288bcb4eca4569",
       "comment": "",
       "updated_at": "2026-10-17T10:29:10+01:00",
-      "approved_fingerprint": "eb288bcb4eca4569"
+      "approved_fingerprint": "eb288bcb4eca4569",
+      "validated_key": "60cb3e1dda218cc9"
     },
     "259": {
       "status": "approved",
@@ -291,6 +322,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "76f04d4362b4c383"
+        },
+        {
+          "at": "2026-10-17T14:55:25+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "76f04d4362b4c383"
         }
       ],
       "number": 4,
@@ -299,7 +337,8 @@
       "fingerprint": "76f04d4362b4c383",
       "comment": "",
       "updated_at": "2026-10-17T12:37:30+01:00",
-      "approved_fingerprint": "76f04d4362b4c383"
+      "approved_fingerprint": "76f04d4362b4c383",
+      "validated_key": "dabc0897d223ccc2"
     },
     "260": {
       "status": "approved",
@@ -331,6 +370,20 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a04111003464732f"
+        },
+        {
+          "at": "2026-10-17T14:56:04+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a04111003464732f"
+        },
+        {
+          "at": "2026-10-17T15:20:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a04111003464732f"
         }
       ],
       "number": 5,
@@ -339,7 +392,8 @@
       "fingerprint": "a04111003464732f",
       "comment": "",
       "updated_at": "2026-10-17T10:44:26+01:00",
-      "approved_fingerprint": "a04111003464732f"
+      "approved_fingerprint": "a04111003464732f",
+      "validated_key": "3f0744ce553118ad"
     },
     "261": {
       "status": "approved",
@@ -347,6 +401,13 @@
         {
           "at": "2026-10-17T13:07:49+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0edea012be518824"
+        },
+        {
+          "at": "2026-10-17T14:53:23+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "0edea012be518824"
@@ -358,7 +419,8 @@
       "fingerprint": "0edea012be518824",
       "comment": "",
       "updated_at": "2026-10-17T13:07:49+01:00",
-      "approved_fingerprint": "0edea012be518824"
+      "approved_fingerprint": "0edea012be518824",
+      "validated_key": "41303b0e63545ae1"
     },
     "262": {
       "status": "approved",
@@ -397,15 +459,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "19095387785adc3d"
+        },
+        {
+          "at": "2026-10-17T14:56:40+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "19095387785adc3d"
+        },
+        {
+          "at": "2026-10-17T15:29:38+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "a70585beaa675181"
+        },
+        {
+          "at": "2026-10-17T15:30:13+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a70585beaa675181"
+        },
+        {
+          "at": "2026-10-17T18:49:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a70585beaa675181"
         }
       ],
       "number": 7,
       "title": "What is an ODA Component?",
       "hidden": false,
-      "fingerprint": "19095387785adc3d",
+      "fingerprint": "a70585beaa675181",
       "comment": "",
-      "updated_at": "2026-10-17T13:18:32+01:00",
-      "approved_fingerprint": "19095387785adc3d"
+      "updated_at": "2026-10-17T15:30:13+01:00",
+      "validated_key": "1aff178f811dbb71",
+      "approved_fingerprint": "a70585beaa675181"
     },
     "263": {
       "status": "approved",
@@ -437,15 +528,72 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "f6c12baf3162622f"
+        },
+        {
+          "at": "2026-10-17T14:57:12+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f6c12baf3162622f"
+        },
+        {
+          "at": "2026-10-17T15:29:39+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "ba1e1af2e4babe13"
+        },
+        {
+          "at": "2026-10-17T15:30:24+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ba1e1af2e4babe13"
+        },
+        {
+          "at": "2026-10-17T18:52:04+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Instead of 'It provides the shared operational services it needs' put 'It provides the shared operational services components need'\n\nAlso on the slide, at the beginning, the component icon overlaps with the title.",
+          "fingerprint": "ba1e1af2e4babe13"
+        },
+        {
+          "at": "2026-10-17T18:52:19+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it.",
+          "fingerprint": "ba1e1af2e4babe13"
+        },
+        {
+          "at": "2026-10-17T18:53:22+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now says 'It provides the shared operational services components need, including API management, identity, observability and secrets.' The component symbol now starts just below the title, so they no longer overlap, then settles onto the Canvas. Please approve again to re-voice it.",
+          "fingerprint": "a519da2b60d7441e"
+        },
+        {
+          "at": "2026-10-17T18:58:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a519da2b60d7441e"
+        },
+        {
+          "at": "2026-10-17T19:50:41+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a519da2b60d7441e"
         }
       ],
       "number": 8,
       "title": "What is the ODA Canvas?",
       "hidden": false,
-      "fingerprint": "f6c12baf3162622f",
+      "fingerprint": "a519da2b60d7441e",
       "comment": "",
-      "updated_at": "2026-10-17T13:19:02+01:00",
-      "approved_fingerprint": "f6c12baf3162622f"
+      "updated_at": "2026-10-17T18:58:12+01:00",
+      "validated_key": "4dbca19fce6411b7",
+      "approved_fingerprint": "a519da2b60d7441e"
     },
     "264": {
       "status": "approved",
@@ -456,15 +604,51 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "9c52faa74ebd3cfb"
+        },
+        {
+          "at": "2026-10-17T14:58:12+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9c52faa74ebd3cfb"
+        },
+        {
+          "at": "2026-10-17T15:20:50+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9c52faa74ebd3cfb"
+        },
+        {
+          "at": "2026-10-17T15:29:39+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "e8115600842f6e46"
+        },
+        {
+          "at": "2026-10-17T15:30:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e8115600842f6e46"
+        },
+        {
+          "at": "2026-10-17T19:02:56+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e8115600842f6e46"
         }
       ],
       "number": 9,
       "title": "Composable IT with ODA",
       "hidden": false,
-      "fingerprint": "9c52faa74ebd3cfb",
+      "fingerprint": "e8115600842f6e46",
       "comment": "",
-      "updated_at": "2026-10-17T13:15:06+01:00",
-      "approved_fingerprint": "9c52faa74ebd3cfb"
+      "updated_at": "2026-10-17T15:30:40+01:00",
+      "validated_key": "32dc1d41480aa07d",
+      "approved_fingerprint": "e8115600842f6e46"
     },
     "265": {
       "status": "approved",
@@ -489,15 +673,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "0acb02b11fce2090"
+        },
+        {
+          "at": "2026-10-17T14:58:54+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0acb02b11fce2090"
+        },
+        {
+          "at": "2026-10-17T15:29:40+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "b69e54c306efc07c"
+        },
+        {
+          "at": "2026-10-17T15:30:57+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b69e54c306efc07c"
+        },
+        {
+          "at": "2026-10-17T19:55:38+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b69e54c306efc07c"
         }
       ],
       "number": 10,
       "title": "Composable AI with Agentic ODA",
       "hidden": false,
-      "fingerprint": "0acb02b11fce2090",
+      "fingerprint": "b69e54c306efc07c",
       "comment": "",
-      "updated_at": "2026-10-17T14:45:00+01:00",
-      "approved_fingerprint": "0acb02b11fce2090"
+      "updated_at": "2026-10-17T15:30:57+01:00",
+      "validated_key": "8970d2ea640c922f",
+      "approved_fingerprint": "b69e54c306efc07c"
     },
     "266": {
       "status": "approved",
@@ -529,6 +742,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "bd41cba7ec356881"
+        },
+        {
+          "at": "2026-10-17T14:59:44+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "bd41cba7ec356881"
         }
       ],
       "number": 11,
@@ -537,7 +757,8 @@
       "fingerprint": "bd41cba7ec356881",
       "comment": "",
       "updated_at": "2026-10-17T13:34:27+01:00",
-      "approved_fingerprint": "bd41cba7ec356881"
+      "approved_fingerprint": "bd41cba7ec356881",
+      "validated_key": "eba1c695d2db85c3"
     },
     "267": {
       "status": "approved",
@@ -555,6 +776,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "f1952382e6380cb3"
+        },
+        {
+          "at": "2026-10-17T15:21:20+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f1952382e6380cb3"
         }
       ],
       "number": 12,
@@ -563,7 +791,8 @@
       "fingerprint": "f1952382e6380cb3",
       "comment": "",
       "updated_at": "2026-10-17T13:34:47+01:00",
-      "approved_fingerprint": "f1952382e6380cb3"
+      "approved_fingerprint": "f1952382e6380cb3",
+      "validated_key": "8c6b72fc46f44101"
     },
     "268": {
       "status": "approved",
@@ -574,15 +803,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "bc2c5c89ca441566"
+        },
+        {
+          "at": "2026-10-17T15:04:47+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "bc2c5c89ca441566"
+        },
+        {
+          "at": "2026-10-17T15:29:41+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "ce5c800b3f8127e5"
+        },
+        {
+          "at": "2026-10-17T15:31:25+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ce5c800b3f8127e5"
+        },
+        {
+          "at": "2026-10-17T18:54:26+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ce5c800b3f8127e5"
         }
       ],
       "number": 13,
       "title": "Six benefits",
       "hidden": false,
-      "fingerprint": "bc2c5c89ca441566",
+      "fingerprint": "ce5c800b3f8127e5",
       "comment": "",
-      "updated_at": "2026-10-17T13:23:34+01:00",
-      "approved_fingerprint": "bc2c5c89ca441566"
+      "updated_at": "2026-10-17T15:31:25+01:00",
+      "validated_key": "f488ac81ca4b8d16",
+      "approved_fingerprint": "ce5c800b3f8127e5"
     },
     "269": {
       "status": "approved",
@@ -593,15 +851,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "76ba8c42d551be20"
+        },
+        {
+          "at": "2026-10-17T15:05:04+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "76ba8c42d551be20"
+        },
+        {
+          "at": "2026-10-17T15:29:41+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "e5374889a8f204d4"
+        },
+        {
+          "at": "2026-10-17T15:31:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e5374889a8f204d4"
+        },
+        {
+          "at": "2026-10-17T18:53:37+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e5374889a8f204d4"
         }
       ],
       "number": 14,
       "title": "An order-of-magnitude goal",
       "hidden": false,
-      "fingerprint": "76ba8c42d551be20",
+      "fingerprint": "e5374889a8f204d4",
       "comment": "",
-      "updated_at": "2026-10-17T13:23:49+01:00",
-      "approved_fingerprint": "76ba8c42d551be20"
+      "updated_at": "2026-10-17T15:31:37+01:00",
+      "validated_key": "066931af6e757061",
+      "approved_fingerprint": "e5374889a8f204d4"
     },
     "270": {
       "status": "approved",
@@ -612,15 +899,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "b1feb70f15fcd911"
+        },
+        {
+          "at": "2026-10-17T15:05:29+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b1feb70f15fcd911"
+        },
+        {
+          "at": "2026-10-17T15:29:42+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "d66e9ba2278a6087"
+        },
+        {
+          "at": "2026-10-17T15:31:53+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d66e9ba2278a6087"
+        },
+        {
+          "at": "2026-10-17T19:02:17+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d66e9ba2278a6087"
         }
       ],
       "number": 15,
       "title": "The component standard in two layers",
       "hidden": false,
-      "fingerprint": "b1feb70f15fcd911",
+      "fingerprint": "d66e9ba2278a6087",
       "comment": "",
-      "updated_at": "2026-10-17T13:24:15+01:00",
-      "approved_fingerprint": "b1feb70f15fcd911"
+      "updated_at": "2026-10-17T15:31:53+01:00",
+      "validated_key": "dcf22f784fff4257",
+      "approved_fingerprint": "d66e9ba2278a6087"
     },
     "271": {
       "status": "approved",
@@ -631,15 +947,65 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "e850eae66f6aa08b"
+        },
+        {
+          "at": "2026-10-17T15:22:27+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The speaker notes should not use colons or semi-colons. The csm voice doesn't handle them well. Just replace with a period.",
+          "fingerprint": "e850eae66f6aa08b"
+        },
+        {
+          "at": "2026-10-17T15:22:36+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it, and checking the whole deck for colons and semicolons.",
+          "fingerprint": "e850eae66f6aa08b"
+        },
+        {
+          "at": "2026-10-17T15:23:41+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The colon is now a full stop: '…shows its specification. The version and status…'. I checked the whole deck: only slides 21 and 26 had one too, and both are fixed. The skill's notes check now flags colons and semicolons in every future script. Approving the slide will re-voice it.",
+          "fingerprint": "2227422414209ec8"
+        },
+        {
+          "at": "2026-10-17T15:25:36+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2227422414209ec8"
+        },
+        {
+          "at": "2026-10-17T15:29:42+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "59882da075e64701"
+        },
+        {
+          "at": "2026-10-17T15:32:18+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "59882da075e64701"
+        },
+        {
+          "at": "2026-10-17T19:51:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "59882da075e64701"
         }
       ],
       "number": 16,
       "title": "Live demo: the ODA Component Directory",
       "hidden": false,
-      "fingerprint": "e850eae66f6aa08b",
+      "fingerprint": "59882da075e64701",
       "comment": "",
-      "updated_at": "2026-10-17T13:24:46+01:00",
-      "approved_fingerprint": "e850eae66f6aa08b"
+      "updated_at": "2026-10-17T15:32:18+01:00",
+      "approved_fingerprint": "59882da075e64701",
+      "validated_key": "1e7e6f84765dd055"
     },
     "272": {
       "status": "approved",
@@ -650,15 +1016,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "65b529f4b90bbd49"
+        },
+        {
+          "at": "2026-10-17T15:23:03+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "65b529f4b90bbd49"
+        },
+        {
+          "at": "2026-10-17T15:29:46+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The long YAML sentence is now three: 'It describes the component's metadata and functional scope. Then, in its core, management and security functions, it lists the APIs it exposes and depends on. Also the events it uses, and the roles it needs.' That added two words, so the YAML highlights after them now come 0.4–0.8 s later to stay in step. Please approve again to re-voice it.",
+          "fingerprint": "1a3c7fca654aa923"
+        },
+        {
+          "at": "2026-10-17T15:32:32+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1a3c7fca654aa923"
+        },
+        {
+          "at": "2026-10-17T19:01:48+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1a3c7fca654aa923"
         }
       ],
       "number": 17,
       "title": "The component YAML",
       "hidden": false,
-      "fingerprint": "65b529f4b90bbd49",
+      "fingerprint": "1a3c7fca654aa923",
       "comment": "",
-      "updated_at": "2026-10-17T13:25:09+01:00",
-      "approved_fingerprint": "65b529f4b90bbd49"
+      "updated_at": "2026-10-17T15:32:32+01:00",
+      "validated_key": "0c3e4cabc867d3a9",
+      "approved_fingerprint": "1a3c7fca654aa923"
     },
     "273": {
       "status": "approved",
@@ -690,15 +1085,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "489bc81696028514"
+        },
+        {
+          "at": "2026-10-17T15:07:41+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "489bc81696028514"
+        },
+        {
+          "at": "2026-10-17T15:29:43+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "d437a6057ca77804"
+        },
+        {
+          "at": "2026-10-17T15:32:47+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d437a6057ca77804"
+        },
+        {
+          "at": "2026-10-17T19:52:02+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d437a6057ca77804"
         }
       ],
       "number": 18,
       "title": "The Canvas as a set of operators",
       "hidden": false,
-      "fingerprint": "489bc81696028514",
+      "fingerprint": "d437a6057ca77804",
       "comment": "",
-      "updated_at": "2026-10-17T13:35:11+01:00",
-      "approved_fingerprint": "489bc81696028514"
+      "updated_at": "2026-10-17T15:32:47+01:00",
+      "validated_key": "bfed613fdce3684d",
+      "approved_fingerprint": "d437a6057ca77804"
     },
     "274": {
       "status": "approved",
@@ -737,15 +1161,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "c501b3f2f69c568f"
+        },
+        {
+          "at": "2026-10-17T15:29:43+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "29fed38a2e2f7705"
+        },
+        {
+          "at": "2026-10-17T15:33:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "29fed38a2e2f7705"
+        },
+        {
+          "at": "2026-10-17T19:52:21+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "29fed38a2e2f7705"
         }
       ],
       "number": 19,
       "title": "Worked example: API exposure",
       "hidden": false,
-      "fingerprint": "c501b3f2f69c568f",
+      "fingerprint": "29fed38a2e2f7705",
       "comment": "",
-      "updated_at": "2026-10-17T13:35:43+01:00",
-      "approved_fingerprint": "c501b3f2f69c568f"
+      "updated_at": "2026-10-17T15:33:12+01:00",
+      "approved_fingerprint": "29fed38a2e2f7705",
+      "validated_key": "093930d33340ac38"
     },
     "275": {
       "status": "approved",
@@ -753,6 +1199,13 @@
         {
           "at": "2026-10-17T13:28:06+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "beffd841e65b1698"
+        },
+        {
+          "at": "2026-10-17T15:08:52+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "beffd841e65b1698"
@@ -764,7 +1217,8 @@
       "fingerprint": "beffd841e65b1698",
       "comment": "",
       "updated_at": "2026-10-17T13:28:06+01:00",
-      "approved_fingerprint": "beffd841e65b1698"
+      "approved_fingerprint": "beffd841e65b1698",
+      "validated_key": "b1c488028f1ac0ac"
     },
     "276": {
       "status": "approved",
@@ -775,15 +1229,48 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "39d7291dfd179b3a"
+        },
+        {
+          "at": "2026-10-17T15:09:14+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "39d7291dfd179b3a"
+        },
+        {
+          "at": "2026-10-17T15:23:41+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4eaf30bf0006128e"
+        },
+        {
+          "at": "2026-10-17T15:23:41+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 16 comment (no colons or semicolons, because the voice reads them badly): now '…the operators take over. They expose its APIs…'. Please approve again to re-voice it.",
+          "fingerprint": "4eaf30bf0006128e"
+        },
+        {
+          "at": "2026-10-17T19:52:43+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4eaf30bf0006128e"
         }
       ],
       "number": 21,
       "title": "Live demo: deploying a component",
       "hidden": false,
-      "fingerprint": "39d7291dfd179b3a",
+      "fingerprint": "4eaf30bf0006128e",
       "comment": "",
-      "updated_at": "2026-10-17T13:28:24+01:00",
-      "approved_fingerprint": "39d7291dfd179b3a"
+      "updated_at": "2026-10-17T15:23:41+01:00",
+      "validated_key": "8615a432012c15bb",
+      "approved_fingerprint": "4eaf30bf0006128e",
+      "reply": {
+        "at": "2026-10-17T15:23:41+01:00",
+        "text": "From your slide 16 comment (no colons or semicolons, because the voice reads them badly): now '…the operators take over. They expose its APIs…'. Please approve again to re-voice it."
+      }
     },
     "277": {
       "status": "approved",
@@ -801,6 +1288,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "b97cdfcc48775600"
+        },
+        {
+          "at": "2026-10-17T15:09:45+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b97cdfcc48775600"
         }
       ],
       "number": 22,
@@ -809,7 +1303,8 @@
       "fingerprint": "b97cdfcc48775600",
       "comment": "",
       "updated_at": "2026-10-17T13:28:46+01:00",
-      "approved_fingerprint": "b97cdfcc48775600"
+      "approved_fingerprint": "b97cdfcc48775600",
+      "validated_key": "804122fb79cad61a"
     },
     "278": {
       "status": "approved",
@@ -827,6 +1322,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "70dbad0dcd0e1fa1"
+        },
+        {
+          "at": "2026-10-17T15:24:39+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "70dbad0dcd0e1fa1"
         }
       ],
       "number": 23,
@@ -835,7 +1337,8 @@
       "fingerprint": "70dbad0dcd0e1fa1",
       "comment": "",
       "updated_at": "2026-10-17T13:29:14+01:00",
-      "approved_fingerprint": "70dbad0dcd0e1fa1"
+      "approved_fingerprint": "70dbad0dcd0e1fa1",
+      "validated_key": "ea4affa1708c3fa4"
     },
     "279": {
       "status": "approved",
@@ -867,6 +1370,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "be0e94ac15202770"
+        },
+        {
+          "at": "2026-10-17T15:11:56+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "be0e94ac15202770"
         }
       ],
       "number": 24,
@@ -875,7 +1385,8 @@
       "fingerprint": "be0e94ac15202770",
       "comment": "",
       "updated_at": "2026-10-17T13:36:19+01:00",
-      "approved_fingerprint": "be0e94ac15202770"
+      "approved_fingerprint": "be0e94ac15202770",
+      "validated_key": "591cf44ed9a6dcae"
     },
     "280": {
       "status": "approved",
@@ -907,15 +1418,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "6522cc4030224ea5"
+        },
+        {
+          "at": "2026-10-17T15:29:44+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "d4ea9800d6ad1d7d"
+        },
+        {
+          "at": "2026-10-17T15:33:33+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d4ea9800d6ad1d7d"
+        },
+        {
+          "at": "2026-10-17T19:01:01+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d4ea9800d6ad1d7d"
         }
       ],
       "number": 25,
       "title": "Measuring Canvas adoption",
       "hidden": false,
-      "fingerprint": "6522cc4030224ea5",
+      "fingerprint": "d4ea9800d6ad1d7d",
       "comment": "",
-      "updated_at": "2026-10-17T14:22:24+01:00",
-      "approved_fingerprint": "6522cc4030224ea5"
+      "updated_at": "2026-10-17T15:33:33+01:00",
+      "approved_fingerprint": "d4ea9800d6ad1d7d",
+      "validated_key": "c9135551a2c05d2c"
     },
     "281": {
       "status": "approved",
@@ -1017,15 +1550,72 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "7d3670213c8839e5"
+        },
+        {
+          "at": "2026-10-17T15:13:40+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7d3670213c8839e5"
+        },
+        {
+          "at": "2026-10-17T15:23:42+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "From your slide 16 comment (no colons or semicolons, because the voice reads them badly): now '…what the ODA Manifesto set out. A standard execution environment for ODA Components.'. Please approve again to re-voice it.",
+          "fingerprint": "e88e950bf284f478"
+        },
+        {
+          "at": "2026-10-17T15:24:59+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e88e950bf284f478"
+        },
+        {
+          "at": "2026-10-17T15:29:45+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "1cf9cf3fcec43b84"
+        },
+        {
+          "at": "2026-10-17T15:34:37+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Whange 'That shared foundation lets the industry adopt new capabilities, including AI, faster together. No one company could do it alone.' to 'That shared foundation lets the industry adopt new capabilities, including AI, faster together than any one company could do alone.'",
+          "fingerprint": "1cf9cf3fcec43b84"
+        },
+        {
+          "at": "2026-10-17T15:35:06+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. It now reads: 'That shared foundation lets the industry adopt new capabilities, including AI, faster together than any one company could do alone.' Please approve again to re-voice it.",
+          "fingerprint": "d2f6eac2a7c3d354"
+        },
+        {
+          "at": "2026-10-17T18:49:48+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d2f6eac2a7c3d354"
+        },
+        {
+          "at": "2026-10-17T19:56:33+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d2f6eac2a7c3d354"
         }
       ],
       "number": 26,
       "title": "Built together",
       "hidden": false,
-      "fingerprint": "7d3670213c8839e5",
+      "fingerprint": "d2f6eac2a7c3d354",
       "comment": "",
-      "updated_at": "2026-10-17T14:45:34+01:00",
-      "approved_fingerprint": "7d3670213c8839e5"
+      "updated_at": "2026-10-17T18:49:48+01:00",
+      "validated_key": "b59f37907be2b8c4",
+      "approved_fingerprint": "d2f6eac2a7c3d354"
     },
     "282": {
       "status": "approved",
@@ -1036,16 +1626,38 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a4769a2c7cb7cc85"
+        },
+        {
+          "at": "2026-10-17T15:29:45+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Long sentences split into shorter ones, keeping the same words wherever possible (for example ', and' became '. And'). The animations stay in step with the narration. Please approve again to re-voice it.",
+          "fingerprint": "96502aaac69decdf"
+        },
+        {
+          "at": "2026-10-17T15:34:50+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "96502aaac69decdf"
+        },
+        {
+          "at": "2026-10-17T19:53:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "96502aaac69decdf"
         }
       ],
       "number": 27,
       "title": "What's next",
       "hidden": false,
-      "fingerprint": "a4769a2c7cb7cc85",
+      "fingerprint": "96502aaac69decdf",
       "comment": "",
-      "updated_at": "2026-10-17T13:34:00+01:00",
-      "approved_fingerprint": "a4769a2c7cb7cc85"
+      "updated_at": "2026-10-17T15:34:50+01:00",
+      "approved_fingerprint": "96502aaac69decdf",
+      "validated_key": "1191ebd6dc4b1bb4"
     }
   },
-  "inspected_at": "2026-10-17T14:42:16+01:00"
+  "inspected_at": "2026-10-17T18:53:15+01:00"
 }

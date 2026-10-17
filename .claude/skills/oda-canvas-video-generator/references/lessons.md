@@ -20,6 +20,15 @@ audio and final video for that slide. For each slide, I want the Approved/Draft 
 to make sure the timing and the length of audio aligns." Folded into SKILL.md Step 7 and
 `narration-and-video.md` (Timing).
 
+### 2026-10-17: Write narration for the voice: short sentences, no colons or semicolons
+**Rule:** Speaker notes use only full stops, question marks and commas to break up sentences, never
+colons or semicolons. Keep each sentence to about 17 words. `extract_notes.py` flags both problems.
+**Why:** csm-voice generates one sentence at a time and handles colons, semicolons and long sentences
+badly, cutting words or reading them with odd pauses.
+**Source:** Deck 01 review: "The speaker notes should not use colons or semi-colons. The csm voice
+doesn't handle them well. Just replace with a period." Earlier: the request to split long sentences on
+slides 1-5.
+
 ### 2026-10-17: Name example products only with "or another … platform"
 **Rule:** Whenever a slide names an example implementation, the narration and the visual must also
 say that another platform can be used. Make the point once, plainly, where it matters: the Canvas

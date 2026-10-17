@@ -33,7 +33,8 @@ Validation is tied to the exact clip, so any rebuild (new notes, re-voice, recor
 clears it. Never validate on the user's behalf.
 
 The user can also **record** a slide's narration on the page. The recording is matched to the
-generated voice (EQ, levelling, loudness) and used in place of the voice; `presgen.py rematch`
+generated voice (EQ towards its spectrum, then one fixed gain to its loudness; no compression or
+noise reduction, which the user rejected) and used in place of the voice; `presgen.py rematch`
 re-processes recordings after the matching changes. A clip is rebuilt whenever its narration file
 is newer than the clip.
 

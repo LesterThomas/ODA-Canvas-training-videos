@@ -65,22 +65,22 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ### Slide 7: What is an ODA Component?
 - **Visual:** [3B1B] The ODA Component symbol builds up segment by segment. Its exposed-API lollipops and dependent-API sockets draw outward as the APIs are mentioned. Core Function, Notification/Reporting, Security and Management/Operations glow in turn while callout tiles list the declared needs. (Deck slide 1, left half.)
 - **Speaker notes:**
-> That's where ODA Components come in. An ODA Component is an independently deployable unit of functionality. Alongside its business function, it declares its non-functional needs, such as the APIs it exposes and depends on, the events it publishes, its security roles and its observability. Components are interoperable, designed around end-to-end use cases. They are also portable and can run on any cloud platform that follows the standard.
+> That's where ODA Components come in. An ODA Component is an independently deployable unit of functionality. Alongside its business function, it declares its non-functional needs. These include the APIs it exposes and depends on, the events it publishes, its security roles and its observability. Components are interoperable, designed around end-to-end use cases. They are also portable and can run on any cloud platform that follows the standard.
 
 ### Slide 8: What is the ODA Canvas?
 - **Visual:** [3B1B] The ODA Canvas picture (images/ODA-Canvas-dark.svg) appears, and the component symbol drops onto its interfaces. The Canvas modules for API management, identity, observability and secrets (Identity & Credentials) light up as the narration names them.
 - **Speaker notes:**
-> The ODA Canvas is the cloud-native execution environment for those components. It reads each component's declared requirements and provides the shared operational services it needs, including API management, identity, observability and secrets. Component developers can focus on business functionality while the Canvas takes care of security, monitoring and scaling.
+> The ODA Canvas is the cloud-native execution environment for those components. It reads each component's declared requirements. It provides the shared operational services components need, including API management, identity, observability and secrets. Component developers can focus on business functionality while the Canvas takes care of security, monitoring and scaling.
 
 ### Slide 9: Composable IT with ODA
 - **Visual:** [3B1B] The capability map from deck slide 2, built layer by layer: Use cases at the top, then ODA Components, then the ODA Canvas operators, then the IT foundations and platform services.
 - **Speaker notes:**
-> Put the two together and you get composable IT. Use cases are assembled from standard components. Components are deployed onto a Canvas. Canvas operators configure the underlying platform services, such as API gateways, service meshes, identity and observability, whether those are open-source reference modules or commercial cloud services. When a new business need appears, you assemble existing building blocks instead of starting a new integration project.
+> Put the two together and you get composable IT. Use cases are assembled from standard components. Components are deployed onto a Canvas. Canvas operators configure the underlying platform services, such as API gateways, service meshes, identity and observability. Those can be open-source reference modules or commercial cloud services. When a new business need appears, you assemble existing building blocks instead of starting a new integration project.
 
 ### Slide 10: Composable AI with Agentic ODA
 - **Visual:** [3B1B] The same diagram morphs into deck slide 3. "ODA Canvas" relabels to "AI-Native Canvas", agentic components appear beside the standard ones, and a new AI and Data foundations layer slides in (AI Gateway, LLMs, Data Products). The interface labels change to "Open APIs, MCP, A2A".
 - **Speaker notes:**
-> The same model now extends to AI. In the AI-Native Canvas, AI agents can be packaged as agentic components that follow the same component standard. Standard components can expose their APIs as tools for agents using the Model Context Protocol. Agents can describe themselves to other agents through agent-to-agent standards. The Canvas adds AI and data services, such as an AI gateway in front of the approved language models, so that agents from many vendors can be governed, observed and cost-managed in one consistent way.
+> The same model now extends to AI. In the AI-Native Canvas, AI agents can be packaged as agentic components that follow the same component standard. Standard components can expose their APIs as tools for agents using the Model Context Protocol. Agents can describe themselves to other agents through agent-to-agent standards. The Canvas adds AI and data services, such as an AI gateway in front of the approved language models. This means agents from many vendors can be governed, observed and cost-managed in one consistent way.
 
 ### Slide 11: Example: identity is declared, not implemented
 - **Visual:** [3B1B] Three components, each with its own small identity box. The boxes collapse into a single Canvas identity service, and each component now sends only a short "roles" list into it.
@@ -97,39 +97,39 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ### Slide 13: Six benefits
 - **Visual:** [NATIVE] Deck slide 4. Six pillars rise one at a time: Customer Experience, Simplicity, Innovation, Operational Efficiency, Security, Technical Debt.
 - **Speaker notes:**
-> Why do this? The benefits are shared by service providers, software vendors, integrators and cloud providers. Seamless integration supports zero-touch, zero-wait and zero-trouble customer experiences. Operations get simpler, moving from hundreds of teams running vertically integrated applications towards a single site reliability team running a Canvas. Agility drives innovation, including faster adoption of AI-native capabilities. Integration becomes automated instead of a manual project. Security is built in, with a zero-trust architecture and security as code. And modular contracts let every component be upgraded continuously, reducing technical debt.
+> Why do this? The benefits are shared by service providers, software vendors, integrators and cloud providers. Seamless integration supports zero-touch, zero-wait and zero-trouble customer experiences. Operations get simpler. Hundreds of teams running vertically integrated applications become one site reliability team running a Canvas. Agility drives innovation, including faster adoption of AI-native capabilities. Integration becomes automated instead of a manual project. Security is built in, with a zero-trust architecture and security as code. And modular contracts let every component be upgraded continuously, reducing technical debt.
 
 ### Slide 14: An order-of-magnitude goal
 - **Visual:** [NATIVE] A "+30%" bar is overtaken by a "10x" bar.
 - **Speaker notes:**
-> The ambition isn't an incremental gain. The goal is a step change, aiming for an order-of-magnitude improvement in efficiency and agility, and a faster transformation to an AI-native telco.
+> The ambition isn't an incremental gain. The goal is a step change, aiming for an order-of-magnitude improvement in efficiency and agility. And a faster transformation to an AI-native telco.
 
 ## Segment 5: A tour of the Canvas
 
 ### Slide 15: The component standard in two layers
 - **Visual:** [NATIVE] Deck slide 21. The bottom layer is design patterns (self-describing, security as code, management as code). The top layer is standard golden components, with a link to the ODA Component Directory.
 - **Speaker notes:**
-> The component standard has two layers. The lower layer is a set of design patterns for self-describing, modular software, with security and management defined as code. The upper layer is a set of standard golden components that represent industry best practice for breaking telecom IT into building blocks. You can browse them in the TM Forum ODA Component Directory.
+> The component standard has two layers. The lower layer is a set of design patterns for self-describing, modular software. Security and management are defined as code. The upper layer is a set of standard golden components. They represent industry best practice for breaking telecom IT into building blocks. You can browse them in the TM Forum ODA Component Directory.
 
 ### Slide 16: Live demo: the ODA Component Directory
 - **Visual:** [DEMO] Real browser recording of tmforum.org/oda/directory/components-map (`demos/directory/directory-tour.mjs` → `videos/public/captures/directory-tour.webm`): the components map with the Canvas operators and the business domains → click Product Catalog Management (TMFC001) → its metadata, component resources (YAML specification, conformance profile, CTK, reference implementation), exposed and dependent Open APIs, certified products → back to the map → Product Inventory (TMFC005). Lower-third labels name each section.
 - **Speaker notes:**
-> The standard components are published in the ODA Component Directory on the TM Forum website. Its components map groups them by business domain, alongside the Canvas operators. Opening Product Catalog Management shows its specification: the version and status, its YAML definition, conformance profile, test kit and reference implementation, the Open APIs it must expose and those it may depend on, and the products certified against it. Every standard component, such as Product Inventory, follows the same structure.
+> The standard components are published in the ODA Component Directory on the TM Forum website. Its components map groups them by business domain, alongside the Canvas operators. Opening Product Catalog Management shows its specification. The version and status, its YAML definition, conformance profile, test kit and reference implementation. The Open APIs it must expose and those it may depend on. And the products certified against it. Every standard component, such as Product Inventory, follows the same structure.
 
 ### Slide 17: The component YAML
 - **Visual:** [3B1B] A YAML file scrolls, and the sections highlight in turn: componentMetadata, coreFunction, managementFunction, securityFunction, eventNotification. (Use `feature-definition-and-test-kit/testData/productcatalog-v1`.)
 - **Speaker notes:**
-> Each component carries a YAML definition. Think of it as a Swagger file for a whole component. It describes the component's metadata and functional scope, and then, in its core, management and security functions, the APIs it exposes and depends on, the events it uses, and the roles it needs. The specification reached version one, its generally available release, at the end of 2024.
+> Each component carries a YAML definition. Think of it as a Swagger file for a whole component. It describes the component's metadata and functional scope. Then, in its core, management and security functions, it lists the APIs it exposes and depends on. Also the events it uses, and the roles it needs. The specification reached version one, its generally available release, at the end of 2024.
 
 ### Slide 18: The Canvas as a set of operators
 - **Visual:** [3B1B] One Component resource splits into sub-resources (ExposedAPI, DependentAPI, IdentityConfig, SecretsManagement, PublishedNotification and others), and each one flows to its own operator. Closing cutaway (from about 22 s): the real Canvas Portal Platform › Operators page (`portal-operators` capture), then a terminal running `kubectl get deployments -n canvas` with the real output (`cli-operators`).
 - **Speaker notes:**
-> The Canvas itself is modular. It is a set of software operators, following the Kubernetes operator pattern. The component management operator takes the component definition and breaks it into sub-resources, such as exposed APIs, dependent APIs, identity configuration and secrets management. Each sub-resource is handled by its own specialised operator. Each operator is a piece of software that holds the operational knowledge a human operator would otherwise apply by hand.
+> The Canvas itself is modular. It is a set of software operators, following the Kubernetes operator pattern. The component management operator takes the component definition and breaks it into sub-resources. These include exposed APIs, dependent APIs, identity configuration and secrets management. Each sub-resource is handled by its own specialised operator. Each operator is a piece of software that holds the operational knowledge a human operator would otherwise apply by hand.
 
 ### Slide 19: Worked example: API exposure
 - **Visual:** [3B1B] An ExposedAPI YAML block flows into an "API operator" gear, which fans out to six gateway logos: Istio, Kong, Apache APISIX, Azure API Management, Google Apigee and Whale Cloud. Policy tags (rate limit, API key, CORS, OpenAPI validation) attach to the route.
 - **Speaker notes:**
-> API exposure shows the pattern. The component declares which APIs it wants to expose, and optionally policies such as rate limiting, API-key checks, cross-origin rules or request validation. An API operator reads that declaration and automatically configures whichever gateway or service mesh the Canvas uses. The reference implementation has six options. They are the Istio service mesh and the Kong and Apache APISIX gateways. There are also operators for Azure API Management, Google Apigee and Whale Cloud. Any other gateway can be added with its own operator. The component stays the same, and only the operator changes.
+> API exposure shows the pattern. The component declares which APIs it wants to expose. And optionally, policies such as rate limiting, API-key checks, cross-origin rules or request validation. An API operator reads that declaration and automatically configures whichever gateway or service mesh the Canvas uses. The reference implementation has six options. They are the Istio service mesh and the Kong and Apache APISIX gateways. There are also operators for Azure API Management, Google Apigee and Whale Cloud. Any other gateway can be added with its own operator. The component stays the same, and only the operator changes.
 
 ### Slide 20: Live demo: the component inventory
 - **Visual:** [DEMO] Real recording of the local Canvas Portal (`portal-inventory` capture): Dashboard → Components › Inventory → scroll the domains → hover the installed Product Catalog Management card ("1 installed instance"). Fallback: [STATIC] `images/Canvas 2.png` via `lib/PortalShot.tsx`.
@@ -139,7 +139,7 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ### Slide 21: Live demo: deploying a component
 - **Visual:** [DEMO] Real recording (`portal-deploy` capture): Components › Deploy → Install Component → repository reference-example-components → chart productcatalog → release name r1 → hover "Next" (nothing is installed). Then a terminal replays real output for release r1 (`cli-deploy`): `helm list -n components`, `kubectl get components -n components`, `kubectl get exposedapis -n components`, with operator chips (API operator → ExposedAPIs, Identity operator → roles, metrics → monitoring).
 - **Speaker notes:**
-> Components are packaged as Helm charts. Deploying one is just a matter of choosing the chart and giving the release a name. From there, the operators take over: they expose its APIs, register its roles and configure its monitoring. Later videos follow that process end to end.
+> Components are packaged as Helm charts. Deploying one is just a matter of choosing the chart and giving the release a name. From there, the operators take over. They expose its APIs, register its roles and configure its monitoring. Later videos follow that process end to end.
 
 ### Slide 22: Identity configuration
 - **Visual:** [3B1B] IdentityConfig YAML (canvasSystemRole plus componentRole entries) flows into an identity operator gear, which branches to Keycloak and Microsoft Entra ID. Two smaller gears appear beside it: Credentials Management and Dependency Management.
@@ -162,19 +162,19 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ### Slide 25: Measuring Canvas adoption
 - **Visual:** [NATIVE] Deck slide 20. A row of lights turns green one by one: API Gateway, Observability, Identity, Secrets, Responsible AI, Cost and Carbon automation.
 - **Speaker notes:**
-> How do you measure adoption? The outcome that matters is automated component deployment and lifecycle management. A service provider can turn on each light in turn as it automates API exposure, observability, identity, secrets and, increasingly, responsible AI, cost and carbon management. The Canvas itself is modular and can be deployed incrementally.
+> How do you measure adoption? The outcome that matters is automated component deployment and lifecycle management. A service provider can turn on each light in turn as it automates API exposure, observability, identity, secrets. And, increasingly, responsible AI, cost and carbon management. The Canvas itself is modular and can be deployed incrementally.
 
 ## Segment 6: Conclusion
 
 ### Slide 26: Built together
 - **Visual:** [NATIVE] Software vendors and systems integrators (top row) send curved arrows to the components; communication service providers and cloud providers (bottom row) send curved arrows to the ODA Canvas picture. Text fades in: "ODA Manifesto: a standard execution environment for ODA Components".
 - **Speaker notes:**
-> The ODA Components and Canvas are the result of collaboration between software vendors, systems integrators, communication service providers and cloud providers. Together they deliver what the ODA Manifesto set out: a standard execution environment for ODA Components. That shared foundation is what lets the industry adopt new capabilities, including AI, faster together than any one company could alone.
+> The ODA Components and Canvas are the result of collaboration between software vendors, systems integrators, communication service providers and cloud providers. Together they deliver what the ODA Manifesto set out. A standard execution environment for ODA Components. That shared foundation lets the industry adopt new capabilities, including AI, faster together than any one company could do alone.
 
 ### Slide 27: What's next
 - **Visual:** [NATIVE] Series roadmap tiles (Buy or build a Canvas; Authentication and Authorization; AI-Native Canvas; Carbon-Aware Software) and links: github.com/tmforum-oda/oda-canvas and tmforum.org/oda/directory.
 - **Speaker notes:**
-> This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas, authentication and authorization, the AI-Native Canvas and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas, and contributions are welcome.
+> This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas. Authentication and authorization, the AI-Native Canvas and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas. And contributions are welcome.
 
 ---
 

@@ -145,7 +145,7 @@ export const S08Canvas: React.FC = () => {
         style={{
           position: "absolute",
           left: 810,
-          top: interpolate(drop, [0, 1], [110, 248]),
+          top: interpolate(drop, [0, 1], [215, 248]), // starts below the title, then settles onto the Canvas
         }}
       >
         <Appear at={0.4} from="pop" style={{ position: "relative" }}>

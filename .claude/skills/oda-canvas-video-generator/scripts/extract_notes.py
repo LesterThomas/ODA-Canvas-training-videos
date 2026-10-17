@@ -29,6 +29,11 @@ def main() -> None:
         words = len(notes.split())
         slides.append({"n": n, "title": title, "notes": notes, "words": words, "secs": round(words / WORDS_PER_SECOND, 1)})
         flag = "  <-- no notes" if not notes else ("  <-- long, consider splitting" if words > 90 else "")
+        if ":" in notes or ";" in notes:
+            flag += "  <-- colon/semicolon: the voice reads them badly, use a full stop"
+        longest = max((len(x.split()) for x in re.split(r"(?<=[.!?])\s+", notes)), default=0)
+        if longest > 20:
+            flag += f"  <-- a {longest}-word sentence: split it (the voice can cut long sentences short)"
         print(f"{n:>2} {title[:55]:<55} {words:>3} words ~{round(words / WORDS_PER_SECOND):>3}s{flag}")
 
     nums = [s["n"] for s in slides]

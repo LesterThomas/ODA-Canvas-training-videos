@@ -129,6 +129,9 @@ and the `--renderer still` fallback uses it.
 
 ## Layout pitfalls already hit (check for these in stills)
 
+- Moving elements can overlap the title on their way in. Check early frames (`stills.mjs <id> 0.05 0.3`),
+  not only the final frame. Nothing should start above the heading area (y < 215).
+
 - Arrows pointing at a shape point *towards* it and stop clearly short of it, leaving a visible gap.
   Prefer straight arrows. Draw them above pictures, so their heads are never hidden.
 
@@ -157,6 +160,11 @@ Prometheus, Datadog and so on), it must also **say and show** that another platf
 say it outright once: the Canvas does not mandate a specific product.
 
 ## Narration voice
+
+- **No colons or semicolons in speaker notes.** The voice (csm-voice) reads them badly. Use a full stop
+  and start a new sentence. `extract_notes.py` flags any it finds.
+- **Keep sentences to about 17 words, 20 at most.** The voice can cut long sentences short.
+  `extract_notes.py` flags longer ones.
 
 - Say "human operator", not "administrator", for the person who would otherwise do the work by hand. This matches the operator pattern the Canvas is built on.
 
