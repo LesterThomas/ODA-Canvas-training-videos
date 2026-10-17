@@ -2,37 +2,37 @@
  {
   "n": 1,
   "title": "Title card",
-  "notes": "Welcome to the first video in a series about the Open Digital Architecture Canvas, the execution platform for ODA Components, and its open-source reference implementation.",
-  "words": 25,
-  "secs": 10.0
+  "notes": "Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components. It also has an open-source reference implementation.",
+  "words": 30,
+  "secs": 12.0
  },
  {
   "n": 2,
   "title": "Who this is for",
-  "notes": "This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.",
-  "words": 64,
-  "secs": 25.6
+  "notes": "This video is for two groups. The first group is the architects and software engineers who build functional software components. They want to know what it means to meet the ODA standards and run on the Canvas. The second group is site reliability engineers who build or operate a Canvas platform. That might be a communication service provider running its own Canvas. Or it might be a cloud provider offering a managed Canvas to others.",
+  "words": 75,
+  "secs": 30.0
  },
  {
   "n": 3,
   "title": "Roadmap",
-  "notes": "We'll start with a short history of how we got here. Then we'll explain what an ODA Component is and what the Canvas provides. After that we'll cover the business benefits, take a quick tour of the Canvas, including the Canvas Portal, and finish with where the work is heading. Later videos in the series go deeper into each area.",
-  "words": 60,
-  "secs": 24.0
- },
- {
-  "n": 4,
-  "title": "Frameworks and the problem of interpretation",
-  "notes": "For more than twenty-five years, TM Forum has been a hub for collaboration on telecom IT. The early frameworks gave the industry a common language for processes, information and functions. They were valuable, but they were human-readable documents, open to interpretation. Each operator built its own variant, and the industry ended up with many slightly different versions of the same standards.",
+  "notes": "We'll start with a short history of how we got here. Then we'll explain what an ODA Component is and what the Canvas provides. After that we'll cover the business benefits. Next comes a quick tour of the Canvas, including the Canvas Portal. We'll finish with where the work is heading. Later videos in the series go deeper into each area.",
   "words": 61,
   "secs": 24.4
  },
  {
+  "n": 4,
+  "title": "Frameworks and the problem of interpretation",
+  "notes": "For more than twenty-five years, TM Forum has been a hub for collaboration on telecom IT. The early frameworks gave the industry a common language for processes, information and functions. Operators used them successfully to design high-level architectures. They also gave a common language for product selection and requests for proposal. But they were not detailed enough for systems to work together seamlessly. So every integration needed custom work. That integration tax was paid again and again.",
+  "words": 77,
+  "secs": 30.8
+ },
+ {
   "n": 5,
   "title": "The Open API programme",
-  "notes": "The next big step was TM Forum's Open API programme. It began with experiments and hackathons around 2013 and launched formally in January 2017. Open APIs are detailed, prescriptive, machine-readable specifications for standard services. Adoption has been huge: the APIs have been downloaded more than a million times by tens of thousands of developers, and today most telecom IT capabilities start with the question, \"Which standard APIs do we need?\"",
-  "words": 70,
-  "secs": 28.0
+  "notes": "The next big step was TM Forum's Open API programme. It began with experiments and hackathons around 2013. It was formally launched in 2015. Open APIs are detailed, prescriptive, machine-readable specifications for standard services. Adoption has been huge. By September 2026, there had been almost one point four million downloads. They came from nearly seventy-two thousand developers. Today, TM Forum Open APIs are the foundation for many telcos' IT services. They have enabled seamless integration between systems.",
+  "words": 77,
+  "secs": 30.8
  },
  {
   "n": 6,

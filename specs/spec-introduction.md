@@ -81,7 +81,7 @@ sub-headers). This deck follows the same six-segment structure:
 
 1. **Intro** — two audiences, roadmap of the video (history → components & canvas → benefits →
    canvas modules preview → conclusion).
-2. **History** — TM Forum frameworks → Open API initiative (2013/2017) → the remaining
+2. **History** — TM Forum frameworks → Open API programme (2013/2015) → the remaining
    deploy/manage gap → the idea of ODA Components.
 3. **Components and Canvas** — what a Component is (modular, declarative functional +
    non-functional requirements, portable); what the Canvas is (shared operational services:
@@ -112,7 +112,7 @@ animation.
 | 2 | Intro | Who this is for (two audiences) | Transcript intro paragraph | [3B1B] simple two-persona split animation |
 | 3 | Intro | Roadmap of this video | — | [3B1B] simple animated agenda/outline |
 | 4 | History | TM Forum frameworks → inconsistency problem | Transcript "History" section | [3B1B] |
-| 5 | History | The Open API initiative (2013/2017) and its adoption | Transcript "History" section (verify stats, §3.3) | [3B1B] |
+| 5 | History | The Open API programme (2013/2015) and its adoption | Transcript "History" section (verify stats, §3.3) | [3B1B] |
 | 6 | History | The remaining gap: deploying & managing IT is still hard | Transcript "History" section | [3B1B] |
 | 7 | Components & Canvas | What is an ODA Component? ("Lego blocks", composable IT) | pptx slide 1 (left half), slide 2 | [3B1B] |
 | 8 | Components & Canvas | What is the ODA Canvas? (operational services layer) | pptx slide 1 (right half) | [3B1B] |

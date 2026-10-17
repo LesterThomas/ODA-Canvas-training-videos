@@ -72,7 +72,7 @@ are collected here once.
 | Tooling / developer experience | "Canvas portal and a set of tools", "Innovation Hub dashboard" | **Canvas Portal v2** with sections Dashboard · Components (Inventory/Deploy/Lifecycle) · APIs (Exposed/Dependent/Gateway/Service Mesh/Policies) · AI (Model Gateway/TMF AI Agents) · Platform (Operators/Observability/BDD). There are AI coding-assistant **skills** (`canvas-ops-tutorial`, `create-oda-operator`, `write-bdd-feature`, …) and a devcontainer. | `canvas-portal-v2/`, `skills/`, `ai-coding-assistants.md` |
 | Tested platforms | "tested across all the major Kubernetes cloud platforms" | EKS, AKS, GKE, Rancher, MicroK8s, Minikube, Docker Desktop, **Kind (used in all CI)**, K3s. | `installation/README.md` |
 | Buy-or-build | Public cloud / roll your own / vendors | Unchanged, plus PoC demonstrations at DTW Copenhagen from **AWS, Azure, China Mobile, Google Cloud and Oracle Cloud**. | `Canvas-design.md` |
-| Open API stats | "over 900,000 downloads … over 50,000 developers" | TM Forum's own site says **over 1 million downloads (Feb 2025)**. Its developer figure is about 50,000 (undated). **Confirm before recording.** | [tmforum.org/open-digital-architecture/about-open-apis](https://www.tmforum.org/open-digital-architecture/about-open-apis/) |
+| Open API stats | "over 900,000 downloads … over 50,000 developers" | **Confirmed by the user: 1,383,661 downloads by 71,916 developers (September 2026); the programme launched formally in 2015.** (TM Forum's site said over 1 million downloads in Feb 2025.) | [tmforum.org/open-digital-architecture/about-open-apis](https://www.tmforum.org/open-digital-architecture/about-open-apis/) |
 
 ---
 

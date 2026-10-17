@@ -29,30 +29,31 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ### Slide 1: Title card
 - **Visual:** [NATIVE] "Introduction to the ODA Canvas" with the TM Forum ODA mark.
 - **Speaker notes:**
-> Welcome to the first video in a series about the Open Digital Architecture Canvas, the execution platform for ODA Components, and its open-source reference implementation.
+> Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components. It also has an open-source reference implementation.
 
 ### Slide 2: Who this is for
 - **Visual:** [NATIVE] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a site reliability engineer holding the Canvas.
 - **Speaker notes:**
-> This video is for two groups. First, architects and software engineers who build functional software components, and want to know what it means to meet the ODA standards and run on the Canvas. Second, site reliability engineers who build or operate a Canvas platform, whether that is a communication service provider running its own, or a cloud provider offering a managed Canvas to others.
+> This video is for two groups. The first group is the architects and software engineers who build functional software components. They want to know what it means to meet the ODA standards and run on the Canvas. The second group is site reliability engineers who build or operate a Canvas platform. That might be a communication service provider running its own Canvas. Or it might be a cloud provider offering a managed Canvas to others.
 
 ### Slide 3: Roadmap
 - **Visual:** [NATIVE] Agenda builds: History, Components and Canvas, Benefits, A tour of the Canvas, What's next.
 - **Speaker notes:**
-> We'll start with a short history of how we got here. Then we'll explain what an ODA Component is and what the Canvas provides. After that we'll cover the business benefits, take a quick tour of the Canvas, including the Canvas Portal, and finish with where the work is heading. Later videos in the series go deeper into each area.
+> We'll start with a short history of how we got here. Then we'll explain what an ODA Component is and what the Canvas provides. After that we'll cover the business benefits. Next comes a quick tour of the Canvas, including the Canvas Portal. We'll finish with where the work is heading. Later videos in the series go deeper into each area.
 
 ## Segment 2: History
 
 ### Slide 4: Frameworks and the problem of interpretation
-- **Visual:** [3B1B] Process, information and functional framework documents appear, then fork into many slightly different copies, one per operator.
+- **Visual:** [3B1B] Process, information and functional framework documents appear and are marked very valuable. Arrows carry them into two successes, high-level architectures and product selection and RFPs. A third panel shows two systems that do not connect seamlessly: custom work bridges them, and an "integration tax" is paid every time.
 - **Speaker notes:**
-> For more than twenty-five years, TM Forum has been a hub for collaboration on telecom IT. The early frameworks gave the industry a common language for processes, information and functions. They were valuable, but they were human-readable documents, open to interpretation. Each operator built its own variant, and the industry ended up with many slightly different versions of the same standards.
+> For more than twenty-five years, TM Forum has been a hub for collaboration on telecom IT. The early frameworks gave the industry a common language for processes, information and functions. Operators used them successfully to design high-level architectures. They also gave a common language for product selection and requests for proposal. But they were not detailed enough for systems to work together seamlessly. So every integration needed custom work. That integration tax was paid again and again.
 
 ### Slide 5: The Open API programme
-- **Visual:** [3B1B] Timeline: hackathons in 2013, the Open API launch in January 2017, then a download counter ticking up.
-- **On-screen text:** "Over 1 million downloads"
+- **Visual:** [3B1B] Timeline: hackathons in 2013, the Open API programme launched in 2015. Machine-readable API specs slide in. A download counter ticks up to 1,383,661, then 71,916 developers. It ends on Open APIs as the foundation of telco IT and seamless integration.
+- **On-screen text:** "1,383,661 downloads", "71,916 developers", "September 2026"
 - **Speaker notes:**
-> The next big step was TM Forum's Open API programme. It began with experiments and hackathons around 2013 and launched formally in January 2017. Open APIs are detailed, prescriptive, machine-readable specifications for standard services. Adoption has been huge: the APIs have been downloaded more than a million times by tens of thousands of developers, and today most telecom IT capabilities start with the question, "Which standard APIs do we need?"
+> The next big step was TM Forum's Open API programme. It began with experiments and hackathons around 2013. It was formally launched in 2015. Open APIs are detailed, prescriptive, machine-readable specifications for standard services. Adoption has been huge. By September 2026, there had been almost one point four million downloads. They came from nearly seventy-two thousand developers. Today, TM Forum Open APIs are the foundation for many telcos' IT services. They have enabled seamless integration between systems.
+- **Source:** figures as of September 2026 and the 2015 launch, from the user (review of deck 01, 2026-10-17).
 
 ### Slide 6: The remaining gap
 - **Visual:** [3B1B] A tangle of vertically integrated systems. An "upgrade" arrow tries to move one box and drags the others with it.

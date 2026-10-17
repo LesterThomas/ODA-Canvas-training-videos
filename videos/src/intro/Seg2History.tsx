@@ -37,103 +37,152 @@ const FRAMEWORKS = [
   { label: "Functional", x: 1290, color: C.operator, at: 7.0 },
 ];
 
-// Slide 4 — Frameworks and the problem of interpretation
-export const S04Frameworks: React.FC = () => {
-  const variants = [
-    { x: 150, from: 0, tilt: -6, hue: "#3A2A10" },
-    { x: 420, from: 0, tilt: 5, hue: "#2E2410" },
-    { x: 690, from: 1, tilt: -4, hue: "#0F2A3A" },
-    { x: 960, from: 1, tilt: 7, hue: "#102536" },
-    { x: 1230, from: 2, tilt: -7, hue: "#0E2E28" },
-    { x: 1500, from: 2, tilt: 4, hue: "#123328" },
-  ];
-  return (
-    <Stage>
-      <Heading kicker="History" title="Frameworks: a common language" />
-      <Appear at={0.8} from="pop" style={{ left: 1540, top: 60 }}>
-        <div
-          style={{
-            width: 250,
-            height: 250,
-            borderRadius: 125,
-            border: `4px solid ${C.tmf}`,
-            background: `${C.tmf}22`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div style={{ fontSize: 64, fontWeight: 800 }}>25+</div>
-          <div style={{ fontSize: 26, color: C.muted, textAlign: "center", lineHeight: 1.2 }}>years of<br />TM Forum</div>
-        </div>
+// Slide 4 — Frameworks: valuable for architecture and buying, but every integration paid a tax.
+// Times follow the narration (words before each mention / 2.5).
+const T4 = { arch: 12.0, rfp: 18.0, gap: 20.4, custom: 26.8, tax: 27.6 };
+
+const Panel: React.FC<{ title: string; color: string; children?: React.ReactNode }> = ({ title, color, children }) => (
+  <div
+    style={{
+      width: 500,
+      height: 300,
+      borderRadius: 20,
+      background: C.panel,
+      border: `3px solid ${color}`,
+      boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      gap: 16,
+      paddingTop: 26,
+      boxSizing: "border-box",
+    }}
+  >
+    <div style={{ fontSize: 34, fontWeight: 800, textAlign: "center" }}>{title}</div>
+    {children}
+  </div>
+);
+
+export const S04Frameworks: React.FC = () => (
+  <Stage>
+    <Heading kicker="History" title="Frameworks: a common language" />
+    <Appear at={0.8} from="pop" style={{ left: 1540, top: 40 }}>
+      <div
+        style={{
+          width: 230,
+          height: 230,
+          borderRadius: 115,
+          border: `4px solid ${C.tmf}`,
+          background: `${C.tmf}22`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div style={{ fontSize: 60, fontWeight: 800 }}>25+</div>
+        <div style={{ fontSize: 24, color: C.muted, textAlign: "center", lineHeight: 1.2 }}>years of<br />TM Forum</div>
+      </div>
+    </Appear>
+    {FRAMEWORKS.map((f) => (
+      <Appear key={f.label} at={f.at} from="up" style={{ left: f.x, top: 250 }}>
+        <DocCard label={`${f.label} framework`} color={f.color} w={260} />
       </Appear>
-      {FRAMEWORKS.map((f) => (
-        <Appear key={f.label} at={f.at} from="up" style={{ left: f.x, top: 330 }}>
-          <DocCard label={`${f.label} framework`} color={f.color} />
-        </Appear>
-      ))}
-      <Appear at={10.5} from="up" style={{ left: 1650, top: 380 }}>
-        <div style={{ width: 200, fontSize: 30, color: C.muted, lineHeight: 1.3 }}>
-          Human-readable.
-          <br />
-          Open to interpretation.
-        </div>
-      </Appear>
-      <Svg>
-        {variants.map((v, i) => {
-          const f = FRAMEWORKS[v.from];
-          const sx = f.x + 150;
-          const ex = v.x + 110;
+    ))}
+    <Appear at={T4.arch} from="pop" style={{ left: 1610, top: 330 }}>
+      <Pill color={C.ok} fontSize={28}>✓ Very valuable</Pill>
+    </Appear>
+    <Svg>
+      {/* Every framework feeds every use: one curved arrow from each card to each box below. */}
+      {[460, 940, 1420].map((fx, i) =>
+        [
+          { cx: 370, at: T4.arch, color: C.ok, dash: false },
+          { cx: 960, at: T4.rfp, color: C.ok, dash: false },
+          { cx: 1550, at: T4.gap, color: C.danger, dash: true },
+        ].map((t, j) => {
+          const tx = t.cx + (i - 1) * 70;
           return (
             <Draw
-              key={i}
-              d={`M ${sx} 520 C ${sx} 600, ${ex} 590, ${ex} 680`}
-              at={15.5 + i * 0.25}
-              color={f.color}
+              key={`${i}-${j}`}
+              d={`M ${fx} 412 C ${fx} 490, ${tx} 470, ${tx} 552`}
+              at={t.at - 0.4 + i * 0.15}
+              color={t.color}
               width={3}
+              dash={t.dash}
               arrow
             />
           );
-        })}
-      </Svg>
-      {variants.map((v, i) => {
-        const f = FRAMEWORKS[v.from];
-        return (
-          <Appear key={i} at={16 + i * 0.25} from="pop" style={{ left: v.x, top: 690 }}>
-            <DocCard
-              label={`Operator ${String.fromCharCode(65 + i)} variant`}
-              color={f.color}
-              w={220}
-              tilt={v.tilt}
-              tint={v.hue}
-            />
-          </Appear>
-        );
-      })}
-      <Caption at={19.5} color={C.danger} bottom={60}>
-        One standard → many slightly different versions
-      </Caption>
-    </Stage>
-  );
-};
+        }),
+      )}
+    </Svg>
+    <Appear at={T4.arch} from="up" style={{ left: 120, top: 560 }}>
+      <Panel title="High-level architectures" color={C.ok}>
+        <Icon name="layers" size={110} color={C.ok} />
+        <div style={{ fontSize: 26, color: C.muted }}>Designed with a shared map</div>
+      </Panel>
+    </Appear>
+    <Appear at={T4.rfp} from="up" style={{ left: 710, top: 560 }}>
+      <Panel title="Product selection & RFPs" color={C.ok}>
+        <Icon name="handshake" size={110} color={C.ok} />
+        <div style={{ fontSize: 26, color: C.muted }}>Buyers and suppliers share terms</div>
+      </Panel>
+    </Appear>
+    <Appear at={T4.gap} from="up" style={{ left: 1300, top: 560 }}>
+      <Panel title="System integration" color={C.danger} />
+    </Appear>
+    <Appear at={T4.gap + 0.3} from="none" style={{ left: 1345, top: 650 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+        <Icon name="server" size={90} color={C.text} />
+        <div style={{ fontSize: 22, color: C.muted }}>System A</div>
+      </div>
+    </Appear>
+    <Appear at={T4.gap + 0.3} from="none" style={{ left: 1655, top: 650 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+        <Icon name="server" size={90} color={C.text} />
+        <div style={{ fontSize: 22, color: C.muted }}>System B</div>
+      </div>
+    </Appear>
+    <Svg>
+      <Draw d="M 1445 695 L 1650 695" at={T4.gap + 0.8} color={C.danger} width={5} dash />
+    </Svg>
+    <Appear at={T4.custom} from="pop" style={{ left: 1512, top: 650 }}>
+      <div style={{ background: C.bg, borderRadius: 40, padding: 6 }}>
+        <Icon name="wrench" size={72} color={C.component} />
+      </div>
+    </Appear>
+    <Appear at={T4.tax} from="pop" style={{ left: 1380, top: 795 }}>
+      <Pill color={C.danger} fontSize={30}>Integration tax</Pill>
+    </Appear>
+    {[0, 1, 2].map((i) => (
+      <Appear key={i} at={T4.tax + 0.4 + i * 0.35} from="down" style={{ left: 1660 + i * 36, top: 797 }}>
+        <Icon name="coin" size={50} color={C.component} />
+      </Appear>
+    ))}
+    <Caption at={T4.tax + 1.6} color={C.danger} bottom={50}>
+      A common language, but every integration paid a tax
+    </Caption>
+  </Stage>
+);
+
+// Slide 5 — The Open API programme. Times follow the narration (words before each mention / 2.5).
+// Figures as of September 2026, from TM Forum via the user.
+const T5 = { y2013: 6.4, y2015: 8.4, specs: 9.6, downloads: 15.2, devs: 20.0, foundation: 22.8, integration: 28.0 };
+const DOWNLOADS = 1_383_661;
+const DEVELOPERS = 71_916;
 
 const MILESTONES = [
-  { year: "2013", label: "Experiments & hackathons", x: 360, at: 3.6 },
-  { year: "Jan 2017", label: "Open API programme launched", x: 860, at: 7.6 },
+  { year: "2013", label: "Experiments & hackathons", x: 360, at: T5.y2013 },
+  { year: "2015", label: "Open API programme launched", x: 860, at: T5.y2015 },
 ];
 
 const APIS = ["TMF620 Product Catalog", "TMF622 Product Ordering", "TMF641 Service Ordering", "TMF639 Resource Inventory", "TMF672 User Roles & Permissions"];
 
-// Slide 5 — The Open API programme
 export const S05OpenApis: React.FC = () => {
   const t = useT();
-  const count = interpolate(t, [15.5, 19.5], [0, 1_000_000], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: (x) => 1 - Math.pow(1 - x, 3),
-  });
-  const line = useProg(1.5, 7, (x) => x);
+  const ease = { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (x: number) => 1 - Math.pow(1 - x, 3) } as const;
+  const downloads = interpolate(t, [T5.downloads + 0.3, T5.downloads + 4], [0, DOWNLOADS], ease);
+  const devs = interpolate(t, [T5.devs + 0.2, T5.devs + 2.4], [0, DEVELOPERS], ease);
+  const line = useProg(1.5, T5.y2015 - 1, (x) => x);
   return (
     <Stage>
       <Heading kicker="History" title="TM Forum Open APIs" />
@@ -147,13 +196,13 @@ export const S05OpenApis: React.FC = () => {
           </div>
         </Appear>
       ))}
-      <Appear at={10.5} from="right" style={{ left: 1200, top: 250 }}>
+      <Appear at={T5.specs} from="right" style={{ left: 1200, top: 250 }}>
         <div style={{ fontSize: 28, color: C.api, fontWeight: 700, letterSpacing: 3, marginBottom: 16 }}>
           MACHINE-READABLE SPECS
         </div>
       </Appear>
       {APIS.map((a, i) => (
-        <Appear key={a} at={11 + i * 0.35} from="right" style={{ left: 1200, top: 310 + i * 84 }}>
+        <Appear key={a} at={T5.specs + 0.5 + i * 0.35} from="right" style={{ left: 1200, top: 310 + i * 84 }}>
           <div
             style={{
               fontFamily: MONO,
@@ -169,29 +218,34 @@ export const S05OpenApis: React.FC = () => {
           </div>
         </Appear>
       ))}
-      <Appear at={15.3} from="up" style={{ left: 200, top: 600 }}>
-        <div style={{ fontSize: 150, fontWeight: 800, color: C.text, letterSpacing: -4, lineHeight: 1 }}>
-          {Math.round(count).toLocaleString("en-US")}
-          {count >= 999_999 ? <span style={{ color: C.api }}>+</span> : null}
+      <Appear at={T5.downloads} from="up" style={{ left: 200, top: 590 }}>
+        <div style={{ fontSize: 130, fontWeight: 800, color: C.text, letterSpacing: -4, lineHeight: 1 }}>
+          {Math.round(downloads).toLocaleString("en-US")}
         </div>
-        <div style={{ fontSize: 40, color: C.muted, marginTop: 10 }}>
-          downloads by tens of thousands of developers
+        <div style={{ fontSize: 38, color: C.muted, marginTop: 10 }}>downloads · September 2026</div>
+      </Appear>
+      <Appear at={T5.devs} from="up" style={{ left: 200, top: 830 }}>
+        <div style={{ fontSize: 60, fontWeight: 800, color: C.api }}>
+          {Math.round(devs).toLocaleString("en-US")} <span style={{ fontSize: 38, color: C.muted, fontWeight: 600 }}>developers</span>
         </div>
       </Appear>
-      <Appear at={22.5} from="up" style={{ left: 1170, top: 790 }}>
+      <Appear at={T5.foundation} from="up" style={{ left: 1170, top: 760 }}>
         <div
           style={{
-            padding: "26px 36px",
+            padding: "24px 32px",
             borderRadius: 26,
             background: C.panel,
             border: `3px solid ${C.tmf}`,
-            fontSize: 40,
-            fontWeight: 700,
-            width: 620,
+            width: 640,
+            height: 160,
+            boxSizing: "border-box",
           }}
         >
-          “Which standard APIs do we need?”
+          <div style={{ fontSize: 38, fontWeight: 800 }}>The foundation of telco IT</div>
         </div>
+      </Appear>
+      <Appear at={T5.integration} from="up" style={{ left: 1205, top: 845 }}>
+        <div style={{ fontSize: 34, color: C.ok, fontWeight: 700 }}>✓ Seamless integration</div>
       </Appear>
     </Stage>
   );

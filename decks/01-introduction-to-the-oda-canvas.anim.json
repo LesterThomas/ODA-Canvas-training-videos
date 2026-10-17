@@ -3,18 +3,18 @@
  "slides": {
   "1": {
    "n": 1,
-   "secs": 10.0,
+   "secs": 12.0,
    "kind": "native",
    "anims": [
     {
-     "shape": "Plate",
-     "at": 1.2,
+     "shape": "Canvas",
+     "at": 0.9,
      "effect": "fade",
      "dur": 0.8
     },
     {
      "shape": "Component",
-     "at": 0.9,
+     "at": 1.6,
      "effect": "zoom",
      "dur": 0.8
     },
@@ -38,7 +38,7 @@
     },
     {
      "shape": "Series",
-     "at": 1.6,
+     "at": 2.2,
      "effect": "fade",
      "dur": 0.6
     }
@@ -46,7 +46,7 @@
   },
   "2": {
    "n": 2,
-   "secs": 25.6,
+   "secs": 30.0,
    "kind": "native",
    "anims": [
     {
@@ -69,19 +69,19 @@
     },
     {
      "shape": "Component builders",
-     "at": 1.4,
+     "at": 2.2,
      "effect": "rise",
      "dur": 0.8
     },
     {
      "shape": "Canvas builders",
-     "at": 12.5,
+     "at": 14.4,
      "effect": "rise",
      "dur": 0.8
     },
     {
      "shape": "Canvas options",
-     "at": 17.6,
+     "at": 20.0,
      "effect": "rise",
      "dur": 0.6
     }
@@ -89,7 +89,7 @@
   },
   "3": {
    "n": 3,
-   "secs": 24.0,
+   "secs": 24.4,
    "kind": "native",
    "anims": [
     {
@@ -150,12 +150,12 @@
   },
   "4": {
    "n": 4,
-   "secs": 24.4,
+   "secs": 30.8,
    "kind": "video"
   },
   "5": {
    "n": 5,
-   "secs": 28.0,
+   "secs": 30.8,
    "kind": "video"
   },
   "6": {

@@ -103,7 +103,7 @@ slide's source video, per the shot list in spec §6. Output to `videos/out/`.
 | 2 | Intro | Who this is for (two audiences) | [x] |
 | 3 | Intro | Roadmap of this video | [x] |
 | 4 | History | TM Forum frameworks → inconsistency problem | [x] |
-| 5 | History | The Open API initiative (2013/2017) and its adoption | [x] |
+| 5 | History | The Open API programme (2013/2015) and its adoption | [x] |
 | 6 | History | The remaining gap: deploying & managing IT is still hard | [x] |
 | 7 | Components & Canvas | What is an ODA Component? | [x] |
 | 8 | Components & Canvas | What is the ODA Canvas? | [x] |

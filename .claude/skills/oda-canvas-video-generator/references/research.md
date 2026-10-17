@@ -63,5 +63,11 @@ captions write "Oda" for ODA and "Kali" for Kiali.
 
 ## External figures
 
+Confirmed by the user (2026-10-17): the TM Forum Open API programme launched formally in **2015** (after
+experiments and hackathons from 2013). As of **September 2026** there have been **1,383,661 downloads
+by 71,916 developers**. Use these, not older figures. In narration, round them ("almost one point four
+million downloads", "nearly seventy-two thousand developers"); show the exact figures on screen.
+
+
 Use web search for figures that aren't in the repo, cite the URL in the source check, and mark the
 figure **[VERIFY]** for the user.

@@ -16,11 +16,11 @@ def _ico(name, color):
 # Slide 1 — Title card
 def s01(k: Kit):
     k.background("stage-title.png")
-    plate = k.rect("Plate", 1060, 640, 700, 98, fill="canvas", radius=16)
-    k.text(None, 0, 0, 0, 0, "ODA Canvas", size=35, bold=True, align="center", anchor="middle", shape=plate, spacing=2)
-    k.anim("Plate", 1.2, "fade", 0.8)
-    k.image("Component", "oda.png", 1220, 342, 380)
-    k.anim("Component", 0.9, "zoom", 0.8)
+    # The ODA Canvas picture (images/ODA-Canvas-dark.svg), with a component above its interfaces.
+    k.image("Canvas", "canvas-dark.png", 1000, 560, 820)
+    k.anim("Canvas", 0.9, "fade", 0.8)
+    k.image("Component", "oda.png", 1265, 235, 290)
+    k.anim("Component", 1.6, "zoom", 0.8)
     k.text("Intro", 120, 330, 900, 60, "Introduction to the", size=44, color="muted", bold=True)
     k.text("Name", 120, 380, 1000, 160, [[("ODA ", {}), ("Canvas", {"color": "tmf"})]], size=132, bold=True)
     # User feedback: rising from the bottom was distracting here; the titles fade in together.
@@ -29,7 +29,7 @@ def s01(k: Kit):
     k.text("Subtitle", 124, 560, 900, 50, "Open Digital Architecture · TM Forum", size=36, color="muted")
     k.anim("Subtitle", 0.2, "fade", 0.8)
     k.pill("Series", 124, 660, "Training series · Part 1", "tmf", size=26)
-    k.anim("Series", 1.6, "fade")
+    k.anim("Series", 2.2, "fade")
 
 
 # Slide 2 — Who this is for
@@ -47,21 +47,21 @@ def s02(k: Kit):
                size=34, color="muted", align="center", line_spacing=1.3),
     ]
     k.group("Component builders", left)
-    k.anim("Component builders", 1.4, "rise", 0.8)
+    k.anim("Component builders", 2.2, "rise", 0.8)
     right = [
         k.rect(None, 1020, 250, 760, 640, fill="panel", line="canvas", line_w=3, radius=28),
         k.image(None, _ico("person", "2F6FED"), 1185, 300, 190),
-        k.rect(None, 1405, 430, 230, 46, fill="canvas", radius=10),
+        k.image(None, "canvas-dark.png", 1385, 330, 330),
         k.text(None, 1020, 520, 760, 140, "Canvas builders & operators", size=52, bold=True, align="center"),
         k.text(None, 1060, 680, 680, 160, "Site reliability engineers (SREs) building or operating a Canvas platform",
                size=34, color="muted", align="center", line_spacing=1.3),
     ]
     k.group("Canvas builders", right)
-    k.anim("Canvas builders", 12.5, "rise", 0.8)
+    k.anim("Canvas builders", 14.4, "rise", 0.8)
     p1 = k.pill(None, 1080, 920, "CSP-run Canvas", "canvas")
     p2 = k.pill(None, 1350, 920, "Managed Canvas (cloud provider)", "canvas")
     k.group("Canvas options", [p1, p2])
-    k.anim("Canvas options", 17.6, "rise")
+    k.anim("Canvas options", 20.0, "rise")
 
 
 # Slide 3 — Roadmap

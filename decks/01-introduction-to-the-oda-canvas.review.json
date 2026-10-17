@@ -38,15 +38,36 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "7f16c4a1d7bc2e9c"
+        },
+        {
+          "at": "2026-10-17T10:27:47+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9ea915f8945e4fe4"
+        },
+        {
+          "at": "2026-10-17T10:59:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Fixed. The voice cut 'It is the execution platform for ODA Components.' off after three words: the cached take was 0.8 seconds. The voice reuses its cached take of any unchanged sentence, so I reworded it to 'The Canvas is the execution platform for ODA Components.', which forces a fresh take. The slide's narration changed, so it needs approving again. Approving it will voice the new sentence.",
+          "fingerprint": "255ee5c4ff511232"
+        },
+        {
+          "at": "2026-10-17T11:00:33+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "255ee5c4ff511232"
         }
       ],
       "number": 1,
       "title": "Title card",
       "hidden": false,
-      "fingerprint": "7f16c4a1d7bc2e9c",
+      "fingerprint": "255ee5c4ff511232",
       "comment": "",
-      "updated_at": "2026-10-17T08:07:32+01:00",
-      "approved_fingerprint": "7f16c4a1d7bc2e9c"
+      "updated_at": "2026-10-17T11:00:33+01:00",
+      "approved_fingerprint": "255ee5c4ff511232"
     },
     "257": {
       "status": "approved",
@@ -99,15 +120,36 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "6b8d96d842b55c99"
+        },
+        {
+          "at": "2026-10-17T10:28:44+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0aa97f277043a706"
+        },
+        {
+          "at": "2026-10-17T11:07:13+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Found it: the take of 'The first group is architects and software engineers who build functional software components.' runs 9 seconds for 13 words. After the sentence there's a pause and then about 3 seconds of extra sound. I tested the voice with your original settings and with mine, and all three fresh takes came out identical, so the settings aren't the cause; the voice just handles that exact sentence badly. I changed it to 'The first group is the architects and software engineers…' so it is voiced afresh. Approving the slide again will re-voice it. If something else on this slide sounds wrong, tell me which sentence.",
+          "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-17T12:35:15+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
         }
       ],
       "number": 2,
       "title": "Who this is for",
       "hidden": false,
-      "fingerprint": "6b8d96d842b55c99",
+      "fingerprint": "73b025779cc1a1d8",
       "comment": "",
-      "updated_at": "2026-10-17T08:32:43+01:00",
-      "approved_fingerprint": "6b8d96d842b55c99"
+      "updated_at": "2026-10-17T12:35:15+01:00",
+      "approved_fingerprint": "73b025779cc1a1d8"
     },
     "258": {
       "status": "approved",
@@ -125,19 +167,29 @@
           "by": "claude",
           "comment": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again.",
           "fingerprint": "8b139ad4fb48b9e6"
+        },
+        {
+          "at": "2026-10-17T08:33:42+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8b139ad4fb48b9e6"
+        },
+        {
+          "at": "2026-10-17T10:29:10+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "eb288bcb4eca4569"
         }
       ],
       "number": 3,
       "title": "Roadmap",
       "hidden": false,
-      "fingerprint": "8b139ad4fb48b9e6",
+      "fingerprint": "eb288bcb4eca4569",
       "comment": "",
-      "updated_at": "2026-10-17T07:51:48+01:00",
-      "approved_fingerprint": "2894bf49063e124a",
-      "reply": {
-        "at": "2026-10-17T08:31:28+01:00",
-        "text": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again."
-      }
+      "updated_at": "2026-10-17T10:29:10+01:00",
+      "approved_fingerprint": "eb288bcb4eca4569"
     },
     "259": {
       "status": "approved",
@@ -162,27 +214,132 @@
           "by": "claude",
           "comment": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again.",
           "fingerprint": "01e16ff8ac1ac784"
+        },
+        {
+          "at": "2026-10-17T10:34:14+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Replace the second half 'They were valuable, but they were human-readable documents, open to interpretation. Each operator built its own variant. The industry ended up with many slightly different versions of the same standards.'\nI want to stress that they were very valuable, and used successfully for high level architectures and to enable a common language for product selection and RFP's. They weren't detailed enough to enable seamless interoperability of systems. \nFor the graphics, don't show the operator variants, instead show their use in building high level architectures and conducting RFPs. The final graphic should use an 'integration tax' to show the issue with not enabling seamless interoperability.",
+          "fingerprint": "9604234f7c8b1540"
+        },
+        {
+          "at": "2026-10-17T10:34:22+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: rewriting the second half of the narration.",
+          "fingerprint": "9604234f7c8b1540"
+        },
+        {
+          "at": "2026-10-17T10:37:12+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The second half now stresses value: the frameworks were very valuable, used successfully for high-level architectures and as a common language for product selection and requests for proposal. They just weren't detailed enough for systems to work together seamlessly, so every integration needed custom work: an integration tax paid again and again. In the picture, the operator variants are gone. Arrows now carry the frameworks into two green success panels, High-level architectures and Product selection & RFPs. A third, red panel shows two systems joined by custom work (the wrench) and an Integration tax tag with coins. Each step appears as the narration mentions it. I wrote RFPs as 'requests for proposal' in the narration so the voice says it clearly.",
+          "fingerprint": "5746d52e252c7aa8"
+        },
+        {
+          "at": "2026-10-17T10:43:44+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "This looks good. One change is that all three frameworks are used in high level architectures and product selection & RFPs (at present it shows one arrow from  process framework to High Level Architectures and one arrow from information framework to product selection & RFPs.",
+          "fingerprint": "5746d52e252c7aa8"
+        },
+        {
+          "at": "2026-10-17T10:43:58+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: connecting all three frameworks to both panels.",
+          "fingerprint": "5746d52e252c7aa8"
+        },
+        {
+          "at": "2026-10-17T10:45:10+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. All three framework cards now drop into one shared bar, and arrows run from that bar to High-level architectures, to Product selection & RFPs, and (red, dashed) to System integration. So every framework feeds every use.",
+          "fingerprint": "301b026463663244"
+        },
+        {
+          "at": "2026-10-17T10:50:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "301b026463663244"
+        },
+        {
+          "at": "2026-10-17T12:32:00+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the sentence 'They were very valuable.'\nMake the arrows from the frameworks to the lower boxes individual curved arrows (don't join them into a single bus)",
+          "fingerprint": "301b026463663244"
+        },
+        {
+          "at": "2026-10-17T12:32:12+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: removing that sentence and drawing separate curved arrows.",
+          "fingerprint": "301b026463663244"
+        },
+        {
+          "at": "2026-10-17T12:33:35+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. 'They were very valuable.' is gone from the narration, and the rest of the build is re-timed to the shorter text. The shared bar is gone too: each framework now has its own curved arrow to each box below. They're green to High-level architectures and Product selection & RFPs, red and dashed to System integration, and each set draws as its box is mentioned. The small '✓ Very valuable' tag is still on screen and now appears with 'Operators used them successfully'. Say if you'd like it removed. Approving the slide will re-voice it.",
+          "fingerprint": "76f04d4362b4c383"
+        },
+        {
+          "at": "2026-10-17T12:37:30+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "76f04d4362b4c383"
         }
       ],
       "number": 4,
       "title": "Frameworks and the problem of interpretation",
       "hidden": false,
-      "fingerprint": "01e16ff8ac1ac784",
+      "fingerprint": "76f04d4362b4c383",
       "comment": "",
-      "updated_at": "2026-10-17T07:51:51+01:00",
-      "approved_fingerprint": "45a3e67252feeff8",
-      "reply": {
-        "at": "2026-10-17T08:31:28+01:00",
-        "text": "Changed only by the new rule that every slide title fades in at the start with no movement, from your slide 2 comment. Nothing else changed. Please check it and approve again."
-      }
+      "updated_at": "2026-10-17T12:37:30+01:00",
+      "approved_fingerprint": "76f04d4362b4c383"
     },
     "260": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-17T10:37:55+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "As of September 2026 there have been 1,383,661 downloads by 71,916 developers.\nThe standard was formally launched in 2015 (not 2017)\nInstead of 'Today, most telecom IT capabilities start with a simple question. Which standard APIs do we need?' say that TM Forum Open-APIs are the foundation for many telcos IT services and has enabled seamless integration.",
+          "fingerprint": "9e13ed1a2f1f1f93"
+        },
+        {
+          "at": "2026-10-17T10:38:10+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it: updating the figures and launch year, and the closing sentence.",
+          "fingerprint": "9e13ed1a2f1f1f93"
+        },
+        {
+          "at": "2026-10-17T10:40:25+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. Launch year is now 2015 (hackathons from 2013). The counter ticks up to 1,383,661 downloads (September 2026), then 71,916 developers. The narration rounds them ('almost one point four million downloads', 'nearly seventy-two thousand developers'), because the exact digits are hard to listen to; say if you'd rather it read them in full. It now ends: 'Today, TM Forum Open APIs are the foundation for many telcos' IT services. They have enabled seamless integration between systems.' On screen, a box reads 'The foundation of telco IT' and then '✓ Seamless integration'. I also corrected the same figures in the project specs, and added them to the skill's research notes so later videos use them.",
+          "fingerprint": "a04111003464732f"
+        },
+        {
+          "at": "2026-10-17T10:44:26+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a04111003464732f"
+        }
+      ],
       "number": 5,
       "title": "The Open API programme",
       "hidden": false,
-      "fingerprint": "f3c4dc90fc585709"
+      "fingerprint": "a04111003464732f",
+      "comment": "",
+      "updated_at": "2026-10-17T10:44:26+01:00",
+      "approved_fingerprint": "a04111003464732f"
     },
     "261": {
       "status": "pending",
@@ -262,7 +419,7 @@
       "number": 15,
       "title": "The component standard in two layers",
       "hidden": false,
-      "fingerprint": "ec3cc689d9d0097a"
+      "fingerprint": "b1feb70f15fcd911"
     },
     "271": {
       "status": "pending",
@@ -350,7 +507,7 @@
       "number": 26,
       "title": "Built together",
       "hidden": false,
-      "fingerprint": "a3a4dad134760d26"
+      "fingerprint": "64686c6a4977e7be"
     },
     "282": {
       "status": "pending",
@@ -361,5 +518,5 @@
       "fingerprint": "a4769a2c7cb7cc85"
     }
   },
-  "inspected_at": "2026-10-17T08:30:06+01:00"
+  "inspected_at": "2026-10-17T12:33:28+01:00"
 }
