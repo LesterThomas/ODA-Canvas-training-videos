@@ -33,3 +33,10 @@ Thumbs.db
 
 # Office lock files (deck open in PowerPoint)
 ~$*
+!.env.example
+
+# Playwright capture deps
+demos/node_modules/
+
+# Playwright scratch recordings
+demos/captures/

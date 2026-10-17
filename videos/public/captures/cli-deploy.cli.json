@@ -1,0 +1,22 @@
+{
+ "name": "cli-deploy",
+ "capturedAt": "2026-10-16T23:27:05.227Z",
+ "context": "docker-desktop",
+ "steps": [
+  {
+   "cmd": "helm list -n components",
+   "output": "NAME    NAMESPACE     REVISION    UPDATED                                  STATUS      CHART                   APP VERSION\nr1      components    1           2026-10-17 00:11:24.4685585 +0100 BST    deployed    productcatalog-1.2.5    1.16.0",
+   "exitCode": 0
+  },
+  {
+   "cmd": "kubectl get components -n components",
+   "output": "NAME                          DEPLOYMENT_STATUS\nr1-productcatalogmanagement   Complete",
+   "exitCode": 0
+  },
+  {
+   "cmd": "kubectl get exposedapis -n components",
+   "output": "NAME                                                      API_ENDPOINT                                                                        IMPLEMENTATION_READY\nr1-productcatalogmanagement-metrics                       https://localhost/r1-productcatalogmanagement/metrics                               true\nr1-productcatalogmanagement-productcatalogmanagement-v4   https://localhost/r1-productcatalogmanagement/tmf-api/productCatalogManagement/v4   true\nr1-productcatalogmanagement-userrolesandpermissions-v5    https://localhost/r1-productcatalogmanagement/rolesAndPermissionsManagement/v5      true",
+   "exitCode": 0
+  }
+ ]
+}

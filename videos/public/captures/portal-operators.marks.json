@@ -1,0 +1,19 @@
+{
+ "name": "portal-operators",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 2.33
+  },
+  {
+   "label": "operators",
+   "t": 5.45
+  },
+  {
+   "label": "api-operator",
+   "t": 18.96
+  }
+ ]
+}

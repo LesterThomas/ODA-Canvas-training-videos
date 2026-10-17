@@ -1,0 +1,27 @@
+{
+ "name": "portal-inventory",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 2.38
+  },
+  {
+   "label": "inventory",
+   "t": 6.79
+  },
+  {
+   "label": "core-commerce",
+   "t": 10.68
+  },
+  {
+   "label": "installed",
+   "t": 16.12
+  },
+  {
+   "label": "production",
+   "t": 20.39
+  }
+ ]
+}

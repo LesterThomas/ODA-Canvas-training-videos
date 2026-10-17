@@ -1,0 +1,826 @@
+{
+ "deck": "01-introduction-to-the-oda-canvas.pptx",
+ "slides": {
+  "1": {
+   "n": 1,
+   "secs": 10.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Plate",
+     "at": 0.2,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Component",
+     "at": 1.1,
+     "effect": "zoom",
+     "dur": 0.8
+    },
+    {
+     "shape": "Intro",
+     "at": 1.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Name",
+     "at": 1.6,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Subtitle",
+     "at": 2.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Series",
+     "at": 3.4,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "2": {
+   "n": 2,
+   "secs": 26.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Divider",
+     "at": 1.0,
+     "effect": "wipe-down",
+     "dur": 1.2
+    },
+    {
+     "shape": "Component builders",
+     "at": 1.4,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Canvas builders",
+     "at": 12.5,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Canvas options",
+     "at": 19.0,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "3": {
+   "n": 3,
+   "secs": 24.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Progress",
+     "at": 0.8,
+     "effect": "wipe-down",
+     "dur": 15.5
+    },
+    {
+     "shape": "Agenda 1",
+     "at": 1.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Agenda 2",
+     "at": 4.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Agenda 3",
+     "at": 8.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Agenda 4",
+     "at": 11.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Agenda 5",
+     "at": 15.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Deep dives",
+     "at": 19.0,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "4": {
+   "n": 4,
+   "secs": 24.4,
+   "kind": "video"
+  },
+  "5": {
+   "n": 5,
+   "secs": 28.0,
+   "kind": "video"
+  },
+  "6": {
+   "n": 6,
+   "secs": 20.8,
+   "kind": "video"
+  },
+  "7": {
+   "n": 7,
+   "secs": 25.6,
+   "kind": "video"
+  },
+  "8": {
+   "n": 8,
+   "secs": 19.6,
+   "kind": "video"
+  },
+  "9": {
+   "n": 9,
+   "secs": 26.4,
+   "kind": "video"
+  },
+  "10": {
+   "n": 10,
+   "secs": 34.0,
+   "kind": "video"
+  },
+  "11": {
+   "n": 11,
+   "secs": 24.8,
+   "kind": "video"
+  },
+  "12": {
+   "n": 12,
+   "secs": 20.8,
+   "kind": "video"
+  },
+  "13": {
+   "n": 13,
+   "secs": 34.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Stakeholders",
+     "at": 2.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Pillar 1",
+     "at": 7.0,
+     "effect": "wipe-up",
+     "dur": 1.0
+    },
+    {
+     "shape": "Pillar 2",
+     "at": 11.2,
+     "effect": "wipe-up",
+     "dur": 1.0
+    },
+    {
+     "shape": "Pillar 3",
+     "at": 18.6,
+     "effect": "wipe-up",
+     "dur": 1.0
+    },
+    {
+     "shape": "Pillar 4",
+     "at": 22.6,
+     "effect": "wipe-up",
+     "dur": 1.0
+    },
+    {
+     "shape": "Pillar 5",
+     "at": 25.4,
+     "effect": "wipe-up",
+     "dur": 1.0
+    },
+    {
+     "shape": "Pillar 6",
+     "at": 29.6,
+     "effect": "wipe-up",
+     "dur": 1.0
+    }
+   ]
+  },
+  "14": {
+   "n": 14,
+   "secs": 11.6,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Small bar",
+     "at": 0.8,
+     "effect": "wipe-up",
+     "dur": 1.4
+    },
+    {
+     "shape": "Small label",
+     "at": 1.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Big bar",
+     "at": 3.8,
+     "effect": "wipe-up",
+     "dur": 2.6
+    },
+    {
+     "shape": "Big label",
+     "at": 5.6,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "What",
+     "at": 6.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Telco",
+     "at": 8.6,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "15": {
+   "n": 15,
+   "secs": 23.6,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Layer 1",
+     "at": 2.6,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Pattern 1",
+     "at": 4.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Pattern 2",
+     "at": 7.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Pattern 3",
+     "at": 9.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Layer 2",
+     "at": 11.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Golden 1",
+     "at": 12.2,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Golden 2",
+     "at": 13.1,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Golden 3",
+     "at": 14.0,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Golden 4",
+     "at": 14.9,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Golden 5",
+     "at": 15.8,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Directory",
+     "at": 19.8,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "16": {
+   "n": 16,
+   "secs": 30.8,
+   "kind": "video"
+  },
+  "17": {
+   "n": 17,
+   "secs": 25.6,
+   "kind": "video"
+  },
+  "18": {
+   "n": 18,
+   "secs": 28.0,
+   "kind": "video"
+  },
+  "19": {
+   "n": 19,
+   "secs": 35.2,
+   "kind": "video"
+  },
+  "20": {
+   "n": 20,
+   "secs": 12.4,
+   "kind": "video"
+  },
+  "21": {
+   "n": 21,
+   "secs": 18.8,
+   "kind": "video"
+  },
+  "22": {
+   "n": 22,
+   "secs": 20.8,
+   "kind": "video"
+  },
+  "23": {
+   "n": 23,
+   "secs": 30.4,
+   "kind": "video"
+  },
+  "24": {
+   "n": 24,
+   "secs": 33.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Available header",
+     "at": 2.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Available 1",
+     "at": 2.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 2",
+     "at": 3.4,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 3",
+     "at": 4.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 4",
+     "at": 4.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 5",
+     "at": 5.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 6",
+     "at": 5.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 7",
+     "at": 6.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 8",
+     "at": 8.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 9",
+     "at": 10.4,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Experimental header",
+     "at": 13.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Experimental 1",
+     "at": 13.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned header",
+     "at": 15.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Planned 1",
+     "at": 16.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned 2",
+     "at": 17.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned 3",
+     "at": 18.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned 4",
+     "at": 18.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "GA",
+     "at": 21.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "BDD",
+     "at": 24.4,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "25": {
+   "n": 25,
+   "secs": 16.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Outcome",
+     "at": 2.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 1",
+     "at": 6.5,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 1 on",
+     "at": 9.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 2",
+     "at": 6.65,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 2 on",
+     "at": 10.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 3",
+     "at": 6.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 3 on",
+     "at": 11.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 4",
+     "at": 6.95,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 4 on",
+     "at": 12.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 5",
+     "at": 7.1,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 5 on",
+     "at": 14.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 6",
+     "at": 7.25,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 6 on",
+     "at": 15.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Light 7",
+     "at": 7.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Light 7 on",
+     "at": 15.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Future",
+     "at": 16.2,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "26": {
+   "n": 26,
+   "secs": 21.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Role 1",
+     "at": 1.2,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 1",
+     "at": 5.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Role 2",
+     "at": 1.8,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 2",
+     "at": 5.3,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Role 3",
+     "at": 2.4,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 3",
+     "at": 5.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Role 4",
+     "at": 3.0,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 4",
+     "at": 5.9,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Canvas",
+     "at": 6.0,
+     "effect": "rise",
+     "dur": 0.8
+    },
+    {
+     "shape": "Manifesto",
+     "at": 9.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Together",
+     "at": 15.5,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "27": {
+   "n": 27,
+   "secs": 20.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Title",
+     "at": 0.1,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Part 2",
+     "at": 2.4,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Part 3",
+     "at": 4.0,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Part 4",
+     "at": 5.6,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Part 5",
+     "at": 7.2,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Links",
+     "at": 10.5,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Welcome",
+     "at": 15.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  }
+ }
+}

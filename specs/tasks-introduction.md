@@ -6,11 +6,15 @@ from spec to a finished `decks/introduction-to-the-oda-canvas.pptx`, ready to ha
 
 > **Status (2026-10-16):** The deck is assembled at `decks/01-introduction-to-the-oda-canvas.pptx`.
 > The narration is in `scripts/01-introduction-to-the-oda-canvas.md`, and the clips come from
-> `videos/` (Remotion, folder *Intro-to-ODA-Canvas*). The Portal slides (19–20) use the fallback: an
-> animated walkthrough built on `images/Canvas 2.png`, `Canvas 3.png` and `Canvas 7.png`, not a live
-> Playwright capture. To rebuild:
-> `cd videos && node scripts/render-all.mjs Intro && node scripts/stills.mjs --posters Intro`, then
-> `python tools/build_deck.py decks/01-introduction-to-the-oda-canvas.notes.json videos/out videos/out/posters Intro decks/01-introduction-to-the-oda-canvas.pptx "Introduction to the ODA Canvas"`.
+> `videos/` (Remotion, folder *Intro-to-ODA-Canvas*). **Update 2026-10-17:** the deck now has 27
+> slides. Slide 16 is a live ODA Component Directory tour. Slides 18, 20 and 21 use real Canvas
+> Portal recordings and real helm/kubectl output (`demos/`, see the skill's `live-demos.md`). To
+> refresh the captures: `node demos/directory/directory-tour.mjs`, `node demos/portal/portal-*.mjs`,
+> and `node demos/cli/capture-cli.mjs cli-operators|cli-deploy`. To rebuild:
+> `cd videos && node scripts/render-all.mjs Intro && node scripts/stills.mjs --posters Intro && node scripts/assets.mjs`, then
+> `python tools/build_deck.py decks/01-introduction-to-the-oda-canvas.notes.json videos/out videos/out/posters Intro decks/01-introduction-to-the-oda-canvas.pptx "Introduction to the ODA Canvas" --native tools/native/intro.py --assets videos/out/assets`
+> and `pwsh tools/animate_deck.ps1 decks/01-introduction-to-the-oda-canvas.pptx`. Slides 1–3, 13–15
+> and 24–27 are native PowerPoint; the other 17 are Remotion clips.
 
 ## Phase 0 — Resolve Open Questions (blocking)
 

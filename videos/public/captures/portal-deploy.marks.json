@@ -1,0 +1,35 @@
+{
+ "name": "portal-deploy",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 2.85
+  },
+  {
+   "label": "deploy",
+   "t": 5.57
+  },
+  {
+   "label": "modal",
+   "t": 9.01
+  },
+  {
+   "label": "repo",
+   "t": 13.97
+  },
+  {
+   "label": "chart",
+   "t": 20.8
+  },
+  {
+   "label": "release",
+   "t": 23.55
+  },
+  {
+   "label": "next",
+   "t": 27.21
+  }
+ ]
+}

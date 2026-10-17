@@ -1,0 +1,12 @@
+{
+  "name": "oda-canvas-demos",
+  "private": true,
+  "type": "module",
+  "description": "Playwright captures of the ODA Component Directory and Canvas Portal, plus CLI output capture, for the training videos.",
+  "scripts": {
+    "capture": "node"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

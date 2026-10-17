@@ -1,0 +1,12 @@
+{
+ "name": "cli-operators",
+ "capturedAt": "2026-10-16T23:27:02.875Z",
+ "context": "docker-desktop",
+ "steps": [
+  {
+   "cmd": "kubectl get deployments -n canvas",
+   "output": "NAME                               READY   UP-TO-DATE   AVAILABLE   AGE\ncanvas-compreg                     1/1     1            1           13d\ncanvas-depapi-op                   1/1     1            1           13d\ncanvas-info-service                1/1     1            1           13d\ncanvas-kongistio-operator          1/1     1            1           13d\ncanvas-pdb-management-operator     2/2     2            2           13d\ncanvas-portal-backend              1/1     1            1           19d\ncanvas-portal-frontend             1/1     1            1           19d\ncanvas-resource-inventory          1/1     1            1           13d\ncanvas-smanop                      1/1     1            1           13d\ncanvas-svcinv-mongodb              1/1     1            1           13d\ncompcrdwebhook                     1/1     1            1           13d\ncomponent-operator                 1/1     1            1           13d\nidentityconfig-operator-keycloak   1/1     1            1           13d",
+   "exitCode": 0
+  }
+ ]
+}

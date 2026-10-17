@@ -15,7 +15,7 @@ import {
   useProg,
   useT,
 } from "../lib/ui";
-import { Plate } from "./Seg1Intro";
+import { Plate } from "../lib/Plate";
 import { OdaComponent, OdaSegment } from "../lib/OdaComponent";
 
 // Slide 7 — What is an ODA Component?

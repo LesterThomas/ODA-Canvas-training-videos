@@ -1,9 +1,8 @@
 import React from "react";
-import { Img, staticFile } from "remotion";
+import { Sequence, useVideoConfig } from "remotion";
 import { C, MONO } from "../theme";
 import {
   Appear,
-  BrowserFrame,
   Caption,
   Code,
   CodeLine,
@@ -19,68 +18,9 @@ import {
   useT,
 } from "../lib/ui";
 import { OdaComponent } from "../lib/OdaComponent";
-
-// Slide 15 — The component standard in two layers
-const GOLDEN = [
-  { id: "TMFC001", name: "Product Catalog" },
-  { id: "TMFC002", name: "Product Order" },
-  { id: "TMFC005", name: "Product Inventory" },
-  { id: "TMFC031", name: "Bill Calculation" },
-  { id: "TMFC043", name: "Fault Management" },
-];
-
-export const S15TwoLayers: React.FC = () => (
-  <Stage>
-    <Heading kicker="A tour of the Canvas" title="The component standard: two layers" color={C.component} />
-    <Appear at={2.6} from="up" dist={60} style={{ left: 160, top: 730 }}>
-      <div
-        style={{
-          width: 1600,
-          height: 210,
-          borderRadius: 24,
-          background: `linear-gradient(180deg, ${C.panel} 0%, #0C1428 100%)`,
-          border: `3px solid ${C.operator}`,
-          boxSizing: "border-box",
-          padding: "26px 40px",
-        }}
-      >
-        <div style={{ fontSize: 30, color: C.operator, fontWeight: 800, letterSpacing: 3 }}>
-          LAYER 1 · DESIGN PATTERNS
-        </div>
-        <div style={{ display: "flex", gap: 22, marginTop: 26 }}>
-          <Appear at={4.2} from="up" style={{ position: "relative" }}>
-            <Pill color={C.operator} fontSize={32}>Self-describing, modular software</Pill>
-          </Appear>
-          <Appear at={7.6} from="up" style={{ position: "relative" }}>
-            <Pill color={C.identity} fontSize={32}>Security as code</Pill>
-          </Appear>
-          <Appear at={9.0} from="up" style={{ position: "relative" }}>
-            <Pill color={C.observability} fontSize={32}>Management as code</Pill>
-          </Appear>
-        </div>
-      </div>
-    </Appear>
-    <Appear at={11.0} from="left" style={{ left: 160, top: 290 }}>
-      <div style={{ fontSize: 30, color: C.component, fontWeight: 800, letterSpacing: 3 }}>
-        LAYER 2 · STANDARD “GOLDEN” COMPONENTS
-      </div>
-    </Appear>
-    {GOLDEN.map((g, i) => (
-      <Appear key={g.id} at={12.2 + i * 0.9} from="down" dist={160} style={{ left: 175 + i * 322, top: 360 }}>
-        <div style={{ width: 290, display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <OdaComponent size={230} labels={false} />
-          <div style={{ fontSize: 30, fontWeight: 800, marginTop: 6 }}>{g.name}</div>
-          <div style={{ fontSize: 24, fontWeight: 700, color: C.component }}>{g.id}</div>
-        </div>
-      </Appear>
-    ))}
-    <Appear at={19.8} from="up" style={{ left: 1180, top: 978 }}>
-      <Pill color={C.tmf} fontSize={30}>
-        <Icon name="globe" size={32} color={C.tmf} /> tmforum.org/oda/directory
-      </Pill>
-    </Appear>
-  </Stage>
-);
+import { CaptureClip, CaptureSegment } from "../lib/CaptureClip";
+import { Terminal } from "../lib/Terminal";
+import cliOperators from "../../public/captures/cli-operators.cli.json";
 
 // Slide 16 — The component YAML
 const YAML: CodeLine[] = [
@@ -175,9 +115,16 @@ const SUBS = [
   { kind: "PublishedNotification", op: "Event operator", color: C.events, at: 17.6 },
 ];
 
+// Real recording of Platform › Operators (demos/portal/portal-operators.mjs), 3.6 s of it.
+const OPERATOR_SEGMENTS: CaptureSegment[] = [
+  { from: 5.4, to: 12.6, rate: 2, url: "localhost:8090/operators", label: "Canvas Portal · Platform › Operators" },
+];
+
 export const S17Operators: React.FC = () => {
+  const { fps } = useVideoConfig();
   const dim = useProg(22.0, 0.8);
-  const shot = useProg(22.3, 1.2);
+  const shot = useProg(22.3, 0.8);
+  const term = useProg(25.7, 0.5);
   return (
     <Stage>
       <Heading kicker="A tour of the Canvas" title="The Canvas is a set of operators" color={C.operator} />
@@ -232,18 +179,20 @@ export const S17Operators: React.FC = () => {
           </Appear>
         ))}
       </div>
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          top: 0,
-          opacity: shot,
-          translate: `0px ${(1 - shot) * 120}px`,
-        }}
-      >
-        <BrowserFrame url="canvas-portal · Platform › Operators" style={{ left: 360, top: 222, width: 1200 }}>
-          <Img src={staticFile("portal/operators.png")} style={{ width: 1200, display: "block" }} />
-        </BrowserFrame>
+      {/* Cutaway: the same operators running for real, in the Canvas Portal and in kubectl. */}
+      <Sequence from={Math.round(22.3 * fps)} durationInFrames={Math.round(3.6 * fps)} premountFor={fps}>
+        <div style={{ position: "absolute", inset: 0, opacity: shot, translate: `0px ${(1 - shot) * 120}px` }}>
+          <CaptureClip
+            src="captures/portal-operators.webm"
+            segments={OPERATOR_SEGMENTS}
+            width={1360}
+            top={150}
+            labelColor={C.operator}
+          />
+        </div>
+      </Sequence>
+      <div style={{ position: "absolute", left: 300, top: 236, opacity: term, translate: `0px ${(1 - term) * 40}px` }}>
+        <Terminal session={cliOperators} at={25.9} cps={40} fontSize={22} width={1320} height={560} highlight={["operator"]} />
       </div>
       <Caption at={23.4} bottom={36} color={C.operator}>
         Operational knowledge, captured in software

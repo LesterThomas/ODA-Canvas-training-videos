@@ -70,6 +70,9 @@ Measure the boxes by opening the PNG. Lift these helpers into `lib/` when the ne
   root, it fails with "ENOENT … package.json". Open `http://localhost:3000/<composition-id>`.
 - **Stills:** run `node scripts/stills.mjs <Prefix> 1` (add `0.4` for mid-motion), then build contact
   sheets with `contact_sheet.py` and look at every one.
+- **Assets for native slides:** `Asset-Stage`, `Asset-Icon`, `Asset-Oda` and `Asset-OdaCrop`
+  (`src/library/Assets.tsx`) are rendered to transparent PNGs by `node scripts/assets.mjs`. Add any
+  new icon or colour a native builder needs to that script's list.
 - **Library:** the `Library` folder in Studio holds `Lib-OdaComponent`, a reference sheet comparing the
   original PNG, the static SVG and the animated symbol at several sizes. Check it after touching the
   symbol.

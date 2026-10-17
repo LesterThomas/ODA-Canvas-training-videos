@@ -1,6 +1,6 @@
 ---
 name: oda-canvas-video-generator
-description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo. Each deck is a .pptx with one animated Remotion clip per slide and spoken-style speaker notes, which presentation-generator turns into a narrated video. Use this skill whenever the user wants to create, update, refresh, re-record or fix an ODA Canvas training video, deck, script, slide, animation or speaker notes. That includes requests like "do the buy-or-build video next", "update the auth deep-dive", "slide 7 feels too busy", "the narration on slide 12 is wrong", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any existing deck, clip or script, because feedback must be applied to that deck and considered for this skill. Use it even if the user names only one part, such as just the script or just one clip.
+description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo. Each deck is a .pptx mixing native PowerPoint slides and Remotion clips (including live recordings), with spoken-style speaker notes that presentation-generator narrates. Use this skill whenever the user wants to create, update, refresh, re-record or fix an ODA Canvas training video, deck, script, slide, animation or speaker notes. That includes requests like "do the buy-or-build video next", "update the auth deep-dive", "slide 7 feels too busy", "the narration on slide 12 is wrong", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any existing deck, clip or script, because feedback must be applied to that deck and considered for this skill. Also use it to record or show the ODA Component Directory, the Canvas Portal, or helm/kubectl commands in a training video. Use it even if the user names only one part, such as just the script or just one clip.
 ---
 
 # ODA Canvas video generator
@@ -9,9 +9,9 @@ This skill holds the house process for turning ODA Canvas knowledge into trainin
 (`ODA-Canvas-training-videos`) produces one **deck per video**. The deck is a `.pptx` whose slides
 each carry:
 
-- a silent **source clip**. Usually this is a 3Blue1Brown-style animation built in Remotion. For
-  portal demos it is an animated walkthrough over a real Canvas Portal screenshot (a live Playwright
-  capture when available).
+- either a **native PowerPoint layout**, with entrance animations timed to the narration, for titles,
+  cards, lists and simple builds; or a silent **Remotion clip** for slides whose motion carries
+  meaning, live Component Directory and Canvas Portal recordings, and terminal replays.
 - **speaker notes**: the narration, written to be read aloud verbatim by an AI voice.
 
 `presentation-generator` (`D:\Dev\lesterthomas\presentation-generator`, a separate repo) turns the
@@ -34,6 +34,8 @@ it overrides anything older in this file.
 | `images/` | Real Canvas Portal v2 screenshots (`Canvas 1–7.png`) |
 | `videos/` | Remotion project: `src/theme.ts`, `src/lib/ui.tsx` (shared primitives), `src/<deck>/` scenes, `src/Root.tsx` |
 | `videos/scripts/` | `render-all.mjs` (bundles once, renders clips) and `stills.mjs` (review stills and posters) |
+| `demos/` | Playwright captures of the **Component Directory** and **Canvas Portal**, plus real **helm/kubectl** output (`demos/.env` holds the portal login and is gitignored) |
+| `videos/public/captures/` | Recorded `.webm` files with `.marks.json` timelines, and `.cli.json` command outputs |
 | `tools/build_deck.py` | Assembles the deck: full-bleed auto-play video, poster frame and notes on each slide |
 | `decks/<deck-id>.pptx` | Deliverable, plus `<deck-id>.notes.json` |
 | `.claude/launch.json` | `remotion-studio` preview config (runs from `videos/`) |
@@ -94,7 +96,20 @@ python .claude/skills/oda-canvas-video-generator/scripts/extract_notes.py script
 This prints the word count and estimated seconds for each slide (about 2.5 words per second). Those
 numbers set each clip's length and the timing of its build-up.
 
-### Step 4: Build the clips in Remotion
+### Step 4: Build each slide: native PowerPoint or a Remotion clip
+
+First decide the treatment of every slide with the table in `references/house-style.md` ("Native
+PowerPoint or Remotion?"). Titles, agendas, cards, lists, simple builds and calls to action are
+**native**: write a builder in `tools/native/<deck>.py` (see `tools/native/intro.py` and
+`pptx_kit.py`). Slides whose motion explains something, and live demos, are **Remotion clips**. Don't
+make a clip just because the tooling exists.
+
+**Native slides.** Run `node videos/scripts/assets.mjs` for the stage backgrounds, icons and
+component-symbol PNGs. Then draw with `Kit` in 1920×1080 px coordinates (`k.rect`, `k.text`,
+`k.pill`, `k.image`, `k.line(..., elbow=True)`, `k.group`) and time entrances with
+`k.anim(name, at, "fade"|"rise"|"wipe-up"|"wipe-down"|"zoom")`.
+
+**Remotion clips:**
 
 Load the `remotion-best-practices` skill first, and follow its markup rules: `interpolate` and
 `useCurrentFrame` only, and no CSS transitions. Then read `references/remotion-scenes.md` for this
@@ -115,12 +130,18 @@ repo's conventions:
   plus 1–2 seconds.
 - **Make the final frame complete.** The poster frame is the last frame, and presentation-generator
   currently exports each slide as a still. So the finished diagram has to stand on its own.
-- **Portal demos.** With no live cluster, animate over `images/Canvas N.png`. Use a slow camera move,
-  a cursor with click ripples, highlight boxes and text typed into fields, all in screenshot pixel
-  coordinates (see the `PortalShot` helpers in `videos/src/intro/Seg5Portal.tsx`).
+- **Show the real thing.** Read `references/live-demos.md` first.
+  - When a slide talks about **which components exist**, record the ODA Component Directory
+    (tmforum.org) and drill into components such as TMFC001, 002, 005, 006, 007, 008, 043 and 023.
+  - When it talks about **a part of the Canvas**, record the Canvas Portal (`demos/portal/`), and
+    pair it with the matching **helm/kubectl** commands replayed from real output
+    (`demos/cli/capture-cli.mjs` → `<Terminal>`).
+  - Edit captures in Remotion with `CaptureClip` segments.
+  - Only fall back to animating a static screenshot (`lib/PortalShot.tsx`) when no live environment
+    is available, and say so in the script.
 
-Register each slide as its own `<Composition>` inside a `<Folder>` for the deck in `Root.tsx`. Then
-run `npx tsc --noEmit` from `videos/`.
+Register each *clip* slide as its own `<Composition>` inside a `<Folder>` for the deck in `Root.tsx`
+(native slides have none). Then run `npx tsc --noEmit` from `videos/`.
 
 ### Step 5: Review the stills before rendering video
 
@@ -142,13 +163,16 @@ through scenes in the browser pane.
 ```bash
 cd videos && node scripts/render-all.mjs <Prefix>          # run in background; ~15 s per clip
 node scripts/stills.mjs --posters <Prefix>                 # full-res final frames → out/posters/
-cd .. && python tools/build_deck.py decks/<deck-id>.notes.json videos/out videos/out/posters <Prefix> decks/<deck-id>.pptx "<Deck title>"
-python .agents/skills/pptx/scripts/office/validate.py decks/<deck-id>.pptx
+node scripts/assets.mjs                                   # PNG assets for native slides
+cd .. && python tools/build_deck.py decks/<deck-id>.notes.json videos/out videos/out/posters <Prefix> decks/<deck-id>.pptx "<Deck title>" --native tools/native/<deck>.py --assets videos/out/assets
+pwsh tools/animate_deck.ps1 decks/<deck-id>.pptx          # native entrances + auto-advance, applied by PowerPoint
+PYTHONUTF8=1 python .agents/skills/pptx/scripts/office/validate.py decks/<deck-id>.pptx
 python .claude/skills/oda-canvas-video-generator/scripts/check_deck.py decks/<deck-id>.pptx decks/<deck-id>.notes.json
 pwsh .claude/skills/oda-canvas-video-generator/scripts/ppt_check.ps1 decks/<deck-id>.pptx -Slides "1,7"   # real PowerPoint
 ```
 
-`ppt_check.ps1` should show one auto-start ("After Previous", trigger 3) media effect on every slide.
+`ppt_check.ps1` should show `N:<effects>/3` for every slide: 1 effect for a clip slide, several for a
+native slide, and the first effect always trigger 3 ("After Previous"), so the slide starts by itself.
 It also exports sample PNGs, which are what presentation-generator will capture. If PowerPoint has
 the deck open, a `~$` lock file appears. It is gitignored.
 
@@ -199,5 +223,6 @@ Tell the user, briefly, what changed in the deck and what (if anything) changed 
 - `references/script-template.md`: the script file format, with an annotated example slide.
 - `references/research.md`: upstream sources, finding videos, transcripts, known factual traps.
 - `references/remotion-scenes.md`: project structure, primitives, timing, portal demos, Studio, pitfalls.
+- `references/live-demos.md`: recording the Component Directory, the Canvas Portal and helm/kubectl, and editing them with `CaptureClip` and `Terminal`.
 - `references/deck-assembly.md`: `build_deck.py`, the auto-play XML, posters, verification, presentation-generator.
 - `references/feedback-log.md`: the log of every feedback item and its outcome.

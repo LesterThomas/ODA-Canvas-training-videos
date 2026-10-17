@@ -71,6 +71,33 @@ observability and management APIs go with **Management/Operations**; the busines
 `dim` of about 0.35–0.55; higher looks muddy on the dark stage), `build` (segments grow from the
 centre) and `interfaces` (lollipops and sockets draw outward) to follow the narration.
 
+## Native PowerPoint or Remotion? (decide per slide)
+
+Use a Remotion clip only where **motion carries meaning**. Otherwise build a native PowerPoint slide.
+
+| Use **native PowerPoint** (`[NATIVE]`) when the slide is… | Use **Remotion** (`[3B1B]` / `[DEMO]`) when the slide needs… |
+|---|---|
+| a title, agenda, outro or call to action | a diagram that **transforms** (morph, merge, split, drop onto) |
+| cards, lists or columns appearing one by one | things **moving between** elements (tokens, requests, sub-resources fanning out) |
+| simple bars or counters that just grow or appear | **timed data** (counters ticking, metrics, scaling), or code typing in with highlights |
+| links the viewer should be able to click | the **ODA Component symbol animating** (segments lighting, interfaces drawing) |
+| text the user may want to edit later | **live recordings** (Component Directory, Canvas Portal) and **terminal replays** |
+
+Why: native slides are editable, crisp at any size, small, and keep real hyperlinks. Remotion is worth
+its cost when the animation explains something. When unsure, prefer native and say so in the script.
+
+Native slides keep the same look as the clips. They use the same stage background, icons and
+component symbol (PNG assets from `videos/scripts/assets.mjs`), the same palette, and the same
+1920×1080 coordinates. The font is Segoe UI, because Inter isn't installed on the build machine.
+Install Inter to make them match exactly. Native entrance effects are timed to the narration exactly
+like Remotion builds (`k.anim(shape, at)`).
+
+In today's pipeline **both kinds show their final state**. presentation-generator exports each slide
+as a still: video slides show their poster frame, and native slides show every shape with animations
+ignored. So the final state of a native slide must be complete too. Animations and clips do play when
+the deck is presented, or exported to video by PowerPoint itself (slides auto-advance after their
+narration).
+
 ## Motion
 
 - Use one idea per beat, and build diagrams piece by piece in the order the narration mentions them.

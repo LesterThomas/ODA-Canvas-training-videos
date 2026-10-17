@@ -7,6 +7,51 @@ it now lives.
 
 ---
 
+### 2026-10-17: Use native PowerPoint unless motion carries meaning
+**Rule:** Decide each slide's treatment. Titles, agendas, cards, lists, simple builds and calls to
+action are native PowerPoint slides with timed entrance animations. Remotion is for transformations,
+flows, timed data, the animated component symbol, and live demos.
+**Why:** The user asked to stop making a video for every slide. Native slides are editable, crisp,
+smaller (deck 01 went from 64 MB to 51 MB with 10 slides native) and keep clickable links. Remotion is
+worth its cost only where the animation explains something.
+**Source:** User feedback on deck 01: "Consider whether for some slides it is simpler to just use the
+powerpoint features and animations. Use remotion if it makes sense, but not necessarily
+everywhere." Folded into house-style.md, script-template.md and SKILL.md Step 4.
+
+### 2026-10-17: Show the real Component Directory, Canvas Portal and CLI, not mock-ups
+**Rule:** When narration covers which components exist, show a recording of the TM Forum ODA
+Component Directory and drill into real components. When it covers part of the Canvas, show a
+recording of the Canvas Portal **and** the equivalent helm/kubectl commands with their real output.
+**Why:** The user wants viewers to see the actual tools they will use. Real recordings and real
+command output are also self-verifying: they can't drift from the product the way a diagram can.
+**Source:** User request (2026-10-17) with the directory URL, the components to drill into, and
+the local portal. Process in `live-demos.md`; first applied to deck 01 (new slide 16, and slides 18,
+20 and 21).
+
+### 2026-10-17: Never fake terminal output; label stand-ins honestly
+**Rule:** Terminal clips replay real output captured from the cluster. If the on-screen action
+(e.g. deploying `r2`) can't be completed, show the real state of an equivalent release and label it
+("release r1 · same chart, deployed earlier").
+**Why:** These are training videos. A viewer who runs the same command must see the same thing.
+**Source:** Deck 01 slide 21. The portal rejected a duplicate release name, and a real install of the
+published chart would fail on missing images.
+
+### 2026-10-17: Check the demo environment's health before recording
+**Rule:** Before any Portal or CLI capture, check that `kubectl get components -A` is all `Complete`,
+that no pods are in `ImagePullBackOff`, and that the dashboard shows components ready. Fix it, or ask
+the user, before recording.
+**Why:** The first look at the demo cluster showed the product catalog stuck "In Deployment". The
+published `productcatalog-1.4.5` chart references images that don't exist. Recording that would
+teach viewers a broken state.
+**Source:** Deck 01 live-demo work. The user chose to reinstall from the upstream test chart.
+
+### 2026-10-17: Public tmforum.org pages need a visible browser window
+**Rule:** Record tmforum.org with Playwright in a visible Chrome window (`headless: false, channel:
+"chrome"`). Never attempt to bypass a bot check.
+**Why:** Cloudflare blocks headless Chromium, while a normal visible window loads fine. The built-in
+browser pane can't capture at 1920×1080, because it renders at the pane's own width.
+**Source:** Deck 01 Component Directory capture.
+
 ### 2026-10-17: The ODA Component symbol is the standard, not the Lego block
 **Rule:** Show ODA Components with the official hexagon symbol (`OdaComponent`, or
 `images/ODA-Component.svg` outside Remotion), in every deck. Use the white `mono` version for agentic

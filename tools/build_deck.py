@@ -1,7 +1,15 @@
-"""Assemble a training-video deck: one full-bleed, auto-playing video per slide plus speaker notes.
+"""Assemble a training-video deck: each slide is either a full-bleed auto-playing Remotion clip or a
+native PowerPoint slide, and every slide carries its speaker notes.
 
 Usage:
     python tools/build_deck.py <notes.json> <clips_dir> <posters_dir> <clip_prefix> <output.pptx> [title]
+                               [--native tools/native/<deck>.py --assets videos/out/assets]
+
+- --native     module with BUILDERS = {slide number: builder(kit)}; those slides are drawn as native
+               PowerPoint shapes (tools/native/pptx_kit.py) instead of embedding a clip
+- --assets     PNG assets for native slides (node videos/scripts/assets.mjs)
+Writes <output>.anim.json next to the deck: the native slides' entrance animations and every slide's
+narration length. Then run tools/animate_deck.ps1 to apply them in PowerPoint.
 
 - notes.json   list of {"n": slide number, "title": ..., "notes": ...} (made from scripts/<deck-id>.md)
 - clips_dir    rendered Remotion clips named <clip_prefix>-NN-*.mp4
@@ -9,7 +17,9 @@ Usage:
                frame, so a static export of the slide shows the finished diagram)
 """
 
+import argparse
 import glob
+import importlib.util
 import json
 import os
 import sys
@@ -64,63 +74,84 @@ def mp4_duration_ms(path: str) -> int:
     return round(duration * 1000 / timescale)
 
 
+def load_builders(path: str | None) -> dict:
+    if not path:
+        return {}
+    sys.path.insert(0, os.path.dirname(os.path.abspath(path)))  # so the module can import pptx_kit
+    spec = importlib.util.spec_from_file_location("native_builders", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod.BUILDERS
+
+
 def main() -> None:
-    notes_json, clips_dir, posters_dir, prefix, out_path = sys.argv[1:6]
-    deck_title = sys.argv[6] if len(sys.argv) > 6 else ""
-    slides = json.load(open(notes_json, encoding="utf-8"))
+    ap = argparse.ArgumentParser()
+    ap.add_argument("notes_json")
+    ap.add_argument("clips_dir")
+    ap.add_argument("posters_dir")
+    ap.add_argument("prefix")
+    ap.add_argument("out_path")
+    ap.add_argument("title", nargs="?", default="")
+    ap.add_argument("--native", default=None)
+    ap.add_argument("--assets", default="videos/out/assets")
+    a = ap.parse_args()
+    slides = json.load(open(a.notes_json, encoding="utf-8"))
+    builders = load_builders(a.native)
+    if builders:
+        from pptx_kit import Kit  # noqa: E402 (path added by load_builders)
 
     prs = Presentation()
     prs.slide_width = Inches(13.333)
     prs.slide_height = Inches(7.5)
-    if deck_title:
-        prs.core_properties.title = deck_title
+    if a.title:
+        prs.core_properties.title = a.title
     layout = prs.slide_layouts[5]  # "Title Only": keeps a real title for outline/accessibility
+    plan = {"deck": os.path.basename(a.out_path), "slides": {}}
 
-    for s in slides:
+    for idx, s in enumerate(slides, 1):
         n = s["n"]
-        clip = one(os.path.join(clips_dir, f"{prefix}-{n:02d}-*.mp4"))
-        poster = one(os.path.join(posters_dir, f"{prefix}-{n:02d}-*.png"))
-
         slide = prs.slides.add_slide(layout)
         bg = slide.background.fill
         bg.solid()
         bg.fore_color.rgb = RGBColor(0x0A, 0x0F, 0x1E)
 
         # Title lives just off the slide: present in outline view and for screen readers,
-        # never rendered on top of the video.
+        # never rendered on top of the content.
         title = slide.shapes.title
         title.text = s["title"]
         title.left, title.top = prs.slide_width + Inches(0.5), Inches(0)
         title.width, title.height = Inches(6), Inches(1)
 
-        movie = slide.shapes.add_movie(
-            clip,
-            0,
-            0,
-            prs.slide_width,
-            prs.slide_height,
-            poster_frame_image=poster,
-            mime_type="video/mp4",
-        )
-        movie.name = f"Clip {n:02d}"
-
-        # Replace click-to-play timing with auto-play.
-        sld = slide.element
-        for t in sld.findall("p:timing", NS):
-            sld.remove(t)
-        timing = etree.fromstring(
-            AUTOPLAY_TIMING.format(dur=mp4_duration_ms(clip), spid=movie.shape_id)
-        )
-        ext = sld.find("p:extLst", NS)  # schema order: cSld, clrMapOvr, transition, timing, extLst
-        if ext is not None:
-            ext.addprevious(timing)
+        entry = {"n": n, "secs": s.get("secs"), "kind": "video"}
+        if n in builders:
+            kit = Kit(slide, a.assets)
+            builders[n](kit)
+            entry.update(kind="native", anims=kit.anims)
         else:
-            sld.append(timing)
-
+            clip = one(os.path.join(a.clips_dir, f"{a.prefix}-{n:02d}-*.mp4"))
+            poster = one(os.path.join(a.posters_dir, f"{a.prefix}-{n:02d}-*.png"))
+            movie = slide.shapes.add_movie(
+                clip, 0, 0, prs.slide_width, prs.slide_height, poster_frame_image=poster, mime_type="video/mp4"
+            )
+            movie.name = f"Clip {n:02d}"
+            # Replace click-to-play timing with auto-play.
+            sld = slide.element
+            for t in sld.findall("p:timing", NS):
+                sld.remove(t)
+            timing = etree.fromstring(AUTOPLAY_TIMING.format(dur=mp4_duration_ms(clip), spid=movie.shape_id))
+            ext = sld.find("p:extLst", NS)  # schema order: cSld, clrMapOvr, transition, timing, extLst
+            if ext is not None:
+                ext.addprevious(timing)
+            else:
+                sld.append(timing)
+        plan["slides"][str(idx)] = entry
         slide.notes_slide.notes_text_frame.text = s["notes"]
 
-    prs.save(out_path)
-    print(f"saved {out_path} with {len(slides)} slides")
+    prs.save(a.out_path)
+    plan_path = os.path.splitext(a.out_path)[0] + ".anim.json"
+    json.dump(plan, open(plan_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
+    native = sum(1 for e in plan["slides"].values() if e["kind"] == "native")
+    print(f"saved {a.out_path} with {len(slides)} slides ({native} native, {len(slides) - native} video); plan {plan_path}")
 
 
 if __name__ == "__main__":

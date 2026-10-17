@@ -1,6 +1,7 @@
 # Open a deck in real PowerPoint (COM), report each slide's auto-play effect, and export sample PNGs.
 # Usage: pwsh ppt_check.ps1 <deck.pptx> [-OutDir <folder>] [-Slides "1,10,20"]
-# Expect "N:1/3" for every slide: one main-sequence effect, trigger 3 = msoAnimTriggerAfterPrevious.
+# Expect "N:<effects>/3" for every slide: video slides have 1 effect (the clip), native slides have
+# several; the first must be trigger 3 = msoAnimTriggerAfterPrevious so the slide starts by itself.
 # The exported PNGs are what presentation-generator narrates over (it captures slides as stills).
 param(
   [Parameter(Mandatory = $true)][string]$Deck,
@@ -19,8 +20,8 @@ try {
   }
   "slides: $($pres.Slides.Count)"
   $report -join "  "
-  $bad = $report | Where-Object { $_ -notmatch ':1/3$' }
-  if ($bad) { "PROBLEM: slides without a single auto-start effect: $($bad -join ', ')" } else { "auto-play OK on every slide" }
+  $bad = $report | Where-Object { $_ -notmatch ':[1-9][0-9]*/3$' }
+  if ($bad) { "PROBLEM: slides that do not start automatically: $($bad -join ', ')" } else { "auto-play OK on every slide" }
   foreach ($i in ($Slides -split "[,\s]+" | Where-Object { $_ } | ForEach-Object { [int]$_ })) {
     if ($i -le $pres.Slides.Count) { $pres.Slides.Item($i).Export((Join-Path $OutDir "slide_$i.png"), "PNG", 1920, 1080) }
   }

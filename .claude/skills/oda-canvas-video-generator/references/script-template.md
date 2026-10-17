@@ -57,8 +57,10 @@ Note demo-environment needs if there are [DEMO] slides.
 
 ## Rules of thumb
 
-- **Treatment tags:** `[3B1B]` for an animated explainer, `[DEMO]` for the portal or CLI, `[STATIC]`
-  for a title card. Most decks mix them: concept slides first, then a short demo.
+- **Treatment tags:** `[NATIVE]` for a native PowerPoint slide (titles, agendas, cards, lists,
+  simple builds, links), `[3B1B]` for a Remotion explainer where the motion carries meaning, and
+  `[DEMO]` for a live recording of the Component Directory, Canvas Portal or a terminal replay.
+  Decide per slide with the table in `house-style.md` ("Native PowerPoint or Remotion?").
 - **`[VERIFY]` markers** go next to the claim, as `**[VERIFY]**`. They must all be resolved with the
   user before the deck is built. Afterwards, update the header paragraph to say the facts were
   confirmed, and on what date.
