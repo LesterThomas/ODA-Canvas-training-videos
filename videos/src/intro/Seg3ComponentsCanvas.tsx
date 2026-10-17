@@ -45,7 +45,7 @@ export const S07Component: React.FC = () => {
   const focus = S07_FOCUS.reduce<OdaSegment | null>((acc, [at, seg]) => (t >= at ? seg : acc), null);
   return (
     <Stage>
-      <Heading kicker="Components and Canvas" title="What is an ODA Component?" color={C.component} />
+      <Heading kicker="Components and Canvas" title="What is an ODA Component?" color={C.component} opening />
       <div
         style={{
           position: "absolute",

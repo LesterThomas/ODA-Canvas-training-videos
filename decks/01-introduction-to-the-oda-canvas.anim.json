@@ -8,38 +8,38 @@
    "anims": [
     {
      "shape": "Plate",
-     "at": 0.2,
-     "effect": "rise",
+     "at": 1.2,
+     "effect": "fade",
      "dur": 0.8
     },
     {
      "shape": "Component",
-     "at": 1.1,
+     "at": 0.9,
      "effect": "zoom",
      "dur": 0.8
     },
     {
      "shape": "Intro",
-     "at": 1.6,
+     "at": 0.2,
      "effect": "fade",
-     "dur": 0.6
+     "dur": 0.8
     },
     {
      "shape": "Name",
-     "at": 1.6,
-     "effect": "rise",
+     "at": 0.2,
+     "effect": "fade",
      "dur": 0.8
     },
     {
      "shape": "Subtitle",
-     "at": 2.6,
+     "at": 0.2,
      "effect": "fade",
-     "dur": 0.6
+     "dur": 0.8
     },
     {
      "shape": "Series",
-     "at": 3.4,
-     "effect": "rise",
+     "at": 1.6,
+     "effect": "fade",
      "dur": 0.6
     }
    ]
@@ -202,13 +202,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Stakeholders",
@@ -318,13 +318,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Layer 1",
@@ -691,13 +691,13 @@
      "shape": "Kicker",
      "at": 0.0,
      "effect": "fade",
-     "dur": 0.5
+     "dur": 0.8
     },
     {
      "shape": "Title",
-     "at": 0.1,
-     "effect": "rise",
-     "dur": 0.6
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
     },
     {
      "shape": "Role 1",

@@ -48,13 +48,17 @@ export const Stage: React.FC<{
   </AbsoluteFill>
 );
 
-/** Slide heading: a small coloured kicker over a large title, top-left inside the safe area. */
+/**
+ * Slide heading: a small coloured kicker over a large title, top-left inside the safe area.
+ * `opening` (title and section-opening slides): a plain fade, no movement (house style).
+ */
 export const Heading: React.FC<{
   kicker?: string;
   title: string;
   color?: string;
   at?: number;
-}> = ({ kicker, title, color = C.tmf, at = 0 }) => {
+  opening?: boolean;
+}> = ({ kicker, title, color = C.tmf, at = 0, opening = false }) => {
   const p = useProg(at, 0.9);
   return (
     <div
@@ -63,7 +67,7 @@ export const Heading: React.FC<{
         left: 120,
         top: 84,
         opacity: p,
-        translate: `${interpolate(p, [0, 1], [-40, 0])}px 0px`,
+        translate: opening ? undefined : `${interpolate(p, [0, 1], [-40, 0])}px 0px`,
       }}
     >
       {kicker ? (

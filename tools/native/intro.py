@@ -18,17 +18,18 @@ def s01(k: Kit):
     k.background("stage-title.png")
     plate = k.rect("Plate", 1060, 640, 700, 98, fill="canvas", radius=16)
     k.text(None, 0, 0, 0, 0, "ODA Canvas", size=35, bold=True, align="center", anchor="middle", shape=plate, spacing=2)
-    k.anim("Plate", 0.2, "rise", 0.8)
+    k.anim("Plate", 1.2, "fade", 0.8)
     k.image("Component", "oda.png", 1220, 342, 380)
-    k.anim("Component", 1.1, "zoom", 0.8)
+    k.anim("Component", 0.9, "zoom", 0.8)
     k.text("Intro", 120, 330, 900, 60, "Introduction to the", size=44, color="muted", bold=True)
     k.text("Name", 120, 380, 1000, 160, [[("ODA ", {}), ("Canvas", {"color": "tmf"})]], size=132, bold=True)
-    k.anim("Intro", 1.6, "fade")
-    k.anim("Name", 1.6, "rise", 0.8)
+    # User feedback: rising from the bottom was distracting here; the titles fade in together.
+    k.anim("Intro", 0.2, "fade", 0.8)
+    k.anim("Name", 0.2, "fade", 0.8)
     k.text("Subtitle", 124, 560, 900, 50, "Open Digital Architecture · TM Forum", size=36, color="muted")
-    k.anim("Subtitle", 2.6, "fade")
+    k.anim("Subtitle", 0.2, "fade", 0.8)
     k.pill("Series", 124, 660, "Training series · Part 1", "tmf", size=26)
-    k.anim("Series", 3.4, "rise")
+    k.anim("Series", 1.6, "fade")
 
 
 # Slide 2 — Who this is for
@@ -99,7 +100,7 @@ PILLARS = [
 
 def s13(k: Kit):
     k.background()
-    k.heading("Benefits", "Why ODA Components and Canvas?")
+    k.heading("Benefits", "Why ODA Components and Canvas?", opening=True)
     pills, x = [], 120
     for who in ["Service providers", "Software vendors", "Systems integrators", "Cloud providers"]:
         p = k.pill(None, x, 245, who, "muted", size=26)
@@ -146,7 +147,7 @@ GOLDEN = [("TMFC001", "Product Catalog"), ("TMFC002", "Product Order"), ("TMFC00
 
 def s15(k: Kit):
     k.background()
-    k.heading("A tour of the Canvas", "The component standard: two layers", color="component")
+    k.heading("A tour of the Canvas", "The component standard: two layers", color="component", opening=True)
     slab = [k.rect(None, 160, 730, 1600, 210, fill="panel", line="operator", line_w=3, radius=24),
             k.text(None, 200, 756, 1500, 40, "LAYER 1 · DESIGN PATTERNS", size=30, bold=True, color="operator", spacing=3)]
     k.group("Layer 1", slab)
@@ -248,7 +249,7 @@ ROLES = [("Communication service providers", "globe", "tmf", "E6007E", 120, 220)
 
 def s26(k: Kit):
     k.background()
-    k.heading("Conclusion", "Built together")
+    k.heading("Conclusion", "Built together", opening=True)
     for i, (label, icon, color, hexc, x, y) in enumerate(ROLES):
         parts = [k.circle(None, x + 200, y + 70, 140, fill=color, fill_alpha=0.15, line=color, line_w=4),
                  k.image(None, _ico(icon, hexc), x + 160, y + 30, 80),

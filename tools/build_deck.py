@@ -147,7 +147,13 @@ def main() -> None:
         plan["slides"][str(idx)] = entry
         slide.notes_slide.notes_text_frame.text = s["notes"]
 
-    prs.save(a.out_path)
+    lock = os.path.join(os.path.dirname(os.path.abspath(a.out_path)), "~$" + os.path.basename(a.out_path))
+    try:
+        if os.path.exists(lock):
+            raise PermissionError
+        prs.save(a.out_path)
+    except PermissionError:
+        sys.exit(f"{a.out_path} is open in PowerPoint: close it there, then build again")
     plan_path = os.path.splitext(a.out_path)[0] + ".anim.json"
     json.dump(plan, open(plan_path, "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     native = sum(1 for e in plan["slides"].values() if e["kind"] == "native")

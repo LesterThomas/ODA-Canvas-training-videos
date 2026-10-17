@@ -191,16 +191,23 @@ Read `references/narration-and-video.md` first. Then:
    `uv run --native-tls presgen.py review "<abs path>/decks/<deck-id>.pptx"`, run from
    `D:\Dev\lesterthomas\presentation-generator`. It opens in the user's browser with a still, a
    silent PowerPoint render and the narration text for every slide.
-2. The user approves slides on the page, or tells you in chat ("approve 1–4"). In that case, record
-   it with `presgen.py approve`. **Never approve a slide yourself.**
-3. Read their comments (`presgen.py status --json`) and handle each one through the **Feedback
-   loop**. Rebuild the deck, re-run `review`, and tell the user which slides need approving again. A
-   changed slide loses its approval automatically.
-4. When the user asks, run `presgen.py generate` in the background. It voices and renders only the
-   approved slides, at 1.5–2.5 minutes of voice per slide. Once every slide is approved, it also
-   builds `decks/<deck-id>/<deck-id>_video.mp4` and a chapter list.
-5. Check sample frames of the result, then tell the user where the video is, how long it runs, and
-   any slides still pending.
+2. The user switches slides from Draft to Approved on the page, or tells you in chat ("approve 1–4").
+   In that case, record it with `presgen.py approve`. **Never approve a slide yourself.** Each
+   approved slide is narrated and rendered straight away, with its animation timed to the real
+   narration. The final video rebuilds once all are approved.
+3. **Watch for change requests and act on them straight away.** Arm a Monitor on
+   `scripts/watch_review.sh` and keep re-arming it while the review page runs. For each request:
+   - fix the slide through the **Feedback loop**,
+   - rebuild only what changed,
+   - run `presgen.py refresh` (the open page updates itself),
+   - post a `presgen.py reply` saying what changed.
+
+   The slide then shows as "Updated: review again". The details are in the **Live fixes** section of
+   `references/narration-and-video.md`.
+4. Watch for slides flagged as timing **CLAMPED** (in the log or on the page), and retime them at
+   source.
+5. When the final video is built (`decks/<deck-id>/<deck-id>_video.mp4`), check sample frames. Then
+   tell the user where it is, how long it runs, and any slides still in draft.
 
 ### Step 8: Close out
 

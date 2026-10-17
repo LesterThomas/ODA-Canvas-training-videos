@@ -7,6 +7,40 @@ it now lives.
 
 ---
 
+### 2026-10-17: Narrate on approval, and time the animation to the real voice
+**Rule:** Approving a slide (the Approved/Draft toggle) narrates and renders it straight away. Each
+clip's animation is aligned to its real narration: it starts with the voice, and is stretched by
+voice length ÷ planned length (words ÷ 2.5), clamped at ×1.25. Retime any clamped slide at source.
+**Why:** The user wants to hear each slide as soon as they sign it off, not after a batch run. The
+real voice is about 5–10% slower than the 2.5 words per second the builds were planned at, so
+unaligned builds ran ahead of the words, and clip slides started a second before the narration.
+**Source:** User: "As soon as I approve a slide, I want the presentation-generator to generate the
+audio and final video for that slide. For each slide, I want the Approved/Draft to be a toggle…" and
+"When the presentation-generator has generated the audio, re-check the timing of the slides animation
+to make sure the timing and the length of audio aligns." Folded into SKILL.md Step 7 and
+`narration-and-video.md` (Timing).
+
+### 2026-10-17: Title and section-opening slides fade their titles in together
+**Rule:** On the title card and the first slide of every segment, fade the kicker, title and any
+subtitle in together at the start (`opening=True` / `<Heading opening />`). Keep rise-ins for content
+that builds with the narration.
+**Why:** Elements rising from the bottom one after another felt distracting on an opening frame,
+which should settle at once and set the scene. Movement earns its place when it tracks the narration.
+**Source:** Review-page feedback on deck 01 slide 1: "I think it is too distracting for everything to
+appear from the bottom. For this introductory frame have the Titles fade-in together at the start."
+The user agreed to make it a rule. Folded into house-style.md (Motion). Applied to deck 01 slides 1,
+4, 7, 13, 15 and 26.
+
+### 2026-10-17: Act on review-page change requests straight away
+**Rule:** While a review page is open, keep a Monitor on `scripts/watch_review.sh`. Fix each change
+request as it arrives: feedback loop, minimal rebuild, `presgen.py refresh`, then a `presgen.py reply`
+on the page.
+**Why:** The user wants requested changes made at once, not when they next remember to mention them
+in chat. The reply and the "Updated: review again" status close the loop on the page itself.
+**Source:** User: "When I request changes, how are those changes made. Ideally I'd like the changes
+to be actioned straight away." Chose the in-session watch over a headless Claude run, so that every
+change stays visible and steerable. Folded into SKILL.md Step 7 and `narration-and-video.md`.
+
 ### 2026-10-17: The user approves every slide before it is narrated
 **Rule:** Run presentation-generator's review page. The user approves slides one by one, there or in
 chat, and only approved slides are narrated and rendered. Never approve on the user's behalf. Treat
