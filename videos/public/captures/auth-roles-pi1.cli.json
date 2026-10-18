@@ -1,0 +1,15 @@
+{
+ "name": "auth-roles-pi1",
+ "live": true,
+ "capturedAt": "2026-10-17T22:38:53.190Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "newman run demo/pi1-RetailandWholesale.postman_collection.json --insecure",
+   "output": "newman\n\nProductInventory - Retail and Wholesale Test Data\n\n□ 1. Permission Specification Sets\n└ Create CSP PermissionSpecificationSet\n  POST https://localhost/pi1-productinventory/rolesAndPermissionsManagement/v5/permissionSpecificationSet [201 Created, 1.23kB, 221ms]\n  √  CSP PermissionSpecificationSet created\n\n└ Create MVNO PermissionSpecificationSet\n  POST https://localhost/pi1-productinventory/rolesAndPermissionsManagement/v5/permissionSpecificationSet [201 Created, 1.19kB, 37ms]\n  √  MVNO PermissionSpecificationSet created\n\n┌─────────────────────────┬────────────────────┬───────────────────┐\n│                         │           executed │            failed │\n├─────────────────────────┼────────────────────┼───────────────────┤\n│              iterations │                  1 │                 0 │\n├─────────────────────────┼────────────────────┼───────────────────┤\n│                requests │                  2 │                 0 │\n├─────────────────────────┼────────────────────┼───────────────────┤\n│            test-scripts │                  2 │                 0 │\n├─────────────────────────┼────────────────────┼───────────────────┤\n│      prerequest-scripts │                  0 │                 0 │\n├─────────────────────────┼────────────────────┼───────────────────┤\n│              assertions │                  2 │                 0 │\n├─────────────────────────┴────────────────────┴───────────────────┤\n│ total run duration: 452ms                                        │\n├──────────────────────────────────────────────────────────────────┤\n│ total data received: 1.47kB (approx)                             │\n├──────────────────────────────────────────────────────────────────┤\n│ average response time: 129ms [min: 37ms, max: 221ms, s.d.: 92ms] │\n└──────────────────────────────────────────────────────────────────┘\n(node:134372) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.\n(Use `node --trace-warnings ...` to show where the warning was created)",
+   "exitCode": 0,
+   "at": "2026-10-17T22:38:53.189Z"
+  }
+ ]
+}

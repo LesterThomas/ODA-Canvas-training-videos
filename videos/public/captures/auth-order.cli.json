@@ -1,0 +1,21 @@
+{
+ "name": "auth-order",
+ "live": true,
+ "capturedAt": "2026-10-17T22:42:34.474Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "curl -sk \"https://localhost/pc1-productcatalogmanagement/tmf-api/productCatalogManagement/v4/productOffering?name=Unlimited%20Max%20SIM%20Only%2024-month&fields=id,name\"",
+   "output": "[{\"name\":\"Unlimited Max SIM Only 24-month\",\"id\":\"7e994e4b-feed-49b4-8193-3cd219c2d8d9\",\"href\":\"/pc1-productcatalogmanagement/tmf-api/productCatalogManagement/v4/productOffering/7e994e4b-feed-49b4-8193-3cd219c2d8d9\"}]",
+   "exitCode": 0,
+   "at": "2026-10-17T22:42:34.161Z"
+  },
+  {
+   "cmd": "curl -sk -X POST https://localhost/po1-productordercaptureandvalidation/tmf-api/productOrderingManagement/v4/productOrder -H \"Content-Type: application/json\" -d @demo/order.json | python -m json.tool",
+   "output": "{\n    \"@type\": \"ProductOrder\",\n    \"description\": \"CSP retail customer order for Unlimited Max SIM Only 24-month plan\",\n    \"priority\": \"1\",\n    \"productOrderItem\": [\n        {\n            \"@type\": \"ProductOrderItem\",\n            \"id\": \"1\",\n            \"quantity\": 1,\n            \"action\": \"add\",\n            \"productOffering\": {\n                \"@type\": \"ProductOfferingRef\",\n                \"id\": \"7e994e4b-feed-49b4-8193-3cd219c2d8d9\",\n                \"name\": \"Unlimited Max SIM Only 24-month\",\n                \"href\": \"/pc1-productcatalogmanagement/tmf-api/productCatalogManagement/v4/productOffering/7e994e4b-feed-49b4-8193-3cd219c2d8d9\"\n            },\n            \"product\": {\n                \"id\": \"77a49ef9-d866-4cf4-a1a6-b8f470802d84\",\n                \"href\": \"/pi1-productinventory/tmf-api/productInventory/v4/product/77a49ef9-d866-4cf4-a1a6-b8f470802d84\",\n                \"name\": \"Unlimited Max SIM Only 24-month\"\n            }\n        }\n    ],\n    \"id\": \"f41ed39c-e8c3-43c8-b227-f28e14333709\",\n    \"href\": \"/po1-productordercaptureandvalidation/tmf-api/productOrderingManagement/v4/productOrder/f41ed39c-e8c3-43c8-b227-f28e14333709\",\n    \"@schemaLocation\": \"/docs/#/\",\n    \"@baseType\": \"ProductOrder\",\n    \"state\": \"acknowledged\",\n    \"orderDate\": \"2026-10-17T22:42:34.350Z\"\n}",
+   "exitCode": 0,
+   "at": "2026-10-17T22:42:34.473Z"
+  }
+ ]
+}

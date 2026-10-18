@@ -1,0 +1,27 @@
+{
+ "name": "auth-grant-inventory-kc",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "clients",
+   "t": 1.44
+  },
+  {
+   "label": "service-account-roles",
+   "t": 11.52
+  },
+  {
+   "label": "search-CSP",
+   "t": 20.81
+  },
+  {
+   "label": "tick-pi1-productinventory-CSP",
+   "t": 23
+  },
+  {
+   "label": "assigned-pi1-productinventory-CSP",
+   "t": 24.79
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "name": "auth-deps-met",
+ "live": true,
+ "capturedAt": "2026-10-17T22:42:33.531Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "kubectl get components -n components",
+   "output": "NAME                                   DEPLOYMENT_STATUS\npc1-productcatalogmanagement           Complete\npi1-productinventory                   Complete\npo1-productordercaptureandvalidation   Complete",
+   "exitCode": 0,
+   "at": "2026-10-17T22:42:33.231Z"
+  },
+  {
+   "cmd": "kubectl get dependentapis -n components",
+   "output": "NAME                                                                 READY   AGE     SVCINVID                               URL\npo1-productordercaptureandvalidation-downstreamproductcatalog-v4     true    4m17s   723fac5b-78a9-42e6-8b4b-11cc4e610568   https://localhost/pc1-productcatalogmanagement/tmf-api/productCatalogManagement/v4\npo1-productordercaptureandvalidation-downstreamproductinventory-v4   true    4m17s   762b8391-1f83-427b-8ec7-af69ae77f2b2   https://localhost/pi1-productinventory/tmf-api/productInventory/v4",
+   "exitCode": 0,
+   "at": "2026-10-17T22:42:33.531Z"
+  }
+ ]
+}

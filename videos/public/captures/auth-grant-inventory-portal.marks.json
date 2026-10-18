@@ -1,0 +1,19 @@
+{
+ "name": "auth-grant-inventory-portal",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 3.4
+  },
+  {
+   "label": "depapis",
+   "t": 6.71
+  },
+  {
+   "label": "resolved",
+   "t": 12.81
+  }
+ ]
+}

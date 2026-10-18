@@ -1,0 +1,21 @@
+# po1: ProductOrderCaptureAndValidation chart from reference-example-components @ be11fd0.
+# The chart's tmforumodacanvas/*:1.0.0 images are not on Docker Hub yet (issue #84 republish not run),
+# so each image points at the image dockerbuild-config.yaml says it was republished from.
+component:
+  storageClassName: hostpath  # Docker Desktop's storage class
+  dependentAPIs:
+    enabled: true  # declares TMF620 (catalog) and TMF637 (inventory) dependencies
+api:
+  image: lesterthomas/productorderingapi:0.9
+metrics:
+  image: adarshkrm/productordercaptureandvalidationmetrics:0.4
+processor:
+  image: adarshkrm/productorderprocessor:0.1
+partyrole:
+  image: lesterthomas/partyroleapi:1.1
+permissionspec:
+  image: lesterthomas/permissionspecapi:0.20
+initialization:
+  image: lesterthomas/productorderinitialization:0.1
+roleinitialization:
+  image: lesterthomas/roleinitialization:0.1

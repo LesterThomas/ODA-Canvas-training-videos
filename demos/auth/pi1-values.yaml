@@ -1,0 +1,17 @@
+# pi1: ProductInventory chart from reference-example-components @ be11fd0.
+# The chart's tmforumodacanvas/*:1.0.0 images are not on Docker Hub yet (issue #84 republish not run),
+# so each image points at the image dockerbuild-config.yaml says it was republished from.
+component:
+  storageClassName: hostpath  # Docker Desktop's storage class
+api:
+  image: lesterthomas/productinventoryapi:0.4
+metrics:
+  image: lesterthomas/productinventorymetrics:0.1
+partyrole:
+  image: lesterthomas/partyroleapi:1.1
+permissionspec:
+  image: lesterthomas/permissionspecapi:0.20
+roleinitialization:
+  image: lesterthomas/roleinitialization:0.1
+initialization:
+  image: lesterthomas/productinventoryinitialization:0.1

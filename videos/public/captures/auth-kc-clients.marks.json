@@ -1,0 +1,15 @@
+{
+ "name": "auth-kc-clients",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "clients",
+   "t": 2.61
+  },
+  {
+   "label": "all-clients",
+   "t": 7.96
+  }
+ ]
+}

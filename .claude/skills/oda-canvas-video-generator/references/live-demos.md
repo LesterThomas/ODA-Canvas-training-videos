@@ -93,6 +93,37 @@ Each run prints its marks: `[12.8s] tmfc001`. Use them to set the Remotion segme
   components`; identity with `kubectl get identityconfigs -n components`; and
   `kubectl get crds | grep oda.tmforum.org` for the resource types.
 
+## Keycloak and other live actions (deck 03 onwards)
+
+Some demos must **change** the cluster on camera: install components, load data, grant roles, send an
+order, uninstall. Do this only with the user's approval for that demo. Use these tools:
+
+- **`demos/lib/live-cli.mjs`**: `recordSession(name, steps, {cwd})` runs real commands in Git Bash and
+  saves `<name>.cli.json` (the format `<Terminal>` replays, plus `live: true`). Steps can include
+  `{wait: async () => …}` entries, which run without being recorded, such as waiting for `Complete`. Run the
+  commands from a checkout of the charts, so the on-screen paths are short (`charts/ProductCatalog`).
+- **`demos/lib/keycloak.mjs`**: `kcLogin` (off camera, onto realm `odari`), `kcShowMoreClients`
+  (20 per page, so new clients aren't on page 2), `kcOpenClient(c, id, tab)`, and
+  `kcAssignClientRole(c, roleClient, role)` (Service accounts roles → Assign role → Filter by clients →
+  search → tick → Assign). It also has a small admin REST client (`kcClientRoles`, `kcGrantClientRole`,
+  `until`), so a script can wait for an operator to finish before it records the result.
+- **One script per demo, in phases** (`demos/auth/record-demo.mjs`), plus a `reset` phase and a
+  `restore` phase that rebuilds a mid-demo state off camera. A bad take is then one phase to redo, not
+  the whole demo.
+
+Keycloak 20 admin-console traps:
+- **Lists don't refetch** when you click the tab or menu item you're already on. To show a change
+  (new roles, deleted clients), re-open the client from the list, or reload the page, as a person would.
+  Otherwise the capture shows stale data while the API already has the new state.
+- **Service-account users aren't listed** under Users. Grant a client's service account a role from
+  that client's **Service accounts roles** tab.
+- In the Assign role dialog, a row reads `<client badge><role>` with no space between them. Match the
+  client and the role as separate plain-text filters, not as one word-boundary regex.
+
+`<Terminal>` options for long or streaming output: `stopAt` shows a step's output up to a given line
+(the run as it looked at that moment, for example before newman's summary and Node's TLS warning) without
+editing it. `outputDur` reveals long output over a few seconds. `wrap` wraps long curl commands.
+
 ## Remotion side
 
 - **`CaptureClip`** (`lib/CaptureClip.tsx`) plays a capture in browser chrome, cut into

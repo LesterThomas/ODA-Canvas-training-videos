@@ -1,0 +1,166 @@
+{
+  "deck": "03-authentication-and-authorization.pptx",
+  "slides": {
+    "256": {
+      "status": "pending",
+      "history": [],
+      "number": 1,
+      "title": "Title",
+      "hidden": false,
+      "fingerprint": "c7101ec9271097bc"
+    },
+    "257": {
+      "status": "pending",
+      "history": [],
+      "number": 2,
+      "title": "Four questions",
+      "hidden": false,
+      "fingerprint": "1b6f07c069c8db6a"
+    },
+    "258": {
+      "status": "pending",
+      "history": [],
+      "number": 3,
+      "title": "Components declare, the Canvas implements",
+      "hidden": false,
+      "fingerprint": "c948b5bddcc8df35"
+    },
+    "259": {
+      "status": "pending",
+      "history": [],
+      "number": 4,
+      "title": "Every component gets its own client",
+      "hidden": false,
+      "fingerprint": "151d0055adc001c0"
+    },
+    "260": {
+      "status": "pending",
+      "history": [],
+      "number": 5,
+      "title": "The Canvas system role",
+      "hidden": false,
+      "fingerprint": "14c36001a7a8203c"
+    },
+    "261": {
+      "status": "pending",
+      "history": [],
+      "number": 6,
+      "title": "Static and dynamic roles",
+      "hidden": false,
+      "fingerprint": "d2db11a7bbdc2a58"
+    },
+    "262": {
+      "status": "pending",
+      "history": [],
+      "number": 7,
+      "title": "A grant is also a connection",
+      "hidden": false,
+      "fingerprint": "9bcef5b0beda5abe"
+    },
+    "263": {
+      "status": "pending",
+      "history": [],
+      "number": 8,
+      "title": "The scenario",
+      "hidden": false,
+      "fingerprint": "f2e624fdd4f8b82b"
+    },
+    "264": {
+      "status": "pending",
+      "history": [],
+      "number": 9,
+      "title": "Deploy the product catalog",
+      "hidden": false,
+      "fingerprint": "9a70a8dc80bad4ca"
+    },
+    "265": {
+      "status": "pending",
+      "history": [],
+      "number": 10,
+      "title": "Its client appears in Keycloak",
+      "hidden": false,
+      "fingerprint": "056d61da9796f2ea"
+    },
+    "266": {
+      "status": "pending",
+      "history": [],
+      "number": 11,
+      "title": "Static roles",
+      "hidden": false,
+      "fingerprint": "f6df15cd2c6d42de"
+    },
+    "267": {
+      "status": "pending",
+      "history": [],
+      "number": 12,
+      "title": "Dynamic roles through TMF672",
+      "hidden": false,
+      "fingerprint": "790e40184ce95847"
+    },
+    "268": {
+      "status": "pending",
+      "history": [],
+      "number": 13,
+      "title": "Deploy the order and inventory components",
+      "hidden": false,
+      "fingerprint": "5f2224129f576d93"
+    },
+    "269": {
+      "status": "pending",
+      "history": [],
+      "number": 14,
+      "title": "Grant a catalog role, and the dependency is met",
+      "hidden": false,
+      "fingerprint": "6c9144e83f63fd4c"
+    },
+    "270": {
+      "status": "pending",
+      "history": [],
+      "number": 15,
+      "title": "The same for the inventory",
+      "hidden": false,
+      "fingerprint": "3a076784f7c47143"
+    },
+    "271": {
+      "status": "pending",
+      "history": [],
+      "number": 16,
+      "title": "Send a product order",
+      "hidden": false,
+      "fingerprint": "cea17aa42dae82de"
+    },
+    "272": {
+      "status": "pending",
+      "history": [],
+      "number": 17,
+      "title": "What happened behind the scenes",
+      "hidden": false,
+      "fingerprint": "866239bcd6c392a3"
+    },
+    "273": {
+      "status": "pending",
+      "history": [],
+      "number": 18,
+      "title": "Automated cleanup",
+      "hidden": false,
+      "fingerprint": "100a4f5dc4987c67"
+    },
+    "274": {
+      "status": "pending",
+      "history": [],
+      "number": 19,
+      "title": "Answers to the four questions",
+      "hidden": false,
+      "fingerprint": "96c6025765743e87"
+    },
+    "275": {
+      "status": "pending",
+      "history": [],
+      "number": 20,
+      "title": "Find out more",
+      "hidden": false,
+      "fingerprint": "86b147535304cbfe"
+    }
+  },
+  "inspected_at": "2026-10-18T00:04:46+01:00"
+}

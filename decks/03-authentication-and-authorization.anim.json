@@ -1,0 +1,385 @@
+{
+ "deck": "03-authentication-and-authorization.pptx",
+ "slides": {
+  "1": {
+   "n": 1,
+   "secs": 17.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Canvas",
+     "at": 0.9,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Component",
+     "at": 1.6,
+     "effect": "zoom",
+     "dur": 0.8
+    },
+    {
+     "shape": "Shield",
+     "at": 2.4,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Intro",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Name",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Subtitle",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Demo",
+     "at": 13.2,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "2": {
+   "n": 2,
+   "secs": 23.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Card 1",
+     "at": 1.6,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 1",
+     "at": 1.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 2",
+     "at": 8.0,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 2",
+     "at": 8.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 3",
+     "at": 12.4,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 3",
+     "at": 12.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 4",
+     "at": 17.6,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 4",
+     "at": 17.6,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "3": {
+   "n": 3,
+   "secs": 29.2,
+   "kind": "video"
+  },
+  "4": {
+   "n": 4,
+   "secs": 17.2,
+   "kind": "video"
+  },
+  "5": {
+   "n": 5,
+   "secs": 21.6,
+   "kind": "video"
+  },
+  "6": {
+   "n": 6,
+   "secs": 31.2,
+   "kind": "video"
+  },
+  "7": {
+   "n": 7,
+   "secs": 28.0,
+   "kind": "video"
+  },
+  "8": {
+   "n": 8,
+   "secs": 21.6,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Catalog",
+     "at": 1.2,
+     "effect": "zoom",
+     "dur": 0.7
+    },
+    {
+     "shape": "CSP",
+     "at": 3.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "MVNO",
+     "at": 5.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Order",
+     "at": 10.0,
+     "effect": "zoom",
+     "dur": 0.7
+    },
+    {
+     "shape": "Dep catalog",
+     "at": 12.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "TMF620",
+     "at": 12.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Inventory",
+     "at": 16.4,
+     "effect": "zoom",
+     "dur": 0.7
+    },
+    {
+     "shape": "Dep inventory",
+     "at": 17.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "TMF637",
+     "at": 17.8,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "9": {
+   "n": 9,
+   "secs": 15.6,
+   "kind": "video"
+  },
+  "10": {
+   "n": 10,
+   "secs": 16.8,
+   "kind": "video"
+  },
+  "11": {
+   "n": 11,
+   "secs": 21.2,
+   "kind": "video"
+  },
+  "12": {
+   "n": 12,
+   "secs": 21.6,
+   "kind": "video"
+  },
+  "13": {
+   "n": 13,
+   "secs": 22.8,
+   "kind": "video"
+  },
+  "14": {
+   "n": 14,
+   "secs": 21.2,
+   "kind": "video"
+  },
+  "15": {
+   "n": 15,
+   "secs": 14.0,
+   "kind": "video"
+  },
+  "16": {
+   "n": 16,
+   "secs": 11.6,
+   "kind": "video"
+  },
+  "17": {
+   "n": 17,
+   "secs": 22.4,
+   "kind": "video"
+  },
+  "18": {
+   "n": 18,
+   "secs": 17.6,
+   "kind": "video"
+  },
+  "19": {
+   "n": 19,
+   "secs": 21.6,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Card 1",
+     "at": 0.5,
+     "effect": "fade",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 1",
+     "at": 1.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 2",
+     "at": 0.8,
+     "effect": "fade",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 2",
+     "at": 10.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 3",
+     "at": 1.1,
+     "effect": "fade",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 3",
+     "at": 14.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 4",
+     "at": 1.4,
+     "effect": "fade",
+     "dur": 0.7
+    },
+    {
+     "shape": "Body 4",
+     "at": 18.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "20": {
+   "n": 20,
+   "secs": 16.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Link 1",
+     "at": 0.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 2",
+     "at": 2.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 3",
+     "at": 4.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 4",
+     "at": 7.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Welcome",
+     "at": 12.8,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  }
+ }
+}

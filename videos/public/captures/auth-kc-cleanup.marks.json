@@ -1,0 +1,23 @@
+{
+ "name": "auth-kc-cleanup",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "clients",
+   "t": 1.48
+  },
+  {
+   "label": "before-uninstall",
+   "t": 6.01
+  },
+  {
+   "label": "uninstall-start",
+   "t": 7.52
+  },
+  {
+   "label": "clients-gone",
+   "t": 17.57
+  }
+ ]
+}

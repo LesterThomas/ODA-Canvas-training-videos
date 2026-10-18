@@ -1,0 +1,21 @@
+{
+ "name": "auth-uninstall",
+ "live": true,
+ "capturedAt": "2026-10-17T22:46:45.547Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "helm uninstall po1 pi1 pc1 -n components",
+   "output": "release \"po1\" uninstalled\nrelease \"pi1\" uninstalled\nrelease \"pc1\" uninstalled",
+   "exitCode": 0,
+   "at": "2026-10-17T22:46:45.303Z"
+  },
+  {
+   "cmd": "kubectl get components -n components",
+   "output": "No resources found in components namespace.",
+   "exitCode": 0,
+   "at": "2026-10-17T22:46:45.547Z"
+  }
+ ]
+}

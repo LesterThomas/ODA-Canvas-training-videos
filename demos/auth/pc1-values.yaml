@@ -1,0 +1,21 @@
+# pc1: ProductCatalog chart from reference-example-components @ be11fd0.
+# The chart's tmforumodacanvas/*:1.0.0 images are not on Docker Hub yet (issue #84 republish not run),
+# so each image points at the image dockerbuild-config.yaml says it was republished from.
+component:
+  storageClassName: hostpath  # Docker Desktop's storage class
+api:
+  image: lesterthomas/productcatalogapi:1.6
+metrics:
+  image: lesterthomas/openmetrics:1.0
+mcp:
+  image: lesterthomas/productcatalogmcp:0.14
+partyrole:
+  image: lesterthomas/partyroleapi:1.1
+permissionspec:
+  image: lesterthomas/permissionspecapi:0.20
+promotionmgmt:
+  image: lesterthomas/promotionmgmtapi:0.6
+initialization:
+  image: lesterthomas/productcataloginitialization:0.3
+roleinitialization:
+  image: lesterthomas/roleinitialization:0.6

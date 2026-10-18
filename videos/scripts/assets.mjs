@@ -26,6 +26,8 @@ const ASSETS = [
   icon("check", C.ok), icon("flask", C.ai), icon("flask", C.ok), icon("rocket", C.muted),
   icon("globe", C.tmf), icon("cloud", C.canvas), icon("cube", C.component), icon("handshake", C.operator),
   icon("layers", C.canvas), icon("shield", C.identity), icon("leaf", C.carbon),
+  // deck 03 (authentication and authorization)
+  icon("people", C.identity), icon("key", C.identity), icon("link", C.identity), icon("doc", C.identity),
 ];
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });

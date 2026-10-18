@@ -1,0 +1,33 @@
+{
+ "name": "auth-install-pi1-po1",
+ "live": true,
+ "capturedAt": "2026-10-17T22:38:48.223Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "helm install pi1 charts/ProductInventory -n components -f demo/pi1-values.yaml",
+   "output": "NAME: pi1\nLAST DEPLOYED: Sat Oct 17 23:38:13 2026\nNAMESPACE: components\nSTATUS: deployed\nREVISION: 1",
+   "exitCode": 0,
+   "at": "2026-10-17T22:38:13.808Z"
+  },
+  {
+   "cmd": "helm install po1 charts/ProductOrderCaptureAndValidation -n components -f demo/po1-values.yaml",
+   "output": "NAME: po1\nLAST DEPLOYED: Sat Oct 17 23:38:14 2026\nNAMESPACE: components\nSTATUS: deployed\nREVISION: 1\nTEST SUITE: None",
+   "exitCode": 0,
+   "at": "2026-10-17T22:38:15.326Z"
+  },
+  {
+   "cmd": "kubectl get components -n components",
+   "output": "NAME                                   DEPLOYMENT_STATUS\npc1-productcatalogmanagement           Complete\npi1-productinventory                   Complete\npo1-productordercaptureandvalidation   In-Progress-DepApi",
+   "exitCode": 0,
+   "at": "2026-10-17T22:38:47.649Z"
+  },
+  {
+   "cmd": "kubectl get dependentapis -n components",
+   "output": "NAME                                                                 READY   AGE   SVCINVID   URL\npo1-productordercaptureandvalidation-downstreamproductcatalog-v4             32s\npo1-productordercaptureandvalidation-downstreamproductinventory-v4           32s",
+   "exitCode": 0,
+   "at": "2026-10-17T22:38:48.223Z"
+  }
+ ]
+}

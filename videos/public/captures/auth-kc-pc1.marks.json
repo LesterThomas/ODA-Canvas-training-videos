@@ -1,0 +1,31 @@
+{
+ "name": "auth-kc-pc1",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "clients",
+   "t": 2.1
+  },
+  {
+   "label": "pc1-client-in-list",
+   "t": 4.86
+  },
+  {
+   "label": "pc1-roles-canvasRole",
+   "t": 13.84
+  },
+  {
+   "label": "newman-start",
+   "t": 15.35
+  },
+  {
+   "label": "roles-created",
+   "t": 21.46
+  },
+  {
+   "label": "pc1-roles-dynamic",
+   "t": 29.91
+  }
+ ]
+}

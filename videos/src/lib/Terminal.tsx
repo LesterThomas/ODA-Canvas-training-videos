@@ -20,8 +20,15 @@ export const Terminal: React.FC<{
   title?: string;
   /** Highlight output lines containing these strings (e.g. a release name). */
   highlight?: string[];
+  /** Per step: show the output only up to the last line containing this string, i.e. the run as it
+   *  looked at that moment (newman keeps printing after it). The output itself is never edited. */
+  stopAt?: (string | undefined)[];
+  /** Seconds over which each step's output is revealed (longer for long, streaming output). */
+  outputDur?: number;
+  /** Wrap long lines (commands and output) at the panel width instead of clipping them. */
+  wrap?: boolean;
   style?: React.CSSProperties;
-}> = ({ session, starts, at = 0, cps = 32, fontSize = 20, width = 1500, height = 560, title, highlight = [], style }) => {
+}> = ({ session, starts, at = 0, cps = 32, fontSize = 20, width = 1500, height = 560, title, highlight = [], stopAt = [], outputDur = 0.5, wrap = false, style }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -36,26 +43,37 @@ export const Terminal: React.FC<{
     cursor = st + s.cmd.length / cps + 0.35 + 0.5 + 1.4;
   });
 
-  const lines: { text: string; kind: "prompt" | "out"; hl: boolean }[] = [];
+  // Monospace glyphs are ~0.6 em wide; leave room for the padding and the "$ " prompt.
+  const cols = Math.floor((width - 44) / (fontSize * 0.6)) - 2;
+  const split = (text: string) => (wrap && text.length > cols ? (text.match(new RegExp(`.{1,${cols}}`, "g")) ?? [text]) : [text]);
+  const lines: { text: string; kind: "prompt" | "cont" | "out"; hl: boolean }[] = [];
   session.steps.forEach((s, i) => {
     const st = sched[i];
     if (t < st) return;
     const typed = Math.min(s.cmd.length, Math.floor((t - st) * cps));
     const doneTyping = st + s.cmd.length / cps;
-    lines.push({ text: s.cmd.slice(0, typed), kind: "prompt", hl: false });
+    split(s.cmd.slice(0, typed)).forEach((chunk, j) => lines.push({ text: chunk, kind: j === 0 ? "prompt" : "cont", hl: false }));
     if (t >= doneTyping + 0.35) {
-      const out = s.output.split("\n");
+      let out = s.output.split("\n");
+      const stop = stopAt[i];
+      if (stop) {
+        const last = out.map((l) => l.includes(stop)).lastIndexOf(true);
+        if (last >= 0) out = out.slice(0, last + 1);
+      }
       const shown = Math.ceil(
-        out.length * interpolate(t, [doneTyping + 0.35, doneTyping + 0.85], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+        out.length * interpolate(t, [doneTyping + 0.35, doneTyping + 0.35 + outputDur], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
       );
-      out.slice(0, shown).forEach((l) => lines.push({ text: l, kind: "out", hl: highlight.some((h) => h && l.includes(h)) }));
+      out.slice(0, shown).forEach((l) => {
+        const hl = highlight.some((h) => h && l.includes(h));
+        split(l).forEach((chunk) => lines.push({ text: chunk, kind: "out", hl }));
+      });
     }
   });
 
   const maxLines = Math.floor((height - 70) / lh);
   const visible = lines.slice(Math.max(0, lines.length - maxLines));
   const blink = Math.floor(t * 2) % 2 === 0;
-  const lastIsTyping = lines.length > 0 && lines[lines.length - 1].kind === "prompt";
+  const lastIsTyping = lines.length > 0 && lines[lines.length - 1].kind !== "out";
 
   return (
     <div
@@ -99,13 +117,13 @@ export const Terminal: React.FC<{
               fontSize,
               whiteSpace: "pre",
               overflow: "hidden",
-              color: l.kind === "prompt" ? C.text : l.hl ? C.ok : "#C8D0E4",
+              color: l.kind !== "out" ? C.text : l.hl ? C.ok : "#C8D0E4",
               background: l.hl ? `${C.ok}1A` : undefined,
             }}
           >
-            {l.kind === "prompt" ? (
+            {l.kind !== "out" ? (
               <>
-                <span style={{ color: C.operator, fontWeight: 600 }}>$ </span>
+                <span style={{ color: C.operator, fontWeight: 600 }}>{l.kind === "prompt" ? "$ " : "  "}</span>
                 {l.text}
                 {i === visible.length - 1 && lastIsTyping && blink ? <span style={{ color: C.operator }}>▋</span> : null}
               </>

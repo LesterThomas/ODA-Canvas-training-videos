@@ -1,0 +1,27 @@
+{
+ "name": "auth-grant-catalog-kc",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "clients",
+   "t": 1.42
+  },
+  {
+   "label": "service-account-roles",
+   "t": 11.32
+  },
+  {
+   "label": "search-CSP",
+   "t": 20.87
+  },
+  {
+   "label": "tick-pc1-productcatalogmanagement-CSP",
+   "t": 23.09
+  },
+  {
+   "label": "assigned-pc1-productcatalogmanagement-CSP",
+   "t": 24.86
+  }
+ ]
+}

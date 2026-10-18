@@ -1,0 +1,23 @@
+{
+ "name": "auth-portal-pc1",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 4.07
+  },
+  {
+   "label": "pc1-overview",
+   "t": 7.94
+  },
+  {
+   "label": "pc1-apis",
+   "t": 13.62
+  },
+  {
+   "label": "pc1-security-function",
+   "t": 20.01
+  }
+ ]
+}

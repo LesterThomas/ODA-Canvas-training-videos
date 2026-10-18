@@ -1,0 +1,27 @@
+{
+ "name": "auth-install-pc1",
+ "live": true,
+ "capturedAt": "2026-10-17T22:37:03.398Z",
+ "context": "docker-desktop",
+ "cwd": "reference-example-components",
+ "steps": [
+  {
+   "cmd": "helm install pc1 charts/ProductCatalog -n components -f demo/pc1-values.yaml",
+   "output": "NAME: pc1\nLAST DEPLOYED: Sat Oct 17 23:36:31 2026\nNAMESPACE: components\nSTATUS: deployed\nREVISION: 1\nTEST SUITE: None",
+   "exitCode": 0,
+   "at": "2026-10-17T22:36:32.124Z"
+  },
+  {
+   "cmd": "kubectl get components -n components",
+   "output": "NAME                           DEPLOYMENT_STATUS\npc1-productcatalogmanagement   Complete",
+   "exitCode": 0,
+   "at": "2026-10-17T22:37:02.922Z"
+  },
+  {
+   "cmd": "kubectl get identityconfigs -n components",
+   "output": "NAME                           IDENTITY_PROVIDER   LISTENER-REGISTERED\npc1-productcatalogmanagement   Keycloak            true",
+   "exitCode": 0,
+   "at": "2026-10-17T22:37:03.398Z"
+  }
+ ]
+}

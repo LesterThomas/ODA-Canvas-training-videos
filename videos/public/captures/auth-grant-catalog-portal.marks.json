@@ -1,0 +1,19 @@
+{
+ "name": "auth-grant-catalog-portal",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 2.88
+  },
+  {
+   "label": "depapis",
+   "t": 6.17
+  },
+  {
+   "label": "resolved",
+   "t": 12.35
+  }
+ ]
+}
