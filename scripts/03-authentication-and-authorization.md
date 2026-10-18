@@ -67,10 +67,12 @@ each offering in pc1 (422 if it isn't found), then creates a product in pi1 for 
 
 ## Part A: The model
 
-### Slide 1: Title
-- **Visual:** [NATIVE] "Authentication and Authorization in the ODA Canvas". The ODA Component symbol with its Security segment lit, beside the ODA Canvas picture with its Identity module lit.
+### Slide 1: Title (presenter introduction)
+- **Visual:** [NATIVE for now, then CLIP Auth-01-Presenter] The presenter will record a head-and-shoulders introduction to camera, as for deck 01's slide 1, reading the notes below. Until then the native title slide stands in. Once the video exists: play it full-frame and muted, with overlays in the side thirds timed to the recording's pauses, and use its EQ-matched sound as the narration (`use-recording --sync`). Overlays: a lower-third title, then deck 01 slide 11's comparison (applications each with their own identity store, collapsing into one Canvas identity platform with "Keycloak · Microsoft Entra ID · or another identity platform"), then a short agenda (declare → clients and roles → live demo).
 - **Speaker notes:**
-> This video takes a deeper look at authentication and authorization in the ODA Canvas. It shows how a component declares its security needs, and how the Canvas configures the identity platform to match. Then it runs a complete example with three real components.
+> Welcome to the third video in our series about the ODA Canvas. This one is about authentication and authorization. Traditionally, every application ships with its own identity management. Operations teams then have to integrate each one, and manage users and roles in many places. An ODA Component is different. It doesn't implement identity management at all. Instead, it declares the roles it supports. The Canvas configures those roles in one shared identity platform. That could be Keycloak, Microsoft Entra ID, or another identity platform.
+>
+> In this video we'll look at how that works. We'll see how a component's YAML declares its security needs, and how the Canvas sets up its clients and roles. Then we'll run a complete example with three components. You'll see a role grant that also connects one component to another.
 
 ### Slide 2: Four questions
 - **Visual:** [NATIVE] Four question cards build one at a time.

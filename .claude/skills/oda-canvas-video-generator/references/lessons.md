@@ -7,6 +7,21 @@ it now lives.
 
 ---
 
+### 2026-10-18: Every deck opens with the presenter on camera
+**Rule:** Slide 1 of every new deck is a placeholder for the user's own head-and-shoulders video to
+camera. Draft its speaker notes as the spoken introduction, about 110–130 words: what is different
+or new about the topic (compared with traditional applications or the old way), then what the video
+covers. Make the slide a simple native title card until the recording exists. Then turn it into a
+presenter clip (overlays, plus the video's own EQ-matched sound), following "Presenter videos" in
+`narration-and-video.md`.
+**Why:** The user records the introduction themselves for each video, so the series opens with a real
+person. The notes are their script, and about 110–130 words is roughly 45–55 seconds on camera, the
+length of deck 01's recorded introduction.
+**Source:** Deck 03 review, 2026-10-18: "The presentations will typically start with me recording a
+head and shoulders video to camera. When you are drafting the slides, the first slide should be a
+placeholder with the speaker notes of about 110-130 words to allow me to record the intro video
+scene." Folded into SKILL.md Step 2, `script-template.md` and `extract_notes.py`.
+
 ### 2026-10-17: Narrate on approval, and time the animation to the real voice
 **Rule:** Approving a slide (the Approved/Draft toggle) narrates and renders it straight away. Each
 clip's animation is aligned to its real narration: it starts with the voice, and is stretched by

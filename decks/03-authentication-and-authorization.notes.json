@@ -1,10 +1,10 @@
 [
  {
   "n": 1,
-  "title": "Title",
-  "notes": "This video takes a deeper look at authentication and authorization in the ODA Canvas. It shows how a component declares its security needs, and how the Canvas configures the identity platform to match. Then it runs a complete example with three real components.",
-  "words": 43,
-  "secs": 17.2
+  "title": "Title (presenter introduction)",
+  "notes": "Welcome to the third video in our series about the ODA Canvas. This one is about authentication and authorization. Traditionally, every application ships with its own identity management. Operations teams then have to integrate each one, and manage users and roles in many places. An ODA Component is different. It doesn't implement identity management at all. Instead, it declares the roles it supports. The Canvas configures those roles in one shared identity platform. That could be Keycloak, Microsoft Entra ID, or another identity platform.\n\nIn this video we'll look at how that works. We'll see how a component's YAML declares its security needs, and how the Canvas sets up its clients and roles. Then we'll run a complete example with three components. You'll see a role grant that also connects one component to another.",
+  "words": 134,
+  "secs": 53.6
  },
  {
   "n": 2,

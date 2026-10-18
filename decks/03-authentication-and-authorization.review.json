@@ -2,165 +2,492 @@
   "deck": "03-authentication-and-authorization.pptx",
   "slides": {
     "256": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:09:05+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c7101ec9271097bc"
+        },
+        {
+          "at": "2026-10-18T10:18:01+01:00",
+          "action": "reset",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c7101ec9271097bc"
+        },
+        {
+          "at": "2026-10-18T10:20:17+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The introduction should describe what is different from traditional applications (using slide 11 from the 01-introduction presentation. I plan to record a head and shoulders video to camera (like I did with the 01-introduction presentation). The speaker notes should be a similar length.",
+          "fingerprint": "c7101ec9271097bc"
+        },
+        {
+          "at": "2026-10-18T10:20:29+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "c7101ec9271097bc"
+        },
+        {
+          "at": "2026-10-18T10:21:25+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "New intro script in the notes (134 words, like deck 01's): what is different from traditional applications, drawn from deck 01 slide 11, then what the video covers. The title slide stands in until your video is recorded. Then I'll add overlays and use its sound, as for deck 01. No skill change.",
+          "fingerprint": "f2d1cd2a2d4e0ea4"
+        },
+        {
+          "at": "2026-10-18T10:24:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f2d1cd2a2d4e0ea4"
+        }
+      ],
       "number": 1,
-      "title": "Title",
+      "title": "Title (presenter introduction)",
       "hidden": false,
-      "fingerprint": "c7101ec9271097bc"
+      "fingerprint": "f2d1cd2a2d4e0ea4",
+      "comment": "",
+      "updated_at": "2026-10-18T10:24:12+01:00",
+      "approved_fingerprint": "f2d1cd2a2d4e0ea4"
     },
     "257": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:09:07+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1b6f07c069c8db6a"
+        },
+        {
+          "at": "2026-10-18T10:20:48+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1b6f07c069c8db6a"
+        }
+      ],
       "number": 2,
       "title": "Four questions",
       "hidden": false,
-      "fingerprint": "1b6f07c069c8db6a"
+      "fingerprint": "1b6f07c069c8db6a",
+      "comment": "",
+      "updated_at": "2026-10-18T10:09:07+01:00",
+      "approved_fingerprint": "1b6f07c069c8db6a",
+      "validated_key": "e59e29313f5f1e17"
     },
     "258": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:09:09+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c948b5bddcc8df35"
+        },
+        {
+          "at": "2026-10-18T10:22:26+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c948b5bddcc8df35"
+        }
+      ],
       "number": 3,
       "title": "Components declare, the Canvas implements",
       "hidden": false,
-      "fingerprint": "c948b5bddcc8df35"
+      "fingerprint": "c948b5bddcc8df35",
+      "comment": "",
+      "updated_at": "2026-10-18T10:09:09+01:00",
+      "approved_fingerprint": "c948b5bddcc8df35",
+      "validated_key": "d0076148ce766467"
     },
     "259": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:09:11+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "151d0055adc001c0"
+        },
+        {
+          "at": "2026-10-18T10:22:50+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "151d0055adc001c0"
+        }
+      ],
       "number": 4,
       "title": "Every component gets its own client",
       "hidden": false,
-      "fingerprint": "151d0055adc001c0"
+      "fingerprint": "151d0055adc001c0",
+      "comment": "",
+      "updated_at": "2026-10-18T10:09:11+01:00",
+      "approved_fingerprint": "151d0055adc001c0",
+      "validated_key": "1e221f6af9e9239f"
     },
     "260": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:09:58+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "14c36001a7a8203c"
+        },
+        {
+          "at": "2026-10-18T10:23:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "14c36001a7a8203c"
+        }
+      ],
       "number": 5,
       "title": "The Canvas system role",
       "hidden": false,
-      "fingerprint": "14c36001a7a8203c"
+      "fingerprint": "14c36001a7a8203c",
+      "comment": "",
+      "updated_at": "2026-10-18T10:09:58+01:00",
+      "approved_fingerprint": "14c36001a7a8203c",
+      "validated_key": "27ba7f013aebe8ef"
     },
     "261": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:10:49+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d2db11a7bbdc2a58"
+        },
+        {
+          "at": "2026-10-18T10:27:56+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d2db11a7bbdc2a58"
+        }
+      ],
       "number": 6,
       "title": "Static and dynamic roles",
       "hidden": false,
-      "fingerprint": "d2db11a7bbdc2a58"
+      "fingerprint": "d2db11a7bbdc2a58",
+      "comment": "",
+      "updated_at": "2026-10-18T10:10:49+01:00",
+      "approved_fingerprint": "d2db11a7bbdc2a58",
+      "validated_key": "77d875fef222038e"
     },
     "262": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:10:45+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9bcef5b0beda5abe"
+        },
+        {
+          "at": "2026-10-18T10:32:10+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9bcef5b0beda5abe"
+        }
+      ],
       "number": 7,
       "title": "A grant is also a connection",
       "hidden": false,
-      "fingerprint": "9bcef5b0beda5abe"
+      "fingerprint": "9bcef5b0beda5abe",
+      "comment": "",
+      "updated_at": "2026-10-18T10:10:45+01:00",
+      "approved_fingerprint": "9bcef5b0beda5abe",
+      "validated_key": "03d912921be7a91c"
     },
     "263": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:11:17+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f2e624fdd4f8b82b"
+        },
+        {
+          "at": "2026-10-18T10:34:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f2e624fdd4f8b82b"
+        }
+      ],
       "number": 8,
       "title": "The scenario",
       "hidden": false,
-      "fingerprint": "f2e624fdd4f8b82b"
+      "fingerprint": "f2e624fdd4f8b82b",
+      "comment": "",
+      "updated_at": "2026-10-18T10:11:17+01:00",
+      "approved_fingerprint": "f2e624fdd4f8b82b",
+      "validated_key": "0693fd7be07c1c02"
     },
     "264": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:11:36+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9a70a8dc80bad4ca"
+        },
+        {
+          "at": "2026-10-18T10:36:14+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9a70a8dc80bad4ca"
+        }
+      ],
       "number": 9,
       "title": "Deploy the product catalog",
       "hidden": false,
-      "fingerprint": "9a70a8dc80bad4ca"
+      "fingerprint": "9a70a8dc80bad4ca",
+      "comment": "",
+      "updated_at": "2026-10-18T10:11:36+01:00",
+      "approved_fingerprint": "9a70a8dc80bad4ca",
+      "validated_key": "2189d1628dac6ab8"
     },
     "265": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:11:50+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "056d61da9796f2ea"
+        },
+        {
+          "at": "2026-10-18T10:39:30+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "056d61da9796f2ea"
+        }
+      ],
       "number": 10,
       "title": "Its client appears in Keycloak",
       "hidden": false,
-      "fingerprint": "056d61da9796f2ea"
+      "fingerprint": "056d61da9796f2ea",
+      "comment": "",
+      "updated_at": "2026-10-18T10:11:50+01:00",
+      "approved_fingerprint": "056d61da9796f2ea",
+      "validated_key": "f506389a797160f3"
     },
     "266": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:12:03+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f6df15cd2c6d42de"
+        }
+      ],
       "number": 11,
       "title": "Static roles",
       "hidden": false,
-      "fingerprint": "f6df15cd2c6d42de"
+      "fingerprint": "f6df15cd2c6d42de",
+      "comment": "",
+      "updated_at": "2026-10-18T10:12:03+01:00",
+      "approved_fingerprint": "f6df15cd2c6d42de"
     },
     "267": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:12:25+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "790e40184ce95847"
+        }
+      ],
       "number": 12,
       "title": "Dynamic roles through TMF672",
       "hidden": false,
-      "fingerprint": "790e40184ce95847"
+      "fingerprint": "790e40184ce95847",
+      "comment": "",
+      "updated_at": "2026-10-18T10:12:25+01:00",
+      "approved_fingerprint": "790e40184ce95847"
     },
     "268": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:12:44+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5f2224129f576d93"
+        }
+      ],
       "number": 13,
       "title": "Deploy the order and inventory components",
       "hidden": false,
-      "fingerprint": "5f2224129f576d93"
+      "fingerprint": "5f2224129f576d93",
+      "comment": "",
+      "updated_at": "2026-10-18T10:12:44+01:00",
+      "approved_fingerprint": "5f2224129f576d93"
     },
     "269": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:13:06+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6c9144e83f63fd4c"
+        }
+      ],
       "number": 14,
       "title": "Grant a catalog role, and the dependency is met",
       "hidden": false,
-      "fingerprint": "6c9144e83f63fd4c"
+      "fingerprint": "6c9144e83f63fd4c",
+      "comment": "",
+      "updated_at": "2026-10-18T10:13:06+01:00",
+      "approved_fingerprint": "6c9144e83f63fd4c"
     },
     "270": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:13:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3a076784f7c47143"
+        }
+      ],
       "number": 15,
       "title": "The same for the inventory",
       "hidden": false,
-      "fingerprint": "3a076784f7c47143"
+      "fingerprint": "3a076784f7c47143",
+      "comment": "",
+      "updated_at": "2026-10-18T10:13:12+01:00",
+      "approved_fingerprint": "3a076784f7c47143"
     },
     "271": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:13:24+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "cea17aa42dae82de"
+        }
+      ],
       "number": 16,
       "title": "Send a product order",
       "hidden": false,
-      "fingerprint": "cea17aa42dae82de"
+      "fingerprint": "cea17aa42dae82de",
+      "comment": "",
+      "updated_at": "2026-10-18T10:13:24+01:00",
+      "approved_fingerprint": "cea17aa42dae82de"
     },
     "272": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:13:39+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "866239bcd6c392a3"
+        }
+      ],
       "number": 17,
       "title": "What happened behind the scenes",
       "hidden": false,
-      "fingerprint": "866239bcd6c392a3"
+      "fingerprint": "866239bcd6c392a3",
+      "comment": "",
+      "updated_at": "2026-10-18T10:13:39+01:00",
+      "approved_fingerprint": "866239bcd6c392a3"
     },
     "273": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:13:58+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "100a4f5dc4987c67"
+        }
+      ],
       "number": 18,
       "title": "Automated cleanup",
       "hidden": false,
-      "fingerprint": "100a4f5dc4987c67"
+      "fingerprint": "100a4f5dc4987c67",
+      "comment": "",
+      "updated_at": "2026-10-18T10:13:58+01:00",
+      "approved_fingerprint": "100a4f5dc4987c67"
     },
     "274": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:14:23+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "96c6025765743e87"
+        }
+      ],
       "number": 19,
       "title": "Answers to the four questions",
       "hidden": false,
-      "fingerprint": "96c6025765743e87"
+      "fingerprint": "96c6025765743e87",
+      "comment": "",
+      "updated_at": "2026-10-18T10:14:23+01:00",
+      "approved_fingerprint": "96c6025765743e87"
     },
     "275": {
-      "status": "pending",
-      "history": [],
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T10:14:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "86b147535304cbfe"
+        }
+      ],
       "number": 20,
       "title": "Find out more",
       "hidden": false,
-      "fingerprint": "86b147535304cbfe"
+      "fingerprint": "86b147535304cbfe",
+      "comment": "",
+      "updated_at": "2026-10-18T10:14:40+01:00",
+      "approved_fingerprint": "86b147535304cbfe"
     }
   },
-  "inspected_at": "2026-10-18T00:04:46+01:00"
+  "inspected_at": "2026-10-18T10:21:07+01:00"
 }

@@ -27,10 +27,16 @@ Note demo-environment needs if there are [DEMO] slides.
 
 ## Segment name            ← optional grouping; extract_notes ignores it
 
-### Slide 1: Title
-- **Visual:** [STATIC] "<Title>"
+### Slide 1: Title (presenter introduction)
+- **Visual:** [NATIVE for now, then CLIP <Prefix>-01-Presenter] A title-card placeholder. The presenter
+  records a head-and-shoulders introduction to camera, reading these notes. The recording later
+  replaces the placeholder, with overlays and its own sound (narration-and-video.md, "Presenter videos").
 - **Speaker notes:**
-> Welcome sentence. Say what the video covers.
+> About 110–130 words, written for the presenter to say on camera (first person plural is fine here).
+> Welcome viewers to this part of the series. Say what is different or new about the topic,
+> compared with traditional applications or the old way. Then say what the video covers.
+> Same voice rules as every slide: short sentences, no colons or semicolons, and "or another …
+> platform" whenever a product is named.
 
 ### Slide 2: <Working title>
 - **Visual:** [3B1B] What builds up, in narration order, using house motifs (the ODA Component symbol, plate, gear…).

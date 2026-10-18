@@ -83,7 +83,11 @@ Write `scripts/<deck-id>.md` using `references/script-template.md`. What matters
 - **Narration is read verbatim by an AI voice.** Write neutral third-person, spoken-style sentences
   with no bullet fragments and no on-screen-only shorthand. Drop presenter-specific phrasing such as
   "I'll show you" or "at Vodafone we…".
-- **One beat per slide**, about 10–30 seconds (25–75 words). Split long ideas across slides.
+- **Slide 1 is the presenter's introduction.** The user records a head-and-shoulders video to camera
+  for it. Draft its notes as that spoken intro, about 110–130 words: what is different or new about
+  the topic, then what the video covers. Build it as a native title-card placeholder until the
+  recording exists, then follow "Presenter videos" in `references/narration-and-video.md`.
+- **One beat per slide** after that, about 10–30 seconds (25–75 words). Split long ideas across slides.
 - Concept decks run about 6–9 minutes. Demo decks run about 5–12 minutes. If a source video is much
   longer, propose splitting it (the AI-Native video became two parts).
 - Each slide gives the **Visual** with a treatment tag (`[3B1B]`, `[DEMO]` or `[STATIC]`), any

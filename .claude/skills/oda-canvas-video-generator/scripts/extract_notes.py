@@ -38,7 +38,12 @@ def main() -> None:
         notes = "\n\n".join(paras)
         words = len(notes.split())
         slides.append({"n": n, "title": title, "notes": notes, "words": words, "secs": round(words / WORDS_PER_SECOND, 1)})
-        flag = "  <-- no notes" if not notes else ("  <-- long, consider splitting" if words > 90 else "")
+        if not notes:
+            flag = "  <-- no notes"
+        elif n == 1:  # the presenter's introduction to camera: about 110-130 words (lessons.md, 2026-10-18)
+            flag = "  <-- presenter intro: aim for 110-130 words" if not 100 <= words <= 140 else ""
+        else:
+            flag = "  <-- long, consider splitting" if words > 90 else ""
         if ":" in notes or ";" in notes:
             flag += "  <-- colon/semicolon: the voice reads them badly, use a full stop"
         longest = max((len(x.split()) for x in re.split(r"(?<=[.!?])\s+", notes)), default=0)
