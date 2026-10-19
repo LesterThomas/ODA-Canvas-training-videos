@@ -17,16 +17,27 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "8e4db0e7e92cf968"
+        },
+        {
+          "at": "2026-10-19T15:43:25+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 1 is now your recording (77.1 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title; 'AI agents · intelligent, autonomous services'; 'Today · pilots' (three agents wired straight to three model providers, then 'Lock-in · Hidden costs · Inconsistent guardrails'); 'The AI-Native Canvas' (an agentic component on the Canvas picture that declares the tools and models it needs, with governed access); then the five-item agenda, each item as you say it. The speaker notes now hold the words as recorded.",
+          "fingerprint": "e97fab50250fea3f"
         }
       ],
       "number": 1,
       "title": "The AI-Native ODA Canvas (presenter introduction)",
       "hidden": false,
-      "fingerprint": "8e4db0e7e92cf968",
+      "fingerprint": "e97fab50250fea3f",
       "comment": "",
       "updated_at": "2026-10-19T12:38:13+01:00",
       "approved_fingerprint": "8e4db0e7e92cf968",
-      "validated_key": "986ebb337719d213"
+      "validated_key": "986ebb337719d213",
+      "reply": {
+        "at": "2026-10-19T15:43:25+01:00",
+        "text": "Slide 1 is now your recording (77.1 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title; 'AI agents · intelligent, autonomous services'; 'Today · pilots' (three agents wired straight to three model providers, then 'Lock-in · Hidden costs · Inconsistent guardrails'); 'The AI-Native Canvas' (an agentic component on the Canvas picture that declares the tools and models it needs, with governed access); then the five-item agenda, each item as you say it. The speaker notes now hold the words as recorded."
+      }
     },
     "257": {
       "status": "approved",
@@ -44,16 +55,27 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "1532a31168fdc876"
+        },
+        {
+          "at": "2026-10-19T15:43:25+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
+          "fingerprint": "8ca74717ac847daa"
         }
       ],
       "number": 2,
       "title": "Four questions",
       "hidden": false,
-      "fingerprint": "1532a31168fdc876",
+      "fingerprint": "8ca74717ac847daa",
       "comment": "",
       "updated_at": "2026-10-19T12:38:41+01:00",
       "approved_fingerprint": "1532a31168fdc876",
-      "validated_key": "4468a5a29f5bb49b"
+      "validated_key": "4468a5a29f5bb49b",
+      "reply": {
+        "at": "2026-10-19T15:43:25+01:00",
+        "text": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs."
+      }
     },
     "258": {
       "status": "approved",
@@ -207,16 +229,27 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "9428d58227767427"
+        },
+        {
+          "at": "2026-10-19T14:56:24+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "To match your slide 23 wording, 'Later it will join…' is now 'Later it may join the main component specification.', and the label reads 'may later join the Component specification'.",
+          "fingerprint": "9428d58227767427"
         }
       ],
       "number": 7,
       "title": "Dependent AI models",
       "hidden": false,
-      "fingerprint": "9428d58227767427",
+      "fingerprint": "84a429e8677c92f6",
       "comment": "",
       "updated_at": "2026-10-19T12:45:26+01:00",
       "approved_fingerprint": "9428d58227767427",
-      "validated_key": "816a5edce41af90b"
+      "validated_key": "816a5edce41af90b",
+      "reply": {
+        "at": "2026-10-19T14:56:24+01:00",
+        "text": "To match your slide 23 wording, 'Later it will join…' is now 'Later it may join the main component specification.', and the label reads 'may later join the Component specification'."
+      }
     },
     "263": {
       "status": "approved",
@@ -309,6 +342,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "1e405dec0f0f35cd"
+        },
+        {
+          "at": "2026-10-19T14:46:17+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1e405dec0f0f35cd"
         }
       ],
       "number": 10,
@@ -317,7 +357,8 @@
       "fingerprint": "1e405dec0f0f35cd",
       "comment": "",
       "updated_at": "2026-10-19T13:05:41+01:00",
-      "approved_fingerprint": "1e405dec0f0f35cd"
+      "approved_fingerprint": "1e405dec0f0f35cd",
+      "validated_key": "e3c6da05ca32b0cb"
     },
     "266": {
       "status": "approved",
@@ -479,16 +520,27 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "b951b5303dd4ef9a"
+        },
+        {
+          "at": "2026-10-19T15:43:25+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
+          "fingerprint": "baeca664327db156"
         }
       ],
       "number": 14,
       "title": "Canvas services for AI",
       "hidden": false,
-      "fingerprint": "b951b5303dd4ef9a",
+      "fingerprint": "baeca664327db156",
       "comment": "",
       "updated_at": "2026-10-19T12:54:57+01:00",
       "approved_fingerprint": "b951b5303dd4ef9a",
-      "validated_key": "cfbd5b588f01aa7c"
+      "validated_key": "cfbd5b588f01aa7c",
+      "reply": {
+        "at": "2026-10-19T15:43:25+01:00",
+        "text": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs."
+      }
     },
     "270": {
       "status": "approved",
@@ -586,7 +638,7 @@
       "validated_key": "3c869a1f9ba14b2d"
     },
     "273": {
-      "status": "changes-requested",
+      "status": "approved",
       "history": [
         {
           "at": "2026-10-19T12:59:33+01:00",
@@ -622,19 +674,22 @@
           "by": "claude",
           "comment": "Narration check fix: split into 'Google's DORA report studied AI-assisted software development. It found that AI is an amplifier.' Same length, so the animation timing is unchanged.",
           "fingerprint": "4541a404d25a1e7a"
+        },
+        {
+          "at": "2026-10-19T14:46:43+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4541a404d25a1e7a"
         }
       ],
       "number": 18,
       "title": "AI is an amplifier",
       "hidden": false,
       "fingerprint": "4541a404d25a1e7a",
-      "comment": "Narration check: after every take, the voice still could not say this sentence. \"Google's DORA report on AI-assisted software development found that AI is an amplifier.\" was heard as \"Google's Dora report on AI-assisted software development\" (missing: found that ai is an amplifier) Please reword it.",
-      "updated_at": "2026-10-19T14:03:51+01:00",
-      "requested_fingerprint": "142e2247caafc21e",
-      "reply": {
-        "at": "2026-10-19T14:04:37+01:00",
-        "text": "Narration check fix: split into 'Google's DORA report studied AI-assisted software development. It found that AI is an amplifier.' Same length, so the animation timing is unchanged."
-      }
+      "comment": "",
+      "updated_at": "2026-10-19T14:46:43+01:00",
+      "approved_fingerprint": "4541a404d25a1e7a"
     },
     "274": {
       "status": "approved",
@@ -672,6 +727,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d3266afb6a78f576"
+        },
+        {
+          "at": "2026-10-19T14:11:56+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d3266afb6a78f576"
         }
       ],
       "number": 20,
@@ -680,7 +742,8 @@
       "fingerprint": "d3266afb6a78f576",
       "comment": "",
       "updated_at": "2026-10-19T13:00:25+01:00",
-      "approved_fingerprint": "d3266afb6a78f576"
+      "approved_fingerprint": "d3266afb6a78f576",
+      "validated_key": "0a04f7bc34e86654"
     },
     "276": {
       "status": "approved",
@@ -688,6 +751,13 @@
         {
           "at": "2026-10-19T13:00:54+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ea91ae0dc47b9db4"
+        },
+        {
+          "at": "2026-10-19T14:42:40+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "ea91ae0dc47b9db4"
@@ -699,7 +769,8 @@
       "fingerprint": "ea91ae0dc47b9db4",
       "comment": "",
       "updated_at": "2026-10-19T13:00:54+01:00",
-      "approved_fingerprint": "ea91ae0dc47b9db4"
+      "approved_fingerprint": "ea91ae0dc47b9db4",
+      "validated_key": "50fe340c36e9ee8c"
     },
     "277": {
       "status": "approved",
@@ -707,6 +778,13 @@
         {
           "at": "2026-10-19T13:01:17+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "77f504f4b315d692"
+        },
+        {
+          "at": "2026-10-19T14:47:39+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "77f504f4b315d692"
@@ -718,7 +796,8 @@
       "fingerprint": "77f504f4b315d692",
       "comment": "",
       "updated_at": "2026-10-19T13:01:17+01:00",
-      "approved_fingerprint": "77f504f4b315d692"
+      "approved_fingerprint": "77f504f4b315d692",
+      "validated_key": "15a56f165af79ebc"
     },
     "278": {
       "status": "approved",
@@ -729,15 +808,40 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "7f16833634614543"
+        },
+        {
+          "at": "2026-10-19T14:44:53+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Change 'So is the dependent AI model resource, which will later join the component specification.' to 'At present we are maintaining the DependentAIModel as an independent resource which may join the component spec later'",
+          "fingerprint": "7f16833634614543"
+        },
+        {
+          "at": "2026-10-19T14:47:02+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7369ad0955fb1636"
+        },
+        {
+          "at": "2026-10-19T14:56:24+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed to 'At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later.' I split it in two for the voice. The row now reads 'DependentAIModel · independent resource for now', and the last two rows are 2 s later.",
+          "fingerprint": "7369ad0955fb1636"
         }
       ],
       "number": 23,
       "title": "What's available today",
       "hidden": false,
-      "fingerprint": "7f16833634614543",
+      "fingerprint": "7369ad0955fb1636",
       "comment": "",
-      "updated_at": "2026-10-19T13:01:50+01:00",
-      "approved_fingerprint": "7f16833634614543"
+      "updated_at": "2026-10-19T14:47:02+01:00",
+      "approved_fingerprint": "7369ad0955fb1636",
+      "reply": {
+        "at": "2026-10-19T14:56:24+01:00",
+        "text": "Changed to 'At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later.' I split it in two for the voice. The row now reads 'DependentAIModel · independent resource for now', and the last two rows are 2 s later."
+      }
     },
     "279": {
       "status": "approved",
@@ -762,6 +866,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "0dd27269095b6e56"
+        },
+        {
+          "at": "2026-10-19T14:45:35+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0dd27269095b6e56"
         }
       ],
       "number": 24,
@@ -770,8 +881,9 @@
       "fingerprint": "0dd27269095b6e56",
       "comment": "",
       "updated_at": "2026-10-19T13:10:46+01:00",
-      "approved_fingerprint": "0dd27269095b6e56"
+      "approved_fingerprint": "0dd27269095b6e56",
+      "validated_key": "103a4599eb4fa961"
     }
   },
-  "inspected_at": "2026-10-19T14:04:30+01:00"
+  "inspected_at": "2026-10-19T15:42:51+01:00"
 }

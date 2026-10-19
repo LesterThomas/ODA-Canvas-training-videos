@@ -3,46 +3,8 @@
  "slides": {
   "1": {
    "n": 1,
-   "secs": 50.0,
-   "kind": "native",
-   "anims": [
-    {
-     "shape": "Canvas",
-     "at": 0.9,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Agent",
-     "at": 1.6,
-     "effect": "zoom",
-     "dur": 0.8
-    },
-    {
-     "shape": "Spark",
-     "at": 2.4,
-     "effect": "zoom",
-     "dur": 0.6
-    },
-    {
-     "shape": "Intro",
-     "at": 0.2,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Name",
-     "at": 0.2,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Topics",
-     "at": 30.4,
-     "effect": "fade",
-     "dur": 0.6
-    }
-   ]
+   "secs": 65.6,
+   "kind": "video"
   },
   "2": {
    "n": 2,
@@ -617,7 +579,7 @@
   },
   "23": {
    "n": 23,
-   "secs": 28.8,
+   "secs": 31.2,
    "kind": "native",
    "anims": [
     {
@@ -664,13 +626,13 @@
     },
     {
      "shape": "Status 6",
-     "at": 19.6,
+     "at": 21.6,
      "effect": "fade",
      "dur": 0.5
     },
     {
      "shape": "Status 7",
-     "at": 24.0,
+     "at": 26.0,
      "effect": "fade",
      "dur": 0.5
     }

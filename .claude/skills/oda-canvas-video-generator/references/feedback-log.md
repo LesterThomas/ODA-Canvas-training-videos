@@ -48,6 +48,37 @@ coming back belongs in `lessons.md`.
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
 
+### 2026-10-19 · deck 02 · published to YouTube (unlisted)
+- **Feedback:** "Publish the 02-how-do-i-buy-or-build-an-oda-canvas video, initially as an unlisted video. Include a description, upload the speaker notes so that YouTube can use captions and split the video as chapters."
+- **Changed:** added a `## YouTube` section to the deck 02 script (title, description linking part 1, chapter overrides for slide 1 and the three "Live:" slides). Packaged it: 9:29, 19 chapters, 145 caption cues, 113 of 113 sentences timed to the voice. Uploaded unlisted following publishing.md: https://youtu.be/fMXEmWalRFc, with SHA-256 checked, AI use "No" (asked again; user: same as deck 01) and English (UK). Recorded in `decks/02-how-do-i-buy-or-build-an-oda-canvas.youtube.json`.
+- **Skill:** no. The publishing.md steps worked unchanged.
+
+### 2026-10-19 · deck 04 · slide 1 (presenter introduction)
+- **Feedback:** "I've recorded a head-and-shoulders to camera video for the first slide. It is at decks/04-ai-native-oda-canvas/Intro-video.mp4"
+- **Changed:** new `AI-01-Presenter` clip (`videos/src/ai/S01Presenter.tsx`, 77.1 s). The agenda part of the transcript had no punctuation, so the agenda items were timed to silencedetect pauses at -30 dB (47.0, 54.3, 59.0, 66.8, 70.7). Overlays: title; AI agents; "Today · pilots" (agents wired to providers, then lock-in, hidden costs and inconsistent guardrails); the AI-Native Canvas; the agenda. Slide 1 was removed from the native builders. The notes now hold the words as recorded (a welcome, plus a longer agenda). `use-recording --sync` supplied the narration. Slides 2 and 14 showed "changed" from re-exported stills only.
+- **Skill:** no.
+
+### 2026-10-19 · deck 03 · slide 1 (presenter introduction)
+- **Feedback:** "I've recorded a head-and-shoulders to camera video for the first slide. It is at decks/03-authentication-and-authorization/Intro-video.mp4"
+- **Changed:** new `Auth-01-Presenter` clip (`videos/src/auth/S01Presenter.tsx`), timed to the Whisper segments, as the script's Visual tag planned: title; "Traditionally" (three apps with their own users and roles); the component's `componentRole` YAML and one shared identity platform (Keycloak · Microsoft Entra ID · or another); then the agenda. Slide 1 was removed from the native builders. The notes now hold the words as recorded. `use-recording --sync` supplied the narration. Only slide 1 needs re-approval.
+- **Skill:** no. The process in narration-and-video.md covered it.
+
+### 2026-10-19 · deck 02 · slide 1 (presenter introduction)
+- **Feedback:** "I've recorded a head-and-shoulders to camera video for the first slide. It is at decks/02-how-do-i-buy-or-build-an-oda-canvas/Intro-video.mp4"
+- **Changed:** new `Buy-01-Presenter` clip (`videos/src/buy/S01Presenter.tsx`), timed to the recording's Whisper segments: lower-third title, a traditional-application bundle, the Canvas picture, "a modular platform", then the agenda. Slide 1 was removed from the native builders. The script notes now hold the words as recorded. `use-recording … --sync` supplied the narration.
+- **Side effect:** slides 3, 14 and 18 showed "changed" although their XML, images and notes were identical (the fingerprint hashes PowerPoint's exported still). The user is asked to re-approve them.
+- **Skill:** a note in narration-and-video.md. Whisper segments (`asr_words.py`) work for timing overlays when silencedetect finds no pauses at -35 dB (here only -30 dB found them).
+
+### 2026-10-19 · deck 02 · slide 2, reverted
+- **Feedback:** "Can you undo the last change. At this level of detail it is OK to show the dependentAIModels inside the component spec."
+- **Changed:** removed the separate DependentAIModel tile. The component.yaml panel lists `dependentAIModels: …` again, under the name the user gave. (I missed this request for 15 minutes, because the watch only covered deck 04. I now watch every deck with an open review page.)
+- **Skill:** a nuance in research.md. In overview slides it's fine to show `dependentAIModels` in the component spec. In detailed slides, show the DependentAIModel resource. Also, run one watch per open review page.
+
+### 2026-10-19 · deck 04 · slide 23 (What's available today)
+- **Feedback:** change the DependentAIModel sentence to "At present we are maintaining the DependentAIModel as an independent resource which may join the component spec later".
+- **Changed:** narration "At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later." (split for the voice). The row reads "DependentAIModel · independent resource for now", and the later rows are 2 s later.
+- **Skill:** research.md now says "may join", not "will join". Slide 7 changed to match: "Later it may join the main component specification.", with the label "may later join the Component specification".
+
 ### 2026-10-19 · deck 04 · slide 18 (AI is an amplifier), narration check
 - **Feedback:** narration check. "Google's DORA report on AI-assisted software development found that AI is an amplifier." was heard without "found that AI is an amplifier".
 - **Changed:** split into "Google's DORA report studied AI-assisted software development. It found that AI is an amplifier." The word count is unchanged, so no retiming.

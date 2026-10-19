@@ -47,15 +47,19 @@ Portal's AI → Model Gateway page reads `/api/model-gateway-services`. When the
 ## Introduction
 
 ### Slide 1: The AI-Native ODA Canvas (presenter introduction)
-- **Visual:** [NATIVE for now, then CLIP AI-01-Presenter] Title-card placeholder, "The AI-Native ODA
-  Canvas", with the ODA Canvas picture and its AI module lit. The presenter records a
-  head-and-shoulders introduction to camera, reading these notes.
-- **Speaker notes:**
-> AI agents are quickly becoming the way service providers deliver intelligent, autonomous services.
+- **Visual:** [CLIP AI-01-Presenter] The presenter's own recorded introduction
+  (`decks/04-ai-native-oda-canvas/Intro-video.mp4`, 77.1 s), muted, with overlays timed to the recording:
+  a lower-third title; "AI agents · intelligent, autonomous services"; "Today · pilots" (three agents wired
+  straight to three model providers, then "Lock-in · Hidden costs · Inconsistent guardrails"); "The
+  AI-Native Canvas" (a white agentic component on the Canvas picture, "declares the tools and models it
+  needs", "the Canvas grants governed access"); then a five-item agenda. Its audio, EQ-matched, is the
+  narration (kept in sync, never stretched).
+- **Speaker notes:** (the words as recorded)
+> Welcome to the fourth video in our series. This one is about the AI-Native ODA Canvas. AI agents are quickly becoming the way service providers deliver intelligent, autonomous services.
 >
 > Most organisations started with a few pilots. Each team wired its agents directly to its favourite model provider. That works for a demo. At enterprise scale it brings lock-in, hidden costs and inconsistent guardrails. The AI-Native Canvas takes a different approach. Agents are packaged as ODA Components. They declare the tools and models they need, and the Canvas grants governed access.
 >
-> In this video, we look at how components become tools for agents, and how agents become components. We cover model as a service and the model gateway. We look at the services needed to run AI at scale. And we finish with how AI is helping us build the Canvas itself.
+> In this video, we look at how systems of record components can make their APIs available as tools for agents. We show how to package and deploy agents as modular components. We show how those agents access the underlying AI services, using model as a service and the model gateway. We look at the services needed to run AI at scale. And we finish with how AI is helping us build the Canvas itself.
 
 ### Slide 2: Four questions
 - **Visual:** [NATIVE] Four question cards build in turn, each with an icon: "Components as tools for
@@ -113,7 +117,7 @@ Portal's AI → Model Gateway page reads `/api/model-gateway-services`. When the
   To the right an "Approved models" list filters it, and a tick marks the model the Canvas grants. A
   dashed arrow labelled "later" points from the DependentAIModel tile back into the Component.
 - **Speaker notes:**
-> With those assumptions, the component model extends naturally. A component already lists the APIs it depends on. Now it can list the AI models it depends on, in priority order. It describes its use case, and the guardrail thresholds it needs. The Canvas grants access to whichever models are on the approved list. This starts as an experimental resource of its own, called dependent AI model. Later it will join the main component specification.
+> With those assumptions, the component model extends naturally. A component already lists the APIs it depends on. Now it can list the AI models it depends on, in priority order. It describes its use case, and the guardrail thresholds it needs. The Canvas grants access to whichever models are on the approved list. This starts as an experimental resource of its own, called dependent AI model. Later it may join the main component specification.
 
 ---
 
@@ -265,11 +269,11 @@ Portal's AI → Model Gateway page reads `/api/model-gateway-services`. When the
 - **Visual:** [NATIVE] Status table with available / experimental / planned pills, like deck 02
   slide 17: MCP as an exposed API type (available, in the reference test component); Resource
   inventory with MCP and Helm tools (available); Model-as-a-Service operator and model gateway
-  (experimental); Data product operator (experimental); DependentAIModel resource (experimental,
-  joining the Component specification later); Model manager for classical ML (proposal); AGENTS.md and
+  (experimental); Data product operator (experimental); DependentAIModel, maintained as an independent
+  resource for now, which may join the Component specification later (experimental); Model manager for classical ML (proposal); AGENTS.md and
   agent skills (available).
 - **Speaker notes:**
-> Here's where things stand. MCP as an exposed API type, and the resource inventory MCP server, are available today. The Model-as-a-Service operator, the model gateway and the data product operator are experimental. So is the dependent AI model resource, which will later join the component specification. A model manager for classical machine learning is still a proposal. And the AGENTS dot M D files and agent skills are ready to use now.
+> Here's where things stand. MCP as an exposed API type, and the resource inventory MCP server, are available today. The Model-as-a-Service operator, the model gateway and the data product operator are experimental. At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later. A model manager for classical machine learning is still a proposal. And the AGENTS dot M D files and agent skills are ready to use now.
 
 ### Slide 24: Find out more
 - **Visual:** [NATIVE] Three link cards, like deck 02 slide 19: "AI-Native Canvas design"

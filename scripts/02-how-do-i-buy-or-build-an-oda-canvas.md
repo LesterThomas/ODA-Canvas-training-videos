@@ -66,15 +66,19 @@ today.
 ## Introduction
 
 ### Slide 1: How do I buy or build an ODA Canvas? (presenter introduction)
-- **Visual:** [NATIVE for now, then CLIP Buy-01-Presenter] Title-card placeholder, "How do I buy or
-  build an ODA Canvas?", with the ODA Canvas picture. The presenter records a head-and-shoulders
-  introduction to camera, reading these notes.
-- **Speaker notes:**
-> One question we're asked a lot is how do I buy or build an ODA Canvas?
+- **Visual:** [CLIP Buy-01-Presenter] The presenter's own recorded introduction
+  (`decks/02-how-do-i-buy-or-build-an-oda-canvas/Intro-video.mp4`, 58.4 s), muted, with overlays: a
+  lower-third title through the question; a "traditional application" bundle (vendor software plus its
+  own gateway, identity management and monitoring); the ODA Canvas picture with a component that
+  "declares what it needs" and "platform services you choose"; "a modular platform, built from Canvas
+  operators"; then a running agenda. Its audio, EQ-matched, is the narration (kept in sync, never
+  stretched).
+- **Speaker notes:** (the words as recorded)
+> Welcome to the second video in a series about the Open Digital Architecture Canvas. One question we're asked a lot is how do I buy or build an ODA Canvas?
 >
-> With a traditional application, you buy the software and its platform together. Each vendor brings its own gateway, identity and monitoring. The ODA Canvas separates those. Components declare what they need, and the Canvas provides it, using the platform services you choose.
+> With a traditional application, you buy the software and its platform together. Every vendor brings its own gateway, identity management and monitoring solutions. The ODA Canvas separates those. Components declare what they need, and the Canvas provides it, using the platform services you choose.
 >
-> So the Canvas isn't one product. It's a modular platform, built from Canvas operators. In this video we'll look at the three ways to get a Canvas. We'll see how to check that it really is one. Then we'll look at the types of operator, with examples, and at the Canvas running on a real cluster. Finally, we'll see what's coming next.
+> So the Canvas isn't one product. It's a modular platform, built from Canvas operators. In this video we'll look at the three ways to get a Canvas. We'll see how to check that a Canvas is really providing the services it's meant to. Then we'll look at the types of operator, with examples, and at the ODA Canvas running on a real cluster. Finally, we'll see what's coming next.
 
 ## What a Canvas is
 
@@ -236,6 +240,27 @@ today.
 > To find out more, see the Open Digital Architecture pages on the TM Forum website. Browse the ODA Component Directory. And explore the reference implementation on GitHub, at TM Forum dash ODA slash ODA Canvas.
 
 ---
+
+## YouTube
+
+Used by `youtube_package.py` to build the upload: title, description (with the chapter list added at the
+end), and captions from the speaker notes.
+
+- **Title:** How do I buy or build an ODA Canvas? | ODA Canvas training, part 2
+- **Chapters:** 1=Introduction; 6=Live: the test kit in the Canvas Portal; 9=Live: the operators in this Canvas; 10=Live: choosing the modules
+- **Description:**
+> There is no separate standard for the ODA Canvas itself. The standard is the ODA Component specification: a Canvas is any platform that reads a component's specification and meets its requirements. This second video in the ODA Canvas training series explains the three ways to get one: public cloud offerings, rolling your own from the open-source reference implementation, or assembling vendor and open-source operators, and mixing and matching all three.
+>
+> It shows how to check that a Canvas really provides the services it should, by running a BDD feature from the Canvas test kit live in the Canvas Portal. It then explains how operators make the Canvas modular, walks through the operator catalogue, and shows the operators in a real Canvas and how they were chosen. Examples cover API management, observability, identity, secrets and carbon-aware scaling, followed by how to build your own operator and what's coming next.
+>
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+- **Links:**
+> ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
+> Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/Canvas-design.md
+> Canvas operators: https://github.com/tmforum-oda/oda-canvas/tree/main/source/operators
+> ODA Component Directory: https://www.tmforum.org/oda/directory
+> Open Digital Architecture: https://www.tmforum.org/oda/
+
 
 ## Decisions (confirmed by the user, 2026-10-18)
 

@@ -1,6 +1,9 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import { S01Presenter } from "./intro/S01Presenter";
+import { S01BuyPresenter } from "./buy/S01Presenter";
+import { S01AuthPresenter } from "./auth/S01Presenter";
+import { S01AiPresenter } from "./ai/S01Presenter";
 import { S04Frameworks, S05OpenApis, S06Gap } from "./intro/Seg2History";
 import {
   S07Component,
@@ -56,6 +59,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Intro-23-Observability" component={S22Observability} durationInFrames={966} fps={30} width={1920} height={1080} />
     </Folder>
     <Folder name="Buy-or-Build-a-Canvas">
+      <Composition id="Buy-01-Presenter" component={S01BuyPresenter} durationInFrames={1753} fps={30} width={1920} height={1080} />
       <Composition id="Buy-02-Standard" component={S02Standard} durationInFrames={1290} fps={30} width={1920} height={1080} />
       <Composition id="Buy-04-MixMatch" component={S04MixMatch} durationInFrames={645} fps={30} width={1920} height={1080} />
       <Composition id="Buy-05-TestKit" component={S05TestKit} durationInFrames={735} fps={30} width={1920} height={1080} />
@@ -69,7 +73,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Buy-15-Carbon" component={S15Carbon} durationInFrames={645} fps={30} width={1920} height={1080} />
     </Folder>
     <Folder name="Authentication-and-Authorization">
-      {/* Deck 03 (scripts/03-authentication-and-authorization.md). Slides 1, 2, 8, 19 and 20 are native (tools/native/auth.py). */}
+      {/* Deck 03 (scripts/03-authentication-and-authorization.md). Slides 2, 8, 19 and 20 are native (tools/native/auth.py); slide 1 is the presenter's recording. */}
+      <Composition id="Auth-01-Presenter" component={S01AuthPresenter} durationInFrames={1754} fps={30} width={1920} height={1080} />
       <Composition id="Auth-03-Declare" component={S03Declare} durationInFrames={930} fps={30} width={1920} height={1080} />
       <Composition id="Auth-04-Client" component={S04Client} durationInFrames={570} fps={30} width={1920} height={1080} />
       <Composition id="Auth-05-SystemRole" component={S05SystemRole} durationInFrames={702} fps={30} width={1920} height={1080} />
@@ -87,7 +92,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Auth-18-Cleanup" component={S18Cleanup} durationInFrames={582} fps={30} width={1920} height={1080} />
     </Folder>
     <Folder name="AI-Native-ODA-Canvas">
-      {/* Deck 04 (scripts/04-ai-native-oda-canvas.md). Slides 1-3, 6, 9, 10, 13, 14, 19, 23 and 24 are native (tools/native/ai.py). */}
+      {/* Deck 04 (scripts/04-ai-native-oda-canvas.md). Slides 2, 3, 6, 9, 10, 13, 14, 19, 23 and 24 are native (tools/native/ai.py); slide 1 is the presenter's recording. */}
+      <Composition id="AI-01-Presenter" component={S01AiPresenter} durationInFrames={2314} fps={30} width={1920} height={1080} />
       <Composition id="AI-04-Mcp" component={S04Mcp} durationInFrames={825} fps={30} width={1920} height={1080} />
       <Composition id="AI-05-Descriptions" component={S05Descriptions} durationInFrames={1000} fps={30} width={1920} height={1080} />
       <Composition id="AI-07-DependentAIModels" component={S07DependentAIModels} durationInFrames={930} fps={30} width={1920} height={1080} />

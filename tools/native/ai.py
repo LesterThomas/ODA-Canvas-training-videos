@@ -280,9 +280,9 @@ STATUS = [
     ("Resource inventory MCP server, with Helm tools", "Available", "ok", 4.0),
     ("Model-as-a-Service operator and model gateway", "Experimental", "ai", 7.6),
     ("Data product operator", "Experimental", "ai", 10.4),
-    ("DependentAIModel resource · joins the Component spec later", "Experimental", "ai", 14.0),
-    ("Model manager for classical ML", "Proposal", "muted", 19.6),
-    ("AGENTS.md files and agent skills", "Available", "ok", 24.0),
+    ("DependentAIModel · independent resource for now", "Experimental", "ai", 14.0),
+    ("Model manager for classical ML", "Proposal", "muted", 21.6),
+    ("AGENTS.md files and agent skills", "Available", "ok", 26.0),
 ]
 
 
@@ -328,4 +328,4 @@ def s24(k: Kit):
     k.anim("Hub", 9.6, "fade")
 
 
-BUILDERS = {1: s01, 2: s02, 3: s03, 6: s06, 9: s09, 10: s10, 13: s13, 14: s14, 19: s19, 23: s23, 24: s24}
+BUILDERS = {2: s02, 3: s03, 6: s06, 9: s09, 10: s10, 13: s13, 14: s14, 19: s19, 23: s23, 24: s24}

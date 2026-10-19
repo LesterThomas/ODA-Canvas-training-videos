@@ -34,9 +34,10 @@ git log -1 --format='%H %cd'                                                  # 
 - **Model-as-a-Service (TMFOP009)** is "Implementation Planned", even though the Portal has a Model
   Gateway page. Call it experimental. The model gateway that gives components governed access to AI models *is*
   the Model-as-a-Service operator: say so, and never list it as planned (user, deck 02 review, 2026-10-18).
-- **AI model dependencies are the experimental `DependentAIModel` sub-resource** (`dependentAIModels`), built
-  as its own CRD first and added to the main Component CRD later. Don't show `dependentModels` inside the
-  Component spec (user, deck 04, 2026-10-19).
+- **AI model dependencies are the experimental `DependentAIModel` sub-resource** (`dependentAIModels`), maintained
+  as an independent CRD for now; it may join the main Component CRD later. In an overview
+  ("what a component declares"), showing `dependentAIModels` in the component spec is fine; show the
+  separate DependentAIModel resource where the slide is about how it works (user, deck 02, 2026-10-19). Use the name `dependentAIModels`, not `dependentModels` (user, deck 04, 2026-10-19).
 - **`controllerRole` was renamed `canvasSystemRole`** (v1beta4). The TMF669 party-role API is being
   replaced by TMF672. `TMFOP003…/keycloak/README.md` still says TMF669, so trust the parent README.
 - **The `README.md:25` intro-video embed** shows the buy-or-build thumbnail but links to the intro

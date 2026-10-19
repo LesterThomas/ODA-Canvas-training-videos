@@ -2,9 +2,9 @@
  {
   "n": 1,
   "title": "How do I buy or build an ODA Canvas? (presenter introduction)",
-  "notes": "One question we're asked a lot is how do I buy or build an ODA Canvas?\n\nWith a traditional application, you buy the software and its platform together. Each vendor brings its own gateway, identity and monitoring. The ODA Canvas separates those. Components declare what they need, and the Canvas provides it, using the platform services you choose.\n\nSo the Canvas isn't one product. It's a modular platform, built from Canvas operators. In this video we'll look at the three ways to get a Canvas. We'll see how to check that it really is one. Then we'll look at the types of operator, with examples, and at the Canvas running on a real cluster. Finally, we'll see what's coming next.",
-  "words": 120,
-  "secs": 48.0
+  "notes": "Welcome to the second video in a series about the Open Digital Architecture Canvas. One question we're asked a lot is how do I buy or build an ODA Canvas?\n\nWith a traditional application, you buy the software and its platform together. Every vendor brings its own gateway, identity management and monitoring solutions. The ODA Canvas separates those. Components declare what they need, and the Canvas provides it, using the platform services you choose.\n\nSo the Canvas isn't one product. It's a modular platform, built from Canvas operators. In this video we'll look at the three ways to get a Canvas. We'll see how to check that a Canvas is really providing the services it's meant to. Then we'll look at the types of operator, with examples, and at the ODA Canvas running on a real cluster. Finally, we'll see what's coming next.",
+  "words": 143,
+  "secs": 57.2
  },
  {
   "n": 2,

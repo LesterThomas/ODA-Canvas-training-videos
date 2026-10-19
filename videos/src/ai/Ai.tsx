@@ -246,7 +246,7 @@ export const S07DependentAIModels: React.FC = () => {
         <Pill color={C.ai} fontSize={22}>experimental</Pill>
       </Appear>
       <Appear at={26.4} from="up" style={{ left: 150, top: 760 }}>
-        <div style={{ fontSize: 24, fontWeight: 700, color: C.ai, width: 420 }}>later: part of the Component specification</div>
+        <div style={{ fontSize: 24, fontWeight: 700, color: C.ai, width: 420 }}>may later join the Component specification</div>
       </Appear>
       <Appear at={6.8} from="up" style={{ left: 980, top: 250 }}>
         <Yaml lines={DAM_YAML} title="dependentaimodel.yaml (illustrative)" width={820} fontSize={23} />

@@ -3,46 +3,8 @@
  "slides": {
   "1": {
    "n": 1,
-   "secs": 48.0,
-   "kind": "native",
-   "anims": [
-    {
-     "shape": "Canvas",
-     "at": 0.9,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Component",
-     "at": 1.6,
-     "effect": "zoom",
-     "dur": 0.8
-    },
-    {
-     "shape": "Gear",
-     "at": 2.4,
-     "effect": "zoom",
-     "dur": 0.6
-    },
-    {
-     "shape": "Intro",
-     "at": 0.2,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Name",
-     "at": 0.2,
-     "effect": "fade",
-     "dur": 0.8
-    },
-    {
-     "shape": "Live",
-     "at": 38.0,
-     "effect": "fade",
-     "dur": 0.6
-    }
-   ]
+   "secs": 57.2,
+   "kind": "video"
   },
   "2": {
    "n": 2,

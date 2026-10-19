@@ -142,4 +142,4 @@ def s20(k: Kit):
     k.anim("Welcome", 12.8, "fade")
 
 
-BUILDERS = {1: s01, 2: s02, 8: s08, 19: s19, 20: s20}
+BUILDERS = {2: s02, 8: s08, 19: s19, 20: s20}

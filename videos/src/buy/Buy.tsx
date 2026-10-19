@@ -24,6 +24,7 @@ const SPEC = [
   { text: "coreFunction:", indent: 1 },
   { text: "exposedAPIs: …", indent: 2, color: C.api },
   { text: "dependentAPIs: …", indent: 2, color: C.api },
+  { text: "dependentAIModels: …", indent: 2, color: C.ai },
   { text: "securityFunction:", indent: 1 },
   { text: "canvasSystemRole: …", indent: 2, color: C.identity },
   { text: "managementFunction:", indent: 1 },
@@ -66,12 +67,6 @@ export const S02Standard: React.FC = () => {
       <Glow box={M2(...MODULES.identity)} color={C.identity} at={13.6} label="Roles registered" labelY={C2.top - 50} />
       <Glow box={M2(...MODULES.observability)} color={C.observability} at={14.6} label="Monitored" labelY={C2.top - 50} />
       <Glow box={M2(...MODULES.model)} color={C.ai} at={19.6} label="AI models" labelY={C2.top + 380} />
-      <Appear at={19.6} from="up" style={{ left: 110, top: 890 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <div style={{ fontFamily: MONO, fontSize: 22, padding: "10px 16px", borderRadius: 12, background: `${C.ai}1F`, border: `2px solid ${C.ai}` }}>kind: DependentAIModel</div>
-          <Pill color={C.ai} fontSize={20}>experimental · separate resource</Pill>
-        </div>
-      </Appear>
       <Glow box={M2(...MODULES.data)} color={C.ai} at={24.0} label="Data products" labelY={C2.top + 380} />
       <Glow box={M2(...MODULES.cost)} color={C.cost} at={28.6} label="Cost" labelY={C2.top + 380} />
       <Glow box={M2(...MODULES.carbon)} color={C.carbon} at={29.4} label="Carbon" labelY={C2.top + 380} />

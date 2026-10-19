@@ -45,15 +45,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "f2d1cd2a2d4e0ea4"
+        },
+        {
+          "at": "2026-10-19T15:33:21+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 1 is now your recording (58.5 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title, then 'Traditionally' (three apps, each with its own users and roles), then 'An ODA Component' with no identity management of its own, its componentRole YAML (pcadmin, cat1owner), one shared identity platform configured by the Canvas, and 'Keycloak · Microsoft Entra ID · or another identity platform', then the agenda, each item as you say it. The speaker notes now hold the words as recorded.",
+          "fingerprint": "aca6370efb420cc5"
+        },
+        {
+          "at": "2026-10-19T15:38:00+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "aca6370efb420cc5"
+        },
+        {
+          "at": "2026-10-19T15:53:31+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "aca6370efb420cc5"
         }
       ],
       "number": 1,
       "title": "Title (presenter introduction)",
       "hidden": false,
-      "fingerprint": "f2d1cd2a2d4e0ea4",
+      "fingerprint": "aca6370efb420cc5",
       "comment": "",
-      "updated_at": "2026-10-18T10:24:12+01:00",
-      "approved_fingerprint": "f2d1cd2a2d4e0ea4"
+      "updated_at": "2026-10-19T15:38:00+01:00",
+      "approved_fingerprint": "aca6370efb420cc5",
+      "validated_key": "de08af3bccc6a46b"
     },
     "257": {
       "status": "approved",
@@ -569,5 +591,5 @@
       "validated_key": "06056c4a70aa9bc1"
     }
   },
-  "inspected_at": "2026-10-18T10:21:07+01:00"
+  "inspected_at": "2026-10-19T15:32:55+01:00"
 }

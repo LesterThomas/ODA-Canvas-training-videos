@@ -46,7 +46,9 @@ deck 01's slide 1), use it as that slide's clip and its sound as the narration:
 1. Copy the video to `videos/public/captures/` and build a Remotion composition that plays it
    full-frame and **muted**, with overlays in the left and right thirds and a lower third, clear of the
    presenter. Time each overlay to the recording's pauses (`ffmpeg -af silencedetect=n=-35dB:d=0.4`),
-   not to a words-per-second estimate. Example: `videos/src/intro/S01Presenter.tsx`.
+   not to a words-per-second estimate. If -35 dB finds no pauses, try -30 dB, or time to Whisper segments
+   (`scripts/asr_words.py` with csm-voice's Python), which also give the words as spoken for the notes.
+   Examples: `videos/src/intro/S01Presenter.tsx`, `videos/src/buy/S01Presenter.tsx`.
 2. Make the slide a clip slide (remove it from the native `BUILDERS`), set the script's Visual tag,
    and keep the speaker notes as the words actually spoken. Rebuild with `rebuild_deck.sh`.
 3. After the refresh, use its sound with

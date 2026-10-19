@@ -19,6 +19,11 @@ Run it in the background, and point the user at it whenever they ask what state 
 Servers that the hub starts stop with it when its process tree is stopped. Use "Open review" again to
 restart them.
 
+**Watch every open review page, not just the one you started.** The user can open any deck from the
+hub. Arm one `scripts/watch_review.sh <deck>` Monitor for each deck whose review server is running
+(`/api/decks` shows `review.running`). A change request on an unwatched deck sits unanswered: deck 02's
+did, for 15 minutes, on 2026-10-19. PowerPoint is shared by all of them, so run rebuilds one at a time.
+
 ## YouTube
 
 Publish a deck only when the user asks, at the visibility they ask for (start **unlisted** unless told

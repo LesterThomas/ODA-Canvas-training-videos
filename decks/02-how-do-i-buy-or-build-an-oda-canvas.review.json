@@ -17,16 +17,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "7cf265e766c6b102"
+        },
+        {
+          "at": "2026-10-19T15:26:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 1 is now your recording (58.4 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title through your question, a 'traditional application' bundle, the ODA Canvas picture ('declares what it needs' / 'platform services you choose'), 'a modular platform, built from Canvas operators', then the agenda, each item as you say it. The speaker notes now hold the words as recorded.",
+          "fingerprint": "19f997d0f0ae0556"
+        },
+        {
+          "at": "2026-10-19T15:27:09+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "19f997d0f0ae0556"
+        },
+        {
+          "at": "2026-10-19T15:28:35+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "19f997d0f0ae0556"
         }
       ],
       "number": 1,
       "title": "How do I buy or build an ODA Canvas? (presenter introduction)",
       "hidden": false,
-      "fingerprint": "7cf265e766c6b102",
+      "fingerprint": "19f997d0f0ae0556",
       "comment": "",
-      "updated_at": "2026-10-18T13:13:07+01:00",
-      "approved_fingerprint": "7cf265e766c6b102",
-      "validated_key": "ff7a204c045f9744"
+      "updated_at": "2026-10-19T15:27:09+01:00",
+      "validated_key": "95afb5f66e96a479",
+      "approved_fingerprint": "19f997d0f0ae0556"
     },
     "257": {
       "status": "approved",
@@ -72,20 +93,51 @@
           "by": "claude",
           "comment": "Updated the visual: dependentModels is no longer shown inside the Component spec. AI models now appear as a separate 'kind: DependentAIModel' resource, marked experimental (it joins the Component CRD later). The narration is unchanged. Please re-approve.",
           "fingerprint": "828661191469ff04"
+        },
+        {
+          "at": "2026-10-19T14:41:26+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Can you undo the last change. At this level of detail it is OK to show the dependentAIModels inside the component spec.",
+          "fingerprint": "828661191469ff04"
+        },
+        {
+          "at": "2026-10-19T14:58:10+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "828661191469ff04"
+        },
+        {
+          "at": "2026-10-19T14:58:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Undone: the component.yaml panel shows the AI models inside the component spec again, now as 'dependentAIModels: …' (the name you gave). The separate DependentAIModel tile is gone. Sorry for the delay: I was only watching deck 04's page, and I'm now watching every open deck.",
+          "fingerprint": "2bc1f52ab751dbad"
+        },
+        {
+          "at": "2026-10-19T14:59:27+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2bc1f52ab751dbad"
+        },
+        {
+          "at": "2026-10-19T15:00:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2bc1f52ab751dbad"
         }
       ],
       "number": 2,
       "title": "The standard is the component",
       "hidden": false,
-      "fingerprint": "828661191469ff04",
+      "fingerprint": "2bc1f52ab751dbad",
       "comment": "",
-      "updated_at": "2026-10-18T21:11:06+01:00",
-      "approved_fingerprint": "24e1558c6e940511",
-      "validated_key": "a3c971d9c3e75760",
-      "reply": {
-        "at": "2026-10-19T12:36:11+01:00",
-        "text": "Updated the visual: dependentModels is no longer shown inside the Component spec. AI models now appear as a separate 'kind: DependentAIModel' resource, marked experimental (it joins the Component CRD later). The narration is unchanged. Please re-approve."
-      }
+      "updated_at": "2026-10-19T14:59:27+01:00",
+      "validated_key": "cb504a415cf693ac",
+      "approved_fingerprint": "2bc1f52ab751dbad"
     },
     "258": {
       "status": "approved",
@@ -124,16 +176,44 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "a940b048d2abfdf2"
+        },
+        {
+          "at": "2026-10-19T14:58:59+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a940b048d2abfdf2"
+        },
+        {
+          "at": "2026-10-19T15:26:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
+          "fingerprint": "442ba6d0ca0bb34e"
+        },
+        {
+          "at": "2026-10-19T15:27:00+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "442ba6d0ca0bb34e"
+        },
+        {
+          "at": "2026-10-19T15:37:32+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "442ba6d0ca0bb34e"
         }
       ],
       "number": 3,
       "title": "Three ways to get a Canvas",
       "hidden": false,
-      "fingerprint": "a940b048d2abfdf2",
+      "fingerprint": "442ba6d0ca0bb34e",
       "comment": "",
-      "updated_at": "2026-10-18T21:15:47+01:00",
-      "approved_fingerprint": "a940b048d2abfdf2",
-      "validated_key": "f9de81b8a029cc71"
+      "updated_at": "2026-10-19T15:27:00+01:00",
+      "validated_key": "6613e62a53e59739",
+      "approved_fingerprint": "442ba6d0ca0bb34e"
     },
     "259": {
       "status": "approved",
@@ -442,16 +522,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "275ba739d983da60"
+        },
+        {
+          "at": "2026-10-19T15:26:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
+          "fingerprint": "231fb3b609c458d5"
+        },
+        {
+          "at": "2026-10-19T15:26:58+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "231fb3b609c458d5"
+        },
+        {
+          "at": "2026-10-19T15:37:37+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "231fb3b609c458d5"
         }
       ],
       "number": 14,
       "title": "Example 4, secrets",
       "hidden": false,
-      "fingerprint": "275ba739d983da60",
+      "fingerprint": "231fb3b609c458d5",
       "comment": "",
-      "updated_at": "2026-10-18T13:17:54+01:00",
-      "approved_fingerprint": "275ba739d983da60",
-      "validated_key": "68e21651c38c903f"
+      "updated_at": "2026-10-19T15:26:58+01:00",
+      "validated_key": "937885add42c1522",
+      "approved_fingerprint": "231fb3b609c458d5"
     },
     "270": {
       "status": "approved",
@@ -564,16 +665,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "6c7e0df446504f0a"
+        },
+        {
+          "at": "2026-10-19T15:26:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
+          "fingerprint": "4141bfc08dbd070a"
+        },
+        {
+          "at": "2026-10-19T15:26:56+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4141bfc08dbd070a"
+        },
+        {
+          "at": "2026-10-19T15:37:39+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4141bfc08dbd070a"
         }
       ],
       "number": 18,
       "title": "Recap",
       "hidden": false,
-      "fingerprint": "6c7e0df446504f0a",
+      "fingerprint": "4141bfc08dbd070a",
       "comment": "",
-      "updated_at": "2026-10-18T13:21:59+01:00",
-      "approved_fingerprint": "6c7e0df446504f0a",
-      "validated_key": "28683d51186a7bc3"
+      "updated_at": "2026-10-19T15:26:56+01:00",
+      "validated_key": "260f1008535cea89",
+      "approved_fingerprint": "4141bfc08dbd070a"
     },
     "274": {
       "status": "approved",
@@ -645,5 +767,5 @@
       "validated_key": "b94c75f7a21de493"
     }
   },
-  "inspected_at": "2026-10-19T12:35:54+01:00"
+  "inspected_at": "2026-10-19T15:25:06+01:00"
 }
