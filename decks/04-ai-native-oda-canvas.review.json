@@ -24,6 +24,20 @@
           "by": "claude",
           "comment": "Slide 1 is now your recording (77.1 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title; 'AI agents · intelligent, autonomous services'; 'Today · pilots' (three agents wired straight to three model providers, then 'Lock-in · Hidden costs · Inconsistent guardrails'); 'The AI-Native Canvas' (an agentic component on the Canvas picture that declares the tools and models it needs, with governed access); then the five-item agenda, each item as you say it. The speaker notes now hold the words as recorded.",
           "fingerprint": "e97fab50250fea3f"
+        },
+        {
+          "at": "2026-10-19T15:55:42+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e97fab50250fea3f"
+        },
+        {
+          "at": "2026-10-19T15:57:33+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "e97fab50250fea3f"
         }
       ],
       "number": 1,
@@ -31,13 +45,9 @@
       "hidden": false,
       "fingerprint": "e97fab50250fea3f",
       "comment": "",
-      "updated_at": "2026-10-19T12:38:13+01:00",
-      "approved_fingerprint": "8e4db0e7e92cf968",
-      "validated_key": "986ebb337719d213",
-      "reply": {
-        "at": "2026-10-19T15:43:25+01:00",
-        "text": "Slide 1 is now your recording (77.1 s). The narration is its own sound, EQ-matched to the generated voice, untrimmed and never stretched. Overlays sit in the side thirds, clear of you: the title; 'AI agents · intelligent, autonomous services'; 'Today · pilots' (three agents wired straight to three model providers, then 'Lock-in · Hidden costs · Inconsistent guardrails'); 'The AI-Native Canvas' (an agentic component on the Canvas picture that declares the tools and models it needs, with governed access); then the five-item agenda, each item as you say it. The speaker notes now hold the words as recorded."
-      }
+      "updated_at": "2026-10-19T15:55:42+01:00",
+      "validated_key": "9f049c81d5367019",
+      "approved_fingerprint": "e97fab50250fea3f"
     },
     "257": {
       "status": "approved",
@@ -62,6 +72,20 @@
           "by": "claude",
           "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
           "fingerprint": "8ca74717ac847daa"
+        },
+        {
+          "at": "2026-10-19T15:55:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8ca74717ac847daa"
+        },
+        {
+          "at": "2026-10-19T15:59:32+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8ca74717ac847daa"
         }
       ],
       "number": 2,
@@ -69,13 +93,9 @@
       "hidden": false,
       "fingerprint": "8ca74717ac847daa",
       "comment": "",
-      "updated_at": "2026-10-19T12:38:41+01:00",
-      "approved_fingerprint": "1532a31168fdc876",
-      "validated_key": "4468a5a29f5bb49b",
-      "reply": {
-        "at": "2026-10-19T15:43:25+01:00",
-        "text": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs."
-      }
+      "updated_at": "2026-10-19T15:55:54+01:00",
+      "validated_key": "dc18c1ce8cba5547",
+      "approved_fingerprint": "8ca74717ac847daa"
     },
     "258": {
       "status": "approved",
@@ -236,6 +256,20 @@
           "by": "claude",
           "comment": "To match your slide 23 wording, 'Later it will join…' is now 'Later it may join the main component specification.', and the label reads 'may later join the Component specification'.",
           "fingerprint": "9428d58227767427"
+        },
+        {
+          "at": "2026-10-19T15:55:56+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "84a429e8677c92f6"
+        },
+        {
+          "at": "2026-10-19T15:57:36+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "84a429e8677c92f6"
         }
       ],
       "number": 7,
@@ -243,13 +277,9 @@
       "hidden": false,
       "fingerprint": "84a429e8677c92f6",
       "comment": "",
-      "updated_at": "2026-10-19T12:45:26+01:00",
-      "approved_fingerprint": "9428d58227767427",
-      "validated_key": "816a5edce41af90b",
-      "reply": {
-        "at": "2026-10-19T14:56:24+01:00",
-        "text": "To match your slide 23 wording, 'Later it will join…' is now 'Later it may join the main component specification.', and the label reads 'may later join the Component specification'."
-      }
+      "updated_at": "2026-10-19T15:55:56+01:00",
+      "validated_key": "73e74af971ecdfb5",
+      "approved_fingerprint": "84a429e8677c92f6"
     },
     "263": {
       "status": "approved",
@@ -527,6 +557,20 @@
           "by": "claude",
           "comment": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs.",
           "fingerprint": "baeca664327db156"
+        },
+        {
+          "at": "2026-10-19T15:55:59+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "baeca664327db156"
+        },
+        {
+          "at": "2026-10-19T15:57:38+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "baeca664327db156"
         }
       ],
       "number": 14,
@@ -534,13 +578,9 @@
       "hidden": false,
       "fingerprint": "baeca664327db156",
       "comment": "",
-      "updated_at": "2026-10-19T12:54:57+01:00",
-      "approved_fingerprint": "b951b5303dd4ef9a",
-      "validated_key": "cfbd5b588f01aa7c",
-      "reply": {
-        "at": "2026-10-19T15:43:25+01:00",
-        "text": "No change to this slide. Its content, images and notes are identical, but rebuilding the deck re-exported its still, so the approval shows as 'changed'. A quick re-approve is all it needs."
-      }
+      "updated_at": "2026-10-19T15:55:59+01:00",
+      "validated_key": "961986d25084b36a",
+      "approved_fingerprint": "baeca664327db156"
     },
     "270": {
       "status": "approved",
@@ -681,6 +721,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "4541a404d25a1e7a"
+        },
+        {
+          "at": "2026-10-19T15:59:02+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4541a404d25a1e7a"
         }
       ],
       "number": 18,
@@ -689,7 +736,8 @@
       "fingerprint": "4541a404d25a1e7a",
       "comment": "",
       "updated_at": "2026-10-19T14:46:43+01:00",
-      "approved_fingerprint": "4541a404d25a1e7a"
+      "approved_fingerprint": "4541a404d25a1e7a",
+      "validated_key": "17c1ca57be01315d"
     },
     "274": {
       "status": "approved",
@@ -829,6 +877,13 @@
           "by": "claude",
           "comment": "Changed to 'At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later.' I split it in two for the voice. The row now reads 'DependentAIModel · independent resource for now', and the last two rows are 2 s later.",
           "fingerprint": "7369ad0955fb1636"
+        },
+        {
+          "at": "2026-10-19T15:58:28+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7369ad0955fb1636"
         }
       ],
       "number": 23,
@@ -841,7 +896,8 @@
       "reply": {
         "at": "2026-10-19T14:56:24+01:00",
         "text": "Changed to 'At present we are maintaining the dependent AI model as an independent resource. It may join the component specification later.' I split it in two for the voice. The row now reads 'DependentAIModel · independent resource for now', and the last two rows are 2 s later."
-      }
+      },
+      "validated_key": "f5d332bf8dfa7abe"
     },
     "279": {
       "status": "approved",
