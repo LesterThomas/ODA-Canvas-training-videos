@@ -1,0 +1,31 @@
+{
+ "name": "buy-operators",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 1.75
+  },
+  {
+   "label": "operators",
+   "t": 5.55
+  },
+  {
+   "label": "kong",
+   "t": 13.02
+  },
+  {
+   "label": "keycloak",
+   "t": 15.53
+  },
+  {
+   "label": "vault",
+   "t": 18.19
+  },
+  {
+   "label": "pods",
+   "t": 24.4
+  }
+ ]
+}

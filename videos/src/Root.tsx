@@ -15,6 +15,7 @@ import { S21IdentityConfig, S22Observability } from "./intro/Seg5Portal";
 import { S16Directory, S20Inventory, S21Deploy } from "./intro/Seg5Live";
 import { S03Declare, S04Client, S05SystemRole, S06Roles, S07Grant, S11Static, S17Flow } from "./auth/Concepts";
 import { S09InstallPc1, S10Pc1Client, S12DynamicRoles, S13InstallRest, S14GrantCatalog, S15GrantInventory, S16Order, S18Cleanup } from "./auth/Demo";
+import { S02Standard, S04MixMatch, S05TestKit, S06Bdd, S07Modules, S09Operators, S10Choosing, S11Api, S12Observability, S13Identity, S15Carbon } from "./buy/Buy";
 import { OdaComponentShowcase } from "./library/OdaComponentShowcase";
 import { IconAsset, OdaAsset, StageAsset } from "./library/Assets";
 
@@ -52,6 +53,19 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Intro-21-PortalDeploy" component={S21Deploy} durationInFrames={630} fps={30} width={1920} height={1080} />
       <Composition id="Intro-22-IdentityConfig" component={S21IdentityConfig} durationInFrames={708} fps={30} width={1920} height={1080} />
       <Composition id="Intro-23-Observability" component={S22Observability} durationInFrames={966} fps={30} width={1920} height={1080} />
+    </Folder>
+    <Folder name="Buy-or-Build-a-Canvas">
+      <Composition id="Buy-02-Standard" component={S02Standard} durationInFrames={1290} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-04-MixMatch" component={S04MixMatch} durationInFrames={645} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-05-TestKit" component={S05TestKit} durationInFrames={735} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-06-Bdd" component={S06Bdd} durationInFrames={825} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-07-Modules" component={S07Modules} durationInFrames={750} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-09-Operators" component={S09Operators} durationInFrames={675} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-10-Choosing" component={S10Choosing} durationInFrames={690} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-11-Api" component={S11Api} durationInFrames={855} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-12-Observability" component={S12Observability} durationInFrames={810} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-13-Identity" component={S13Identity} durationInFrames={810} fps={30} width={1920} height={1080} />
+      <Composition id="Buy-15-Carbon" component={S15Carbon} durationInFrames={645} fps={30} width={1920} height={1080} />
     </Folder>
     <Folder name="Authentication-and-Authorization">
       {/* Deck 03 (scripts/03-authentication-and-authorization.md). Slides 1, 2, 8, 19 and 20 are native (tools/native/auth.py). */}

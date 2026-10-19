@@ -1,0 +1,620 @@
+{
+ "deck": "02-how-do-i-buy-or-build-an-oda-canvas.pptx",
+ "slides": {
+  "1": {
+   "n": 1,
+   "secs": 48.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Canvas",
+     "at": 0.9,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Component",
+     "at": 1.6,
+     "effect": "zoom",
+     "dur": 0.8
+    },
+    {
+     "shape": "Gear",
+     "at": 2.4,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Intro",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Name",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Live",
+     "at": 38.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "2": {
+   "n": 2,
+   "secs": 40.8,
+   "kind": "video"
+  },
+  "3": {
+   "n": 3,
+   "secs": 32.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Canvas",
+     "at": 0.6,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Route 1",
+     "at": 3.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 1",
+     "at": 3.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "PoC label",
+     "at": 6.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Cloud 1",
+     "at": 7.4,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Cloud 2",
+     "at": 7.9,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Cloud 3",
+     "at": 8.4,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Cloud 4",
+     "at": 8.9,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Cloud 5",
+     "at": 9.4,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Route 2",
+     "at": 18.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 2",
+     "at": 17.8,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Repo",
+     "at": 19.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Route 3",
+     "at": 26.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 3",
+     "at": 25.8,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Vendor 1",
+     "at": 29.0,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Vendor 2",
+     "at": 29.4,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Vendor 3",
+     "at": 29.8,
+     "effect": "zoom",
+     "dur": 0.4
+    }
+   ]
+  },
+  "4": {
+   "n": 4,
+   "secs": 20.0,
+   "kind": "video"
+  },
+  "5": {
+   "n": 5,
+   "secs": 22.8,
+   "kind": "video"
+  },
+  "6": {
+   "n": 6,
+   "secs": 24.0,
+   "kind": "video"
+  },
+  "7": {
+   "n": 7,
+   "secs": 23.6,
+   "kind": "video"
+  },
+  "8": {
+   "n": 8,
+   "secs": 28.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Available header",
+     "at": 2.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Available 1",
+     "at": 4.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 2",
+     "at": 5.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 3",
+     "at": 5.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 4",
+     "at": 6.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 5",
+     "at": 6.4,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 6",
+     "at": 6.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 7",
+     "at": 7.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Available 8",
+     "at": 8.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Experimental header",
+     "at": 11.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Experimental 1",
+     "at": 13.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Experimental 2",
+     "at": 16.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Experimental 3",
+     "at": 17.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned header",
+     "at": 19.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Planned 1",
+     "at": 19.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned 2",
+     "at": 20.4,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Planned 3",
+     "at": 21.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Not fixed",
+     "at": 23.6,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "9": {
+   "n": 9,
+   "secs": 20.8,
+   "kind": "video"
+  },
+  "10": {
+   "n": 10,
+   "secs": 21.6,
+   "kind": "video"
+  },
+  "11": {
+   "n": 11,
+   "secs": 26.8,
+   "kind": "video"
+  },
+  "12": {
+   "n": 12,
+   "secs": 25.6,
+   "kind": "video"
+  },
+  "13": {
+   "n": 13,
+   "secs": 25.6,
+   "kind": "video"
+  },
+  "14": {
+   "n": 14,
+   "secs": 18.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Component",
+     "at": 0.8,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Needs",
+     "at": 2.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 1",
+     "at": 3.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Operator",
+     "at": 3.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 2",
+     "at": 7.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Vault",
+     "at": 7.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Identity",
+     "at": 12.4,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "15": {
+   "n": 15,
+   "secs": 20.0,
+   "kind": "video"
+  },
+  "16": {
+   "n": 16,
+   "secs": 25.6,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Card 1",
+     "at": 2.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 2",
+     "at": 12.4,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Card 3",
+     "at": 18.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Repo",
+     "at": 21.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "17": {
+   "n": 17,
+   "secs": 22.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "AI",
+     "at": 0.4,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "AI 1",
+     "at": 4.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "AI 2",
+     "at": 7.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "AI 3",
+     "at": 12.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "AI 4",
+     "at": 13.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Experimental",
+     "at": 14.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "MaaS",
+     "at": 8.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Planned",
+     "at": 17.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Roadmap 1",
+     "at": 18.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Roadmap 2",
+     "at": 19.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Roadmap 3",
+     "at": 20.4,
+     "effect": "zoom",
+     "dur": 0.5
+    }
+   ]
+  },
+  "18": {
+   "n": 18,
+   "secs": 14.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Point 1",
+     "at": 0.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Point 2",
+     "at": 5.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Point 3",
+     "at": 9.2,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "19": {
+   "n": 19,
+   "secs": 14.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Link 1",
+     "at": 0.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 2",
+     "at": 6.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 3",
+     "at": 8.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 4",
+     "at": 10.0,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  }
+ }
+}

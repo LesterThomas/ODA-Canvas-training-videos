@@ -1,0 +1,558 @@
+{
+  "deck": "02-how-do-i-buy-or-build-an-oda-canvas.pptx",
+  "slides": {
+    "256": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:13:07+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7cf265e766c6b102"
+        },
+        {
+          "at": "2026-10-18T21:11:46+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7cf265e766c6b102"
+        }
+      ],
+      "number": 1,
+      "title": "How do I buy or build an ODA Canvas? (presenter introduction)",
+      "hidden": false,
+      "fingerprint": "7cf265e766c6b102",
+      "comment": "",
+      "updated_at": "2026-10-18T13:13:07+01:00",
+      "approved_fingerprint": "7cf265e766c6b102",
+      "validated_key": "ff7a204c045f9744"
+    },
+    "257": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:13:25+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2169c4c13c9021f6"
+        },
+        {
+          "at": "2026-10-18T21:07:02+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "After 'It exposes the component's APIs, registers its roles, and monitors it.' the slide should also cover that a component can declare requirements for accessing AI services through the model-as-a-service operator or data products through the Data operator, or even manage its cost or carbon footprint through the cost and carbon management operators. It should mention that this list is not exhaustive and that any underlying common service could be offered through this standard pattern.",
+          "fingerprint": "2169c4c13c9021f6"
+        },
+        {
+          "at": "2026-10-18T21:09:54+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. After the APIs, roles and monitoring sentence, the narration now covers AI models through the Model-as-a-Service operator, data products through the Data operator, and cost and carbon through their operators. It then says the list isn't exhaustive and any common platform service can use the same pattern. On screen, the Cost, Carbon, Model Operator and Data Operator modules of the Canvas picture light up as each is named, the YAML gains a dependentModels line, and a 'Not exhaustive' line follows. The slide is now about 41 s (102 words).",
+          "fingerprint": "24e1558c6e940511"
+        },
+        {
+          "at": "2026-10-18T21:11:06+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "24e1558c6e940511"
+        },
+        {
+          "at": "2026-10-18T21:16:38+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "24e1558c6e940511"
+        }
+      ],
+      "number": 2,
+      "title": "The standard is the component",
+      "hidden": false,
+      "fingerprint": "24e1558c6e940511",
+      "comment": "",
+      "updated_at": "2026-10-18T21:11:06+01:00",
+      "approved_fingerprint": "24e1558c6e940511",
+      "validated_key": "a3c971d9c3e75760"
+    },
+    "258": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:13:56+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6444e1a8918c08ff"
+        },
+        {
+          "at": "2026-10-18T21:14:03+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "For Apache 2.0, spell this out in the speaker notes as 'Apache two dot O'",
+          "fingerprint": "6444e1a8918c08ff"
+        },
+        {
+          "at": "2026-10-18T21:14:36+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The speaker notes now say 'under the Apache two dot O licence'. The on-screen text still shows 'Apache 2.0'.",
+          "fingerprint": "a940b048d2abfdf2"
+        },
+        {
+          "at": "2026-10-18T21:15:47+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a940b048d2abfdf2"
+        },
+        {
+          "at": "2026-10-18T21:17:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "a940b048d2abfdf2"
+        }
+      ],
+      "number": 3,
+      "title": "Three ways to get a Canvas",
+      "hidden": false,
+      "fingerprint": "a940b048d2abfdf2",
+      "comment": "",
+      "updated_at": "2026-10-18T21:15:47+01:00",
+      "approved_fingerprint": "a940b048d2abfdf2",
+      "validated_key": "f9de81b8a029cc71"
+    },
+    "259": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:14:19+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "263cf32d109b96b3"
+        },
+        {
+          "at": "2026-10-18T21:08:03+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "263cf32d109b96b3"
+        }
+      ],
+      "number": 4,
+      "title": "Mix and match",
+      "hidden": false,
+      "fingerprint": "263cf32d109b96b3",
+      "comment": "",
+      "updated_at": "2026-10-18T13:14:19+01:00",
+      "approved_fingerprint": "263cf32d109b96b3",
+      "validated_key": "b1c910a61bb89e12"
+    },
+    "260": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:12:04+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4d7132b26601d8ee"
+        },
+        {
+          "at": "2026-10-18T21:08:32+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4d7132b26601d8ee"
+        }
+      ],
+      "number": 5,
+      "title": "How you know it's a Canvas",
+      "hidden": false,
+      "fingerprint": "4d7132b26601d8ee",
+      "comment": "",
+      "updated_at": "2026-10-18T13:12:04+01:00",
+      "approved_fingerprint": "4d7132b26601d8ee",
+      "validated_key": "8116b4d6a2ddd1f7"
+    },
+    "261": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:12:29+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "22c8922d3327f93c"
+        },
+        {
+          "at": "2026-10-18T21:08:58+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "22c8922d3327f93c"
+        }
+      ],
+      "number": 6,
+      "title": "Live, the test kit in the Canvas Portal",
+      "hidden": false,
+      "fingerprint": "22c8922d3327f93c",
+      "comment": "",
+      "updated_at": "2026-10-18T13:12:29+01:00",
+      "approved_fingerprint": "22c8922d3327f93c",
+      "validated_key": "9f640a11f2e55911"
+    },
+    "262": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:15:31+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "22fee7976abcc66c"
+        },
+        {
+          "at": "2026-10-18T21:09:28+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "22fee7976abcc66c"
+        }
+      ],
+      "number": 7,
+      "title": "Operators are the modules",
+      "hidden": false,
+      "fingerprint": "22fee7976abcc66c",
+      "comment": "",
+      "updated_at": "2026-10-18T13:15:31+01:00",
+      "approved_fingerprint": "22fee7976abcc66c",
+      "validated_key": "ecf79b98f014e88d"
+    },
+    "263": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:15:55+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "14ba0a4e30b3318e"
+        },
+        {
+          "at": "2026-10-18T21:19:49+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "At the moment the narration is leaving gaps. Reword the speaker notes to something that the narration will succeed in. At the moment it skips' is a prototype' and 'data products and carbon-aware scaling'",
+          "fingerprint": "14ba0a4e30b3318e"
+        },
+        {
+          "at": "2026-10-18T21:20:48+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Reworded into short sentences, each ending on a plain word: 'Seven are available now. They cover components, APIs, identity, credentials, dependencies, secrets and disruption budgets. A prototype operator handles authentication between components. Three operators are experimental. One provides model as a service. One manages data products. And one scales workloads to cut carbon.' The planned and closing sentences are split the same way. The builds are retimed to match. Approve it again to re-voice it.",
+          "fingerprint": "0188c507d195b5af"
+        },
+        {
+          "at": "2026-10-18T21:21:35+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0188c507d195b5af"
+        },
+        {
+          "at": "2026-10-18T21:27:08+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0188c507d195b5af"
+        }
+      ],
+      "number": 8,
+      "title": "The operator catalogue",
+      "hidden": false,
+      "fingerprint": "0188c507d195b5af",
+      "comment": "",
+      "updated_at": "2026-10-18T21:21:35+01:00",
+      "approved_fingerprint": "0188c507d195b5af",
+      "validated_key": "cbf1322384b79dea"
+    },
+    "264": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:16:15+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "00682a298a888c74"
+        }
+      ],
+      "number": 9,
+      "title": "Live, the operators in this Canvas",
+      "hidden": false,
+      "fingerprint": "00682a298a888c74",
+      "comment": "",
+      "updated_at": "2026-10-18T13:16:15+01:00",
+      "approved_fingerprint": "00682a298a888c74"
+    },
+    "265": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:16:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4c322c721c31fdc7"
+        },
+        {
+          "at": "2026-10-18T21:33:30+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4c322c721c31fdc7"
+        }
+      ],
+      "number": 10,
+      "title": "Live, choosing the modules",
+      "hidden": false,
+      "fingerprint": "4c322c721c31fdc7",
+      "comment": "",
+      "updated_at": "2026-10-18T13:16:37+01:00",
+      "approved_fingerprint": "4c322c721c31fdc7",
+      "validated_key": "039c3b31e6425e76"
+    },
+    "266": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:16:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "18d15fbf3dcfaf8e"
+        },
+        {
+          "at": "2026-10-18T21:23:23+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "18d15fbf3dcfaf8e"
+        }
+      ],
+      "number": 11,
+      "title": "Example 1, API management",
+      "hidden": false,
+      "fingerprint": "18d15fbf3dcfaf8e",
+      "comment": "",
+      "updated_at": "2026-10-18T13:16:54+01:00",
+      "approved_fingerprint": "18d15fbf3dcfaf8e",
+      "validated_key": "6e6049605e961be2"
+    },
+    "267": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:17:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b27711dc9f874324"
+        }
+      ],
+      "number": 12,
+      "title": "Example 2, observability",
+      "hidden": false,
+      "fingerprint": "b27711dc9f874324",
+      "comment": "",
+      "updated_at": "2026-10-18T13:17:12+01:00",
+      "approved_fingerprint": "b27711dc9f874324"
+    },
+    "268": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:17:38+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "52df0b6b5f178445"
+        }
+      ],
+      "number": 13,
+      "title": "Example 3, identity",
+      "hidden": false,
+      "fingerprint": "52df0b6b5f178445",
+      "comment": "",
+      "updated_at": "2026-10-18T13:17:38+01:00",
+      "approved_fingerprint": "52df0b6b5f178445"
+    },
+    "269": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:17:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "275ba739d983da60"
+        }
+      ],
+      "number": 14,
+      "title": "Example 4, secrets",
+      "hidden": false,
+      "fingerprint": "275ba739d983da60",
+      "comment": "",
+      "updated_at": "2026-10-18T13:17:54+01:00",
+      "approved_fingerprint": "275ba739d983da60"
+    },
+    "270": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:19:26+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7b8b521e5edbec8a"
+        }
+      ],
+      "number": 15,
+      "title": "Example 5, carbon-aware scaling",
+      "hidden": false,
+      "fingerprint": "7b8b521e5edbec8a",
+      "comment": "",
+      "updated_at": "2026-10-18T13:19:26+01:00",
+      "approved_fingerprint": "7b8b521e5edbec8a"
+    },
+    "271": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:19:44+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "313fc27f4b20e80c"
+        },
+        {
+          "at": "2026-10-18T21:31:28+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "313fc27f4b20e80c"
+        }
+      ],
+      "number": 16,
+      "title": "Build your own operator",
+      "hidden": false,
+      "fingerprint": "313fc27f4b20e80c",
+      "comment": "",
+      "updated_at": "2026-10-18T13:19:44+01:00",
+      "approved_fingerprint": "313fc27f4b20e80c",
+      "validated_key": "6224df594a627767"
+    },
+    "272": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:21:42+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The Model-as-a-Service operator is available as an experimental operator. Where the AI-Native canvas says it provides AI governed access through a model gateway, this is using the Model-as-a-Service operator.",
+          "fingerprint": "8dfc3ee74ebe757a"
+        },
+        {
+          "at": "2026-10-18T13:22:56+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. Model-as-a-Service is no longer in the Planned list. The model gateway line now carries a 'Model-as-a-Service operator · TMFOP009 · experimental' tag. The narration now says: 'The experimental Model-as-a-Service operator grants governed access through a model gateway. The gateway applies guardrails and records usage.' Slide 8 already lists it as experimental.",
+          "fingerprint": "3a60363aa753d43a"
+        },
+        {
+          "at": "2026-10-18T21:11:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3a60363aa753d43a"
+        }
+      ],
+      "number": 17,
+      "title": "What's next",
+      "hidden": false,
+      "fingerprint": "3a60363aa753d43a",
+      "comment": "",
+      "updated_at": "2026-10-18T21:11:34+01:00",
+      "approved_fingerprint": "3a60363aa753d43a"
+    },
+    "273": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-18T13:21:59+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6c7e0df446504f0a"
+        },
+        {
+          "at": "2026-10-18T21:30:59+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6c7e0df446504f0a"
+        }
+      ],
+      "number": 18,
+      "title": "Recap",
+      "hidden": false,
+      "fingerprint": "6c7e0df446504f0a",
+      "comment": "",
+      "updated_at": "2026-10-18T13:21:59+01:00",
+      "approved_fingerprint": "6c7e0df446504f0a",
+      "validated_key": "28683d51186a7bc3"
+    },
+    "274": {
+      "status": "changes-requested",
+      "history": [
+        {
+          "at": "2026-10-18T13:22:08+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f948858bdc5cddc0"
+        },
+        {
+          "at": "2026-10-18T21:33:02+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Write 'tmforum-oda slash oda-canvas.' as TM Forum dash ODA slash ODA Canvas'",
+          "fingerprint": "f948858bdc5cddc0"
+        },
+        {
+          "at": "2026-10-18T21:33:42+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The narration now ends 'on GitHub, at TM Forum dash ODA slash ODA Canvas.' The on-screen link is unchanged. Deck 01 (slide 26) has the same phrase. Say if you want it changed there too.",
+          "fingerprint": "1d4480352d340f4c"
+        }
+      ],
+      "number": 19,
+      "title": "Find out more",
+      "hidden": false,
+      "fingerprint": "1d4480352d340f4c",
+      "comment": "Write 'tmforum-oda slash oda-canvas.' as TM Forum dash ODA slash ODA Canvas'",
+      "updated_at": "2026-10-18T21:33:02+01:00",
+      "requested_fingerprint": "f948858bdc5cddc0",
+      "reply": {
+        "at": "2026-10-18T21:33:42+01:00",
+        "text": "Done. The narration now ends 'on GitHub, at TM Forum dash ODA slash ODA Canvas.' The on-screen link is unchanged. Deck 01 (slide 26) has the same phrase. Say if you want it changed there too."
+      }
+    }
+  },
+  "inspected_at": "2026-10-18T21:33:28+01:00"
+}

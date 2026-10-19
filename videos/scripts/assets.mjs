@@ -8,7 +8,7 @@ import path from "node:path";
 const C = {
   text: "#F2F5FB", muted: "#8F9BB8", tmf: "#E6007E", component: "#F5A623", canvas: "#2F6FED",
   operator: "#1FC7A8", api: "#8B6CFF", identity: "#FF6B6B", observability: "#38BDF8", ai: "#F472B6",
-  carbon: "#34D399", ok: "#22C55E", agent: "#F8FAFC",
+  carbon: "#34D399", ok: "#22C55E", agent: "#F8FAFC", secrets: "#E9C46A",
 };
 const icon = (name, color, file = `icon-${name}-${color.slice(1).toLowerCase()}`) => ({ id: "Asset-Icon", props: { name, color }, file });
 const ASSETS = [
@@ -28,6 +28,9 @@ const ASSETS = [
   icon("layers", C.canvas), icon("shield", C.identity), icon("leaf", C.carbon),
   // deck 03 (authentication and authorization)
   icon("people", C.identity), icon("key", C.identity), icon("link", C.identity), icon("doc", C.identity),
+  // deck 02
+  icon("lock", C.secrets), icon("key", C.secrets), icon("gear", C.operator), icon("doc", C.operator), icon("wrench", C.operator),
+  icon("cloud", C.tmf), icon("check", C.operator), icon("spark", C.operator), icon("gear", C.muted), icon("layers", C.operator),
 ];
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });

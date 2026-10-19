@@ -22,5 +22,5 @@ python tools/build_deck.py "decks/$deck.notes.json" videos/out videos/out/poster
 pwsh -NoProfile -File tools/animate_deck.ps1 "decks/$deck.pptx" | tail -1
 python "$skill/check_deck.py" "decks/$deck.pptx" "decks/$deck.notes.json" | tail -1
 PYTHONUTF8=1 python .agents/skills/pptx/scripts/office/validate.py "decks/$deck.pptx" | tail -1
-(cd ../presentation-generator && uv run --native-tls presgen.py refresh "$root/decks/$deck.pptx" 2>&1 | grep -E "rendered|ERROR" || true)
+[ -n "${NO_REFRESH:-}" ] || (cd ../presentation-generator && uv run --native-tls presgen.py refresh "$root/decks/$deck.pptx" 2>&1 | grep -E "rendered|ERROR" || true)
 echo "rebuilt and refreshed decks/$deck.pptx"

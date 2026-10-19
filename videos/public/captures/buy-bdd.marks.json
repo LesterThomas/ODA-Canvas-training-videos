@@ -1,0 +1,31 @@
+{
+ "name": "buy-bdd",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 5.05
+  },
+  {
+   "label": "bdd",
+   "t": 8.9
+  },
+  {
+   "label": "catalogue",
+   "t": 18.17
+  },
+  {
+   "label": "selected",
+   "t": 25.86
+  },
+  {
+   "label": "started",
+   "t": 28.43
+  },
+  {
+   "label": "finished",
+   "t": 85.02
+  }
+ ]
+}

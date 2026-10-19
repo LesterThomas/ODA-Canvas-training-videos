@@ -1,0 +1,26 @@
+{
+ "name": "buy-cli",
+ "live": true,
+ "capturedAt": "2026-10-18T11:07:03.424Z",
+ "context": "docker-desktop",
+ "steps": [
+  {
+   "cmd": "kubectl get deployments -n canvas",
+   "output": "NAME                                   READY   UP-TO-DATE   AVAILABLE   AGE\ncanvas-compreg                         1/1     1            1           14d\ncanvas-depapi-op                       0/0     0            0           14d\ncanvas-info-service                    1/1     1            1           14d\ncanvas-kongistio-operator              1/1     1            1           14d\ncanvas-pdb-management-operator         2/2     2            2           14d\ncanvas-portal-backend                  1/1     1            1           21d\ncanvas-portal-frontend                 1/1     1            1           21d\ncanvas-resource-inventory              1/1     1            1           14d\ncanvas-smanop                          1/1     1            1           14d\ncanvas-svcinv-mongodb                  1/1     1            1           14d\ncompcrdwebhook                         1/1     1            1           14d\ncomponent-operator                     1/1     1            1           14d\ndependency-management-keycloak-authz   1/1     1            1           12h\nidentityconfig-operator-keycloak       1/1     1            1           14d",
+   "exitCode": 0,
+   "at": "2026-10-18T11:07:02.683Z"
+  },
+  {
+   "cmd": "helm get values canvas -n canvas",
+   "output": "USER-SUPPLIED VALUES:\napi-operator-istio:\n  enabled: false\napisix-gateway-install:\n  enabled: false\nkong-gateway-install:\n  enabled: true",
+   "exitCode": 0,
+   "at": "2026-10-18T11:07:03.051Z"
+  },
+  {
+   "cmd": "helm list -n canvas",
+   "output": "NAME                      NAMESPACE    REVISION    UPDATED                                  STATUS      CHART                                         APP VERSION\ncanvas                    canvas       1           2026-10-03 17:14:28.5748319 +0100 BST    deployed    canvas-oda-1.2.6-rc4                          v1\ncanvas-portal             canvas       1           2026-09-27 12:05:02.0539015 +0100 BST    deployed    canvas-portal-0.1.0                           v1\ndepmgmt-keycloak-authz    canvas       1           2026-10-17 23:12:13.6957828 +0100 BST    deployed    dependency-management-keycloak-authz-0.2.1    v1",
+   "exitCode": 0,
+   "at": "2026-10-18T11:07:03.424Z"
+  }
+ ]
+}
