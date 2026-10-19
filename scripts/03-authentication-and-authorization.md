@@ -188,6 +188,29 @@ each offering in pc1 (422 if it isn't found), then creates a product in pi1 for 
 
 ---
 
+## YouTube
+
+Used by `youtube_package.py` to build the upload: title, description (with the chapter list added at the
+end), and captions from the speaker notes.
+
+- **Title:** Authentication and Authorization in the ODA Canvas | ODA Canvas training, part 3
+- **Chapters:** 1=Introduction; 9=Live: deploy the product catalog; 10=Live: its client appears in Keycloak; 12=Live: dynamic roles through TMF672; 13=Live: deploy the order and inventory components; 14=Live: grant a catalog role, and the dependency is met; 15=Live: the same for the inventory; 16=Live: send a product order; 18=Live: automated cleanup
+- **Description:**
+> An ODA Component doesn't implement identity management. It declares the roles it supports, and the ODA Canvas configures them in one shared identity platform, such as Keycloak, Microsoft Entra ID or another identity platform. This third video in the ODA Canvas training series explains how that works.
+>
+> It covers how a component's YAML declares its security needs, how every component gets its own client, the Canvas system role, and static and dynamic roles (through TMF672). It then runs a complete example on a real Canvas with three components: a product catalog, product order capture and product inventory. You'll see their clients and roles appear in Keycloak, a role grant that also connects one component to another, a product order flowing through all three, and the automated cleanup.
+>
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+> Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
+- **Links:**
+> Authentication design: https://github.com/tmforum-oda/oda-canvas/blob/main/Authentication-design.md
+> UC005 Configure clients and roles: https://github.com/tmforum-oda/oda-canvas/blob/main/usecase-library/UC005-Configure-Clients-and-Roles.md
+> UC007 Configure dependent APIs: https://github.com/tmforum-oda/oda-canvas/blob/main/usecase-library/UC007-Configure-Dependent-APIs.md
+> ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
+> Reference example components: https://github.com/tmforum-oda/reference-example-components
+
+---
+
 ## Source check
 
 | Claim | Source |

@@ -48,6 +48,12 @@ coming back belongs in `lessons.md`.
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
 
+### 2026-10-19 · decks 03 and 04 · published to YouTube (unlisted)
+- **Feedback:** "Publish the 03-authentication-and-authorization video, initially as an unlisted video…" and then the same for 04-ai-native-oda-canvas.
+- **Changed:** added `## YouTube` sections to both scripts, with "Live:" chapter titles for the demo slides. Deck 04 slide 12's chapter is "Preview: the Model Gateway in the Canvas Portal", to keep "simulated" off the public page, matching the user's removal of the badge. Deck 03: https://youtu.be/a6j6tUDTS80 (8:44, 20 chapters, 126 cues). Deck 04: https://youtu.be/0QtnMJDblvE (13:52, 24 chapters, 194 cues). Every sentence was timed to the voice. AI use "No", asked again for each deck.
+- **Fixed:** `youtube_package.py` joined consecutive link lines in a description paragraph into one line (deck 03's "Part 1… Part 2…"). Link lines now stay on their own lines. The deck 03 upload got the corrected text by hand.
+- **Skill:** no, apart from the packager fix.
+
 ### 2026-10-19 · deck 02 · published to YouTube (unlisted)
 - **Feedback:** "Publish the 02-how-do-i-buy-or-build-an-oda-canvas video, initially as an unlisted video. Include a description, upload the speaker notes so that YouTube can use captions and split the video as chapters."
 - **Changed:** added a `## YouTube` section to the deck 02 script (title, description linking part 1, chapter overrides for slide 1 and the three "Live:" slides). Packaged it: 9:29, 19 chapters, 145 caption cues, 113 of 113 sentences timed to the voice. Uploaded unlisted following publishing.md: https://youtu.be/fMXEmWalRFc, with SHA-256 checked, AI use "No" (asked again; user: same as deck 01) and English (UK). Recorded in `decks/02-how-do-i-buy-or-build-an-oda-canvas.youtube.json`.

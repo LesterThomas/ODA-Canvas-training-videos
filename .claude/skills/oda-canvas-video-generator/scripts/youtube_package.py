@@ -70,7 +70,11 @@ def youtube_section(script: Path) -> dict:
         paras, cur = [], []
         for line in mm.group(1).splitlines():
             line = line[1:].strip()
-            if line and keep_lines:
+            if line and (keep_lines or "http" in line):
+                # Link lines stay on their own line, even inside a paragraph block.
+                if cur:
+                    paras.append(" ".join(cur))
+                    cur = []
                 paras.append(line)
             elif line:
                 cur.append(line)

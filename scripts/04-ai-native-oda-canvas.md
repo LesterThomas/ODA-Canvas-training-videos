@@ -324,6 +324,30 @@ ten", "about half", "more than half", "about one in five", "several").
 
 ---
 
+## YouTube
+
+Used by `youtube_package.py` to build the upload: title, description (with the chapter list added at the
+end), and captions from the speaker notes.
+
+- **Title:** The AI-Native ODA Canvas | ODA Canvas training, part 4
+- **Chapters:** 1=Introduction; 12=Preview: the Model Gateway in the Canvas Portal
+- **Description:**
+> AI agents are fast becoming the way service providers deliver intelligent, autonomous services, but wiring each agent directly to its favourite model provider brings lock-in, hidden costs and inconsistent guardrails at enterprise scale. This fourth video in the ODA Canvas training series explains the AI-Native ODA Canvas: agents packaged as ODA Components that declare the tools and models they need, with governed access granted by the Canvas.
+>
+> It covers what TM Forum's 2026 Catalysts show, MCP as one more exposed API type, descriptions written for agents, agentic components and dependent AI models, and Model as a Service (TM Forum GB1085) with the model gateway. It looks at the Canvas services needed to run AI at scale, the Canvas as a self-describing registry, and evaluation. It finishes with how AI is helping build the Canvas itself: why a modular architecture like ODA matters for AI-assisted development, AGENTS.md files, and agent skills as an open standard for capturing knowledge as a reusable asset.
+>
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+> Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
+> Part 3, Authentication and Authorization in the ODA Canvas: https://youtu.be/a6j6tUDTS80
+- **Links:**
+> AI-Native Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/AI-Native-Canvas-design.md
+> ODA Canvas agent skills: https://github.com/tmforum-oda/oda-canvas/tree/main/skills
+> ODA agent skills marketplace: https://github.com/tmforum-oda/oda-agent-skills-marketplace
+> ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
+> TM Forum Catalysts: https://www.tmforum.org/catalysts
+
+---
+
 ## Source check
 
 | Claim | Source |
