@@ -253,7 +253,7 @@ end), and captions from the speaker notes.
 >
 > It shows how to check that a Canvas really provides the services it should, by running a BDD feature from the Canvas test kit live in the Canvas Portal. It then explains how operators make the Canvas modular, walks through the operator catalogue, and shows the operators in a real Canvas and how they were chosen. Examples cover API management, observability, identity, secrets and carbon-aware scaling, followed by how to build your own operator and what's coming next.
 >
-> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/RD6XJUPc5hw
 - **Links:**
 > ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
 > Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/Canvas-design.md

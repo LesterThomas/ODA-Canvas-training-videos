@@ -9,16 +9,16 @@ import { OdaComponent } from "../lib/OdaComponent";
 // in the left and right thirds and a lower third, clear of the presenter in the centre. Times follow
 // the recording: speech starts at 2.5 s, and its pauses mark the script's sentences.
 // The clip is silent: the recording's audio (EQ-matched) is slide 1's narration, kept in sync.
-export const PRESENTER_SECS = 55.33;
+export const PRESENTER_SECS = 56.57;  // Intro-video-v2.mp4 (2026-10-19)
 
 const AGENDA: { label: string; at: number }[] = [
-  { label: "A short history · frameworks to Open APIs", at: 15.5 },
-  { label: "Why the Component and Canvas standards", at: 25.9 },
-  { label: "What a Component is · Canvas services", at: 29.2 },
-  { label: "Business benefits", at: 38.8 },
-  { label: "A tour of the Canvas and its Portal", at: 41.8 },
-  { label: "A live deploy, configured automatically", at: 45.7 },
-  { label: "Available · experimental · planned", at: 50.5 },
+  { label: "A short history · frameworks to Open APIs", at: 16.0 },
+  { label: "Why the Component and Canvas standards", at: 21.8 },
+  { label: "What a Component is · Canvas services", at: 27.0 },
+  { label: "Business benefits", at: 36.4 },
+  { label: "A tour of the Canvas and its Portal", at: 37.8 },
+  { label: "A live deploy, configured automatically", at: 40.3 },
+  { label: "Available · experimental · planned", at: 47.4 },
 ];
 
 const panel: React.CSSProperties = {
@@ -33,7 +33,7 @@ export const S01Presenter: React.FC = () => (
     <Video src={staticFile("captures/intro-presenter.mp4")} muted objectFit="cover" style={{ width: "100%", height: "100%" }} />
 
     {/* Lower-third title: fades in at the start, no movement (house style) */}
-    <Appear at={0.3} from="none" out={7.4} style={{ left: 70, top: 800 }}>
+    <Appear at={0.3} from="none" out={6.9} style={{ left: 70, top: 800 }}>
       <div style={{ ...panel, padding: "26px 40px", width: 1060, boxSizing: "border-box" }}>
         <div style={{ fontSize: 26, fontWeight: 700, letterSpacing: 5, color: C.tmf }}>TRAINING SERIES · PART 1</div>
         <div style={{ fontSize: 58, fontWeight: 800, color: C.text, marginTop: 6, whiteSpace: "nowrap" }}>
@@ -43,7 +43,7 @@ export const S01Presenter: React.FC = () => (
     </Appear>
 
     {/* "…the execution platform for ODA Components": the ODA Canvas picture, a component above it */}
-    <Appear at={7.8} from="right" out={15.0} style={{ left: 1250, top: 420 }}>
+    <Appear at={7.3} from="right" out={14.6} style={{ left: 1250, top: 420 }}>
       <div style={{ ...panel, width: 620, height: 470, position: "relative" }}>
         <div style={{ position: "absolute", left: 225, top: 28 }}>
           <OdaComponent size={170} labels={false} />
@@ -53,7 +53,7 @@ export const S01Presenter: React.FC = () => (
     </Appear>
 
     {/* Running agenda: each topic appears as it is named */}
-    <Appear at={15.2} from="left" style={{ left: 50, top: 120 }}>
+    <Appear at={14.8} from="left" style={{ left: 50, top: 120 }}>
       <div style={{ ...panel, width: 590, height: 860, padding: "30px 30px", boxSizing: "border-box" }}>
         <div style={{ fontSize: 26, fontWeight: 700, letterSpacing: 5, color: C.tmf }}>IN THIS VIDEO</div>
       </div>

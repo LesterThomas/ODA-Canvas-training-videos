@@ -27,11 +27,11 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 ## Segment 1: Intro
 
 ### Slide 1: Title card
-- **Visual:** [CLIP Intro-01-Presenter] The presenter's own recorded introduction (Intro-video.mp4), with overlays: a lower-third title, the ODA Canvas picture, and a running agenda. Its audio, EQ-matched, is the narration (kept in sync, never stretched).
+- **Visual:** [CLIP Intro-01-Presenter] The presenter's own recorded introduction (Intro-video-v2.mp4, 56.6 s, recorded again 2026-10-19), with overlays: a lower-third title, the ODA Canvas picture, and a running agenda. Its audio, EQ-matched, is the narration (kept in sync, never stretched).
 - **Speaker notes:**
 > Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components, with an open-source reference implementation. This video starts with a short history, from TM Forum's frameworks to its Open APIs, sharing what led us to creating the ODA Component and Canvas standards. It then shares what an ODA Component is, and what services the Canvas provides towards components.
 >
-> Next we'll go through the business benefits of this approach, and a tour of the Canvas and its Portal. You'll see a component deployed, with its APIs, identity and observability configured automatically. The video also covers which capabilities are available today, which are experimental, and which are planned.
+> Next we'll go through the business benefits of this approach, and a tour of the Canvas and its Portal. You'll see a component deployed, with its APIs, identity and observability configured automatically. The video also covers which capabilities are available today, which are experimental, and which are planned. Let's get started.
 
 ### Slide 2: Who this is for
 - **Visual:** [NATIVE] Two personas slide in. On the left, a component developer beside the ODA Component symbol. On the right, a site reliability engineer holding the Canvas.
@@ -192,7 +192,10 @@ end), and captions from the speaker notes.
 >
 > It covers what an ODA Component is and the services the Canvas provides to components, the business benefits of the approach, and a tour of the Canvas and its Portal: a component is deployed and its APIs, identity and observability are configured automatically. It finishes with which Canvas capabilities are available today, which are experimental and which are planned.
 >
-> Next in the series: how to buy or build a Canvas, authentication and authorization, the AI-Native Canvas, and carbon-aware software.
+> Next in the series:
+> Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
+> Part 3, Authentication and Authorization in the ODA Canvas: https://youtu.be/a6j6tUDTS80
+> Part 4, The AI-Native ODA Canvas: https://youtu.be/0QtnMJDblvE
 - **Links:**
 > ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
 > Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/Canvas-design.md

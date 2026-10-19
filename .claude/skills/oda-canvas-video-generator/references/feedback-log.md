@@ -48,6 +48,15 @@ coming back belongs in `lessons.md`.
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
 
+### 2026-10-19 · deck 01 · new presenter intro, re-uploaded; upstream links (oda-canvas #636, PR #637)
+- **Feedback:** "I've created an updated version of the introduction video… Replace the current first slide video with this one." Then: "Re-upload video 01 to youtube and update the links in the three other video descriptions." Then: "Create a new issue… change all the links that pointed to the old videos to point to the new videos. At the same time, address the minor fixes in issues 632, 633, 634 and 635. Finally create a Pull Request."
+- **Changed:**
+  - Slide 1 now uses Intro-video-v2.mp4 with retimed overlays and `use-recording --sync`; the user re-approved it.
+  - Part 1 was re-uploaded unlisted (https://youtu.be/RD6XJUPc5hw) with "Next in the series" links. The old upload (kIxNnKHtnzQ) was left unlisted, per the user.
+  - The descriptions of parts 2–4 were edited in Studio to link the new part 1, and the scripts were updated to match.
+  - Upstream: issue #636, plus branch `636-update-training-video-links` with one commit each for #632–#636, opened as PR #637.
+- **Skill:** a note for publishing.md. YouTube can't replace a video's file, so a re-cut means a new upload, and every description that links the old one must be edited.
+
 ### 2026-10-19 · decks 03 and 04 · published to YouTube (unlisted)
 - **Feedback:** "Publish the 03-authentication-and-authorization video, initially as an unlisted video…" and then the same for 04-ai-native-oda-canvas.
 - **Changed:** added `## YouTube` sections to both scripts, with "Live:" chapter titles for the demo slides. Deck 04 slide 12's chapter is "Preview: the Model Gateway in the Canvas Portal", to keep "simulated" off the public page, matching the user's removal of the badge. Deck 03: https://youtu.be/a6j6tUDTS80 (8:44, 20 chapters, 126 cues). Deck 04: https://youtu.be/0QtnMJDblvE (13:52, 24 chapters, 194 cues). Every sentence was timed to the voice. AI use "No", asked again for each deck.

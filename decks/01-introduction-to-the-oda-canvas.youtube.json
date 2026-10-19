@@ -1,15 +1,19 @@
 {
-  "url": "https://youtu.be/kIxNnKHtnzQ",
-  "video_id": "kIxNnKHtnzQ",
+  "url": "https://youtu.be/RD6XJUPc5hw",
+  "video_id": "RD6XJUPc5hw",
   "visibility": "unlisted",
   "published": "2026-10-19",
   "channel": "Systems Architecture (UCmVRZcgf2-gY_HR2lKAHhhw)",
   "title": "Introduction to the ODA Canvas | ODA Canvas training, part 1",
-  "duration": 893.6,
+  "duration": 894.8,
   "chapters": 27,
   "captions": "English (United Kingdom), from the speaker notes, timed to the voice",
   "language": "English (United Kingdom)",
   "made_for_kids": false,
   "altered_content": "No (user, 2026-10-19)",
-  "video_sha256": "03fa0e2a99d4148ea5a535139c3127f9b1fa8e296fd63b8daa4fca7acf1c3ae8"
+  "video_sha256": "a27ab5dd810d8d73ec808d00de168b6dac821273533990682d2f0c7e39be0928",
+  "replaces": {
+    "url": "https://youtu.be/kIxNnKHtnzQ",
+    "note": "first upload, with the original introduction; left unlisted (user, 2026-10-19)"
+  }
 }

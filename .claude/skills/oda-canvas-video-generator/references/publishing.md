@@ -104,3 +104,8 @@ Load the `chrome-browser` skill. Then, in a new tab on `https://studio.youtube.c
 8. Close the tabs you opened, and give the user the link.
 
 When the user later makes it public, update `visibility` in the `.youtube.json`.
+
+**Re-cutting a published video.** YouTube can't replace a video's file. Upload the new cut as a new video,
+update `decks/<deck-id>.youtube.json` (keep the old URL under `replaces`), and edit every other video's
+description that links the old URL (Studio → video → Details → description → Save). Then update the links in the
+scripts' `## YouTube` sections and in any upstream docs. Ask the user what to do with the old upload.

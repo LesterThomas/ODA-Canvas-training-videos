@@ -200,7 +200,7 @@ end), and captions from the speaker notes.
 >
 > It covers how a component's YAML declares its security needs, how every component gets its own client, the Canvas system role, and static and dynamic roles (through TMF672). It then runs a complete example on a real Canvas with three components: a product catalog, product order capture and product inventory. You'll see their clients and roles appear in Keycloak, a role grant that also connects one component to another, a product order flowing through all three, and the automated cleanup.
 >
-> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/RD6XJUPc5hw
 > Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
 - **Links:**
 > Authentication design: https://github.com/tmforum-oda/oda-canvas/blob/main/Authentication-design.md

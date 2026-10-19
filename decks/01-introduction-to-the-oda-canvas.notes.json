@@ -2,9 +2,9 @@
  {
   "n": 1,
   "title": "Title card",
-  "notes": "Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components, with an open-source reference implementation. This video starts with a short history, from TM Forum's frameworks to its Open APIs, sharing what led us to creating the ODA Component and Canvas standards. It then shares what an ODA Component is, and what services the Canvas provides towards components.\n\nNext we'll go through the business benefits of this approach, and a tour of the Canvas and its Portal. You'll see a component deployed, with its APIs, identity and observability configured automatically. The video also covers which capabilities are available today, which are experimental, and which are planned.",
-  "words": 119,
-  "secs": 47.6
+  "notes": "Welcome to the first video in a series about the Open Digital Architecture Canvas. The Canvas is the execution platform for ODA Components, with an open-source reference implementation. This video starts with a short history, from TM Forum's frameworks to its Open APIs, sharing what led us to creating the ODA Component and Canvas standards. It then shares what an ODA Component is, and what services the Canvas provides towards components.\n\nNext we'll go through the business benefits of this approach, and a tour of the Canvas and its Portal. You'll see a component deployed, with its APIs, identity and observability configured automatically. The video also covers which capabilities are available today, which are experimental, and which are planned. Let's get started.",
+  "words": 122,
+  "secs": 48.8
  },
  {
   "n": 2,

@@ -336,7 +336,7 @@ end), and captions from the speaker notes.
 >
 > It covers what TM Forum's 2026 Catalysts show, MCP as one more exposed API type, descriptions written for agents, agentic components and dependent AI models, and Model as a Service (TM Forum GB1085) with the model gateway. It looks at the Canvas services needed to run AI at scale, the Canvas as a self-describing registry, and evaluation. It finishes with how AI is helping build the Canvas itself: why a modular architecture like ODA matters for AI-assisted development, AGENTS.md files, and agent skills as an open standard for capturing knowledge as a reusable asset.
 >
-> Part 1, Introduction to the ODA Canvas: https://youtu.be/kIxNnKHtnzQ
+> Part 1, Introduction to the ODA Canvas: https://youtu.be/RD6XJUPc5hw
 > Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
 > Part 3, Authentication and Authorization in the ODA Canvas: https://youtu.be/a6j6tUDTS80
 - **Links:**

@@ -115,16 +115,37 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d21a347551dcfc6a"
+        },
+        {
+          "at": "2026-10-19T17:00:07+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 1 now uses Intro-video-v2.mp4 (56.6 s), with its own EQ-matched sound, in sync. The overlays are retimed to the new recording, and the notes add 'Let's get started.'",
+          "fingerprint": "295eda9e45cc42b7"
+        },
+        {
+          "at": "2026-10-19T21:58:18+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "295eda9e45cc42b7"
+        },
+        {
+          "at": "2026-10-19T21:59:40+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "295eda9e45cc42b7"
         }
       ],
       "number": 1,
       "title": "Title card",
       "hidden": false,
-      "fingerprint": "d21a347551dcfc6a",
+      "fingerprint": "295eda9e45cc42b7",
       "comment": "",
-      "updated_at": "2026-10-17T20:41:43+01:00",
-      "validated_key": "f9e68f83f230359a",
-      "approved_fingerprint": "d21a347551dcfc6a"
+      "updated_at": "2026-10-19T21:58:18+01:00",
+      "validated_key": "cbef4c962f747d27",
+      "approved_fingerprint": "295eda9e45cc42b7"
     },
     "257": {
       "status": "approved",
@@ -2086,5 +2107,5 @@
       "validated_key": "1191ebd6dc4b1bb4"
     }
   },
-  "inspected_at": "2026-10-17T20:33:50+01:00"
+  "inspected_at": "2026-10-19T16:59:48+01:00"
 }
