@@ -57,6 +57,8 @@ The Remotion composition ids use a short prefix per deck plus the slide number (
    update the script and the affected clips.
 4. **Review, approve, narrate or render a built deck**: go to Step 7. Comments left on the review
    page are feedback, so handle them through the **Feedback loop**.
+5. **See every deck, or publish one**: run the overview page (`presgen.py hub decks/`, see
+   `references/publishing.md`), and use Step 8 to publish a finished video to YouTube.
 
 ## The process
 
@@ -219,7 +221,16 @@ Read `references/narration-and-video.md` first. Then:
 5. When the final video is built (`decks/<deck-id>/<deck-id>_video.mp4`), check sample frames. Then
    tell the user where it is, how long it runs, and any slides still in draft.
 
-### Step 8: Close out
+### Step 8: Publish to YouTube (when the user asks)
+
+Read `references/publishing.md`. Add a `## YouTube` section to the script (title, description,
+links, chapter-title overrides). Run `scripts/youtube_package.py <deck-id>`: it writes the
+description with chapters from the slide titles, and English captions from the speaker notes, timed
+to the real voice. Then upload with Claude in Chrome in the user's signed-in YouTube Studio, at the
+visibility the user asked for (unlisted first). Ask the AI-use question every time. Record the result in
+`decks/<deck-id>.youtube.json`.
+
+### Step 9: Close out
 
 Update the deck's task list and status, and mention anything you couldn't verify. Commit only when
 the user asks. Rendered clips (`videos/out/`) are gitignored. The `.pptx` is committed, and it is
@@ -269,4 +280,5 @@ Tell the user, briefly, what changed in the deck and what (if anything) changed 
 - `references/live-demos.md`: recording the Component Directory, the Canvas Portal and helm/kubectl, and editing them with `CaptureClip` and `Terminal`.
 - `references/deck-assembly.md`: `build_deck.py`, the auto-play XML, posters, verification.
 - `references/narration-and-video.md`: presentation-generator, covering slide-by-slide review and approval, narration, PowerPoint rendering and the final video.
+- `references/publishing.md`: the overview page of all decks, and publishing a finished video to YouTube (description, chapters, captions, upload).
 - `references/feedback-log.md`: the log of every feedback item and its outcome.

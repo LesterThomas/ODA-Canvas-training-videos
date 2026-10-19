@@ -10,6 +10,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "8e4db0e7e92cf968"
+        },
+        {
+          "at": "2026-10-19T13:25:39+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8e4db0e7e92cf968"
         }
       ],
       "number": 1,
@@ -18,7 +25,8 @@
       "fingerprint": "8e4db0e7e92cf968",
       "comment": "",
       "updated_at": "2026-10-19T12:38:13+01:00",
-      "approved_fingerprint": "8e4db0e7e92cf968"
+      "approved_fingerprint": "8e4db0e7e92cf968",
+      "validated_key": "986ebb337719d213"
     },
     "257": {
       "status": "approved",
@@ -138,6 +146,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "d9718eba72f545f0"
+        },
+        {
+          "at": "2026-10-19T14:06:02+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d9718eba72f545f0"
         }
       ],
       "number": 5,
@@ -146,7 +161,8 @@
       "fingerprint": "d9718eba72f545f0",
       "comment": "",
       "updated_at": "2026-10-19T13:03:40+01:00",
-      "approved_fingerprint": "d9718eba72f545f0"
+      "approved_fingerprint": "d9718eba72f545f0",
+      "validated_key": "1237ff9b0cb75624"
     },
     "261": {
       "status": "approved",
@@ -154,6 +170,13 @@
         {
           "at": "2026-10-19T12:45:04+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "799934193597865d"
+        },
+        {
+          "at": "2026-10-19T14:06:33+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "799934193597865d"
@@ -165,7 +188,8 @@
       "fingerprint": "799934193597865d",
       "comment": "",
       "updated_at": "2026-10-19T12:45:04+01:00",
-      "approved_fingerprint": "799934193597865d"
+      "approved_fingerprint": "799934193597865d",
+      "validated_key": "f2f9a925da62c7bf"
     },
     "262": {
       "status": "approved",
@@ -173,6 +197,13 @@
         {
           "at": "2026-10-19T12:45:26+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9428d58227767427"
+        },
+        {
+          "at": "2026-10-19T14:07:12+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "9428d58227767427"
@@ -184,7 +215,8 @@
       "fingerprint": "9428d58227767427",
       "comment": "",
       "updated_at": "2026-10-19T12:45:26+01:00",
-      "approved_fingerprint": "9428d58227767427"
+      "approved_fingerprint": "9428d58227767427",
+      "validated_key": "816a5edce41af90b"
     },
     "263": {
       "status": "approved",
@@ -209,6 +241,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "ea2321354edd3c58"
+        },
+        {
+          "at": "2026-10-19T14:07:53+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ea2321354edd3c58"
         }
       ],
       "number": 8,
@@ -217,7 +256,8 @@
       "fingerprint": "ea2321354edd3c58",
       "comment": "",
       "updated_at": "2026-10-19T13:04:11+01:00",
-      "approved_fingerprint": "ea2321354edd3c58"
+      "approved_fingerprint": "ea2321354edd3c58",
+      "validated_key": "5d3a27f1816b6192"
     },
     "264": {
       "status": "approved",
@@ -225,6 +265,13 @@
         {
           "at": "2026-10-19T12:46:52+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1ca38d74ec5cd35d"
+        },
+        {
+          "at": "2026-10-19T14:08:20+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "1ca38d74ec5cd35d"
@@ -236,7 +283,8 @@
       "fingerprint": "1ca38d74ec5cd35d",
       "comment": "",
       "updated_at": "2026-10-19T12:46:52+01:00",
-      "approved_fingerprint": "1ca38d74ec5cd35d"
+      "approved_fingerprint": "1ca38d74ec5cd35d",
+      "validated_key": "03a82f050ef52edf"
     },
     "265": {
       "status": "approved",
@@ -294,6 +342,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "442ea5316c87ae8c"
+        },
+        {
+          "at": "2026-10-19T14:09:28+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "442ea5316c87ae8c"
         }
       ],
       "number": 11,
@@ -302,7 +357,8 @@
       "fingerprint": "442ea5316c87ae8c",
       "comment": "",
       "updated_at": "2026-10-19T13:06:32+01:00",
-      "approved_fingerprint": "442ea5316c87ae8c"
+      "approved_fingerprint": "442ea5316c87ae8c",
+      "validated_key": "f8182b47c1e68adc"
     },
     "267": {
       "status": "approved",
@@ -341,6 +397,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "8aa19bbf89ec15c1"
+        },
+        {
+          "at": "2026-10-19T14:10:34+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8aa19bbf89ec15c1"
         }
       ],
       "number": 12,
@@ -349,7 +412,8 @@
       "fingerprint": "8aa19bbf89ec15c1",
       "comment": "",
       "updated_at": "2026-10-19T13:10:18+01:00",
-      "approved_fingerprint": "8aa19bbf89ec15c1"
+      "approved_fingerprint": "8aa19bbf89ec15c1",
+      "validated_key": "a2e74592de478045"
     },
     "268": {
       "status": "approved",
@@ -381,6 +445,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "c1eb8c6d8ce4f438"
+        },
+        {
+          "at": "2026-10-19T14:10:02+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c1eb8c6d8ce4f438"
         }
       ],
       "number": 13,
@@ -389,7 +460,8 @@
       "fingerprint": "c1eb8c6d8ce4f438",
       "comment": "",
       "updated_at": "2026-10-19T13:08:52+01:00",
-      "approved_fingerprint": "c1eb8c6d8ce4f438"
+      "approved_fingerprint": "c1eb8c6d8ce4f438",
+      "validated_key": "421efd95b07e89a4"
     },
     "269": {
       "status": "approved",
@@ -468,6 +540,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "df9d4d8001f63d95"
+        },
+        {
+          "at": "2026-10-19T14:11:22+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "df9d4d8001f63d95"
         }
       ],
       "number": 16,
@@ -476,7 +555,8 @@
       "fingerprint": "df9d4d8001f63d95",
       "comment": "",
       "updated_at": "2026-10-19T13:09:18+01:00",
-      "approved_fingerprint": "df9d4d8001f63d95"
+      "approved_fingerprint": "df9d4d8001f63d95",
+      "validated_key": "b944a416ad509c34"
     },
     "272": {
       "status": "approved",
@@ -506,7 +586,7 @@
       "validated_key": "3c869a1f9ba14b2d"
     },
     "273": {
-      "status": "approved",
+      "status": "changes-requested",
       "history": [
         {
           "at": "2026-10-19T12:59:33+01:00",
@@ -528,15 +608,33 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "142e2247caafc21e"
+        },
+        {
+          "at": "2026-10-19T14:03:51+01:00",
+          "action": "changes",
+          "by": "narration check",
+          "comment": "Narration check: after every take, the voice still could not say this sentence. \"Google's DORA report on AI-assisted software development found that AI is an amplifier.\" was heard as \"Google's Dora report on AI-assisted software development\" (missing: found that ai is an amplifier) Please reword it.",
+          "fingerprint": "142e2247caafc21e"
+        },
+        {
+          "at": "2026-10-19T14:04:37+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Narration check fix: split into 'Google's DORA report studied AI-assisted software development. It found that AI is an amplifier.' Same length, so the animation timing is unchanged.",
+          "fingerprint": "4541a404d25a1e7a"
         }
       ],
       "number": 18,
       "title": "AI is an amplifier",
       "hidden": false,
-      "fingerprint": "142e2247caafc21e",
-      "comment": "",
-      "updated_at": "2026-10-19T13:09:51+01:00",
-      "approved_fingerprint": "142e2247caafc21e"
+      "fingerprint": "4541a404d25a1e7a",
+      "comment": "Narration check: after every take, the voice still could not say this sentence. \"Google's DORA report on AI-assisted software development found that AI is an amplifier.\" was heard as \"Google's Dora report on AI-assisted software development\" (missing: found that ai is an amplifier) Please reword it.",
+      "updated_at": "2026-10-19T14:03:51+01:00",
+      "requested_fingerprint": "142e2247caafc21e",
+      "reply": {
+        "at": "2026-10-19T14:04:37+01:00",
+        "text": "Narration check fix: split into 'Google's DORA report studied AI-assisted software development. It found that AI is an amplifier.' Same length, so the animation timing is unchanged."
+      }
     },
     "274": {
       "status": "approved",
@@ -675,5 +773,5 @@
       "approved_fingerprint": "0dd27269095b6e56"
     }
   },
-  "inspected_at": "2026-10-19T13:09:51+01:00"
+  "inspected_at": "2026-10-19T14:04:30+01:00"
 }

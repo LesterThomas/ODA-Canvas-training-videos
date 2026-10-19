@@ -223,7 +223,7 @@ Portal's AI → Model Gateway page reads `/api/model-gateway-services`. When the
   Caption: "DORA 2025: AI is an amplifier".
 - **On-screen text:** "Amplifies strengths", "Amplifies dysfunction"
 - **Speaker notes:**
-> The AI tools we use to build the Canvas follow the same rule. Google's DORA report on AI-assisted software development found that AI is an amplifier. It magnifies the strengths of high-performing teams. It also magnifies the dysfunctions of struggling ones. With a modular, loosely coupled, API-first architecture, AI amplifies that. With a tightly coupled monolith, AI amplifies the chaos.
+> The AI tools we use to build the Canvas follow the same rule. Google's DORA report studied AI-assisted software development. It found that AI is an amplifier. It magnifies the strengths of high-performing teams. It also magnifies the dysfunctions of struggling ones. With a modular, loosely coupled, API-first architecture, AI amplifies that. With a tightly coupled monolith, AI amplifies the chaos.
 
 ### Slide 19: Why ODA suits AI development
 - **Visual:** [NATIVE] Four cards, each pairing an ODA principle with what it gives a coding agent:

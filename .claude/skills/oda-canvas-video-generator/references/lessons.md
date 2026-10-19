@@ -7,6 +7,20 @@ it now lives.
 
 ---
 
+### 2026-10-19: One overview page for every deck; publish finished videos to YouTube with chapters and captions
+**Rule:** Keep `presgen.py hub decks/` available as the way into every deck. It shows each deck's status,
+final video and YouTube link, and starts or opens its review page. Publish a finished deck with
+`youtube_package.py` (description with chapters from the slide titles, captions from the speaker notes
+timed to the voice) and an upload through Claude in Chrome, unlisted first. Details are in `publishing.md`.
+**Why:** With four decks and more coming, the user needs one place to see them all and jump into any
+review. The speaker notes are already the exact narration, so they make accurate captions, and the slide
+titles make natural chapters. Both help viewers navigate a 10 to 15 minute video.
+**Source:** User, 2026-10-19: "There are now 4 separate videos. In the future there may be more. Create
+an overview page to show all the available videos with links so that I can go in and review any one of
+them. I also want to be able to publish these videos on YouTube when they are complete… initially as an
+unlisted video. Include a description, upload the speaker notes so that YouTube can use captions and split
+the video as chapters. This should be part of the skill." Folded into SKILL.md Step 8 and `publishing.md`.
+
 ### 2026-10-18: Check every take with speech-to-text, and learn from the failures
 **Rule:** csm-voice transcribes every take with Whisper and only keeps takes that say the whole sentence.
 A sentence that still fails after its retries becomes a "narration check" change request on the review

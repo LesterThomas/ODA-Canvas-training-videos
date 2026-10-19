@@ -48,6 +48,16 @@ coming back belongs in `lessons.md`.
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
 
+### 2026-10-19 · deck 04 · slide 18 (AI is an amplifier), narration check
+- **Feedback:** narration check. "Google's DORA report on AI-assisted software development found that AI is an amplifier." was heard without "found that AI is an amplifier".
+- **Changed:** split into "Google's DORA report studied AI-assisted software development. It found that AI is an amplifier." The word count is unchanged, so no retiming.
+- **Skill:** no.
+
+### 2026-10-19 · all decks · overview page and YouTube publishing
+- **Feedback:** "Create an overview page to show all the available videos with links so that I can go in and review any one of them… publish these videos on YouTube… initially as an unlisted video. Include a description, upload the speaker notes so that YouTube can use captions and split the video as chapters. This should be part of the skill."
+- **Changed:** presentation-generator gained `presgen hub` (the overview page; review servers record themselves in `server.json`). New `youtube_package.py` and `asr_words.py`, and a `## YouTube` section in the deck 01 script. Deck 01 was uploaded unlisted (https://youtu.be/kIxNnKHtnzQ) with its description, 27 chapters and 217 caption cues. AI use was answered "No", per the user.
+- **Skill:** yes. New SKILL.md Step 8, `references/publishing.md`, and a lessons.md entry.
+
 ### 2026-10-19 · deck 04 · slide 12, opening sentence
 - **Feedback:** change "Here's a simulated view… supplied for the recording." to "This is how the Model Gateway will appear in the Canvas Portal."
 - **Changed:** narration replaced. The first capture segment was sped up (rate 0.31) so the list hold matches; the clip is now 910 frames. The disclosure is now carried by "will appear" (future), per the user. The script records that the data is simulated.

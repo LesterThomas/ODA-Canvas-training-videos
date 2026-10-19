@@ -180,6 +180,26 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 
 ---
 
+## YouTube
+
+Used by `youtube_package.py` to build the upload: title, description (with the chapter list added at the
+end), and captions from the speaker notes.
+
+- **Title:** Introduction to the ODA Canvas | ODA Canvas training, part 1
+- **Chapters:** 1=Introduction
+- **Description:**
+> The ODA Canvas is the execution platform for TM Forum Open Digital Architecture (ODA) Components, with an open-source reference implementation. This first video in the ODA Canvas training series explains why the Canvas exists, from TM Forum's frameworks and Open APIs to the ODA Component and Canvas standards.
+>
+> It covers what an ODA Component is and the services the Canvas provides to components, the business benefits of the approach, and a tour of the Canvas and its Portal: a component is deployed and its APIs, identity and observability are configured automatically. It finishes with which Canvas capabilities are available today, which are experimental and which are planned.
+>
+> Next in the series: how to buy or build a Canvas, authentication and authorization, the AI-Native Canvas, and carbon-aware software.
+- **Links:**
+> ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
+> Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/Canvas-design.md
+> ODA Component Directory: https://www.tmforum.org/oda/directory
+> Open Digital Architecture: https://www.tmforum.org/oda/
+
+
 ## Source check
 
 | Claim | Source in oda-canvas @ c39da63 |
