@@ -1,8 +1,9 @@
 import React from "react";
-import { Img, interpolate, Sequence, staticFile, useVideoConfig } from "remotion";
+import { interpolate, Sequence, useVideoConfig } from "remotion";
 import { C, MONO } from "../theme";
 import { Appear, Caption, Code, Draw, Gear, Heading, Icon, IconName, Pill, Stage, Svg, Tile, useProg, useT } from "../lib/ui";
 import { OdaComponent } from "../lib/OdaComponent";
+import { canvasModule, CanvasPicture, Glow, MODULES, OpGear } from "../lib/CanvasPicture";
 import { CaptureClip, CaptureSegment } from "../lib/CaptureClip";
 import { CliSession, Terminal } from "../lib/Terminal";
 import { IdpPanel } from "../auth/Concepts";
@@ -15,65 +16,6 @@ import cli from "../../public/captures/buy-cli.cli.json";
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const PORTAL = "localhost:8090";
 
-// ---- The ODA Canvas picture (images/ODA-Canvas-dark.svg; viewBox 10 180 1652 610), with its modules.
-type Box = { left: number; top: number; width: number; height: number };
-const canvasModule = (c: { left: number; top: number; w: number }) => {
-  const s = c.w / 1652;
-  return (x0: number, x1: number, y0: number, y1: number): Box => ({
-    left: c.left + (x0 - 10) * s,
-    top: c.top + (y0 - 180) * s,
-    width: (x1 - x0) * s,
-    height: (y1 - y0) * s,
-  });
-};
-const MODULES: Record<string, [number, number, number, number]> = {
-  component: [110, 412, 326, 458],
-  api: [490, 821, 326, 458],
-  observability: [849, 1181, 326, 458],
-  identity: [1205, 1556, 326, 458],
-  data: [1205, 1556, 494, 626],
-  model: [849, 1181, 494, 626],
-  cost: [95, 425, 494, 626],
-  carbon: [470, 805, 494, 626],
-};
-
-const CanvasPicture: React.FC<{ left: number; top: number; w: number; at: number }> = ({ left, top, w, at }) => (
-  <Appear at={at} from="up" dist={60} style={{ left, top }}>
-    <Img src={staticFile("ODA-Canvas-dark.svg")} style={{ width: w, display: "block" }} />
-  </Appear>
-);
-
-const Glow: React.FC<{ box: Box; color: string; at: number; label?: string; labelY?: number }> = ({ box, color, at, label, labelY }) => {
-  const p = useProg(at, 0.5);
-  return (
-    <div
-      style={{
-        position: "absolute",
-        ...box,
-        borderRadius: 10,
-        border: `4px solid ${color}`,
-        boxShadow: `0 0 ${30 * p}px ${color}, inset 0 0 ${20 * p}px ${color}66`,
-        opacity: p,
-      }}
-    >
-      {label ? (
-        <div style={{ position: "absolute", left: -40, right: -40, top: (labelY ?? box.top - 44) - box.top, textAlign: "center", fontSize: 24, fontWeight: 700, color, whiteSpace: "nowrap" }}>
-          {label}
-        </div>
-      ) : null}
-    </div>
-  );
-};
-
-/** A gear with a label under it (an operator). */
-const OpGear: React.FC<{ label: string; sub?: string; color: string; size?: number; width?: number }> = ({ label, sub, color, size = 110, width = 280 }) => (
-  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6, width }}>
-    <Gear size={size} color={color} />
-    <div style={{ fontSize: 26, fontWeight: 800, color, textAlign: "center", lineHeight: 1.15 }}>{label}</div>
-    {sub ? <div style={{ fontSize: 20, color: C.muted, textAlign: "center" }}>{sub}</div> : null}
-  </div>
-);
-
 // ---------------------------------------------------------------------------------------------
 // Slide 2 — The standard is the component
 const SPEC = [
@@ -82,7 +24,6 @@ const SPEC = [
   { text: "coreFunction:", indent: 1 },
   { text: "exposedAPIs: …", indent: 2, color: C.api },
   { text: "dependentAPIs: …", indent: 2, color: C.api },
-  { text: "dependentModels: …", indent: 2, color: C.ai },
   { text: "securityFunction:", indent: 1 },
   { text: "canvasSystemRole: …", indent: 2, color: C.identity },
   { text: "managementFunction:", indent: 1 },
@@ -125,6 +66,12 @@ export const S02Standard: React.FC = () => {
       <Glow box={M2(...MODULES.identity)} color={C.identity} at={13.6} label="Roles registered" labelY={C2.top - 50} />
       <Glow box={M2(...MODULES.observability)} color={C.observability} at={14.6} label="Monitored" labelY={C2.top - 50} />
       <Glow box={M2(...MODULES.model)} color={C.ai} at={19.6} label="AI models" labelY={C2.top + 380} />
+      <Appear at={19.6} from="up" style={{ left: 110, top: 890 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{ fontFamily: MONO, fontSize: 22, padding: "10px 16px", borderRadius: 12, background: `${C.ai}1F`, border: `2px solid ${C.ai}` }}>kind: DependentAIModel</div>
+          <Pill color={C.ai} fontSize={20}>experimental · separate resource</Pill>
+        </div>
+      </Appear>
       <Glow box={M2(...MODULES.data)} color={C.ai} at={24.0} label="Data products" labelY={C2.top + 380} />
       <Glow box={M2(...MODULES.cost)} color={C.cost} at={28.6} label="Cost" labelY={C2.top + 380} />
       <Glow box={M2(...MODULES.carbon)} color={C.carbon} at={29.4} label="Carbon" labelY={C2.top + 380} />

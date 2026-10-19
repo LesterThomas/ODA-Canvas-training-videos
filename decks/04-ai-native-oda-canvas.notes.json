@@ -1,0 +1,170 @@
+[
+ {
+  "n": 1,
+  "title": "The AI-Native ODA Canvas (presenter introduction)",
+  "notes": "AI agents are quickly becoming the way service providers deliver intelligent, autonomous services.\n\nMost organisations started with a few pilots. Each team wired its agents directly to its favourite model provider. That works for a demo. At enterprise scale it brings lock-in, hidden costs and inconsistent guardrails. The AI-Native Canvas takes a different approach. Agents are packaged as ODA Components. They declare the tools and models they need, and the Canvas grants governed access.\n\nIn this video, we look at how components become tools for agents, and how agents become components. We cover model as a service and the model gateway. We look at the services needed to run AI at scale. And we finish with how AI is helping us build the Canvas itself.",
+  "words": 125,
+  "secs": 50.0
+ },
+ {
+  "n": 2,
+  "title": "Four questions",
+  "notes": "The AI-Native Canvas work started from three questions. How do we expose ODA Components as tools for AI agents? How do we deploy the agents themselves as components? And how do we operate many agents, from many vendors, with proper governance? This video adds a fourth question. How can AI help us build the Canvas?",
+  "words": 55,
+  "secs": 22.0
+ },
+ {
+  "n": 3,
+  "title": "What the 2026 Catalysts show",
+  "notes": "TM Forum's Catalyst projects show where the industry is heading. At DTW twenty twenty-six, there were fifty-nine Catalysts. Nine in ten used AI. About half were built from AI agents, often several agents working together. More than half targeted autonomous networks. About one in five tackled trust, security and governance for agents. And several built the platform that agents need, such as registries, runtimes and a model gateway. Much of the work in the AI-Native Canvas is lessons learned from these Catalyst projects.",
+  "words": 83,
+  "secs": 33.2
+ },
+ {
+  "n": 4,
+  "title": "MCP is one more exposed API",
+  "notes": "Components already declare the APIs they expose. That includes cross-industry APIs such as OpenMetrics. So adding MCP was simple. MCP became one more API type. The product catalog test component exposes an MCP server beside its Open APIs. MCP keeps long-lived connections open, unlike short REST calls. Because the component declares the type, the API operator configures the gateway for it automatically.",
+  "words": 62,
+  "secs": 24.8
+ },
+ {
+  "n": 5,
+  "title": "Descriptions are written for agents",
+  "notes": "The heart of an MCP server is its plain-language description of each tool and argument. Swagger files were written for API experts. Agents need more. In testing, detailed explanations and concrete examples made the difference. One agent only used the filter argument correctly once an example was added. Version five of the TM Forum Open APIs includes JSON examples. They cover request and response payloads, embedded directly in the Open API specifications. That lets us generate MCP servers automatically.",
+  "words": 79,
+  "secs": 31.6
+ },
+ {
+  "n": 6,
+  "title": "Agents as components",
+  "notes": "The second question is about packaging agents as components. Four assumptions shape the design. Models run as services on the platform, and agents reach them through APIs. Service providers keep approved catalogues of models. Agents are non-deterministic, so they need continuous evaluation, not just fixed tests. And agents need extra services, such as vector databases and anonymisation, which the Canvas should provide.",
+  "words": 62,
+  "secs": 24.8
+ },
+ {
+  "n": 7,
+  "title": "Dependent AI models",
+  "notes": "With those assumptions, the component model extends naturally. A component already lists the APIs it depends on. Now it can list the AI models it depends on, in priority order. It describes its use case, and the guardrail thresholds it needs. The Canvas grants access to whichever models are on the approved list. This starts as an experimental resource of its own, called dependent AI model. Later it will join the main component specification.",
+  "words": 74,
+  "secs": 29.6
+ },
+ {
+  "n": 8,
+  "title": "Training builds intelligence, inference builds cost",
+  "notes": "TM Forum's Model as a Service guide starts with a simple observation. Training builds intelligence, but inference builds cost. Today, many teams wire their agents directly to model providers. That creates lock-in, hidden costs and inconsistent guardrails. Every team rebuilds the same plumbing. Model as a service puts a control plane between agents and models. It separates the demand for intelligence from its supply.",
+  "words": 64,
+  "secs": 25.6
+ },
+ {
+  "n": 9,
+  "title": "Three options",
+  "notes": "The guide weighed three options. Standardising on one hyperscaler's AI service was rejected. It just trades model lock-in for platform lock-in. Waiting for an industry-wide standard was judged premature, because the market moves too fast. Model as a service was selected. It gives a service provider its own standard layer today, without waiting for the market to settle.",
+  "words": 58,
+  "secs": 23.2
+ },
+ {
+  "n": 10,
+  "title": "What the control plane provides",
+  "notes": "The control plane offers a consistent set of services. One standard API reaches every model, internal or external. A catalogue helps developers pick the most efficient model that does the job. Routing fails over when a provider goes down. Golden datasets catch silent quality drift. Tracing follows every request end to end. Guardrails block prompt attacks and redact personal data. And cost tracking stops a runaway agent from blowing the budget.",
+  "words": 71,
+  "secs": 28.4
+ },
+ {
+  "n": 11,
+  "title": "The model gateway in the Canvas",
+  "notes": "On the Canvas, this is the job of the Model-as-a-Service operator. It's experimental today. The operator reads the models a component depends on. It configures the model gateway. Then it gives the component a credential and an endpoint. From then on, every model call goes through the gateway. Guardrails are enforced, and each call is recorded for audit, observability and cost.",
+  "words": 61,
+  "secs": 24.4
+ },
+ {
+  "n": 12,
+  "title": "Simulated demo: Model Gateway in the Canvas Portal",
+  "notes": "This is how the Model Gateway will appear in the Canvas Portal. The list shows the AI models available through the gateway. They cover high, medium and fast reasoning, and multimodal models. Each comes from a primary or an open provider, with its own gateway endpoint. The Portal can test the connection. It gets a token, lists the models, and sends a prompt through the gateway.",
+  "words": 66,
+  "secs": 26.4
+ },
+ {
+  "n": 13,
+  "title": "Six levers of inference cost",
+  "notes": "The guide also explains what drives the cost of each answer. It names six levers. The first three are capability, accuracy and latency. The next three are throughput, context window and token efficiency. A cheaper model is a false economy if it fails the task. But the most capable model is often more than a task needs. The aim is sufficient intelligence at the optimal cost.",
+  "words": 66,
+  "secs": 26.4
+ },
+ {
+  "n": 14,
+  "title": "Canvas services for AI",
+  "notes": "To run agents from many vendors, the Canvas needs a broader set of services. It needs access to language, embedding and multimodal models. It needs classical machine learning, with proper MLOps. It needs supporting services, such as vector databases. Observability must cover model calls, with LangSmith, OpenLLMetry or another platform. And it needs the model gateway, an evaluation framework, and a registry of agents, tools and use cases.",
+  "words": 68,
+  "secs": 27.2
+ },
+ {
+  "n": 15,
+  "title": "The Canvas with AI and data",
+  "notes": "Here is how it fits together. Agentic components sit beside the standard components. Systems of record expose MCP, so agents can use them as tools. Agents publish agent cards, using agent-to-agent standards, so other agents can discover them. Agentic components are shown in white on purpose. Like engagement systems, agents can differentiate a service provider. They don't have to be standard, but they still follow the component model. The model and data operators, both experimental, extend the Canvas to models and data products.",
+  "words": 83,
+  "secs": 33.2
+ },
+ {
+  "n": 16,
+  "title": "The Canvas describes itself",
+  "notes": "Because everything on the Canvas is declared, the Canvas can describe itself. The reference implementation includes a resource inventory, based on the TMF six three nine Open API. It registers every component, API and agent. Like any TM Forum API, it is also offered as an MCP server. An operations agent, if requested and given the permissions, can ask what is deployed. It can also draw a component and its APIs. The MCP server also has Helm tools, so an agent can propose installing a component.",
+  "words": 86,
+  "secs": 34.4
+ },
+ {
+  "n": 17,
+  "title": "Evaluation",
+  "notes": "Because agents are non-deterministic, they should ship with evaluation data. Before deployment, a golden set of questions sets a baseline. The TM Forum AI assistant used eighty-seven questions. In production, real questions and answers are logged and scored. People and AI evaluators rate them for relevance, accuracy and completeness. So a change, such as a new model, is checked against the baseline before it goes live.",
+  "words": 66,
+  "secs": 26.4
+ },
+ {
+  "n": 18,
+  "title": "AI is an amplifier",
+  "notes": "The AI tools we use to build the Canvas follow the same rule. Google's DORA report on AI-assisted software development found that AI is an amplifier. It magnifies the strengths of high-performing teams. It also magnifies the dysfunctions of struggling ones. With a modular, loosely coupled, API-first architecture, AI amplifies that. With a tightly coupled monolith, AI amplifies the chaos.",
+  "words": 60,
+  "secs": 24.0
+ },
+ {
+  "n": 19,
+  "title": "Why ODA suits AI development",
+  "notes": "The Open Digital Architecture is a good fit for AI development. Modular components give an agent small, well bounded tasks. Open APIs and shared data models give it clear contracts to code against. The component specification is declarative, so the result can be checked. And the use cases and BDD tests let an agent verify its own work.",
+  "words": 58,
+  "secs": 23.2
+ },
+ {
+  "n": 20,
+  "title": "Live: AGENTS.md in the oda-canvas repository",
+  "notes": "The Canvas repository documents itself for AI agents. There's an AGENTS dot M D file at the root, and in each main area of the repository. AGENTS dot M D is an open format that most coding agents read. It tells an agent what the project is, how it's structured, and the do's and don'ts. The operators folder, for example, explains the operator pattern and its code conventions.",
+  "words": 68,
+  "secs": 27.2
+ },
+ {
+  "n": 21,
+  "title": "Agent skills: knowledge as a reusable asset",
+  "notes": "Agent skills go a step further. A skill is a folder with a SKILL dot M D file, plus any scripts and references it needs. Its description tells the agent when to load it. Agent Skills is an open standard. The same skill works with Claude Code, GitHub Copilot and Codex. It works with Google Antigravity, Cursor or another agent too. That turns expert knowledge into a reusable asset. It's written once, and every contributor's agent can use it.",
+  "words": 79,
+  "secs": 31.6
+ },
+ {
+  "n": 22,
+  "title": "Live: the create-oda-operator skill",
+  "notes": "The Canvas repository already has a set of skills. They cover operating the Canvas, writing use cases and BDD features, Helm charts and CI. The create-oda-operator skill helps anyone build a new Canvas operator with AI. It gives the agent the framework, the pinned versions, and a map of existing operators to copy from. A contributor's agent starts with the knowledge of the core team.",
+  "words": 65,
+  "secs": 26.0
+ },
+ {
+  "n": 23,
+  "title": "What's available today",
+  "notes": "Here's where things stand. MCP as an exposed API type, and the resource inventory MCP server, are available today. The Model-as-a-Service operator, the model gateway and the data product operator are experimental. So is the dependent AI model resource, which will later join the component specification. A model manager for classical machine learning is still a proposal. And the AGENTS dot M D files and agent skills are ready to use now.",
+  "words": 72,
+  "secs": 28.8
+ },
+ {
+  "n": 24,
+  "title": "Find out more",
+  "notes": "To find out more, read the AI-Native Canvas design in the oda-canvas repository. Then read TM Forum's Model as a Service guide. The work happens in the open, in the TM Forum Innovation Hub. If you'd like to contribute, point your coding agent at the repository. Its AGENTS dot M D files and skills will help it get started. The repository is on GitHub, at TM Forum dash ODA slash ODA Canvas.",
+  "words": 72,
+  "secs": 28.8
+ }
+]

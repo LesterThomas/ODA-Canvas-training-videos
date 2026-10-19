@@ -1,0 +1,729 @@
+{
+ "deck": "04-ai-native-oda-canvas.pptx",
+ "slides": {
+  "1": {
+   "n": 1,
+   "secs": 50.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Canvas",
+     "at": 0.9,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Agent",
+     "at": 1.6,
+     "effect": "zoom",
+     "dur": 0.8
+    },
+    {
+     "shape": "Spark",
+     "at": 2.4,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Intro",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Name",
+     "at": 0.2,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Topics",
+     "at": 30.4,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "2": {
+   "n": 2,
+   "secs": 22.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Question 1",
+     "at": 3.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 2",
+     "at": 8.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 3",
+     "at": 11.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 4",
+     "at": 19.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Design tag",
+     "at": 19.8,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "3": {
+   "n": 3,
+   "secs": 33.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Total",
+     "at": 4.0,
+     "effect": "zoom",
+     "dur": 0.7
+    },
+    {
+     "shape": "Bar 1",
+     "at": 8.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Bar 2",
+     "at": 10.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Bar 3",
+     "at": 14.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Bar 4",
+     "at": 17.2,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Bar 5",
+     "at": 21.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Lessons",
+     "at": 27.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Source",
+     "at": 4.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "4": {
+   "n": 4,
+   "secs": 24.8,
+   "kind": "video"
+  },
+  "5": {
+   "n": 5,
+   "secs": 31.6,
+   "kind": "video"
+  },
+  "6": {
+   "n": 6,
+   "secs": 24.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Agent",
+     "at": 0.6,
+     "effect": "zoom",
+     "dur": 0.7
+    },
+    {
+     "shape": "Assumptions",
+     "at": 3.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Assumption 1",
+     "at": 5.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Assumption 2",
+     "at": 10.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Assumption 3",
+     "at": 13.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Assumption 4",
+     "at": 18.8,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "7": {
+   "n": 7,
+   "secs": 29.6,
+   "kind": "video"
+  },
+  "8": {
+   "n": 8,
+   "secs": 25.6,
+   "kind": "video"
+  },
+  "9": {
+   "n": 9,
+   "secs": 23.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Option 1",
+     "at": 2.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Verdict 1",
+     "at": 5.2,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Option 2",
+     "at": 9.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Verdict 2",
+     "at": 10.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Option 3",
+     "at": 15.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Verdict 3",
+     "at": 17.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Source",
+     "at": 0.6,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "10": {
+   "n": 10,
+   "secs": 28.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Plate",
+     "at": 0.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Service 1",
+     "at": 3.6,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 2",
+     "at": 7.2,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 3",
+     "at": 12.4,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 4",
+     "at": 15.6,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 5",
+     "at": 18.0,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 6",
+     "at": 20.8,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 7",
+     "at": 24.0,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Source",
+     "at": 0.4,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "11": {
+   "n": 11,
+   "secs": 24.4,
+   "kind": "video"
+  },
+  "12": {
+   "n": 12,
+   "secs": 26.4,
+   "kind": "video"
+  },
+  "13": {
+   "n": 13,
+   "secs": 26.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Lever 1",
+     "at": 7.6,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Lever 2",
+     "at": 8.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Lever 3",
+     "at": 8.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Lever 4",
+     "at": 10.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Lever 5",
+     "at": 11.2,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Lever 6",
+     "at": 12.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Aim",
+     "at": 23.2,
+     "effect": "rise",
+     "dur": 0.6
+    }
+   ]
+  },
+  "14": {
+   "n": 14,
+   "secs": 27.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Service 1",
+     "at": 5.6,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 2",
+     "at": 9.2,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 3",
+     "at": 12.4,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 4",
+     "at": 15.6,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 5",
+     "at": 20.0,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 6",
+     "at": 21.2,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Service 7",
+     "at": 22.4,
+     "effect": "rise",
+     "dur": 0.5
+    }
+   ]
+  },
+  "15": {
+   "n": 15,
+   "secs": 33.2,
+   "kind": "video"
+  },
+  "16": {
+   "n": 16,
+   "secs": 34.4,
+   "kind": "video"
+  },
+  "17": {
+   "n": 17,
+   "secs": 26.4,
+   "kind": "video"
+  },
+  "18": {
+   "n": 18,
+   "secs": 24.0,
+   "kind": "video"
+  },
+  "19": {
+   "n": 19,
+   "secs": 23.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Col 1",
+     "at": 0.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Col 2",
+     "at": 0.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Row 1",
+     "at": 4.4,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 1",
+     "at": 5.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Row 2",
+     "at": 8.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 2",
+     "at": 8.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Row 3",
+     "at": 13.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 3",
+     "at": 13.8,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Row 4",
+     "at": 17.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Arrow 4",
+     "at": 18.2,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "20": {
+   "n": 20,
+   "secs": 27.2,
+   "kind": "video"
+  },
+  "21": {
+   "n": 21,
+   "secs": 31.6,
+   "kind": "video"
+  },
+  "22": {
+   "n": 22,
+   "secs": 26.0,
+   "kind": "video"
+  },
+  "23": {
+   "n": 23,
+   "secs": 28.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Status 1",
+     "at": 1.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 2",
+     "at": 4.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 3",
+     "at": 7.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 4",
+     "at": 10.4,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 5",
+     "at": 14.0,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 6",
+     "at": 19.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Status 7",
+     "at": 24.0,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "24": {
+   "n": 24,
+   "secs": 28.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Link 1",
+     "at": 0.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 2",
+     "at": 6.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 3",
+     "at": 14.4,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 4",
+     "at": 19.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Hub",
+     "at": 9.6,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  }
+ }
+}

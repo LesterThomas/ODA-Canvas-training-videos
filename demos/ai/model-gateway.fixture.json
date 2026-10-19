@@ -1,0 +1,250 @@
+{
+  "_note": "SIMULATED data for deck 04 slide 12. The Model-as-a-Service operator and the modelgatewayservices.oda.tmforum.org CRD are not installed on the demo Canvas, so record-demo.mjs answers the Portal's /api/model-gateway-services routes from this file. Eight generic models: high, medium and fast reasoning LLMs and multimodal models, each from a primary and an open provider (user, 2026-10-19).",
+  "list": {
+    "available": true,
+    "items": [
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "primary-llm-high-reasoning",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://primary-llm-high-reasoning.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:10:00Z",
+        "dependentAIModels": [
+          {
+            "name": "primary-llm-high-reasoning",
+            "provider": "primary",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "primary-llm-high-reasoning",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "open-llm-high-reasoning",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://open-llm-high-reasoning.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:12:00Z",
+        "dependentAIModels": [
+          {
+            "name": "open-llm-high-reasoning",
+            "provider": "open",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "open-llm-high-reasoning",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "primary-llm-medium-reasoning",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://primary-llm-medium-reasoning.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:14:00Z",
+        "dependentAIModels": [
+          {
+            "name": "primary-llm-medium-reasoning",
+            "provider": "primary",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "primary-llm-medium-reasoning",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "open-llm-medium-reasoning",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://open-llm-medium-reasoning.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:16:00Z",
+        "dependentAIModels": [
+          {
+            "name": "open-llm-medium-reasoning",
+            "provider": "open",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "open-llm-medium-reasoning",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "primary-llm-fast",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://primary-llm-fast.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:18:00Z",
+        "dependentAIModels": [
+          {
+            "name": "primary-llm-fast",
+            "provider": "primary",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "primary-llm-fast",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "open-llm-fast",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://open-llm-fast.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:20:00Z",
+        "dependentAIModels": [
+          {
+            "name": "open-llm-fast",
+            "provider": "open",
+            "version": "1",
+            "priority": 1,
+            "modality": "text"
+          }
+        ],
+        "modelNames": "open-llm-fast",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "primary-multimodal",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://primary-multimodal.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:22:00Z",
+        "dependentAIModels": [
+          {
+            "name": "primary-multimodal",
+            "provider": "primary",
+            "version": "1",
+            "priority": 1,
+            "modality": "text+image"
+          }
+        ],
+        "modelNames": "primary-multimodal",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      },
+      {
+        "apiVersion": "oda.tmforum.org/v1alpha1",
+        "kind": "ModelGatewayService",
+        "name": "open-multimodal",
+        "namespace": "model-gateway",
+        "endpointUrl": "http://open-multimodal.model-gateway.svc.cluster.local:4000/v1",
+        "createdAt": "2026-10-19T09:24:00Z",
+        "dependentAIModels": [
+          {
+            "name": "open-multimodal",
+            "provider": "open",
+            "version": "1",
+            "priority": 1,
+            "modality": "text+image"
+          }
+        ],
+        "modelNames": "open-multimodal",
+        "trafficSplitStrategy": "single",
+        "jwtAuth": {
+          "publicKeyUrl": "http://canvas-keycloak.canvas.svc.cluster.local/realms/odari/protocol/openid-connect/certs"
+        },
+        "guardrails": {
+          "piiRedaction": true
+        },
+        "spec": {}
+      }
+    ]
+  },
+  "token": {
+    "access_token": "eyJhbGciOiJSUzI1NiJ9.simulated.token",
+    "token_type": "Bearer",
+    "expires_in": 300
+  },
+  "models": {
+    "object": "list",
+    "data": [
+      {
+        "id": "primary-llm-medium-reasoning",
+        "object": "model"
+      }
+    ]
+  },
+  "chat": {
+    "id": "chatcmpl-simulated",
+    "object": "chat.completion",
+    "model": "primary-llm-medium-reasoning",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "A product catalog component manages the products and offers a service provider sells, and exposes them through the TMF620 Product Catalog Management API."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 31,
+      "total_tokens": 49
+    }
+  }
+}

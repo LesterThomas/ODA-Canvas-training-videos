@@ -48,6 +48,71 @@ coming back belongs in `lessons.md`.
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
 
+### 2026-10-19 · deck 04 · slide 12, opening sentence
+- **Feedback:** change "Here's a simulated view… supplied for the recording." to "This is how the Model Gateway will appear in the Canvas Portal."
+- **Changed:** narration replaced. The first capture segment was sped up (rate 0.31) so the list hold matches; the clip is now 910 frames. The disclosure is now carried by "will appear" (future), per the user. The script records that the data is simulated.
+- **Skill:** no. Note for the honesty rule: for unreleased features, the user prefers future-tense framing ("will appear") over an explicit "simulated" label.
+
+### 2026-10-19 · deck 04 · slide 24 (Find out more)
+- **Feedback:** "Also include a new item at the bottom with a reference to https://github.com/tmforum-oda/oda-agent-skills-marketplace"
+- **Changed:** added a fourth linked card, "ODA agent skills marketplace", using the repo's own description. It appears at 19.2 s. The narration is unchanged.
+- **Skill:** no. Fact for later decks: tmforum-oda/oda-agent-skills-marketplace hosts ODA agent skills as plugins.
+
+### 2026-10-19 · deck 04 · slide 18 (AI is an amplifier)
+- **Feedback:** "Create a better diagram of a tightly coupled monolithic application architecture for the right-hand-side of the slide"
+- **Changed:** the random tangle became a monolith: one deployable box with nine named modules, direct cross-calls and a shared database. AI adds crammed "+ feature" boxes and more calls, and the box turns red.
+- **Skill:** maybe. Draw anti-patterns as recognisable architecture, not abstract scribbles. Logged here; not a rule yet.
+
+### 2026-10-19 · deck 04 · slide 16 (The Canvas describes itself)
+- **Feedback:** "Change 'An agent can ask what is deployed, ' to 'An operations agents, if requested and given the permissions, can ask what is deployed, '"
+- **Changed:** "An operations agent, if requested and given the permissions, can ask what is deployed. It can also draw a component and its APIs." (split for the voice). The agent is labelled "Operations agent" with an "if requested · with permission" tag. Questions retimed; clip is 1080 frames.
+- **Skill:** no.
+
+### 2026-10-19 · deck 04 · slide 13 (Six levers), narration check
+- **Feedback:** narration check. "They are capability, accuracy, latency, throughput, context window size and token efficiency." was heard as "They are capability, accuracy, latency, throughput," every time.
+- **Changed:** split into "The first three are capability, accuracy and latency. The next three are throughput, context window and token efficiency." The cards appear as each lever is named.
+- **Skill:** no. Proposed limiting spoken lists to three or four items per sentence; the user declined it as a general rule (2026-10-19). The narration check catches failures case by case.
+
+### 2026-10-19 · deck 04 · slide 12 (Simulated demo: Model Gateway)
+- **Feedback:** "Remove the item at the top of the slide 'SIMULATED - operator not installed on this Canvas'. Also, the list under the Model Gateway Services should be just the list of AI Models available… 8 models… high, medium and low (fast) levels of reasoning and primary and open as providers, as well as multi-modal models as well as llms".
+- **Changed:** badge removed. The fixture now has eight single-model services (primary/open × high, medium, fast reasoning LLM, and multimodal); re-recorded. The narration was reworded to describe the models, because priority and traffic split are no longer shown. The opening still says "simulated", and I asked the user about it. The clip is now 1125 frames.
+- **Skill:** no.
+
+### 2026-10-19 · deck 04 · slide 11 (The model gateway in the Canvas)
+- **Feedback:** "Remove the last sentence 'The guide's last chapter sets out requirements for this operator.'"
+- **Changed:** removed the sentence and the GB1085 §4 note in the clip. The clip is now 820 frames.
+- **Skill:** no.
+
+### 2026-10-19 · deck 04 · slide 10 (What the control plane provides)
+- **Feedback:** "I don't like the term 'cheapest'. I prefer most efficient."
+- **Changed:** narration "pick the most efficient model that does the job", and the card text "The most efficient model". The later builds moved 0.4 s later. Slide 13 keeps "A cheaper model is a false economy", which compares prices; flagged to the user.
+- **Skill:** no, wording on one slide.
+
+### 2026-10-19 · deck 04 · slide 8 (Training builds intelligence, inference builds cost)
+- **Feedback:** "Remove the 'known as shadow AI' statement and the Shadow AI icon in the slide."
+- **Changed:** cut the phrase from the narration and the Shadow AI tag from the clip. The later builds moved 1.6 s earlier, and the clip is now 825 frames.
+- **Skill:** no, specific to this slide.
+
+### 2026-10-19 · deck 04 · slide 5 (Descriptions are written for agents)
+- **Feedback:** replace "The API team is now enriching the Open API specifications…" with "The version 5 of the TM Forum Open APIs include JSON examples, including request and response payloads, and these are embedded directly in the OpenAPI specifications. This allows us to generate MCP servers automatically".
+- **Changed:** narration split into three short sentences ("Version five…", spelled out for the voice), two new captions timed to them, and the clip lengthened to 1000 frames.
+- **Skill:** no. Fact noted for later decks: TM Forum Open APIs v5 embed JSON request and response examples in the specification, which is what makes MCP generation possible.
+
+### 2026-10-19 · deck 04 · slide 3 (What the 2026 Catalysts show), closing line
+- **Feedback:** "Add a statement at the end 'Much of the work in the AI Native canvas is lessons-learned from these various catalyst projects.'"
+- **Changed:** added "Much of the work in the AI-Native Canvas is lessons learned from these Catalyst projects." to the narration, with a matching banner at 27.2 s.
+- **Skill:** no, it's specific to this slide.
+
+### 2026-10-19 · deck 02 · slide 2 (The standard is the component), and deck 04
+- **Feedback:** "Use dependentAIModels. this is an experimental addition and we are starting by creating the dependentAIModel sub-CRD before adding it to the main Component CRD." Then: "Fix deck 02 slide 2 so it shows DependentAIModel as an experimental separate resource, not dependentModels in the Component spec."
+- **Changed:** deck 02 slide 2's component.yaml panel no longer lists `dependentModels`. A separate "kind: DependentAIModel · experimental · separate resource" tile appears when AI models are mentioned. The narration is unchanged; the user re-approves. Deck 04 slides 7, 11 and 23 use DependentAIModel the same way.
+- **Skill:** yes, in research.md: AI model dependencies are the experimental DependentAIModel sub-resource, not a Component spec field yet.
+
+### 2026-10-19 · deck 04 · slide 3 (Catalysts)
+- **Feedback:** "We need to update to use the 2026 DTW catalysts as examples… Maybe we shouldn't name specific examples, but rather describe trends and numbers of catalysts addressing different problems."
+- **Changed:** slide 3 now summarises the 59 DTW 2026 Catalysts (URN `C26.0.*`, read from tmforum.org/catalysts on 2026-10-19) as rounded counts: AI, agents, autonomous networks, trust and governance, agent platforms. It names no projects. The method and URN lists are in the script's "DTW 2026 Catalyst tally" section, marked [VERIFY].
+- **Skill:** no. The user confirmed the counts, and said citing Catalyst trends is specific to this video, not a general rule (2026-10-19).
+
 ### 2026-10-18 · deck 02 · slide 17 (What's next)
 - **Feedback:** "The Model-as-a-Service operator is available as an experimental operator. Where the AI-Native canvas says it provides AI governed access through a model gateway, this is using the Model-as-a-Service operator."
 - **Changed:** removed Model-as-a-Service from the Planned list. Tagged the model-gateway line "Model-as-a-Service operator · TMFOP009 · experimental". Narration now names the experimental Model-as-a-Service operator as what grants governed access through the model gateway. Script header updated.

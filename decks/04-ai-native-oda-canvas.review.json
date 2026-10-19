@@ -1,0 +1,679 @@
+{
+  "deck": "04-ai-native-oda-canvas.pptx",
+  "slides": {
+    "256": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:38:13+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8e4db0e7e92cf968"
+        }
+      ],
+      "number": 1,
+      "title": "The AI-Native ODA Canvas (presenter introduction)",
+      "hidden": false,
+      "fingerprint": "8e4db0e7e92cf968",
+      "comment": "",
+      "updated_at": "2026-10-19T12:38:13+01:00",
+      "approved_fingerprint": "8e4db0e7e92cf968"
+    },
+    "257": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:38:41+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1532a31168fdc876"
+        },
+        {
+          "at": "2026-10-19T13:11:32+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1532a31168fdc876"
+        }
+      ],
+      "number": 2,
+      "title": "Four questions",
+      "hidden": false,
+      "fingerprint": "1532a31168fdc876",
+      "comment": "",
+      "updated_at": "2026-10-19T12:38:41+01:00",
+      "approved_fingerprint": "1532a31168fdc876",
+      "validated_key": "4468a5a29f5bb49b"
+    },
+    "258": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:40:23+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Add a statement at the end 'Much of the work in the AI Native canvas is lessons-learned from these various catalyst projects.'",
+          "fingerprint": "dab1735bf770f18b"
+        },
+        {
+          "at": "2026-10-19T12:41:07+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Added the closing sentence to the narration: 'Much of the work in the AI-Native Canvas is lessons learned from these Catalyst projects.' A matching banner rises in as it is spoken. The slide now runs about 33 seconds.",
+          "fingerprint": "2a13125577a380c2"
+        },
+        {
+          "at": "2026-10-19T13:03:17+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2a13125577a380c2"
+        },
+        {
+          "at": "2026-10-19T13:12:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2a13125577a380c2"
+        }
+      ],
+      "number": 3,
+      "title": "What the 2026 Catalysts show",
+      "hidden": false,
+      "fingerprint": "2a13125577a380c2",
+      "comment": "",
+      "updated_at": "2026-10-19T13:03:17+01:00",
+      "approved_fingerprint": "2a13125577a380c2",
+      "validated_key": "0b16a007cefa7c91"
+    },
+    "259": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:41:25+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c7450a9f93595aa7"
+        },
+        {
+          "at": "2026-10-19T13:12:57+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c7450a9f93595aa7"
+        }
+      ],
+      "number": 4,
+      "title": "MCP is one more exposed API",
+      "hidden": false,
+      "fingerprint": "c7450a9f93595aa7",
+      "comment": "",
+      "updated_at": "2026-10-19T12:41:25+01:00",
+      "approved_fingerprint": "c7450a9f93595aa7",
+      "validated_key": "b13c66c5906f2bce"
+    },
+    "260": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:44:38+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Instead of saying 'The API team is now enriching the Open API specifications, so MCP servers can be generated automatically.', say 'The version 5 of the TM Forum Open APIs include JSON examples, including request and response payloads, and these are embedded directly in the OpenAPI specifications. This allows us to generate MCP servers automatically'",
+          "fingerprint": "e9d51cb78f38e6f9"
+        },
+        {
+          "at": "2026-10-19T12:46:03+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Reworded the ending as three short sentences for the voice: 'Version five of the TM Forum Open APIs includes JSON examples. They cover request and response payloads, embedded directly in the Open API specifications. That lets us generate MCP servers automatically.' New captions match, and the clip is now about 33 s.",
+          "fingerprint": "d9718eba72f545f0"
+        },
+        {
+          "at": "2026-10-19T13:03:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d9718eba72f545f0"
+        }
+      ],
+      "number": 5,
+      "title": "Descriptions are written for agents",
+      "hidden": false,
+      "fingerprint": "d9718eba72f545f0",
+      "comment": "",
+      "updated_at": "2026-10-19T13:03:40+01:00",
+      "approved_fingerprint": "d9718eba72f545f0"
+    },
+    "261": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:45:04+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "799934193597865d"
+        }
+      ],
+      "number": 6,
+      "title": "Agents as components",
+      "hidden": false,
+      "fingerprint": "799934193597865d",
+      "comment": "",
+      "updated_at": "2026-10-19T12:45:04+01:00",
+      "approved_fingerprint": "799934193597865d"
+    },
+    "262": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:45:26+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "9428d58227767427"
+        }
+      ],
+      "number": 7,
+      "title": "Dependent AI models",
+      "hidden": false,
+      "fingerprint": "9428d58227767427",
+      "comment": "",
+      "updated_at": "2026-10-19T12:45:26+01:00",
+      "approved_fingerprint": "9428d58227767427"
+    },
+    "263": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:46:27+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the 'known as shadow AI' statement and the Shadow AI icon in the slide.",
+          "fingerprint": "d80a56d85d91abd6"
+        },
+        {
+          "at": "2026-10-19T12:47:51+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Removed 'known as shadow AI' from the narration and the Shadow AI tag from the animation. The later builds are retimed about 1.6 s earlier to match, and the slide now runs about 26 s.",
+          "fingerprint": "ea2321354edd3c58"
+        },
+        {
+          "at": "2026-10-19T13:04:11+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ea2321354edd3c58"
+        }
+      ],
+      "number": 8,
+      "title": "Training builds intelligence, inference builds cost",
+      "hidden": false,
+      "fingerprint": "ea2321354edd3c58",
+      "comment": "",
+      "updated_at": "2026-10-19T13:04:11+01:00",
+      "approved_fingerprint": "ea2321354edd3c58"
+    },
+    "264": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:46:52+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1ca38d74ec5cd35d"
+        }
+      ],
+      "number": 9,
+      "title": "Three options",
+      "hidden": false,
+      "fingerprint": "1ca38d74ec5cd35d",
+      "comment": "",
+      "updated_at": "2026-10-19T12:46:52+01:00",
+      "approved_fingerprint": "1ca38d74ec5cd35d"
+    },
+    "265": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:47:44+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "I don't like the term 'cheapest'. I prefer most efficient.",
+          "fingerprint": "6910404148136c71"
+        },
+        {
+          "at": "2026-10-19T12:48:52+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Replaced 'cheapest' with 'most efficient' in the narration ('pick the most efficient model that does the job') and on the catalogue card ('The most efficient model'). The builds after it are 0.4 s later to match.",
+          "fingerprint": "1e405dec0f0f35cd"
+        },
+        {
+          "at": "2026-10-19T13:05:41+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1e405dec0f0f35cd"
+        }
+      ],
+      "number": 10,
+      "title": "What the control plane provides",
+      "hidden": false,
+      "fingerprint": "1e405dec0f0f35cd",
+      "comment": "",
+      "updated_at": "2026-10-19T13:05:41+01:00",
+      "approved_fingerprint": "1e405dec0f0f35cd"
+    },
+    "266": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:48:35+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the last sentence 'The guide's last chapter sets out requirements for this operator.'",
+          "fingerprint": "8c0a8838ac8d9205"
+        },
+        {
+          "at": "2026-10-19T12:50:00+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Removed the last sentence about the guide's operator requirements, and the matching GB1085 §4 note from the animation. The clip is now about 27 s.",
+          "fingerprint": "442ea5316c87ae8c"
+        },
+        {
+          "at": "2026-10-19T13:06:32+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "442ea5316c87ae8c"
+        }
+      ],
+      "number": 11,
+      "title": "The model gateway in the Canvas",
+      "hidden": false,
+      "fingerprint": "442ea5316c87ae8c",
+      "comment": "",
+      "updated_at": "2026-10-19T13:06:32+01:00",
+      "approved_fingerprint": "442ea5316c87ae8c"
+    },
+    "267": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:54:00+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the item at the top if the slide 'SIMULATED - operator not installed on this Canvas'.\n\nAlso, the list under the Model Gateway Services should be just the list of AI Models available. I suggest we should have 8 models in the list covering high, medium and low (fast) levels of reasoning and primary and open as providers, as well as multi-modal models as well as llms",
+          "fingerprint": "7a11ab456bf6ff99"
+        },
+        {
+          "at": "2026-10-19T12:57:48+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Removed the SIMULATED badge. The Model Gateway list now shows eight AI models: high, medium and fast reasoning LLMs and multimodal models, each from a primary and an open provider (re-recorded). Because the list no longer shows priority or traffic split, I reworded the middle of the narration: 'The list shows the AI models available through the gateway. They cover high, medium and fast reasoning, and multimodal models. Each comes from a primary or an open provider, with its own gateway endpoint.' The opening still says it is a simulated view. Tell me if you'd like that dropped too.",
+          "fingerprint": "b7c1d9b422712672"
+        },
+        {
+          "at": "2026-10-19T13:08:10+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "In the speaker notes, change 'Here's a simulated view of how this appears in the Canvas Portal. The operator isn't installed on this demo Canvas, so the data is supplied for the recording. ' to\n'This is how the Model Gateway will appear in the Canvas Portal.'",
+          "fingerprint": "b7c1d9b422712672"
+        },
+        {
+          "at": "2026-10-19T13:10:17+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The opening now says 'This is how the Model Gateway will appear in the Canvas Portal.' The opening shot of the list is shortened to match, and the slide now runs about 30 s.",
+          "fingerprint": "8aa19bbf89ec15c1"
+        },
+        {
+          "at": "2026-10-19T13:10:18+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "8aa19bbf89ec15c1"
+        }
+      ],
+      "number": 12,
+      "title": "Simulated demo: Model Gateway in the Canvas Portal",
+      "hidden": false,
+      "fingerprint": "8aa19bbf89ec15c1",
+      "comment": "",
+      "updated_at": "2026-10-19T13:10:18+01:00",
+      "approved_fingerprint": "8aa19bbf89ec15c1"
+    },
+    "268": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:54:27+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "fbf91d232bf83e4d"
+        },
+        {
+          "at": "2026-10-19T12:57:20+01:00",
+          "action": "changes",
+          "by": "narration check",
+          "comment": "Narration check: after every take, the voice still could not say this sentence. \"They are capability, accuracy, latency, throughput, context window size and token efficiency.\" was heard as \"They are capability, accuracy, latency, throughput,\" (missing: context window size and token efficiency) Please reword it.",
+          "fingerprint": "fbf91d232bf83e4d"
+        },
+        {
+          "at": "2026-10-19T12:59:26+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Narration check fix: split the six-item list into two short sentences: 'The first three are capability, accuracy and latency. The next three are throughput, context window and token efficiency.' The lever cards now appear as each one is named.",
+          "fingerprint": "c1eb8c6d8ce4f438"
+        },
+        {
+          "at": "2026-10-19T13:08:52+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "c1eb8c6d8ce4f438"
+        }
+      ],
+      "number": 13,
+      "title": "Six levers of inference cost",
+      "hidden": false,
+      "fingerprint": "c1eb8c6d8ce4f438",
+      "comment": "",
+      "updated_at": "2026-10-19T13:08:52+01:00",
+      "approved_fingerprint": "c1eb8c6d8ce4f438"
+    },
+    "269": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:54:57+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b951b5303dd4ef9a"
+        },
+        {
+          "at": "2026-10-19T13:14:58+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b951b5303dd4ef9a"
+        }
+      ],
+      "number": 14,
+      "title": "Canvas services for AI",
+      "hidden": false,
+      "fingerprint": "b951b5303dd4ef9a",
+      "comment": "",
+      "updated_at": "2026-10-19T12:54:57+01:00",
+      "approved_fingerprint": "b951b5303dd4ef9a",
+      "validated_key": "cfbd5b588f01aa7c"
+    },
+    "270": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:55:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "078fcaeeccb0952f"
+        },
+        {
+          "at": "2026-10-19T13:15:48+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "078fcaeeccb0952f"
+        }
+      ],
+      "number": 15,
+      "title": "The Canvas with AI and data",
+      "hidden": false,
+      "fingerprint": "078fcaeeccb0952f",
+      "comment": "",
+      "updated_at": "2026-10-19T12:55:40+01:00",
+      "approved_fingerprint": "078fcaeeccb0952f",
+      "validated_key": "7c62b73993a48e6a"
+    },
+    "271": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:57:45+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Change 'An agent can ask what is deployed, ' to 'An operations agents, if requested and given the permissions, can ask what is deployed, '",
+          "fingerprint": "ee3c4035d2004b4c"
+        },
+        {
+          "at": "2026-10-19T12:59:27+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed to 'An operations agent, if requested and given the permissions, can ask what is deployed. It can also draw a component and its APIs.' I split it in two for the voice. The agent is now labelled 'Operations agent' with an 'if requested · with permission' tag, and the questions are retimed.",
+          "fingerprint": "df9d4d8001f63d95"
+        },
+        {
+          "at": "2026-10-19T13:09:18+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "df9d4d8001f63d95"
+        }
+      ],
+      "number": 16,
+      "title": "The Canvas describes itself",
+      "hidden": false,
+      "fingerprint": "df9d4d8001f63d95",
+      "comment": "",
+      "updated_at": "2026-10-19T13:09:18+01:00",
+      "approved_fingerprint": "df9d4d8001f63d95"
+    },
+    "272": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:58:28+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3089d0096bdaba31"
+        },
+        {
+          "at": "2026-10-19T13:16:34+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3089d0096bdaba31"
+        }
+      ],
+      "number": 17,
+      "title": "Evaluation",
+      "hidden": false,
+      "fingerprint": "3089d0096bdaba31",
+      "comment": "",
+      "updated_at": "2026-10-19T12:58:28+01:00",
+      "approved_fingerprint": "3089d0096bdaba31",
+      "validated_key": "3c869a1f9ba14b2d"
+    },
+    "273": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:59:33+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Create a better diagram of a tightly coupled monolithic application architecture for the right-hand-side of the slide",
+          "fingerprint": "96e5ad8a7f335540"
+        },
+        {
+          "at": "2026-10-19T13:01:22+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Redrew the right-hand side as a tightly coupled monolith: one deployable box with nine business modules (Billing, Orders, Catalog…), direct calls criss-crossing between them, and everything wired to one shared database. When the AI pulse passes, new features get crammed in, more cross-calls appear and the box glows red. The left side and the narration are unchanged.",
+          "fingerprint": "142e2247caafc21e"
+        },
+        {
+          "at": "2026-10-19T13:09:51+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "142e2247caafc21e"
+        }
+      ],
+      "number": 18,
+      "title": "AI is an amplifier",
+      "hidden": false,
+      "fingerprint": "142e2247caafc21e",
+      "comment": "",
+      "updated_at": "2026-10-19T13:09:51+01:00",
+      "approved_fingerprint": "142e2247caafc21e"
+    },
+    "274": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T12:59:57+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1edaaa95cfd2b381"
+        },
+        {
+          "at": "2026-10-19T13:17:04+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1edaaa95cfd2b381"
+        }
+      ],
+      "number": 19,
+      "title": "Why ODA suits AI development",
+      "hidden": false,
+      "fingerprint": "1edaaa95cfd2b381",
+      "comment": "",
+      "updated_at": "2026-10-19T12:59:57+01:00",
+      "approved_fingerprint": "1edaaa95cfd2b381",
+      "validated_key": "e4cb3093d5c1f14c"
+    },
+    "275": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T13:00:25+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d3266afb6a78f576"
+        }
+      ],
+      "number": 20,
+      "title": "Live: AGENTS.md in the oda-canvas repository",
+      "hidden": false,
+      "fingerprint": "d3266afb6a78f576",
+      "comment": "",
+      "updated_at": "2026-10-19T13:00:25+01:00",
+      "approved_fingerprint": "d3266afb6a78f576"
+    },
+    "276": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T13:00:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "ea91ae0dc47b9db4"
+        }
+      ],
+      "number": 21,
+      "title": "Agent skills: knowledge as a reusable asset",
+      "hidden": false,
+      "fingerprint": "ea91ae0dc47b9db4",
+      "comment": "",
+      "updated_at": "2026-10-19T13:00:54+01:00",
+      "approved_fingerprint": "ea91ae0dc47b9db4"
+    },
+    "277": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T13:01:17+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "77f504f4b315d692"
+        }
+      ],
+      "number": 22,
+      "title": "Live: the create-oda-operator skill",
+      "hidden": false,
+      "fingerprint": "77f504f4b315d692",
+      "comment": "",
+      "updated_at": "2026-10-19T13:01:17+01:00",
+      "approved_fingerprint": "77f504f4b315d692"
+    },
+    "278": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T13:01:50+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7f16833634614543"
+        }
+      ],
+      "number": 23,
+      "title": "What's available today",
+      "hidden": false,
+      "fingerprint": "7f16833634614543",
+      "comment": "",
+      "updated_at": "2026-10-19T13:01:50+01:00",
+      "approved_fingerprint": "7f16833634614543"
+    },
+    "279": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-19T13:02:55+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Also include a new item at the bottom with a reference to https://github.com/tmforum-oda/oda-agent-skills-marketplace",
+          "fingerprint": "32a615ca63b6c6cb"
+        },
+        {
+          "at": "2026-10-19T13:03:38+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Added a fourth card at the bottom: 'ODA agent skills marketplace', github.com/tmforum-oda/oda-agent-skills-marketplace, with its repo description ('agent skills plugins for ODA'), linked. It appears as the narration mentions skills. The narration is unchanged.",
+          "fingerprint": "0dd27269095b6e56"
+        },
+        {
+          "at": "2026-10-19T13:10:46+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "0dd27269095b6e56"
+        }
+      ],
+      "number": 24,
+      "title": "Find out more",
+      "hidden": false,
+      "fingerprint": "0dd27269095b6e56",
+      "comment": "",
+      "updated_at": "2026-10-19T13:10:46+01:00",
+      "approved_fingerprint": "0dd27269095b6e56"
+    }
+  },
+  "inspected_at": "2026-10-19T13:09:51+01:00"
+}

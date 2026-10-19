@@ -1,0 +1,51 @@
+{
+ "name": "ai-github",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "repo",
+   "t": 2.68
+  },
+  {
+   "label": "agents-root",
+   "t": 5.49
+  },
+  {
+   "label": "agents-open",
+   "t": 9.87
+  },
+  {
+   "label": "agents-arch",
+   "t": 16.27
+  },
+  {
+   "label": "agents-do",
+   "t": 23.25
+  },
+  {
+   "label": "operators-agents",
+   "t": 25.58
+  },
+  {
+   "label": "operators-pattern",
+   "t": 32.81
+  },
+  {
+   "label": "skills",
+   "t": 34.84
+  },
+  {
+   "label": "skill-open",
+   "t": 45.84
+  },
+  {
+   "label": "skill-tech",
+   "t": 52.83
+  },
+  {
+   "label": "skill-table",
+   "t": 60.47
+  }
+ ]
+}

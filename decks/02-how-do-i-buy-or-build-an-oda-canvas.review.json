@@ -65,16 +65,27 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "24e1558c6e940511"
+        },
+        {
+          "at": "2026-10-19T12:36:11+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Updated the visual: dependentModels is no longer shown inside the Component spec. AI models now appear as a separate 'kind: DependentAIModel' resource, marked experimental (it joins the Component CRD later). The narration is unchanged. Please re-approve.",
+          "fingerprint": "828661191469ff04"
         }
       ],
       "number": 2,
       "title": "The standard is the component",
       "hidden": false,
-      "fingerprint": "24e1558c6e940511",
+      "fingerprint": "828661191469ff04",
       "comment": "",
       "updated_at": "2026-10-18T21:11:06+01:00",
       "approved_fingerprint": "24e1558c6e940511",
-      "validated_key": "a3c971d9c3e75760"
+      "validated_key": "a3c971d9c3e75760",
+      "reply": {
+        "at": "2026-10-19T12:36:11+01:00",
+        "text": "Updated the visual: dependentModels is no longer shown inside the Component spec. AI models now appear as a separate 'kind: DependentAIModel' resource, marked experimental (it joins the Component CRD later). The narration is unchanged. Please re-approve."
+      }
     },
     "258": {
       "status": "approved",
@@ -634,5 +645,5 @@
       "validated_key": "b94c75f7a21de493"
     }
   },
-  "inspected_at": "2026-10-19T10:08:38+01:00"
+  "inspected_at": "2026-10-19T12:35:54+01:00"
 }

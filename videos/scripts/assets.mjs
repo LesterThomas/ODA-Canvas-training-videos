@@ -31,6 +31,9 @@ const ASSETS = [
   // deck 02
   icon("lock", C.secrets), icon("key", C.secrets), icon("gear", C.operator), icon("doc", C.operator), icon("wrench", C.operator),
   icon("cloud", C.tmf), icon("check", C.operator), icon("spark", C.operator), icon("gear", C.muted), icon("layers", C.operator),
+  // deck 04 (AI-Native ODA Canvas)
+  ...["link", "gateway", "cloud", "check", "chart", "database", "doc", "trace", "shield", "coin", "bolt", "rocket", "layers"].map((n) => icon(n, C.ai)),
+  icon("cloud", C.muted), icon("link", C.operator),
 ];
 
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });

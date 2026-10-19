@@ -1,0 +1,39 @@
+{
+ "name": "ai-gateway",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 4.53
+  },
+  {
+   "label": "list",
+   "t": 8.4
+  },
+  {
+   "label": "models",
+   "t": 18.95
+  },
+  {
+   "label": "endpoint",
+   "t": 21.96
+  },
+  {
+   "label": "test",
+   "t": 24.55
+  },
+  {
+   "label": "token",
+   "t": 34.54
+  },
+  {
+   "label": "listed",
+   "t": 37.94
+  },
+  {
+   "label": "reply",
+   "t": 48.86
+  }
+ ]
+}

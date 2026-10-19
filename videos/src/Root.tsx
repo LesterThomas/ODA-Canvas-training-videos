@@ -16,6 +16,7 @@ import { S16Directory, S20Inventory, S21Deploy } from "./intro/Seg5Live";
 import { S03Declare, S04Client, S05SystemRole, S06Roles, S07Grant, S11Static, S17Flow } from "./auth/Concepts";
 import { S09InstallPc1, S10Pc1Client, S12DynamicRoles, S13InstallRest, S14GrantCatalog, S15GrantInventory, S16Order, S18Cleanup } from "./auth/Demo";
 import { S02Standard, S04MixMatch, S05TestKit, S06Bdd, S07Modules, S09Operators, S10Choosing, S11Api, S12Observability, S13Identity, S15Carbon } from "./buy/Buy";
+import { S04Mcp, S05Descriptions, S07DependentAIModels, S08Inference, S11Gateway, S12GatewayDemo, S15WithAI, S16Registry, S17Evaluation, S18Amplifier, S20AgentsMd, S21Skills, S22SkillDemo } from "./ai/Ai";
 import { OdaComponentShowcase } from "./library/OdaComponentShowcase";
 import { IconAsset, OdaAsset, StageAsset } from "./library/Assets";
 
@@ -84,6 +85,22 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Auth-16-Order" component={S16Order} durationInFrames={402} fps={30} width={1920} height={1080} />
       <Composition id="Auth-17-Flow" component={S17Flow} durationInFrames={726} fps={30} width={1920} height={1080} />
       <Composition id="Auth-18-Cleanup" component={S18Cleanup} durationInFrames={582} fps={30} width={1920} height={1080} />
+    </Folder>
+    <Folder name="AI-Native-ODA-Canvas">
+      {/* Deck 04 (scripts/04-ai-native-oda-canvas.md). Slides 1-3, 6, 9, 10, 13, 14, 19, 23 and 24 are native (tools/native/ai.py). */}
+      <Composition id="AI-04-Mcp" component={S04Mcp} durationInFrames={825} fps={30} width={1920} height={1080} />
+      <Composition id="AI-05-Descriptions" component={S05Descriptions} durationInFrames={1000} fps={30} width={1920} height={1080} />
+      <Composition id="AI-07-DependentAIModels" component={S07DependentAIModels} durationInFrames={930} fps={30} width={1920} height={1080} />
+      <Composition id="AI-08-Inference" component={S08Inference} durationInFrames={825} fps={30} width={1920} height={1080} />
+      <Composition id="AI-11-Gateway" component={S11Gateway} durationInFrames={820} fps={30} width={1920} height={1080} />
+      <Composition id="AI-12-GatewayDemo" component={S12GatewayDemo} durationInFrames={910} fps={30} width={1920} height={1080} />
+      <Composition id="AI-15-WithAI" component={S15WithAI} durationInFrames={1065} fps={30} width={1920} height={1080} />
+      <Composition id="AI-16-Registry" component={S16Registry} durationInFrames={1080} fps={30} width={1920} height={1080} />
+      <Composition id="AI-17-Evaluation" component={S17Evaluation} durationInFrames={860} fps={30} width={1920} height={1080} />
+      <Composition id="AI-18-Amplifier" component={S18Amplifier} durationInFrames={800} fps={30} width={1920} height={1080} />
+      <Composition id="AI-20-AgentsMd" component={S20AgentsMd} durationInFrames={858} fps={30} width={1920} height={1080} />
+      <Composition id="AI-21-Skills" component={S21Skills} durationInFrames={990} fps={30} width={1920} height={1080} />
+      <Composition id="AI-22-SkillDemo" component={S22SkillDemo} durationInFrames={840} fps={30} width={1920} height={1080} />
     </Folder>
     </>
   );
