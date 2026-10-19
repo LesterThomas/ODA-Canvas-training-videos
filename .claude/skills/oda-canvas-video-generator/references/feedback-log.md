@@ -47,3 +47,33 @@ coming back belongs in `lessons.md`.
 | 2026-10-17 | Shared asset (requested) | "I want to use this image as a standard (and not the Lego block) when talking about ODA Components. If possible, create a svg version of this image so that it scales nicely" | Traced `images/ODA-Component.png` into `images/ODA-Component.svg`, an `-icon.svg`, and the animatable `OdaComponent`. | Yes. See the entry above. |
 | 2026-10-16 | 01 intro / slides 5, 14 | "For the 01-introduction-to-the-oda-canvas script all the VERIFY checks are good." | Removed [VERIFY] markers, set script status to confirmed, built the deck. | Yes. Added the "confirm external figures with the user" lesson, because confirming [VERIFY] items is now a standard gate before narration. |
 | 2026-10-16 | All decks (process) | Asked for the skill to improve continually: apply feedback to the deck in question, and consider whether it should become part of the skill. | n/a | Yes. This log and the SKILL.md "Feedback loop" section were created from it. |
+
+### 2026-10-18 · deck 02 · slide 17 (What's next)
+- **Feedback:** "The Model-as-a-Service operator is available as an experimental operator. Where the AI-Native canvas says it provides AI governed access through a model gateway, this is using the Model-as-a-Service operator."
+- **Changed:** removed Model-as-a-Service from the Planned list. Tagged the model-gateway line "Model-as-a-Service operator · TMFOP009 · experimental". Narration now names the experimental Model-as-a-Service operator as what grants governed access through the model gateway. Script header updated.
+- **Skill:** `research.md` known trap extended: the model gateway is the Model-as-a-Service operator, so never list it as planned. A fact fix, not a new rule. Deck 01 already calls it experimental.
+
+### 2026-10-18 · deck 02 · slide 2 (The standard is the component)
+- **Feedback:** "After 'It exposes the component's APIs, registers its roles, and monitors it.' the slide should also cover that a component can declare requirements for accessing AI services through the model-as-a-service operator or data products through the Data operator, or even manage its cost or carbon footprint through the cost and carbon management operators. It should mention that this list is not exhaustive and that any underlying common service could be offered through this standard pattern."
+- **Changed:** added four sentences to the narration (AI models, data products, cost and carbon, "not exhaustive, same pattern"). In the scene, the Canvas picture's second row (Cost, Carbon, Model Operator, Data Operator) lights up as each is named, the YAML gains `dependentModels`, and a "Not exhaustive · any common platform service, same pattern" line follows. The clip grew from 21 s to 43 s (102 words, over the 90-word guide, accepted because the user asked for this content on this slide).
+- **Skill:** none. Content specific to this deck. Deck 01 slide 8 already lights only the four core modules, so this doesn't contradict it.
+
+### 2026-10-18 · deck 02 · slide 3 (Three ways to get a Canvas)
+- **Feedback:** "For Apache 2.0, spell this out in the speaker notes as 'Apache two dot O'"
+- **Changed:** the narration now says "under the Apache two dot O licence". The on-screen text keeps "Apache 2.0". No other deck's narration has a dotted version number.
+- **Skill:** general rule, agreed by the user. New lessons.md entry "Spell out version numbers in speaker notes". Added to house-style.md (Narration voice) and script-template.md. `extract_notes.py` now flags dotted numbers (`\d+(\.\d+)+`) in notes. Checked all five scripts: none are flagged now.
+
+### 2026-10-18 · deck 02 · slide 8 (The operator catalogue)
+- **Feedback:** "At the moment the narration is leaving gaps. Reword the speaker notes to something that the narration will succeed in. At the moment it skips' is a prototype' and 'data products and carbon-aware scaling'"
+- **Changed:** reworded into short sentences, each ending on a plain word. "An OAuth2 operator … is a prototype" became "A prototype operator handles authentication between components". The experimental list became three sentences ("One provides model as a service. One manages data products. And one scales workloads to cut carbon."). The planned and closing sentences are split the same way. Native builds retimed (now 28 s).
+- **Skill:** proposed to the user as a rule (the voice drops the tail of sentences that end in a list or after an alphanumeric term, so give each list item its own short sentence). Not added until they agree.
+
+### 2026-10-18 · all decks · narration (speech-to-text check)
+- **Feedback:** "is it possible to use a speech-to-text model to automatically validate the text-to-speech is working correctly. If something repeatedly fails to generate, you should reword the speaker notes and keep a record to build data for what succeeds and what fails." Then "Do this".
+- **Changed:** csm-voice now checks every take with Distil-Whisper, retries up to three rounds, doesn't cache failed sentences, logs every sentence to `tts-log.jsonl`, and reports per-sentence verdicts to presgen. presgen turns a failed sentence into a "narration check" change request and renders no clip. New `tts_report.py` summarises the log. Fixed the word count for hyphenated words, which was cutting takes short. Tested: slide 8's old wording reproduced both dropped phrases, and its new wording passed every sentence.
+- **Skill:** yes. New lessons.md entry; SKILL.md Step 7 and narration-and-video.md ("Narration check").
+
+### 2026-10-18 · deck 02 · slide 19 (Find out more)
+- **Feedback:** "Write 'tmforum-oda slash oda-canvas.' as TM Forum dash ODA slash ODA Canvas'"
+- **Changed:** the narration now says "on GitHub, at TM Forum dash ODA slash ODA Canvas." The on-screen link is unchanged. Deck 01 slide 26 has the same phrase. Flagged to the user, and not changed (deck 01 is complete).
+- **Skill:** not yet. It's the same family as the version-number rule (write identifiers the way they are spoken), so I'll propose widening that rule.

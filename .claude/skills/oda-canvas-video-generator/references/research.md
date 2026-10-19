@@ -32,7 +32,8 @@ git log -1 --format='%H %cd'                                                  # 
 - **Carbon** is *implemented* (TMFOP011, KEDA-based, `CarbonManagement` CRD, TMF628 data). Older
   material calls it "planned".
 - **Model-as-a-Service (TMFOP009)** is "Implementation Planned", even though the Portal has a Model
-  Gateway page. Call it experimental.
+  Gateway page. Call it experimental. The model gateway that gives components governed access to AI models *is*
+  the Model-as-a-Service operator: say so, and never list it as planned (user, deck 02 review, 2026-10-18).
 - **`controllerRole` was renamed `canvasSystemRole`** (v1beta4). The TMF669 party-role API is being
   replaced by TMF672. `TMFOP003…/keycloak/README.md` still says TMF669, so trust the parent README.
 - **The `README.md:25` intro-video embed** shows the buy-or-build thumbnail but links to the intro

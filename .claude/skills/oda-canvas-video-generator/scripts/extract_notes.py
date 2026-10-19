@@ -4,7 +4,8 @@ Usage: python extract_notes.py scripts/<deck-id>.md decks/<deck-id>.notes.json
 
 The script format is `### Slide N: Title` headings with narration in `> ` lines
 (see references/script-template.md). Prints words and estimated seconds per slide (2.5 words/s)
-so clip lengths and build-up timings can follow the narration. Warns about leftover [VERIFY] markers.
+so clip lengths and build-up timings can follow the narration. Warns about leftover [VERIFY] markers,
+and flags notes the voice reads badly: colons, semicolons, long sentences and dotted version numbers.
 """
 
 import json
@@ -44,6 +45,9 @@ def main() -> None:
             flag = "  <-- presenter intro: aim for 110-130 words" if not 100 <= words <= 140 else ""
         else:
             flag = "  <-- long, consider splitting" if words > 90 else ""
+        dotted = sorted(set(re.findall(r"\d+(?:\.\d+)+", notes)))
+        if dotted:
+            flag += f"  <-- spell out {', '.join(dotted)} as spoken (e.g. 'two dot O')"
         if ":" in notes or ";" in notes:
             flag += "  <-- colon/semicolon: the voice reads them badly, use a full stop"
         longest = max((len(x.split()) for x in re.split(r"(?<=[.!?])\s+", notes)), default=0)

@@ -212,6 +212,10 @@ Read `references/narration-and-video.md` first. Then:
    `references/narration-and-video.md`.
 4. Watch for slides flagged as timing **CLAMPED** (in the log or on the page), and retime them at
    source.
+   Change requests by **"narration check"** come from the voice's speech-to-text check: after every
+   take, it still couldn't say a sentence. Reword that sentence, rebuild and reply. The user re-approves.
+   See "Narration check" in `references/narration-and-video.md`. After each deck, run
+   `tts_report.py` (csm-lester-voice) and turn clear failure patterns into narration rules.
 5. When the final video is built (`decks/<deck-id>/<deck-id>_video.mp4`), check sample frames. Then
    tell the user where it is, how long it runs, and any slides still in draft.
 

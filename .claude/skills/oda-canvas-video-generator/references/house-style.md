@@ -165,6 +165,8 @@ say it outright once: the Canvas does not mandate a specific product.
   and start a new sentence. `extract_notes.py` flags any it finds.
 - **Keep sentences to about 17 words, 20 at most.** The voice can cut long sentences short.
   `extract_notes.py` flags longer ones.
+- **Spell out version numbers as they should be spoken.** Write "Apache two dot O", not "Apache 2.0".
+  The voice reads digits with dots unpredictably. On-screen text keeps the written form. `extract_notes.py` flags dotted numbers.
 
 - Say "human operator", not "administrator", for the person who would otherwise do the work by hand. This matches the operator pattern the Canvas is built on.
 

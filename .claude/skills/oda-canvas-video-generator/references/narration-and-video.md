@@ -127,6 +127,30 @@ Things to watch:
 - The watch only runs while this Claude session is open. If the session ends, the requests wait in
   `review.json` and are picked up from `status --json` next time.
 
+## Narration check: speech-to-text on every take
+
+csm-voice transcribes every take with Whisper (`distil-whisper/distil-large-v3`, on the GPU beside the
+voice) and compares it with the sentence. A take passes when no more than 15% of the words are missing,
+no two missing words are next to each other (a dropped phrase), and it adds no more than three words.
+Near-misses such as "carbonware" for "carbon aware" count as heard. Takes that pass win over takes that
+don't. Length only decides between takes that pass equally well.
+
+- **Retries:** if no take of a sentence passes, the voice tries up to two more batches of three, with new
+  seeds. Cached takes are checked too, and regenerated if they fail.
+- **A sentence that still fails** is not cached, and no clip is rendered for the slide.
+  presentation-generator posts a change request by **"narration check"** on the review page, quoting
+  each failed sentence and what the voice actually said. The watch picks it up like any other request.
+- **Handling it:** reword the failing sentence in the script (short sentences, each ending on a plain
+  word; spell out hyphenated terms, numbers and identifiers the way they are spoken). Rebuild, then
+  reply on the page with the new wording. The user approves the slide again to re-voice it.
+- **The record:** every checked sentence is appended to `tts-log.jsonl` in the csm-lester-voice folder,
+  with the deck, slide, verdict, transcript and missing words. `python tts_report.py` there summarises
+  it: failure and retry rates by sentence feature, then each failed sentence with what came next for the
+  same slide (usually its rewording). Review it after each deck, and turn clear patterns into narration
+  rules and `extract_notes.py` checks.
+- **Turning it off:** pass `--no-check` in the TTS command (for example to compare against the old
+  behaviour).
+
 ## Rules
 
 - **Approval is the user's call.** Never approve a slide on your own initiative, not even one you

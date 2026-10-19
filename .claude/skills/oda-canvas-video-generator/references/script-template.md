@@ -65,7 +65,8 @@ Note demo-environment needs if there are [DEMO] slides.
 
 - For more than one paragraph of narration, put a bare `>` line between them. `extract_notes.py` keeps the break.
 
-- Speaker notes have no colons or semicolons and no sentence over about 17 words (house-style.md).
+- Speaker notes have no colons or semicolons, no sentence over about 17 words, and no dotted version
+  numbers: spell them out as spoken, such as "Apache two dot O" (house-style.md).
 
 - When you name an example product, add "or another … platform" in the narration and on screen
   (see house-style.md, "Naming products").

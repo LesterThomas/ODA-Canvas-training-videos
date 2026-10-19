@@ -144,3 +144,24 @@ editing it. `outputDur` reveals long output over a few seconds. `wrap` wraps lon
 - Live clips are slow to render (video decode). Re-render only the slides that use them.
 - **Fallback** when no live capture is possible: `lib/PortalShot.tsx` animates a cursor, highlights
   and typing over a static screenshot.
+
+## Running BDD features from the Canvas Portal (deck 02, 2026-10-18)
+
+The Portal's *BDD* page clones `tmforum-oda/oda-canvas` main into the backend pod and runs
+cucumber there. On the demo cluster it needed two fixes (both approved by the user) before a run
+could pass:
+
+- `CONFORMANCE_KEYCLOAK_PASSWORD` in the `canvas-portal-backend` secret was empty, so every run stopped
+  at "Please set the environment variables KEYCLOAK_USER…". Set it from `demos/.env`, then restart
+  the backend. A `helm upgrade` of the `canvas-portal` release may reset it.
+- The test kit's `installPackage` always runs `helm install … -n components --create-namespace`, and
+  Helm then tries to create the namespace even when it exists. The portal's service account is
+  sandboxed to `components`, so it was given a ClusterRole that can only create namespaces
+  (`canvas-portal-backend-conformance-namespaces`).
+
+Pick features that need only Helm and Kubernetes. `UC002-F001 Install Component` passes (6
+scenarios). `UC016-F001` doesn't: the runner passes no `RESOURCE_INVENTORY_BASE_URL`, so its queries
+go to localhost. Runs leave their `ctk` release installed, so run `helm uninstall ctk -n components`
+afterwards. In recorder scripts, prefix `kubectl exec … /app/...` with `MSYS_NO_PATHCONV=1`, or Git
+Bash rewrites the pod path. The history table keeps failed attempts, so cut the clip before it
+scrolls into view.

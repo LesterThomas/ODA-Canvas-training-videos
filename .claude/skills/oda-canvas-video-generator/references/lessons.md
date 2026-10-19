@@ -7,6 +7,30 @@ it now lives.
 
 ---
 
+### 2026-10-18: Check every take with speech-to-text, and learn from the failures
+**Rule:** csm-voice transcribes every take with Whisper and only keeps takes that say the whole sentence.
+A sentence that still fails after its retries becomes a "narration check" change request on the review
+page. Reword it, rebuild and reply. Every checked sentence is logged to `tts-log.jsonl`. Summarise it
+with `tts_report.py` and turn clear patterns into narration rules.
+**Why:** takes were chosen by length alone, so a take that dropped "is a prototype" but ran about the
+right length could win, and the user had to hear the gap to catch it. The first test also found a cause:
+"model-as-a-service" counted as one word, which set the token limit too short, so the voice cut the
+sentence off. Words are now counted as spoken. The log builds the evidence for what the voice says well.
+**Source:** User, deck 02 review, 2026-10-18: "is it possible to use a speech-to-text model to
+automatically validate the text-to-speech is working correctly. If something repeatedly fails to
+generate, you should reword the speaker notes and keep a record to build data for what succeeds and what
+fails." Then "Do this". Folded into SKILL.md Step 7 and narration-and-video.md ("Narration check").
+
+### 2026-10-18: Spell out version numbers in speaker notes
+**Rule:** In narration, write version numbers the way they should be spoken ("Apache two dot O", not
+"Apache 2.0"). Keep the written form on screen. `extract_notes.py` flags any digits with dots in the
+notes.
+**Why:** The cloned voice reads text verbatim, and dotted numbers come out wrong or ambiguous
+("two point zero", "two zero"). Spelling them out fixes the pronunciation at source.
+**Source:** Deck 02 slide 3 review, 2026-10-18: "For Apache 2.0, spell this out in the speaker notes as
+'Apache two dot O'". The user then asked for it as a rule, with the `extract_notes.py` check. Folded
+into house-style.md (Narration voice) and script-template.md.
+
 ### 2026-10-18: Every deck opens with the presenter on camera
 **Rule:** Slide 1 of every new deck is a placeholder for the user's own head-and-shoulders video to
 camera. Draft its speaker notes as the spoken introduction, about 110–130 words: what is different
