@@ -307,6 +307,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "f6df15cd2c6d42de"
+        },
+        {
+          "at": "2026-10-18T10:42:13+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "f6df15cd2c6d42de"
         }
       ],
       "number": 11,
@@ -315,7 +322,8 @@
       "fingerprint": "f6df15cd2c6d42de",
       "comment": "",
       "updated_at": "2026-10-18T10:12:03+01:00",
-      "approved_fingerprint": "f6df15cd2c6d42de"
+      "approved_fingerprint": "f6df15cd2c6d42de",
+      "validated_key": "76fddc30129f8f94"
     },
     "267": {
       "status": "approved",
@@ -323,6 +331,13 @@
         {
           "at": "2026-10-18T10:12:25+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "790e40184ce95847"
+        },
+        {
+          "at": "2026-10-18T10:56:47+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "790e40184ce95847"
@@ -334,7 +349,8 @@
       "fingerprint": "790e40184ce95847",
       "comment": "",
       "updated_at": "2026-10-18T10:12:25+01:00",
-      "approved_fingerprint": "790e40184ce95847"
+      "approved_fingerprint": "790e40184ce95847",
+      "validated_key": "6cb715362c1fe57c"
     },
     "268": {
       "status": "approved",
@@ -342,6 +358,13 @@
         {
           "at": "2026-10-18T10:12:44+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5f2224129f576d93"
+        },
+        {
+          "at": "2026-10-18T10:57:20+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "5f2224129f576d93"
@@ -353,7 +376,8 @@
       "fingerprint": "5f2224129f576d93",
       "comment": "",
       "updated_at": "2026-10-18T10:12:44+01:00",
-      "approved_fingerprint": "5f2224129f576d93"
+      "approved_fingerprint": "5f2224129f576d93",
+      "validated_key": "7d625a964f560b35"
     },
     "269": {
       "status": "approved",
@@ -361,6 +385,13 @@
         {
           "at": "2026-10-18T10:13:06+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "6c9144e83f63fd4c"
+        },
+        {
+          "at": "2026-10-18T11:34:33+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "6c9144e83f63fd4c"
@@ -372,7 +403,8 @@
       "fingerprint": "6c9144e83f63fd4c",
       "comment": "",
       "updated_at": "2026-10-18T10:13:06+01:00",
-      "approved_fingerprint": "6c9144e83f63fd4c"
+      "approved_fingerprint": "6c9144e83f63fd4c",
+      "validated_key": "1012e59d3473c6e1"
     },
     "270": {
       "status": "approved",
@@ -380,6 +412,13 @@
         {
           "at": "2026-10-18T10:13:12+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3a076784f7c47143"
+        },
+        {
+          "at": "2026-10-18T11:07:00+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "3a076784f7c47143"
@@ -391,7 +430,8 @@
       "fingerprint": "3a076784f7c47143",
       "comment": "",
       "updated_at": "2026-10-18T10:13:12+01:00",
-      "approved_fingerprint": "3a076784f7c47143"
+      "approved_fingerprint": "3a076784f7c47143",
+      "validated_key": "2b9a768a2d0b90ae"
     },
     "271": {
       "status": "approved",
@@ -399,6 +439,13 @@
         {
           "at": "2026-10-18T10:13:24+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "cea17aa42dae82de"
+        },
+        {
+          "at": "2026-10-18T11:07:20+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "cea17aa42dae82de"
@@ -410,7 +457,8 @@
       "fingerprint": "cea17aa42dae82de",
       "comment": "",
       "updated_at": "2026-10-18T10:13:24+01:00",
-      "approved_fingerprint": "cea17aa42dae82de"
+      "approved_fingerprint": "cea17aa42dae82de",
+      "validated_key": "dd203bd36db6e19a"
     },
     "272": {
       "status": "approved",
@@ -418,6 +466,13 @@
         {
           "at": "2026-10-18T10:13:39+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "866239bcd6c392a3"
+        },
+        {
+          "at": "2026-10-18T11:08:11+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "866239bcd6c392a3"
@@ -429,7 +484,8 @@
       "fingerprint": "866239bcd6c392a3",
       "comment": "",
       "updated_at": "2026-10-18T10:13:39+01:00",
-      "approved_fingerprint": "866239bcd6c392a3"
+      "approved_fingerprint": "866239bcd6c392a3",
+      "validated_key": "b61a0a11f328c2d4"
     },
     "273": {
       "status": "approved",
@@ -437,6 +493,13 @@
         {
           "at": "2026-10-18T10:13:58+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "100a4f5dc4987c67"
+        },
+        {
+          "at": "2026-10-18T11:38:08+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "100a4f5dc4987c67"
@@ -448,7 +511,8 @@
       "fingerprint": "100a4f5dc4987c67",
       "comment": "",
       "updated_at": "2026-10-18T10:13:58+01:00",
-      "approved_fingerprint": "100a4f5dc4987c67"
+      "approved_fingerprint": "100a4f5dc4987c67",
+      "validated_key": "f7cce764c15c4772"
     },
     "274": {
       "status": "approved",
@@ -456,6 +520,13 @@
         {
           "at": "2026-10-18T10:14:23+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "96c6025765743e87"
+        },
+        {
+          "at": "2026-10-18T11:09:25+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "96c6025765743e87"
@@ -467,7 +538,8 @@
       "fingerprint": "96c6025765743e87",
       "comment": "",
       "updated_at": "2026-10-18T10:14:23+01:00",
-      "approved_fingerprint": "96c6025765743e87"
+      "approved_fingerprint": "96c6025765743e87",
+      "validated_key": "c604ad0c2919d042"
     },
     "275": {
       "status": "approved",
@@ -475,6 +547,13 @@
         {
           "at": "2026-10-18T10:14:40+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "86b147535304cbfe"
+        },
+        {
+          "at": "2026-10-18T11:09:47+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "86b147535304cbfe"
@@ -486,7 +565,8 @@
       "fingerprint": "86b147535304cbfe",
       "comment": "",
       "updated_at": "2026-10-18T10:14:40+01:00",
-      "approved_fingerprint": "86b147535304cbfe"
+      "approved_fingerprint": "86b147535304cbfe",
+      "validated_key": "06056c4a70aa9bc1"
     }
   },
   "inspected_at": "2026-10-18T10:21:07+01:00"

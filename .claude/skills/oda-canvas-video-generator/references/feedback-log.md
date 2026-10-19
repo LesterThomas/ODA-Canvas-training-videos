@@ -77,3 +77,8 @@ coming back belongs in `lessons.md`.
 - **Feedback:** "Write 'tmforum-oda slash oda-canvas.' as TM Forum dash ODA slash ODA Canvas'"
 - **Changed:** the narration now says "on GitHub, at TM Forum dash ODA slash ODA Canvas." The on-screen link is unchanged. Deck 01 slide 26 has the same phrase. Flagged to the user, and not changed (deck 01 is complete).
 - **Skill:** not yet. It's the same family as the version-number rule (write identifiers the way they are spoken), so I'll propose widening that rule.
+
+### 2026-10-19 · deck 02 · slide 19 (Find out more)
+- **Feedback:** "Remove the box with the ODA Component Design Guidelines (the first 3 are sufficient). Don't make changes to the speaker notes."
+- **Changed:** removed the fourth link card from `tools/native/buy.py` and from the script's visual description. The speaker notes are unchanged.
+- **Skill:** none. Specific to this deck.

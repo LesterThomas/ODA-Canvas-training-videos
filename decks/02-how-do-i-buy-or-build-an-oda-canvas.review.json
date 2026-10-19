@@ -289,6 +289,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "00682a298a888c74"
+        },
+        {
+          "at": "2026-10-19T09:24:09+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "00682a298a888c74"
         }
       ],
       "number": 9,
@@ -297,7 +304,8 @@
       "fingerprint": "00682a298a888c74",
       "comment": "",
       "updated_at": "2026-10-18T13:16:15+01:00",
-      "approved_fingerprint": "00682a298a888c74"
+      "approved_fingerprint": "00682a298a888c74",
+      "validated_key": "3c50f5819697994a"
     },
     "265": {
       "status": "approved",
@@ -362,6 +370,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "b27711dc9f874324"
+        },
+        {
+          "at": "2026-10-19T09:27:19+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b27711dc9f874324"
         }
       ],
       "number": 12,
@@ -370,7 +385,8 @@
       "fingerprint": "b27711dc9f874324",
       "comment": "",
       "updated_at": "2026-10-18T13:17:12+01:00",
-      "approved_fingerprint": "b27711dc9f874324"
+      "approved_fingerprint": "b27711dc9f874324",
+      "validated_key": "b13ef10367546c03"
     },
     "268": {
       "status": "approved",
@@ -378,6 +394,13 @@
         {
           "at": "2026-10-18T13:17:38+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "52df0b6b5f178445"
+        },
+        {
+          "at": "2026-10-19T10:04:37+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "52df0b6b5f178445"
@@ -389,7 +412,8 @@
       "fingerprint": "52df0b6b5f178445",
       "comment": "",
       "updated_at": "2026-10-18T13:17:38+01:00",
-      "approved_fingerprint": "52df0b6b5f178445"
+      "approved_fingerprint": "52df0b6b5f178445",
+      "validated_key": "e6f0736ec5320cc8"
     },
     "269": {
       "status": "approved",
@@ -397,6 +421,13 @@
         {
           "at": "2026-10-18T13:17:54+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "275ba739d983da60"
+        },
+        {
+          "at": "2026-10-19T10:05:03+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "275ba739d983da60"
@@ -408,7 +439,8 @@
       "fingerprint": "275ba739d983da60",
       "comment": "",
       "updated_at": "2026-10-18T13:17:54+01:00",
-      "approved_fingerprint": "275ba739d983da60"
+      "approved_fingerprint": "275ba739d983da60",
+      "validated_key": "68e21651c38c903f"
     },
     "270": {
       "status": "approved",
@@ -416,6 +448,13 @@
         {
           "at": "2026-10-18T13:19:26+01:00",
           "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7b8b521e5edbec8a"
+        },
+        {
+          "at": "2026-10-19T09:18:42+01:00",
+          "action": "validate",
           "by": "review page",
           "comment": "",
           "fingerprint": "7b8b521e5edbec8a"
@@ -427,7 +466,8 @@
       "fingerprint": "7b8b521e5edbec8a",
       "comment": "",
       "updated_at": "2026-10-18T13:19:26+01:00",
-      "approved_fingerprint": "7b8b521e5edbec8a"
+      "approved_fingerprint": "7b8b521e5edbec8a",
+      "validated_key": "218eb999d5b43c2a"
     },
     "271": {
       "status": "approved",
@@ -479,6 +519,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "3a60363aa753d43a"
+        },
+        {
+          "at": "2026-10-19T10:05:35+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3a60363aa753d43a"
         }
       ],
       "number": 17,
@@ -487,7 +534,8 @@
       "fingerprint": "3a60363aa753d43a",
       "comment": "",
       "updated_at": "2026-10-18T21:11:34+01:00",
-      "approved_fingerprint": "3a60363aa753d43a"
+      "approved_fingerprint": "3a60363aa753d43a",
+      "validated_key": "bc04c2e6d85e9657"
     },
     "273": {
       "status": "approved",
@@ -517,7 +565,7 @@
       "validated_key": "28683d51186a7bc3"
     },
     "274": {
-      "status": "changes-requested",
+      "status": "approved",
       "history": [
         {
           "at": "2026-10-18T13:22:08+01:00",
@@ -539,20 +587,52 @@
           "by": "claude",
           "comment": "Done. The narration now ends 'on GitHub, at TM Forum dash ODA slash ODA Canvas.' The on-screen link is unchanged. Deck 01 (slide 26) has the same phrase. Say if you want it changed there too.",
           "fingerprint": "1d4480352d340f4c"
+        },
+        {
+          "at": "2026-10-19T09:18:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1d4480352d340f4c"
+        },
+        {
+          "at": "2026-10-19T10:08:13+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the box with the ODA Component Design Guidelines (the first 3 are sufficient). Don't make changes to the speaker notes.",
+          "fingerprint": "1d4480352d340f4c"
+        },
+        {
+          "at": "2026-10-19T10:08:56+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Done. The Design Guidelines box is gone, so three link cards remain. The speaker notes are unchanged.",
+          "fingerprint": "fd7b5371bf0a7c0b"
+        },
+        {
+          "at": "2026-10-19T10:15:31+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "fd7b5371bf0a7c0b"
+        },
+        {
+          "at": "2026-10-19T10:15:58+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "fd7b5371bf0a7c0b"
         }
       ],
       "number": 19,
       "title": "Find out more",
       "hidden": false,
-      "fingerprint": "1d4480352d340f4c",
-      "comment": "Write 'tmforum-oda slash oda-canvas.' as TM Forum dash ODA slash ODA Canvas'",
-      "updated_at": "2026-10-18T21:33:02+01:00",
-      "requested_fingerprint": "f948858bdc5cddc0",
-      "reply": {
-        "at": "2026-10-18T21:33:42+01:00",
-        "text": "Done. The narration now ends 'on GitHub, at TM Forum dash ODA slash ODA Canvas.' The on-screen link is unchanged. Deck 01 (slide 26) has the same phrase. Say if you want it changed there too."
-      }
+      "fingerprint": "fd7b5371bf0a7c0b",
+      "comment": "",
+      "updated_at": "2026-10-19T10:15:31+01:00",
+      "approved_fingerprint": "fd7b5371bf0a7c0b",
+      "validated_key": "b94c75f7a21de493"
     }
   },
-  "inspected_at": "2026-10-18T21:33:28+01:00"
+  "inspected_at": "2026-10-19T10:08:38+01:00"
 }

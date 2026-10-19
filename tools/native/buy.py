@@ -240,8 +240,6 @@ LINKS = [
     ("ODA Component Directory", "tmforum.org/oda/directory", "https://www.tmforum.org/oda/directory", "component", 6.0),
     ("ODA Canvas reference implementation", "github.com/tmforum-oda/oda-canvas › Canvas-design.md · source/operators",
      "https://github.com/tmforum-oda/oda-canvas", "operator", 8.0),
-    ("ODA Component Design Guidelines", "github.com/tmforum-oda/oda-ca-docs",
-     "https://github.com/tmforum-oda/oda-ca-docs/blob/master/ODAComponentDesignGuidelines.md", "canvas", 10.0),
 ]
 
 

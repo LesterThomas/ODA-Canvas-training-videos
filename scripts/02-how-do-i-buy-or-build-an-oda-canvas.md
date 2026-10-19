@@ -230,8 +230,8 @@ today.
 
 ### Slide 19: Find out more
 - **Visual:** [NATIVE] Clickable links, tmforum.org/oda, the ODA Component Directory
-  (tmforum.org/oda/directory), github.com/tmforum-oda/oda-canvas (Canvas-design.md,
-  source/operators), and the oda-ca-docs ODA Component Design Guidelines.
+  (tmforum.org/oda/directory), and github.com/tmforum-oda/oda-canvas (Canvas-design.md,
+  source/operators).
 - **Speaker notes:**
 > To find out more, see the Open Digital Architecture pages on the TM Forum website. Browse the ODA Component Directory. And explore the reference implementation on GitHub, at TM Forum dash ODA slash ODA Canvas.
 
