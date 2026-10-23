@@ -66,8 +66,9 @@ Measure the boxes by opening the PNG. Lift these helpers into `lib/` when the ne
 
 - After edits, run `npx tsc --noEmit` from `videos/`.
 - **Studio:** use the `remotion-studio` config in `.claude/launch.json`. It has to run from inside
-  `videos/` (`cmd /c "cd videos && npx remotion studio --no-open --port 3000"`). Run from the repo
-  root, it fails with "ENOENT … package.json". Open `http://localhost:3000/<composition-id>`.
+  `videos/` (`cmd /c "cd videos && npx remotion studio --no-open --port 3001"`, because Grafana
+  uses 3000). Run from the repo
+  root, it fails with "ENOENT … package.json". Open `http://localhost:3001/<composition-id>`.
 - **Stills:** run `node scripts/stills.mjs <Prefix> 1` (add `0.4` for mid-motion), then build contact
   sheets with `contact_sheet.py` and look at every one.
 - **Assets for native slides:** `Asset-Stage`, `Asset-Icon`, `Asset-Oda` and `Asset-OdaCrop`

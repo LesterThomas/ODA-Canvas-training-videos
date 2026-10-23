@@ -13,7 +13,7 @@ Everything is recorded with Playwright into `videos/public/captures/` and then e
 
 ```
 demos/
-├── .env                    PORTAL_URL, PORTAL_USER, PORTAL_PASSWORD, DIRECTORY_URL (gitignored)
+├── .env                    PORTAL_*, KEYCLOAK_*, GRAFANA_*, PROMETHEUS_URL, JAEGER_URL, DIRECTORY_URL (gitignored)
 ├── .env.example            template (committed)
 ├── lib/capture.mjs         startCapture(): 1920×1080 video, injected cursor and click ripples, mark(), moveTo/clickOn/hover/typeInto/scrollBy, declineCookies(), hideClutter()
 ├── lib/portal.mjs          portalLogin(), sideItem()
@@ -26,6 +26,23 @@ videos/public/captures/     <name>.webm + <name>.marks.json, <session>.cli.json 
 Run from the repo root, for example `node demos/portal/portal-inventory.mjs` or
 `node demos/cli/capture-cli.mjs cli-deploy`. Install once with `cd demos && npm i` (Playwright 1.58).
 Each run prints its marks: `[12.8s] tmfc001`. Use them to set the Remotion segments.
+
+## Local Canvas environment
+
+The reference Canvas runs locally (port-forwarded from the demo cluster). The user has said these are
+test-environment logins and not sensitive, and asked for them to be kept here (2026-10-23).
+`demos/.env` holds the same values for the scripts.
+
+| Service | URL | Login |
+|---|---|---|
+| Canvas Portal | http://localhost:8090/ | `portal-admin` / `F8cnUtD5sZ8KnTrwwEXfng` |
+| Keycloak | http://localhost:8083/auth/ (realm `odari`) | `admin` / `adpass` |
+| Grafana | http://localhost:3000/ | `admin` / `prom-operator` |
+| Prometheus | http://localhost:9090/ | none |
+| Jaeger | http://localhost:16686/ | none |
+
+Grafana owns port 3000, so Remotion Studio runs on **3001** (`.claude/launch.json`). If a URL doesn't
+answer, the port-forward has probably stopped: ask the user rather than restarting it.
 
 ## ODA Component Directory (tmforum.org)
 
@@ -57,8 +74,7 @@ Each run prints its marks: `[12.8s] tmfc001`. Use them to set the Remotion segme
 
 ## Canvas Portal (local reference Canvas)
 
-- URL and credentials are in `demos/.env`. It's a local test instance, so the user has said the
-  credentials are not sensitive, but keep them out of committed files and chat anyway.
+- URL and login: see **Local Canvas environment** above (also in `demos/.env`).
   `portalLogin(c, env)` signs in instantly; `{ show: true }` types it on camera instead.
 - Routes, from the sidebar: Dashboard `/` · Components: Inventory `/components`, Deploy
   `/components/deploy`, Lifecycle · APIs: Exposed APIs `/exposedapis` (tabs for APIs, Dependent

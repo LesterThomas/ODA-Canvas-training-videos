@@ -1,6 +1,6 @@
 ---
 name: oda-canvas-video-generator
-description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo: native PowerPoint slides and Remotion clips (including live recordings) with spoken-style speaker notes, which presentation-generator turns into a narrated video after slide-by-slide approval. Use this skill whenever the user wants to create, update, refresh, re-record, fix, review, approve, narrate or render an ODA Canvas training video, deck, script, slide, animation or speaker notes, e.g. "do the buy-or-build video next", "slide 7 feels too busy", "the narration on slide 12 is wrong", "approve slides 1-4", "generate the video", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any deck, clip, script or narration (apply it, then consider it for this skill), and to record the ODA Component Directory, the Canvas Portal or helm/kubectl commands for a video. Use it even if the user names only one part.
+description: End-to-end process for producing and revising TM Forum ODA Canvas training-video decks in this repo. It covers native PowerPoint slides and Remotion clips (including live recordings) with spoken-style speaker notes, which presentation-generator turns into a narrated video after slide-by-slide approval. Use this skill whenever the user wants to create, update, refresh, re-record, fix, review, approve, narrate or render an ODA Canvas training video, deck, script, slide, animation or speaker notes, e.g. "do the buy-or-build video next", "slide 7 feels too busy", "the narration on slide 12 is wrong", "approve slides 1-4", "generate the video", or "the Canvas changed, refresh the intro". Also use it whenever the user gives feedback on any deck, clip, script or narration (apply it, then consider it for this skill), and to record the ODA Component Directory, the Canvas Portal or helm/kubectl commands for a video. Use it even if the user names only one part.
 ---
 
 # ODA Canvas video generator
@@ -36,7 +36,7 @@ it overrides anything older in this file.
 | `images/` | Real Canvas Portal v2 screenshots (`Canvas 1–7.png`) |
 | `videos/` | Remotion project: `src/theme.ts`, `src/lib/ui.tsx` (shared primitives), `src/<deck>/` scenes, `src/Root.tsx` |
 | `videos/scripts/` | `render-all.mjs` (bundles once, renders clips) and `stills.mjs` (review stills and posters) |
-| `demos/` | Playwright captures of the **Component Directory** and **Canvas Portal**, plus real **helm/kubectl** output (`demos/.env` holds the portal login and is gitignored) |
+| `demos/` | Playwright captures of the **Component Directory** and **Canvas Portal**, plus real **helm/kubectl** output (local Canvas URLs and logins: `references/live-demos.md`, "Local Canvas environment"; also in the gitignored `demos/.env`) |
 | `videos/public/captures/` | Recorded `.webm` files with `.marks.json` timelines, and `.cli.json` command outputs |
 | `tools/build_deck.py` | Assembles the deck: full-bleed auto-play video, poster frame and notes on each slide |
 | `decks/<deck-id>.pptx` | Deliverable, plus `<deck-id>.notes.json` and `<deck-id>.anim.json` |
