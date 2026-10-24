@@ -1,0 +1,20 @@
+{
+ "name": "obs-cli-stack",
+ "live": true,
+ "capturedAt": "2026-10-23T09:57:02.073Z",
+ "context": "docker-desktop",
+ "steps": [
+  {
+   "cmd": "helm list -n monitoring",
+   "output": "NAME             NAMESPACE     REVISION    UPDATED                                  STATUS      CHART                        APP VERSION\nobservability    monitoring    2           2026-10-23 09:02:09.2928425 +0100 BST    deployed    observability-stack-0.1.0    1.0",
+   "exitCode": 0,
+   "at": "2026-10-23T09:57:01.769Z"
+  },
+  {
+   "cmd": "kubectl get pods -n monitoring",
+   "output": "NAME                                                     READY   STATUS    RESTARTS        AGE\nalertmanager-observability-prometheus-alertmanager-0     2/2     Running   16 (125m ago)   21d\nobservability-grafana-8db597f6f-q4295                    3/3     Running   24 (125m ago)   21d\nobservability-jaeger-7c6df48755-wbwb8                    1/1     Running   8 (125m ago)    21d\nobservability-kube-state-metrics-675d58fdb5-6nh8c        1/1     Running   9 (125m ago)    21d\nobservability-opentelemetry-collector-79dfb74588-lr96b   1/1     Running   8 (125m ago)    21d\nobservability-prometheus-operator-67bf554bb5-qswxp       1/1     Running   9 (125m ago)    21d\nprometheus-observability-prometheus-prometheus-0         2/2     Running   16 (125m ago)   21d",
+   "exitCode": 0,
+   "at": "2026-10-23T09:57:02.072Z"
+  }
+ ]
+}

@@ -737,7 +737,7 @@
   },
   "27": {
    "n": 27,
-   "secs": 20.4,
+   "secs": 23.6,
    "kind": "native",
    "anims": [
     {
@@ -754,37 +754,43 @@
     },
     {
      "shape": "Part 2",
-     "at": 2.4,
+     "at": 6.0,
      "effect": "rise",
      "dur": 0.7
     },
     {
      "shape": "Part 3",
-     "at": 4.0,
+     "at": 8.8,
      "effect": "rise",
      "dur": 0.7
     },
     {
      "shape": "Part 4",
-     "at": 5.6,
+     "at": 10.8,
      "effect": "rise",
      "dur": 0.7
     },
     {
      "shape": "Part 5",
-     "at": 7.2,
+     "at": 12.8,
+     "effect": "rise",
+     "dur": 0.7
+    },
+    {
+     "shape": "Part 6",
+     "at": 13.8,
      "effect": "rise",
      "dur": 0.7
     },
     {
      "shape": "Links",
-     "at": 10.5,
+     "at": 15.4,
      "effect": "rise",
      "dur": 0.6
     },
     {
      "shape": "Welcome",
-     "at": 15.0,
+     "at": 22.4,
      "effect": "fade",
      "dur": 0.6
     }

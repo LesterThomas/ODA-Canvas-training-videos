@@ -247,6 +247,13 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "73b025779cc1a1d8"
+        },
+        {
+          "at": "2026-10-24T11:21:43+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "73b025779cc1a1d8"
         }
       ],
       "number": 2,
@@ -256,7 +263,7 @@
       "comment": "",
       "updated_at": "2026-10-17T12:35:15+01:00",
       "approved_fingerprint": "73b025779cc1a1d8",
-      "validated_key": "98f6e9e1ab2289f5"
+      "validated_key": "2822422217edd37e"
     },
     "258": {
       "status": "approved",
@@ -2095,17 +2102,101 @@
           "by": "review page",
           "comment": "",
           "fingerprint": "96502aaac69decdf"
+        },
+        {
+          "at": "2026-10-24T11:22:09+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "02c9bc3d40b365c0"
+        },
+        {
+          "at": "2026-10-24T11:24:40+01:00",
+          "action": "changes",
+          "by": "narration check",
+          "comment": "Narration check: after every take, the voice still could not say this sentence. \"Authentication and authorization, the AI-Native Canvas, observability and carbon-aware software.\" was heard as \"Authentication and authorization, the AI Native Canvas,\" (missing: observability and carbon aware software) Please reword it.",
+          "fingerprint": "02c9bc3d40b365c0"
+        },
+        {
+          "at": "2026-10-24T11:24:50+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "02c9bc3d40b365c0"
+        },
+        {
+          "at": "2026-10-24T11:25:12+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Reworded into two complete sentences: 'They also cover authentication and authorization, and the AI-Native Canvas. After that come observability, and carbon-aware software.' Please approve it again.",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:26:38+01:00",
+          "action": "changes",
+          "by": "narration check",
+          "comment": "Narration check: after every take, the voice still could not say this sentence. \"Authentication and authorization, the AI-Native Canvas, observability and carbon-aware software.\" was heard as \"Authentication and authorization, the AI Native Canvas,\" (missing: observability and carbon aware software) Please reword it.",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:26:52+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "This failure is from a second narration run that started at 11:22 with the old text. The notes were already reworded at 11:25 ('They also cover authentication and authorization, and the AI-Native Canvas. After that come observability, and carbon-aware software.'). Approve slide 27 again to narrate the new wording.",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:42:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:45:05+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Update the timing of the slide to match the narration.",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:47:04+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "4ab729b12b4c89b4"
+        },
+        {
+          "at": "2026-10-24T11:47:38+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Retimed to the new narration. Each part tile now appears as it is named (Part 2 at 6 s through Part 6 at 14 s), the links when GitHub is mentioned, and 'Contributions welcome' at the end. Approve it again to narrate and render.",
+          "fingerprint": "eca88d0fb6906860"
+        },
+        {
+          "at": "2026-10-24T11:49:06+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "eca88d0fb6906860"
+        },
+        {
+          "at": "2026-10-24T11:50:22+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "eca88d0fb6906860"
         }
       ],
       "number": 27,
       "title": "What's next",
       "hidden": false,
-      "fingerprint": "96502aaac69decdf",
+      "fingerprint": "eca88d0fb6906860",
       "comment": "",
-      "updated_at": "2026-10-17T15:34:50+01:00",
-      "approved_fingerprint": "96502aaac69decdf",
-      "validated_key": "1191ebd6dc4b1bb4"
+      "updated_at": "2026-10-24T11:49:06+01:00",
+      "validated_key": "86a4b2c68a92bd12",
+      "approved_fingerprint": "eca88d0fb6906860"
     }
   },
-  "inspected_at": "2026-10-19T16:59:48+01:00"
+  "inspected_at": "2026-10-24T11:47:18+01:00"
 }

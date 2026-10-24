@@ -44,3 +44,6 @@ demos/node_modules/
 
 # Playwright scratch recordings
 demos/captures/
+
+# Overview-page requests (presgen hub), read by watch_hub.sh
+decks/hub-events.jsonl

@@ -22,6 +22,8 @@ import { S02Standard, S04MixMatch, S05TestKit, S06Bdd, S07Modules, S09Operators,
 import { S04Mcp, S05Descriptions, S07DependentAIModels, S08Inference, S11Gateway, S12GatewayDemo, S15WithAI, S16Registry, S17Evaluation, S18Amplifier, S20AgentsMd, S21Skills, S22SkillDemo } from "./ai/Ai";
 import { OdaComponentShowcase } from "./library/OdaComponentShowcase";
 import { IconAsset, OdaAsset, StageAsset } from "./library/Assets";
+import { S05Stack, S07Wiring, S09ServiceMonitor, S10Targets, S11Business, S12Cpu, S13Grafana, S14K8s, S15Traces, S17JaegerSearch, S18Trace, S19Portal } from "./obs/Obs";
+import { S01ObsPresenter } from "./obs/S01Presenter";
 
 // Deck 01 — "Introduction to the ODA Canvas" (scripts/01-introduction-to-the-oda-canvas.md).
 // One silent clip per *animated* slide; each duration roughly matches that slide's narration so the
@@ -107,6 +109,21 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AI-20-AgentsMd" component={S20AgentsMd} durationInFrames={858} fps={30} width={1920} height={1080} />
       <Composition id="AI-21-Skills" component={S21Skills} durationInFrames={990} fps={30} width={1920} height={1080} />
       <Composition id="AI-22-SkillDemo" component={S22SkillDemo} durationInFrames={840} fps={30} width={1920} height={1080} />
+    </Folder>
+    <Folder name="Observability">
+      <Composition id="Obs-01-Presenter" component={S01ObsPresenter} durationInFrames={1638} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-05-Stack" component={S05Stack} durationInFrames={660} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-07-Wiring" component={S07Wiring} durationInFrames={900} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-09-ServiceMonitor" component={S09ServiceMonitor} durationInFrames={720} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-10-Targets" component={S10Targets} durationInFrames={570} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-11-Business" component={S11Business} durationInFrames={720} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-12-Cpu" component={S12Cpu} durationInFrames={630} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-13-Grafana" component={S13Grafana} durationInFrames={810} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-14-K8s" component={S14K8s} durationInFrames={510} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-15-Traces" component={S15Traces} durationInFrames={720} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-17-JaegerSearch" component={S17JaegerSearch} durationInFrames={570} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-18-Trace" component={S18Trace} durationInFrames={720} fps={30} width={1920} height={1080} />
+      <Composition id="Obs-19-Portal" component={S19Portal} durationInFrames={690} fps={30} width={1920} height={1080} />
     </Folder>
     </>
   );

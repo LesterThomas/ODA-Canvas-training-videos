@@ -1,8 +1,8 @@
 ---
-deck-id: 05-carbon-aware-software
+deck-id: 06-carbon-aware-software
 replaces: https://youtu.be/I78MSow6RQg  (Carbon Aware Software, 13:25)
 linked-from: oda-canvas source/operators/TMFOP011-Carbon-Management/README.md:6
-original-transcript: presentations/transcripts/05-carbon-aware-software.md
+original-transcript: presentations/transcripts/06-carbon-aware-software.md
 oda-canvas-commit: c39da6340dbc971981bcb1eea5da5d718fac11d2
 demo-scenario: source/operators/TMFOP011-Carbon-Management/carbon-management/carbon-aware-scaling-scenario.md
 target-length: ~7 min

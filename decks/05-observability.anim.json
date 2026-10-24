@@ -1,0 +1,684 @@
+{
+ "deck": "05-observability.pptx",
+ "slides": {
+  "1": {
+   "n": 1,
+   "secs": 48.0,
+   "kind": "video"
+  },
+  "2": {
+   "n": 2,
+   "secs": 25.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Canvas",
+     "at": 0.4,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Own 1",
+     "at": 7.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Component 1",
+     "at": 0.8,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Vendor 1",
+     "at": 1.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Own 2",
+     "at": 7.5,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Component 2",
+     "at": 1.4,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Vendor 2",
+     "at": 1.6,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Own 3",
+     "at": 8.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Component 3",
+     "at": 2.0,
+     "effect": "zoom",
+     "dur": 0.5
+    },
+    {
+     "shape": "Vendor 3",
+     "at": 2.2,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Platform",
+     "at": 14.6,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Feed 1",
+     "at": 16.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feed 2",
+     "at": 16.7,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feed 3",
+     "at": 17.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Trace 1",
+     "at": 19.6,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Trace 2",
+     "at": 20.2,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Trace 3",
+     "at": 21.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Trace label",
+     "at": 19.2,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "3": {
+   "n": 3,
+   "secs": 35.2,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Kind 1",
+     "at": 2.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 1",
+     "at": 24.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Kind 2",
+     "at": 9.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 2",
+     "at": 26.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Kind 3",
+     "at": 15.6,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Question 3",
+     "at": 29.4,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "4": {
+   "n": 4,
+   "secs": 22.4,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Standard 1",
+     "at": 2.8,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Standard 2",
+     "at": 8.4,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Reference",
+     "at": 13.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Tool 1",
+     "at": 13.2,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Tool 2",
+     "at": 13.7,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Tool 3",
+     "at": 14.2,
+     "effect": "zoom",
+     "dur": 0.4
+    },
+    {
+     "shape": "Or",
+     "at": 18.4,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "5": {
+   "n": 5,
+   "secs": 18.8,
+   "kind": "video"
+  },
+  "6": {
+   "n": 6,
+   "secs": 24.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Component",
+     "at": 0.4,
+     "effect": "zoom",
+     "dur": 0.6
+    },
+    {
+     "shape": "Segment",
+     "at": 2.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Spec panel",
+     "at": 0.8,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Spec 1",
+     "at": 1.2,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 2",
+     "at": 3.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 3",
+     "at": 4.6,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 4",
+     "at": 6.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 5",
+     "at": 9.6,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 6",
+     "at": 14.8,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Spec 7",
+     "at": 16.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Note",
+     "at": 20.4,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "7": {
+   "n": 7,
+   "secs": 26.4,
+   "kind": "video"
+  },
+  "8": {
+   "n": 8,
+   "secs": 22.0,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Operator",
+     "at": 2.4,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Mode 1",
+     "at": 6.6,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Mode 2",
+     "at": 11.0,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Mode 3",
+     "at": 15.8,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Same",
+     "at": 18.6,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "9": {
+   "n": 9,
+   "secs": 21.2,
+   "kind": "video"
+  },
+  "10": {
+   "n": 10,
+   "secs": 14.4,
+   "kind": "video"
+  },
+  "11": {
+   "n": 11,
+   "secs": 21.2,
+   "kind": "video"
+  },
+  "12": {
+   "n": 12,
+   "secs": 18.4,
+   "kind": "video"
+  },
+  "13": {
+   "n": 13,
+   "secs": 24.4,
+   "kind": "video"
+  },
+  "14": {
+   "n": 14,
+   "secs": 14.0,
+   "kind": "video"
+  },
+  "15": {
+   "n": 15,
+   "secs": 21.2,
+   "kind": "video"
+  },
+  "16": {
+   "n": 16,
+   "secs": 16.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Values panel",
+     "at": 0.6,
+     "effect": "fade",
+     "dur": 0.5
+    },
+    {
+     "shape": "Values 1",
+     "at": 0.8,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 2",
+     "at": 1.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 3",
+     "at": 1.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 4",
+     "at": 10.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 5",
+     "at": 11.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 6",
+     "at": 13.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Values 7",
+     "at": 13.8,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Install",
+     "at": 2.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Not spec",
+     "at": 7.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Namespace",
+     "at": 15.0,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  },
+  "17": {
+   "n": 17,
+   "secs": 16.4,
+   "kind": "video"
+  },
+  "18": {
+   "n": 18,
+   "secs": 21.6,
+   "kind": "video"
+  },
+  "19": {
+   "n": 19,
+   "secs": 20.4,
+   "kind": "video"
+  },
+  "20": {
+   "n": 20,
+   "secs": 18.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Feature 1",
+     "at": 2.0,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Feature 1 step 1",
+     "at": 4.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feature 1 step 2",
+     "at": 6.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feature 1 step 3",
+     "at": 7.6,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feature 1 step 4",
+     "at": 8.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Tag 1",
+     "at": 14.6,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Feature 2",
+     "at": 9.2,
+     "effect": "rise",
+     "dur": 0.6
+    },
+    {
+     "shape": "Feature 2 step 1",
+     "at": 10.2,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feature 2 step 2",
+     "at": 11.2,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Feature 2 step 3",
+     "at": 13.4,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Tag 2",
+     "at": 15.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Skip",
+     "at": 16.6,
+     "effect": "fade",
+     "dur": 0.5
+    }
+   ]
+  },
+  "21": {
+   "n": 21,
+   "secs": 28.8,
+   "kind": "native",
+   "anims": [
+    {
+     "shape": "Kicker",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Title",
+     "at": 0.0,
+     "effect": "fade",
+     "dur": 0.8
+    },
+    {
+     "shape": "Recap 1",
+     "at": 0.8,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Recap 2",
+     "at": 7.2,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "Recap 3",
+     "at": 14.0,
+     "effect": "rise",
+     "dur": 0.5
+    },
+    {
+     "shape": "More",
+     "at": 22.0,
+     "effect": "fade",
+     "dur": 0.4
+    },
+    {
+     "shape": "Link 1",
+     "at": 22.4,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 2",
+     "at": 23.0,
+     "effect": "fade",
+     "dur": 0.6
+    },
+    {
+     "shape": "Link 3",
+     "at": 23.6,
+     "effect": "fade",
+     "dur": 0.6
+    }
+   ]
+  }
+ }
+}

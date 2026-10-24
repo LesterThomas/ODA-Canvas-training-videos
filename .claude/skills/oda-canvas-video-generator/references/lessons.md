@@ -7,6 +7,17 @@ it now lives.
 
 ---
 
+### 2026-10-23: Show metrics APIs as `apiType: openmetrics`
+**Rule:** In any example YAML, diagram label or narration, give a component's metrics API `apiType: openmetrics`.
+Use only `openmetrics` throughout a video: don't mention that `prometheus` is also accepted.
+**Why:** The Component and ExposedAPI CRDs accept both `openmetrics` and `prometheus`, but TM Forum wants
+people to use the open standard. Viewers copy what the training videos show.
+**Source:** Deck 05 slide 6 review: "Show the apiType as openmetrics (the Canvas CRD allows openmetrics or
+prometheus, but we prefer people to use openmetrics)." Then, on the same slide: "Remove the sentence 'The
+Canvas also accepts prometheus, but openmetrics is preferred.' Throughout the video we should only use the
+openmetrics apiType". Deck 04 slide 4 (published) still shows
+`apiType: prometheus   # OpenMetrics`, so fix it at the next re-cut.
+
 ### 2026-10-19: One overview page for every deck; publish finished videos to YouTube with chapters and captions
 **Rule:** Keep `presgen.py hub decks/` available as the way into every deck. It shows each deck's status,
 final video and YouTube link, and starts or opens its review page. Publish a finished deck with

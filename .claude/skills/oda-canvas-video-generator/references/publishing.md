@@ -10,12 +10,24 @@ uv run --native-tls presgen.py hub "D:/Dev/lesterthomas/ODA-Canvas-training-vide
 It lists every `decks/*.pptx`, newest decks included automatically, with:
 - the slide review status (the same statuses the review page shows, including "changed");
 - whether the final video exists and is up to date, with its length and a Watch link;
-- the YouTube link and visibility, once `decks/<deck-id>.youtube.json` exists;
+- the YouTube link and visibility, once `decks/<deck-id>.youtube.json` exists. The link is shown **out of
+  date** (amber, with the reason) when the slides changed after the final video was built, or when the
+  final video's SHA-256 differs from the uploaded one (`video_sha256`). An out-of-date deck gets a
+  **Republish to YouTube** button;
 - **Start review / Open review**. Each deck's review page is its own `presgen serve` (it owns a voice
   worker and drives PowerPoint). The hub reuses a running server (each server records itself in
   `decks/<deck-id>/server.json`) or starts one on the next free port from 8765, then opens it.
 
-Run it in the background, and point the user at it whenever they ask what state the videos are in.
+Run it in the background (`--no-open` when you open it in the browser pane yourself), and point the user
+at it whenever they ask what state the videos are in.
+
+**Republish requests.** The button can't upload by itself, because uploads go through the user's browser. It
+records `republish_requested` in the deck's `.youtube.json` and appends the request to
+`decks/hub-events.jsonl`. While the hub runs, keep a Monitor on
+`scripts/watch_hub.sh "<abs path>/decks"` (re-arm it on expiry; on start it prints any request still open).
+For each request: if the final video is out of date, get the remaining slides approved and rebuilt first.
+Then re-cut and re-upload as in **Re-cutting a published video** below, asking the AI-use question as
+always. The new `.youtube.json` replaces the old one, which clears the request.
 Servers that the hub starts stop with it when its process tree is stopped. Use "Open review" again to
 restart them.
 

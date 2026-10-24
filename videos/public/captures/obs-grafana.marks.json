@@ -1,0 +1,27 @@
+{
+ "name": "obs-grafana",
+ "width": 1280,
+ "height": 720,
+ "marks": [
+  {
+   "label": "dashboards",
+   "t": 3.31
+  },
+  {
+   "label": "dashboard",
+   "t": 11.6
+  },
+  {
+   "label": "top",
+   "t": 17.09
+  },
+  {
+   "label": "events",
+   "t": 22.1
+  },
+  {
+   "label": "pods",
+   "t": 27.61
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "name": "obs-prom-targets",
+ "width": 1280,
+ "height": 720,
+ "marks": [
+  {
+   "label": "targets",
+   "t": 1.82
+  },
+  {
+   "label": "filtered",
+   "t": 6.25
+  },
+  {
+   "label": "up",
+   "t": 12.8
+  },
+  {
+   "label": "scrape",
+   "t": 19.65
+  }
+ ]
+}

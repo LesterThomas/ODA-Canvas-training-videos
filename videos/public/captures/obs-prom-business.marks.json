@@ -1,0 +1,27 @@
+{
+ "name": "obs-prom-business",
+ "width": 1280,
+ "height": 720,
+ "marks": [
+  {
+   "label": "page",
+   "t": 1.77
+  },
+  {
+   "label": "typed",
+   "t": 7.97
+  },
+  {
+   "label": "table",
+   "t": 11.48
+  },
+  {
+   "label": "graph",
+   "t": 17.62
+  },
+  {
+   "label": "hover",
+   "t": 24.3
+  }
+ ]
+}

@@ -286,6 +286,7 @@ def s26(k: Kit):
 NEXT = [("How do I buy or build an ODA Canvas?", "layers", "canvas", "2F6FED"),
         ("Authentication & authorization", "shield", "identity", "FF6B6B"),
         ("AI-Native ODA Canvas", "spark", "ai", "F472B6"),
+        ("Observability", "chart", "observability", "38BDF8"),
         ("Carbon-aware software", "leaf", "carbon", "34D399")]
 
 
@@ -293,22 +294,23 @@ def s27(k: Kit):
     k.background("stage-title.png")
     k.heading("Coming up in the series", "What's next")
     for i, (label, icon, color, hexc) in enumerate(NEXT):
-        x = 120 + i * 430
-        parts = [k.rect(None, x, 300, 400, 330, fill="panel", line=color, line_w=3, radius=26),
-                 k.text(None, x + 34, 334, 300, 34, f"PART {i + 2}", size=24, bold=True, color="muted"),
-                 k.image(None, _ico(icon, hexc), x + 34, 380, 84),
-                 k.text(None, x + 34, 484, 332, 130, label, size=34, bold=True, line_spacing=1.1)]
+        x = 120 + i * 340  # five parts across (observability became part 5, 2026-10-24)
+        parts = [k.rect(None, x, 300, 320, 330, fill="panel", line=color, line_w=3, radius=26),
+                 k.text(None, x + 30, 334, 260, 34, f"PART {i + 2}", size=24, bold=True, color="muted"),
+                 k.image(None, _ico(icon, hexc), x + 30, 380, 84),
+                 k.text(None, x + 30, 484, 268, 130, label, size=30, bold=True, line_spacing=1.1)]
         k.group(f"Part {i + 2}", parts)
-        k.anim(f"Part {i + 2}", 2.4 + i * 1.6, "rise", 0.7)
+        # Each part appears as the narration names it (words before the mention / 2.5).
+        k.anim(f"Part {i + 2}", [6.0, 8.8, 10.8, 12.8, 13.8][i], "rise", 0.7)
     links = [k.text(None, 120, 740, 1400, 44, "Reference implementation, docs and use-case library", size=30, color="muted"),
              k.pill(None, 120, 796, "github.com/tmforum-oda/oda-canvas", "tmf", size=36,
                     link="https://github.com/tmforum-oda/oda-canvas"),
              k.pill(None, 120 + Kit.pill_width("github.com/tmforum-oda/oda-canvas", 36) + 24, 796, "tmforum.org/oda/directory", "component", size=36,
                     link="https://www.tmforum.org/oda/directory/components-map")]
     k.group("Links", links)
-    k.anim("Links", 10.5, "rise")
+    k.anim("Links", 15.4, "rise")
     k.text("Welcome", 120, 930, 1200, 60, "Contributions welcome.", size=40, bold=True, color="operator")
-    k.anim("Welcome", 15.0, "fade")
+    k.anim("Welcome", 22.4, "fade")
 
 
 BUILDERS = {2: s02, 3: s03, 13: s13, 14: s14, 15: s15, 24: s24, 25: s25, 26: s26, 27: s27}

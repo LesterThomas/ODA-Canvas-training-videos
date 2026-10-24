@@ -1,0 +1,804 @@
+{
+  "deck": "05-observability.pptx",
+  "slides": {
+    "256": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-24T11:10:39+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "The speaker notes should be 'Welcome to part 5 of the ODA Canvas training series'",
+          "fingerprint": "fa4f6ccac61206cd"
+        },
+        {
+          "at": "2026-10-24T11:10:45+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "fa4f6ccac61206cd"
+        },
+        {
+          "at": "2026-10-24T11:11:11+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The speaker notes now open: 'Welcome to part 5 of the ODA Canvas training series, on observability.' Use these when you record the intro.",
+          "fingerprint": "06a781663e674d7e"
+        },
+        {
+          "at": "2026-10-24T11:27:37+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "It should start with 'Welcome to the fifth video in the ODA Canvas training series' to match the other videos",
+          "fingerprint": "06a781663e674d7e"
+        },
+        {
+          "at": "2026-10-24T11:27:45+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "06a781663e674d7e"
+        },
+        {
+          "at": "2026-10-24T11:28:04+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The notes now start: 'Welcome to the fifth video in the ODA Canvas training series, on observability.'",
+          "fingerprint": "c003c8eb67057b73"
+        },
+        {
+          "at": "2026-10-24T11:38:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "041c54ce9c1064c1"
+        },
+        {
+          "at": "2026-10-24T11:39:18+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "041c54ce9c1064c1"
+        }
+      ],
+      "number": 1,
+      "title": "Observability in the ODA Canvas (presenter introduction)",
+      "hidden": false,
+      "fingerprint": "041c54ce9c1064c1",
+      "comment": "",
+      "updated_at": "2026-10-24T11:38:34+01:00",
+      "approved_fingerprint": "041c54ce9c1064c1",
+      "validated_key": "75b3147e13b55d43"
+    },
+    "257": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:11:20+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "This slide should include that the observability can even show traces across components (and between components and the underlying Canvas services).",
+          "fingerprint": "acc93ccf0bf04179"
+        },
+        {
+          "at": "2026-10-23T12:12:00+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "acc93ccf0bf04179"
+        },
+        {
+          "at": "2026-10-23T12:13:04+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Added a sentence: 'It can even trace a single request across components, and into the Canvas services they use.' A dashed trace now runs Vendor A to B to C and into the Canvas, with the label 'One trace across components and Canvas services'. Specific to this deck, so no new skill rule.",
+          "fingerprint": "518595707fd8f20d"
+        },
+        {
+          "at": "2026-10-23T12:16:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "518595707fd8f20d"
+        },
+        {
+          "at": "2026-10-23T12:39:39+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "518595707fd8f20d"
+        },
+        {
+          "at": "2026-10-24T11:14:04+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "518595707fd8f20d"
+        }
+      ],
+      "number": 2,
+      "title": "One view across many components",
+      "hidden": false,
+      "fingerprint": "518595707fd8f20d",
+      "comment": "",
+      "updated_at": "2026-10-23T12:16:37+01:00",
+      "approved_fingerprint": "518595707fd8f20d",
+      "validated_key": "488db9d93edeca00"
+    },
+    "258": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:12:12+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5ec1ed466251a5d6"
+        },
+        {
+          "at": "2026-10-23T12:17:36+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Traces can also trace across components and between components and canvas services.",
+          "fingerprint": "5ec1ed466251a5d6"
+        },
+        {
+          "at": "2026-10-23T12:17:48+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "5ec1ed466251a5d6"
+        },
+        {
+          "at": "2026-10-23T12:18:17+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The Traces card now reads 'One request, across components and Canvas services'. The narration says 'Traces follow a single request step by step, even across components and the Canvas services they use.' The three questions are retimed to match. Specific to this deck.",
+          "fingerprint": "cf8e5396dff1fddd"
+        },
+        {
+          "at": "2026-10-23T12:20:36+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Change \"and where time is spent\" to \"and troubleshoot issues, for example to track where time is spent for a request\"",
+          "fingerprint": "cf8e5396dff1fddd"
+        },
+        {
+          "at": "2026-10-23T12:21:42+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "cf8e5396dff1fddd"
+        },
+        {
+          "at": "2026-10-23T12:22:10+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The narration now ends: 'Together, they answer whether a component is healthy and whether it is doing business. They also help troubleshoot issues, for example to track where time is spent for a request.' I split it in two to keep each sentence short for the voice. The third question under the cards now reads 'Troubleshoot issues'.",
+          "fingerprint": "25ffbe6dd6bb3579"
+        },
+        {
+          "at": "2026-10-23T12:23:56+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Change \"whether it is doing business\" to \"gives insights into the business performance metrics\"",
+          "fingerprint": "25ffbe6dd6bb3579"
+        },
+        {
+          "at": "2026-10-23T12:24:07+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "25ffbe6dd6bb3579"
+        },
+        {
+          "at": "2026-10-23T12:24:53+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Now reads: 'Together, they show whether a component is healthy, and give insights into its business performance metrics.' I reworded around your phrase so the sentence stays grammatical. The labels under the cards are now 'Component health', 'Business performance' and 'Troubleshoot issues'.",
+          "fingerprint": "b085806841cbcd93"
+        },
+        {
+          "at": "2026-10-23T12:25:15+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b085806841cbcd93"
+        },
+        {
+          "at": "2026-10-23T12:40:21+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "b085806841cbcd93"
+        }
+      ],
+      "number": 3,
+      "title": "Three kinds of observability",
+      "hidden": false,
+      "fingerprint": "b085806841cbcd93",
+      "comment": "",
+      "updated_at": "2026-10-23T12:25:15+01:00",
+      "approved_fingerprint": "b085806841cbcd93",
+      "validated_key": "ba7a4249d676d070"
+    },
+    "259": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:12:37+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7045e345ef9c1254"
+        },
+        {
+          "at": "2026-10-23T12:21:05+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7045e345ef9c1254"
+        }
+      ],
+      "number": 4,
+      "title": "Built on open standards",
+      "hidden": false,
+      "fingerprint": "7045e345ef9c1254",
+      "comment": "",
+      "updated_at": "2026-10-23T12:12:37+01:00",
+      "approved_fingerprint": "7045e345ef9c1254",
+      "validated_key": "e54dabfbe8c1ce3f"
+    },
+    "260": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:12:45+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2f4e15f34199def4"
+        },
+        {
+          "at": "2026-10-23T12:21:47+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "2f4e15f34199def4"
+        }
+      ],
+      "number": 5,
+      "title": "The reference observability stack",
+      "hidden": false,
+      "fingerprint": "2f4e15f34199def4",
+      "comment": "",
+      "updated_at": "2026-10-23T12:12:45+01:00",
+      "approved_fingerprint": "2f4e15f34199def4",
+      "validated_key": "5a95bdb73c915e7f"
+    },
+    "261": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:14:54+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Show the apiType as openmetrics (the Canvas CRD allows openmetrics or prometheus, but we prefer people to use openmetrics).",
+          "fingerprint": "300707f4077227be"
+        },
+        {
+          "at": "2026-10-23T12:15:20+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "300707f4077227be"
+        },
+        {
+          "at": "2026-10-23T12:16:59+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "The YAML now shows apiType: openmetrics. The narration says: 'Its API type is openmetrics, the open standard for metrics. The Canvas also accepts prometheus, but openmetrics is preferred.' Slide 7 (API operator label) and slide 9 (pill) no longer show prometheus either. This is now a skill rule for every deck.",
+          "fingerprint": "5ffd2239f9f4212e"
+        },
+        {
+          "at": "2026-10-23T12:18:58+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Remove the sentence \"The Canvas also accepts prometheus, but openmetrics is preferred.\"\nThroughout the video we should only use the openmetrics apiType",
+          "fingerprint": "5ffd2239f9f4212e"
+        },
+        {
+          "at": "2026-10-23T12:19:23+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "5ffd2239f9f4212e"
+        },
+        {
+          "at": "2026-10-23T12:21:41+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Removed that sentence and retimed the build. Slide 7 now says 'For an API of type openmetrics' (prometheus dropped). The video now uses only openmetrics, and the skill lesson is updated to say so.",
+          "fingerprint": "5c27b0e55475810a"
+        },
+        {
+          "at": "2026-10-23T12:22:16+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5c27b0e55475810a"
+        },
+        {
+          "at": "2026-10-23T12:40:52+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5c27b0e55475810a"
+        }
+      ],
+      "number": 6,
+      "title": "A component declares its metrics API",
+      "hidden": false,
+      "fingerprint": "5c27b0e55475810a",
+      "comment": "",
+      "updated_at": "2026-10-23T12:22:16+01:00",
+      "approved_fingerprint": "5c27b0e55475810a",
+      "validated_key": "d57a0097b7c9c78f"
+    },
+    "262": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:22:49+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7803f5427814b493"
+        },
+        {
+          "at": "2026-10-23T15:42:03+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7803f5427814b493"
+        }
+      ],
+      "number": 7,
+      "title": "How the Canvas wires it up",
+      "hidden": false,
+      "fingerprint": "7803f5427814b493",
+      "comment": "",
+      "updated_at": "2026-10-23T12:22:49+01:00",
+      "approved_fingerprint": "7803f5427814b493",
+      "validated_key": "1753e953a30321ea"
+    },
+    "263": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:15:40+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "91d4c42588b42c99"
+        },
+        {
+          "at": "2026-10-23T12:42:15+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "91d4c42588b42c99"
+        }
+      ],
+      "number": 8,
+      "title": "Choose how metrics are collected",
+      "hidden": false,
+      "fingerprint": "91d4c42588b42c99",
+      "comment": "",
+      "updated_at": "2026-10-23T12:15:40+01:00",
+      "approved_fingerprint": "91d4c42588b42c99",
+      "validated_key": "4b758e7ffec03bd0"
+    },
+    "264": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:24:26+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "89619dd0ad10e1be"
+        },
+        {
+          "at": "2026-10-23T12:43:00+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "89619dd0ad10e1be"
+        }
+      ],
+      "number": 9,
+      "title": "Live: the Canvas created the ServiceMonitor",
+      "hidden": false,
+      "fingerprint": "89619dd0ad10e1be",
+      "comment": "",
+      "updated_at": "2026-10-23T12:24:26+01:00",
+      "approved_fingerprint": "89619dd0ad10e1be",
+      "validated_key": "9cd92642459216c6"
+    },
+    "265": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:24:41+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7c075b9820a5cd31"
+        },
+        {
+          "at": "2026-10-23T12:43:17+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "7c075b9820a5cd31"
+        }
+      ],
+      "number": 10,
+      "title": "Live: Prometheus finds the component",
+      "hidden": false,
+      "fingerprint": "7c075b9820a5cd31",
+      "comment": "",
+      "updated_at": "2026-10-23T12:24:41+01:00",
+      "approved_fingerprint": "7c075b9820a5cd31",
+      "validated_key": "127b3dba87545c62"
+    },
+    "266": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:25:01+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4a71b693fe8d466b"
+        },
+        {
+          "at": "2026-10-23T15:42:30+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "4a71b693fe8d466b"
+        }
+      ],
+      "number": 11,
+      "title": "Live: business metrics in Prometheus",
+      "hidden": false,
+      "fingerprint": "4a71b693fe8d466b",
+      "comment": "",
+      "updated_at": "2026-10-23T12:25:01+01:00",
+      "approved_fingerprint": "4a71b693fe8d466b",
+      "validated_key": "d0f353a5cd289597"
+    },
+    "267": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:25:39+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d78a5077f8639a2c"
+        },
+        {
+          "at": "2026-10-23T12:43:59+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d78a5077f8639a2c"
+        }
+      ],
+      "number": 12,
+      "title": "Technical metrics come with the platform",
+      "hidden": false,
+      "fingerprint": "d78a5077f8639a2c",
+      "comment": "",
+      "updated_at": "2026-10-23T12:25:39+01:00",
+      "approved_fingerprint": "d78a5077f8639a2c",
+      "validated_key": "eceb78b4380738ac"
+    },
+    "268": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:26:00+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "44d0c420f32d3133"
+        },
+        {
+          "at": "2026-10-23T12:44:27+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "44d0c420f32d3133"
+        }
+      ],
+      "number": 13,
+      "title": "Live: a Grafana dashboard for the component",
+      "hidden": false,
+      "fingerprint": "44d0c420f32d3133",
+      "comment": "",
+      "updated_at": "2026-10-23T12:26:00+01:00",
+      "approved_fingerprint": "44d0c420f32d3133",
+      "validated_key": "e9c2dc5d93d8bf3c"
+    },
+    "269": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:26:16+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "41d8c3c4db9fcf3b"
+        },
+        {
+          "at": "2026-10-23T15:42:48+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "41d8c3c4db9fcf3b"
+        }
+      ],
+      "number": 14,
+      "title": "Live: the platform dashboards",
+      "hidden": false,
+      "fingerprint": "41d8c3c4db9fcf3b",
+      "comment": "",
+      "updated_at": "2026-10-23T12:26:16+01:00",
+      "approved_fingerprint": "41d8c3c4db9fcf3b",
+      "validated_key": "25bbbcd026ab51dc"
+    },
+    "270": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:26:34+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "33bb66dbf664839e"
+        },
+        {
+          "at": "2026-10-23T15:43:11+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "33bb66dbf664839e"
+        }
+      ],
+      "number": 15,
+      "title": "How traces reach Jaeger",
+      "hidden": false,
+      "fingerprint": "33bb66dbf664839e",
+      "comment": "",
+      "updated_at": "2026-10-23T12:26:34+01:00",
+      "approved_fingerprint": "33bb66dbf664839e",
+      "validated_key": "8f3d56d3e973b2a2"
+    },
+    "271": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:26:56+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5f3b645287e8395f"
+        },
+        {
+          "at": "2026-10-23T15:43:30+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "5f3b645287e8395f"
+        }
+      ],
+      "number": 16,
+      "title": "Pointing a component at the collector",
+      "hidden": false,
+      "fingerprint": "5f3b645287e8395f",
+      "comment": "",
+      "updated_at": "2026-10-23T12:26:56+01:00",
+      "approved_fingerprint": "5f3b645287e8395f",
+      "validated_key": "b1a53f647012b143"
+    },
+    "272": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:29:38+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1b0ac34dbcd7ba9c"
+        },
+        {
+          "at": "2026-10-23T15:43:53+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "1b0ac34dbcd7ba9c"
+        }
+      ],
+      "number": 17,
+      "title": "Live: finding traces in Jaeger",
+      "hidden": false,
+      "fingerprint": "1b0ac34dbcd7ba9c",
+      "comment": "",
+      "updated_at": "2026-10-23T12:29:38+01:00",
+      "approved_fingerprint": "1b0ac34dbcd7ba9c",
+      "validated_key": "a71c9b9e5dcd999a"
+    },
+    "273": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:29:54+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "44c6009505bfa9ca"
+        },
+        {
+          "at": "2026-10-23T15:44:17+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "44c6009505bfa9ca"
+        }
+      ],
+      "number": 18,
+      "title": "Live: inside one request",
+      "hidden": false,
+      "fingerprint": "44c6009505bfa9ca",
+      "comment": "",
+      "updated_at": "2026-10-23T12:29:54+01:00",
+      "approved_fingerprint": "44c6009505bfa9ca",
+      "validated_key": "1f06036022c2249e"
+    },
+    "274": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:31:51+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Can you change this to show what the Portal view should be. It should show Prometheus, Grafafa and Jaeger. It is also good to show Langfuse in grey and to state that the Canvas is still under development and LLM Observability is in the backlog.",
+          "fingerprint": "bbc9641d37b513e6"
+        },
+        {
+          "at": "2026-10-23T12:32:07+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "bbc9641d37b513e6"
+        },
+        {
+          "at": "2026-10-23T12:34:46+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Slide 19 now shows the Portal's Observability page as designed, recreated in its own layout. Prometheus, Grafana and Jaeger show 'Found in cluster' with their real in-cluster addresses, and Langfuse is greyed out. Narration: '...It shows Prometheus, Grafana and Jaeger, each with its address inside the cluster. Langfuse, a tool for LLM observability, is shown in grey. The Canvas is still under development, and LLM observability is in the backlog.' The same message is the closing caption.",
+          "fingerprint": "16499a073a79ff1c"
+        },
+        {
+          "at": "2026-10-23T12:38:33+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "16499a073a79ff1c"
+        },
+        {
+          "at": "2026-10-23T15:44:41+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "16499a073a79ff1c"
+        }
+      ],
+      "number": 19,
+      "title": "Observability in the Canvas Portal",
+      "hidden": false,
+      "fingerprint": "16499a073a79ff1c",
+      "comment": "",
+      "updated_at": "2026-10-23T12:38:33+01:00",
+      "approved_fingerprint": "16499a073a79ff1c",
+      "validated_key": "2f2c9582027a194f"
+    },
+    "275": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T12:32:11+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3dd10c6d0fc9b49a"
+        },
+        {
+          "at": "2026-10-24T11:14:29+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "3dd10c6d0fc9b49a"
+        }
+      ],
+      "number": 20,
+      "title": "Tested with BDD features",
+      "hidden": false,
+      "fingerprint": "3dd10c6d0fc9b49a",
+      "comment": "",
+      "updated_at": "2026-10-23T12:32:11+01:00",
+      "approved_fingerprint": "3dd10c6d0fc9b49a",
+      "validated_key": "f90c5e80a7dbf6df"
+    },
+    "276": {
+      "status": "approved",
+      "history": [
+        {
+          "at": "2026-10-23T11:49:18+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "d986f65ed0f475c3"
+        },
+        {
+          "at": "2026-10-23T12:46:02+01:00",
+          "action": "changes",
+          "by": "review page",
+          "comment": "Change \"when it is uninstalled\" to \"when the component is uninstalled\"",
+          "fingerprint": "d986f65ed0f475c3"
+        },
+        {
+          "at": "2026-10-23T12:46:12+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Working on it",
+          "fingerprint": "d986f65ed0f475c3"
+        },
+        {
+          "at": "2026-10-23T12:46:34+01:00",
+          "action": "reply",
+          "by": "claude",
+          "comment": "Changed to '...and removes the configuration when the component is uninstalled.' Specific to this deck.",
+          "fingerprint": "dcf36d74f5dbf00e"
+        },
+        {
+          "at": "2026-10-23T15:41:23+01:00",
+          "action": "approve",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "dcf36d74f5dbf00e"
+        },
+        {
+          "at": "2026-10-23T15:45:28+01:00",
+          "action": "validate",
+          "by": "review page",
+          "comment": "",
+          "fingerprint": "dcf36d74f5dbf00e"
+        }
+      ],
+      "number": 21,
+      "title": "Summary",
+      "hidden": false,
+      "fingerprint": "dcf36d74f5dbf00e",
+      "comment": "",
+      "updated_at": "2026-10-23T15:41:23+01:00",
+      "approved_fingerprint": "dcf36d74f5dbf00e",
+      "validated_key": "d909a7b608967354"
+    }
+  },
+  "inspected_at": "2026-10-24T11:36:27+01:00"
+}

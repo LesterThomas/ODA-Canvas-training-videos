@@ -27,7 +27,7 @@ and `video` finds **5 distinct recorded videos**. All are on the *Systems Archit
 | 2 | How do I buy or build an OCA Canvas? *(typo in title)* | `dYyyCDPlVHY` | 7:14 | `source/operators/README.md:9` | [02-how-do-i-buy-or-build-an-oda-canvas.md](../scripts/02-how-do-i-buy-or-build-an-oda-canvas.md) |
 | 3 | ODA Canvas Authentication and Authorization deep-dive | `w0iQv9FtuiM` | 14:11 | `Authentication-design.md:7` | [03-authentication-and-authorization.md](../scripts/03-authentication-and-authorization.md) |
 | 4 | AI Native ODA Canvas | `MICzwN8VB_o` | 30:32 | `AI-Native-Canvas-design.md:7`, `:314–326` (9 chapter deep-links) | [04-ai-native-oda-canvas.md](../scripts/04-ai-native-oda-canvas.md) (two parts) |
-| 5 | Carbon Aware Software | `I78MSow6RQg` | 13:25 | `source/operators/TMFOP011-Carbon-Management/README.md:6` | [05-carbon-aware-software.md](../scripts/05-carbon-aware-software.md) |
+| 5 | Carbon Aware Software | `I78MSow6RQg` | 13:25 | `source/operators/TMFOP011-Carbon-Management/README.md:6` | [06-carbon-aware-software.md](../scripts/06-carbon-aware-software.md) |
 
 `docs/writing-style.md:392–396` has a placeholder (`VIDEO_ID`) showing how to embed videos. It isn't a
 real video.
@@ -183,7 +183,8 @@ These are not in scope for this update. They are recorded here because the old v
 or the docs have no video at all:
 
 - **Observability** (`Observability-design.md` has no video, and it was promised in Video 1). This maps
-  to UC006, UC011 and UC012.
+  to UC006, UC011 and UC012. **In progress (2026-10-23):** deck [05-observability](../scripts/05-observability.md) (part 5 of the new series; carbon moves to deck 06), with live
+  Prometheus, Grafana and Jaeger. Building it found the Kong API operator bug (issue 650, PR 651).
 - **API exposure and gateway policies**, promised at the end of Video 3. This maps to UC003 and the
   Portal's Gateway and Policies pages.
 - **Canvas Portal v2 tour** and **installing the Canvas** (UC001 and UC013), from deck slides 23–24.

@@ -88,12 +88,12 @@ answer, the port-forward has probably stopped: ask the user rather than restarti
 - **Check the demo environment is healthy first.** `kubectl get components -A` should show
   `Complete`, the dashboard should say "N ready", and no pods should be in `ImagePullBackOff`.
   Recording a broken state teaches the wrong thing.
-  - Known issue (Oct 2026): `oda-components/productcatalog` **1.4.5** pulls
-    `tmforumodacanvas/*:1.0.0` images that aren't on Docker Hub, so it sticks at
-    `In-Progress-CompCon`. The upstream test chart
-    `feature-definition-and-test-kit/testData/productcatalog-v1` (images `lesterthomas/*`) works.
-    The demo cluster runs it as release **r1** in `components`. Ask the user before changing their
-    cluster.
+  - The `tmforumodacanvas/*:1.0.0` component images were missing from Docker Hub until 2026-10-19, so
+    older notes say `productcatalog` 1.4.5 sticks at `In-Progress-CompCon`. They are published now, and
+    the upstream test chart `feature-definition-and-test-kit/testData/productcatalog-v1` installs cleanly
+    (deck 05 runs it as release **obs**). Ask the user before changing their cluster.
+  - Reinstalling a release straight after `helm uninstall` can leave MongoDB `Pending` ("persistentvolumeclaim
+    … is being deleted"). Wait until `kubectl get exposedapis,pvc -n components` is empty before installing again.
 
 ## helm and kubectl
 
@@ -108,6 +108,25 @@ answer, the port-forward has probably stopped: ask the user rather than restarti
   `helm list -n components`, `kubectl get components -n components` and `kubectl get exposedapis -n
   components`; identity with `kubectl get identityconfigs -n components`; and
   `kubectl get crds | grep oda.tmforum.org` for the resource types.
+
+## Prometheus, Grafana and Jaeger (deck 05)
+
+`demos/observability/record-demo.mjs` records all three, plus the Portal's Observability page.
+- **Record dense UIs at 1280×720** (`startCapture(name, { viewport: { width: 1280, height: 720 } })`).
+  `CaptureClip` scales the video up, so text reads at 1.5×. Playwright pads, rather than scales, a video
+  larger than the viewport, so the video takes the viewport's size. CSS zoom would break mouse hover on
+  canvas charts. Zoom points in `CaptureSegment.zoom` are 1920-space, so multiply capture pixels by 1.5.
+  Keep the Canvas Portal at 1920: its layout overflows at 1280.
+- **Give the charts something to show.** Drive traffic for 15+ minutes before recording
+  (`skills/canvas-ops-tutorial/scripts/exercise_catalog_api.py`, one round every 20–45 s).
+- **Prometheus 2.x:** the query box is `.cm-content`. Click the Graph tab and type the range (`15m`) into
+  `.graph-controls input`, because URL parameters are ignored when the page opens without a query. Filter
+  Targets by a component name, not "obs", which also matches the stack's own (often down) control-plane targets.
+- **Grafana:** log in off camera (Enter in the password field). The dashboard list is virtualised, so
+  search for a dashboard rather than scrolling to it. Panels are `<section>` elements headed by their title.
+- **Jaeger (classic UI):** the service picker is the first `form .ant-select`. Drag
+  `.VerticalResizer--dragger` to widen the span-name column, or names are cut to "…mid…".
+- Several of these pages render hidden copies of labels, so hover `.filter({ visible: true })` matches.
 
 ## Keycloak and other live actions (deck 03 onwards)
 

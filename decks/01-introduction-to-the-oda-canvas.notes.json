@@ -184,8 +184,8 @@
  {
   "n": 27,
   "title": "What's next",
-  "notes": "This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas. Authentication and authorization, the AI-Native Canvas and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas. And contributions are welcome.",
-  "words": 51,
-  "secs": 20.4
+  "notes": "This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas. They also cover authentication and authorization, and the AI-Native Canvas. After that come observability, and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas. And contributions are welcome.",
+  "words": 59,
+  "secs": 23.6
  }
 ]

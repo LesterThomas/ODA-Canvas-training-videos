@@ -1,0 +1,15 @@
+{
+ "name": "obs-grafana-k8s",
+ "width": 1280,
+ "height": 720,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 4.91
+  },
+  {
+   "label": "memory",
+   "t": 13.46
+  }
+ ]
+}

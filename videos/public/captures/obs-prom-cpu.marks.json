@@ -1,0 +1,27 @@
+{
+ "name": "obs-prom-cpu",
+ "width": 1280,
+ "height": 720,
+ "marks": [
+  {
+   "label": "page",
+   "t": 1.78
+  },
+  {
+   "label": "typed",
+   "t": 8.16
+  },
+  {
+   "label": "table",
+   "t": 11.57
+  },
+  {
+   "label": "graph",
+   "t": 17.9
+  },
+  {
+   "label": "hover",
+   "t": 24.59
+  }
+ ]
+}

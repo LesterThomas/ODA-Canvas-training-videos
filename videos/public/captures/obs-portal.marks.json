@@ -1,0 +1,23 @@
+{
+ "name": "obs-portal",
+ "width": 1920,
+ "height": 1080,
+ "marks": [
+  {
+   "label": "dashboard",
+   "t": 2.39
+  },
+  {
+   "label": "observability",
+   "t": 7.33
+  },
+  {
+   "label": "prometheus",
+   "t": 16.08
+  },
+  {
+   "label": "grafana",
+   "t": 18.93
+  }
+ ]
+}

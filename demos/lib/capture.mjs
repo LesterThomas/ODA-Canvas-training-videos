@@ -62,7 +62,13 @@ const CURSOR_SCRIPT = `
  * Start a capture. Returns helpers bound to the page; call `finish()` at the end.
  * Pacing is deliberate (people need to read the screen); dead time is trimmed later in Remotion.
  */
-export async function startCapture(name, { width = 1920, height = 1080, headless = true, channel } = {}) {
+export async function startCapture(name, { width = 1920, height = 1080, headless = true, channel, viewport } = {}) {
+  // `viewport` (e.g. {width: 1280, height: 720}) records a smaller page and video, so dense UIs
+  // (Prometheus, Grafana, Jaeger) read larger once CaptureClip scales the video up. Playwright pads
+  // rather than scales a video larger than the viewport, so the video takes the viewport's size.
+  // Unlike CSS zoom, mouse positions stay correct on canvas charts.
+  const vp = viewport ?? { width, height };
+  ({ width, height } = vp);
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const tmpDir = path.join(REPO, "demos", "captures", "_tmp", name);
   fs.rmSync(tmpDir, { recursive: true, force: true });
@@ -71,7 +77,7 @@ export async function startCapture(name, { width = 1920, height = 1080, headless
   // bypass a bot check: if one appears, a person completes it in that window.
   const browser = await chromium.launch({ headless, ...(channel ? { channel } : {}) });
   const context = await browser.newContext({
-    viewport: { width, height },
+    viewport: vp,
     deviceScaleFactor: 1,
     recordVideo: { dir: tmpDir, size: { width, height } },
     locale: "en-GB",
@@ -80,7 +86,7 @@ export async function startCapture(name, { width = 1920, height = 1080, headless
   const page = await context.newPage();
   const t0 = Date.now();
   const marks = [];
-  let mouse = { x: width / 2, y: height / 2 };
+  let mouse = { x: vp.width / 2, y: vp.height / 2 };
 
   const sleep = (ms) => page.waitForTimeout(ms);
   const mark = (label) => {

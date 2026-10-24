@@ -174,9 +174,9 @@ confirmed on 2026-10-16, including the Open API download figure and the 10x clai
 > The ODA Components and Canvas are the result of collaboration between software vendors, systems integrators, communication service providers and cloud providers. Together they deliver what the ODA Manifesto set out. A standard execution environment for ODA Components. That shared foundation lets the industry adopt new capabilities, including AI, faster together than any one company could do alone.
 
 ### Slide 27: What's next
-- **Visual:** [NATIVE] Series roadmap tiles (Buy or build a Canvas; Authentication and Authorization; AI-Native Canvas; Carbon-Aware Software) and links: github.com/tmforum-oda/oda-canvas and tmforum.org/oda/directory.
+- **Visual:** [NATIVE] Series roadmap tiles (Buy or build a Canvas; Authentication and Authorization; AI-Native Canvas; Observability; Carbon-Aware Software) and links: github.com/tmforum-oda/oda-canvas and tmforum.org/oda/directory.
 - **Speaker notes:**
-> This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas. Authentication and authorization, the AI-Native Canvas and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas. And contributions are welcome.
+> This video was an overview. The next videos in the series go deeper into how to buy or build a Canvas. They also cover authentication and authorization, and the AI-Native Canvas. After that come observability, and carbon-aware software. The reference implementation, its documentation and its use-case library are all on GitHub at tmforum-oda slash oda-canvas. And contributions are welcome.
 
 ---
 
@@ -196,6 +196,7 @@ end), and captions from the speaker notes.
 > Part 2, How do I buy or build an ODA Canvas?: https://youtu.be/fMXEmWalRFc
 > Part 3, Authentication and Authorization in the ODA Canvas: https://youtu.be/a6j6tUDTS80
 > Part 4, The AI-Native ODA Canvas: https://youtu.be/0QtnMJDblvE
+> Part 5, Observability in the ODA Canvas: https://youtu.be/3Mcv0oc-0rs
 - **Links:**
 > ODA Canvas reference implementation: https://github.com/tmforum-oda/oda-canvas
 > Canvas design: https://github.com/tmforum-oda/oda-canvas/blob/main/Canvas-design.md

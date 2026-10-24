@@ -1,0 +1,26 @@
+{
+ "name": "obs-cli-wiring",
+ "live": true,
+ "capturedAt": "2026-10-23T09:57:03.207Z",
+ "context": "docker-desktop",
+ "steps": [
+  {
+   "cmd": "kubectl get exposedapis -n components",
+   "output": "NAME                                                       API_ENDPOINT                                                                         IMPLEMENTATION_READY\nobs-productcatalogmanagement-metrics                       https://localhost/obs-productcatalogmanagement/metrics                               true\nobs-productcatalogmanagement-productcatalogmanagement-v4   https://localhost/obs-productcatalogmanagement/tmf-api/productCatalogManagement/v4   true\nobs-productcatalogmanagement-userrolesandpermissions-v5    https://localhost/obs-productcatalogmanagement/rolesAndPermissionsManagement/v5      true",
+   "exitCode": 0,
+   "at": "2026-10-23T09:57:02.548Z"
+  },
+  {
+   "cmd": "kubectl get servicemonitors -n components",
+   "output": "NAME                                   AGE\nobs-productcatalogmanagement-metrics   5m57s",
+   "exitCode": 0,
+   "at": "2026-10-23T09:57:02.891Z"
+  },
+  {
+   "cmd": "kubectl get servicemonitor obs-productcatalogmanagement-metrics -n components -o yaml",
+   "output": "apiVersion: monitoring.coreos.com/v1\nkind: ServiceMonitor\nmetadata:\n  creationTimestamp: \"2026-10-23T09:51:05Z\"\n  generation: 1\n  labels:\n    app.kubernetes.io/managed-by: Helm\n    oda.tmforum.org/componentName: obs-productcatalogmanagement\n  name: obs-productcatalogmanagement-metrics\n  namespace: components\n  ownerReferences:\n  - apiVersion: oda.tmforum.org/v1\n    blockOwnerDeletion: true\n    controller: true\n    kind: ExposedAPI\n    name: obs-productcatalogmanagement-metrics\n    uid: c44267e1-b59c-42ab-9e0c-6798dbf65e66\n  resourceVersion: \"4430467\"\n  uid: 1d4ae3c8-c97c-4695-b295-3052caab8a79\nspec:\n  endpoints:\n  - interval: 15s\n    path: /obs-productcatalogmanagement/metrics\n    scheme: http\n    targetPort: 4000\n  selector:\n    matchLabels:\n      name: obs-productcatalogmanagement-sm",
+   "exitCode": 0,
+   "at": "2026-10-23T09:57:03.207Z"
+  }
+ ]
+}
